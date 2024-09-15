@@ -1,0 +1,12 @@
+body {
+	background-color: #3E3E3E;
+}
+
+a:link, a:visited {
+	background-color: #F4722B;
+	color: #F5E5C1;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
