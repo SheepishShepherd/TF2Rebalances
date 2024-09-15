@@ -1,5 +1,5 @@
-@font-face { font-family: "TF2"; src: url('fonts/tf2.ttf') format('truetype'); }
-@font-face { font-family: "TF2Secondary"; src: url('fonts/tf2secondary.ttf') format('truetype'); }
+@font-face { font-family: "TF2"; src: url('fonts/TF2.ttf') format('truetype'); }
+@font-face { font-family: "TF2Secondary"; src: url('fonts/TF2secondary.ttf') format('truetype'); }
 @font-face { font-family: "TF2Build"; src: url('fonts/tf2build.ttf') format('truetype'); }
 
 h1{
