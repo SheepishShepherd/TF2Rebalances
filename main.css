@@ -58,3 +58,12 @@ a {
 	background-color: #F4722B;
 	box-shadow: #B46032 3px 3px inset;
 }
+
+.home-btn {
+	width: 50px;
+	padding: 0px;
+	text-align: center;
+	position: sticky;
+	top: 10px;
+	left: 10px;
+}

@@ -1,3 +1,11 @@
+h1 {
+	font-family: 'TF2 Build';
+	font-size: 64px;
+	text-align: center;
+	color: #F4722B;
+	text-shadow: 3px 3px #141414;
+}
+
 table {
 	width: 1200px;
 	margin: auto;
@@ -9,6 +17,17 @@ th {
 	font-size: 36px;
 	padding: 5px 0px;
 	border-radius: 10px 10px 10px 10px;
+}
+
+.quick-access {
+	width: 1200px;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.class-portrait {
+	max-width: 120px;
 }
 
 .class-icon {
