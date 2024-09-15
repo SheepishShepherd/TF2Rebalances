@@ -9,6 +9,7 @@ h1 {
 table {
 	width: 1200px;
 	margin: auto;
+	margin-top: 25px;
 }
 
 th {
@@ -17,6 +18,11 @@ th {
 	font-size: 36px;
 	padding: 5px 0px;
 	border-radius: 10px 10px 10px 10px;
+}
+
+.class-icon {
+	height: 30px;
+	margin-right: 10px;
 }
 
 .item-perk {
