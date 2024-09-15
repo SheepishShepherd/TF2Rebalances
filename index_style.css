@@ -1,12 +1,17 @@
-body {
+.menu {
+	width: 500px;
+	height: 500px;
 	background-color: #3E3E3E;
+	margin: auto;
+	margin-top: 150px;
 }
 
-a:link, a:visited {
-	background-color: #F4722B;
-	color: #F5E5C1;
-	padding: 14px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
+.balance-link {
+	width: 400px;
+}
+
+h1 {
+	font-family: 'TF2 Build';
+	color: #E6E6E6;
+	font-size: 24px;
 }

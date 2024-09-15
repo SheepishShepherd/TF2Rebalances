@@ -2,6 +2,8 @@
 @font-face { font-family: "TF2Secondary"; src: url('fonts/TF2secondary.ttf') format('truetype'); }
 @font-face { font-family: "TF2Build"; src: url('fonts/tf2build.ttf') format('truetype'); }
 
+/* These stylizations are used by multiple pages */
+
 body {
 	background-color: #3E3E3E;
 }
@@ -10,16 +12,9 @@ img {
 	user-select: none;
 }
 
-table {
-	width: 1200px;
-}
-
-th {
-	background-color: #F3A957;
-	font-family: TF2;
-	font-size: 36px;
-	padding: 5px 0px;
-	border-radius: 10px 10px 10px 10px;
+a {
+	text-decoration: none;
+	user-select: none;
 }
 
 .item-card {
@@ -45,3 +40,21 @@ th {
 .upside { color: #99CCFF; }
 .downside { color: #FF4040; }
 .neutral { color: #EBE2CA; }
+
+.nav-btn {
+	height: 50px;
+	background-color: #F5E5C1;
+	box-shadow: #9A9280 -3px -3px inset;
+	color: #141414;
+	font-family: 'TF2 Build';
+	font-size: 32px;
+	line-height: 50px;
+	border-radius: 10px;
+	padding-left: 7px;
+	margin: 10px 0px;
+}
+
+.nav-btn:hover {
+	background-color: #F4722B;
+	box-shadow: #B46032 3px 3px inset;
+}
