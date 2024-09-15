@@ -1,0 +1,77 @@
+@font-face { font-family: TF2; src: url('fonts/tf2.TTF'); }
+@font-face { font-family: TF2Secondary; src: url('fonts/tf2secondary.TTF'); }
+@font-face { font-family: TF2Build; src: url('fonts/tf2build.TTF'); }
+
+h1{
+	font-family: TF2;
+}
+
+h2 {
+	font-family: TF2Secondary;
+}
+
+h3 {
+	font-family: TF2Build;
+}
+
+body {
+	background-color: #434343;
+}
+
+img {
+	user-select: none;
+}
+
+table {
+	width: 1200px;
+}
+
+th {
+	background-color: #F3A957;
+	font-family: TF2;
+	font-size: 36px;
+	padding: 5px 0px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.class-icon {
+	height: 30px;
+	margin-right: 10px;
+}
+
+.item-card {
+	width: 400px;
+	border-radius: 10px;
+	background-color: #222222;
+	text-align: center;
+	line-height: 1.6;
+	padding: 7px;
+}
+
+.item-weapon {
+	background-color: #3C362F;
+	border-radius: 10px;
+}
+
+.item-stamp {
+	width: 150px;
+}
+
+.item-name {
+	font-family: TF2Build;
+	color: #FFD700;
+	font-size: 18px;
+}
+
+.stat {
+	font-family: TF2Secondary;
+	font-size: 15px;
+	margin: 0px 7px;
+}
+.upside { color: #99CCFF; }
+.downside { color: #FF4040; }
+.neutral { color: #EBE2CA; }
+
+.change-card {
+
+}
