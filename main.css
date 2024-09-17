@@ -32,6 +32,11 @@ a {
 	font-size: 18px;
 }
 
+.item-img {
+	background-color: #3C362F;
+	border-radius: 10px;
+}
+
 .stat {
 	font-family: TF2Secondary;
 	font-size: 15px;
@@ -52,6 +57,8 @@ a {
 	border-radius: 10px;
 	padding-left: 7px;
 	margin: 10px 0px;
+	user-select: none;
+	cursor: pointer;
 }
 
 .nav-btn:hover {
@@ -60,10 +67,24 @@ a {
 }
 
 .home-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 50px;
+	height: 50px;
 	padding: 0px;
 	text-align: center;
 	position: sticky;
 	top: 10px;
+	left: 10px;
+}
+
+.up-btn {
+	display: inline-block;
+	width: 50px;
+	padding: 0px;
+	text-align: center;
+	position: fixed;
+	bottom: 10px;
 	left: 10px;
 }
