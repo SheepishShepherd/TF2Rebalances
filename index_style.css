@@ -1,9 +1,23 @@
+#wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 90vh;
+}
+
+.title-banner {
+	width: fit-content;
+	margin: 0px auto 50px auto;
+}
+
 .menu {
-	width: 500px;
-	height: 500px;
-	background-color: #3E3E3E;
+	width: fit-content;
+	height: fit-content;
+	border-radius: 4px;
+	background-color: #37322C;
 	margin: auto;
-	margin-top: 150px;
+	padding: 5px 10px;
 }
 
 .balance-link {
@@ -14,4 +28,25 @@ h1 {
 	font-family: 'TF2 Build';
 	color: #E6E6E6;
 	font-size: 24px;
+	text-shadow: 3px 3px #141414;
+	text-align: left;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	font-family: 'TF2 Build';
+	font-size: 64px;
+	text-align: center;
+	color: #F4722B;
+	text-shadow: 3px 3px #141414;
+	margin: 8px 0px;
+}
+
+h3 {
+	font-family: 'TF2 Build';
+	font-size: 18px;
+	color: #F3A957;
+	text-shadow: 3px 3px #141414;
+	margin: 8px 0px;
 }
