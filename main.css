@@ -45,6 +45,8 @@ a {
 .upside { color: #99CCFF; }
 .downside { color: #FF4040; }
 .neutral { color: #EBE2CA; }
+.subtle { color: #756B5E; }
+.tooltip { cursor: help; border-bottom: 1px dotted; }
 
 .nav-btn {
 	height: 50px;
