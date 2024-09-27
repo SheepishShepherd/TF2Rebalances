@@ -26,6 +26,15 @@ a {
 	padding: 7px;
 }
 
+.topleft-parent {
+	position: relative;
+	left: 0px;
+}
+
+.topleft {
+	position: absolute;
+}
+
 .item-name {
 	font-family: TF2Build;
 	color: #FFD700;
