@@ -41,6 +41,7 @@ a {
 .notice-icon {
 	width: 40px;
 	height: 40px;
+	cursor: help;
 }
 
 .item-name {
@@ -63,7 +64,7 @@ a {
 .downside { color: #FF4040; }
 .neutral { color: #EBE2CA; }
 .subtle { color: #756B5E; }
-.tooltip { cursor: help; border-bottom: 1px dotted; }
+.tooltip { cursor: help; border-bottom: 1px dotted; color: inherit; } .tooltip-link:hover { color: #FFD700; }
 
 .nav-btn {
 	height: 50px;
