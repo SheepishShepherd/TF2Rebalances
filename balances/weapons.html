@@ -1102,7 +1102,7 @@
 			<!-- Inferno -->
 			<tr id="inferno">
 				<td class="item-card">
-					<div class="topleft-parent"><div class="topleft"><img src="../resources/alert.png" height="40" width="40" /></div></div>
+					<div class="topleft-parent"><div class="topleft"><img class="notice-icon" src="../resources/alert.png" title="This is a new concept" /></div></div>
 					<img class="item-img" src="../resources/weapons/pyro/Inferno.png" />
 					<p>
 						<span class="item-name">Inferno</span><br />
@@ -1427,11 +1427,11 @@
 			</tr>
 
 			<!-- Powerjack -->
-			<tr id="manmelter">
+			<tr id="powerjack">
 				<td class="item-card">
 					<img class="item-img" src="../resources/weapons/pyro/Powerjack.png" />
 					<p>
-						<span class="item-name">Mannmelter*</span><br />
+						<span class="item-name">Powerjack</span><br />
 						<span class="stat neutral">TODO</span><br />
 					</p>
 				</td>
@@ -2636,7 +2636,7 @@
 			<!-- Pip-Boy -->
 			<tr id="pip-boy">
 				<td class="item-card">
-					<div class="topleft-parent"><div class="topleft"><img src="../resources/alert.png" height="40" width="40" /></div></div>
+					<div class="topleft-parent"><div class="topleft"><img class="notice-icon" src="../resources/alert.png" title="This is a new concept" /></div></div>
 					<img class="item-img" src="../resources/weapons/engineer/Pip-Boy.png" />
 					<p>
 						<span class="item-name">Pip-Boy</span><br />
@@ -3414,23 +3414,22 @@
 					<img class="item-img" src="../resources/weapons/spy/Revolver.png" />
 					<p>
 						<span class="item-name">Revolver</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat subtle">Changes affect all Revolvers</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside"><span class="tooltip" title="The time it takes for your next shot to become perfectly accurate after firing.">
+							Bullet spread recovery time</span> reduced from 1.25s to 1</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
+						<span class="item-name">Reason</span><br />
+						This change is meant to aid Spy's self-defense when creating distance from threats.
+						Fall-off damage is enough to keep this from being too beneficial for offensive improvements.<br />
+						To note, this is makes all revolvers match the Ambassador's bullet spread recovery.<br />
 					</p>
 				</td>
 			</tr>
@@ -3441,23 +3440,23 @@
 					<img class="item-img" src="../resources/weapons/spy/Ambassador.png" />
 					<p>
 						<span class="item-name">Ambassador</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Crits on headshot</span><br />
+						<span class="stat downside">-15% damage penalty</span><br />
+						<span class="stat downside">20% slower firing speed</span><br />
+						<span class="stat downside">Critical damage is affected by range</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Headshots between 1200 to 1536 HU will gradually reduce to base damage</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
+						<span class="item-name">Reason</span><br />
+						Keeping the damage scale going after headshots become mini-crit damage is much better than a sharp cut in damage.
+						Spies should be able to position himself without having to worry about damage loss.<br />
 					</p>
 				</td>
 			</tr>
@@ -3522,23 +3521,31 @@
 					<img class="item-img" src="../resources/weapons/spy/L'Etranger.png" />
 					<p>
 						<span class="item-name">L'Etranger</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">+40% cloak duration</span><br />
+						<span class="stat upside">On Hit: Gain up to +24 cloak per attack</span><br />
+						<span class="stat downside">-25% damage penalty</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">
+							Cloak on hit changed from a flat 15 to
+							<span class="tooltip" title="Affected by range and unaffected by damage modifiers">50% of the damage dealt</span>
+							resulting in <span class="tooltip" title="Dealing base damage still results in 15 cloak on hit">8-24 cloak</span>
+						</span><br />
+						<span class="stat downside">Base damage reduced from 32 to 30</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The fact that hits reward the same amount of cloak no matter the distance, somewhat incentivizes the Spy to attack further away.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						This change encourages the Spy to maintain a proper distance to capitalize on the benefit.
+						Being too close would make it more difficult to escape.
 					</p>
 				</td>
 			</tr>
@@ -3546,26 +3553,34 @@
 			<!-- Sapper -->
 			<tr id="sapper">
 				<td class="item-card">
+					<div class="topleft-parent">
+						<div class="topleft">
+							<a href="https://www.badweaponrehab.tf/" target="_blank"><img class="notice-icon" src="../resources/BWR.png" title="This idea originates from badweaponrehab.tf" /></a>
+						</div>
+					</div>
 					<img class="item-img" src="../resources/weapons/spy/Sapper.png" />
 					<p>
 						<span class="item-name">Sapper</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat subtle">Changes affect all Sappers</span><br />
+						<span class="stat neutral">Press your reload key to activate Radar</span><br />
+						<span class="stat neutral">Radar highlights yourself and all enemies in a small radius for 5s. Highlight is visible to both teams.</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Outlines <span class="tooltip" title="512hu radius">nearby</span> enemies and buildings for 5 seconds</span><br />
+						<span class="stat downside">Does not apply highlight on cloaked spies</span><br />
+						<span class="stat downside">Activating Spy Radar highlights yourself and emits a pinging noise from your position</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
+						<span class="item-name">Reason</span><br />
+						Spy could use another tool to help fulfill his supportive role.
+						Gathering intel on enemy positions and relaying them to the team is something Spy is already capable of.
+						This addition allows the Spy to streamline this information, making it easier for his team to capitalize on oppurtunities in real time.
+						This also provides the sapper a use while no enemy engineer is present.<br />
 					</p>
 				</td>
 			</tr>
@@ -3573,27 +3588,37 @@
 			<!-- Malformed Sapper -->
 			<tr id="malformedsapper">
 				<td class="item-card">
-					<div class="topleft-parent"><div class="topleft"><img src="../resources/alert.png" height="40" width="40" /></div></div>
+					<div class="topleft-parent"><div class="topleft"><img class="notice-icon" src="../resources/alert.png" title="This is a new concept" /></div></div>
 					<img class="item-img" src="../resources/weapons/spy/Sapper_Broken.png" />
 					<p>
 						<span class="item-name">Malformed Sapper</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat subtle">New sapper state</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">
+							Sappers become malformed when struck by the
+							<a href="#homewrecker" class="tooltip tooltip-link" title="Click to jump to">Homewrecker</a>,
+							<a href="#neonannihilator" class="tooltip tooltip-link" title="Click to jump to">Neon Annihilator</a> or
+							<a href="#powerjack" class="tooltip tooltip-link" title="Click to jump to">Powerjack</a>.
+						</span><br />
+						<span class="stat upside">Buildings with an attached malformed sapper do not benefit from sapper armor</span><br />
+						<span class="stat downside">Malformed sappers only disable buildings. They deal no damage and have no additional sapper effects.</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The Spy goes through a lot of effort to infultrate a nest, especially if with the presence of a Pyro.<br />
+						Giving the Pyro another tool to completely nullify one of Spy's tools is just salt to the wound.
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						Rather than outright removal of this feature, the effects are lessened.
+						With these changes, the Sentry Gun still remains disabled after the sapper is struck.
+						This allows for the Spy or his team to follow up if the Engineer is not present to remove the sapper.
 					</p>
 				</td>
 			</tr>
@@ -3601,16 +3626,34 @@
 			<!-- Red-Tape Recorder -->
 			<tr id="red-taperecorder">
 				<td class="item-card">
+					<div class="topleft-parent">
+						<div class="topleft">
+							<img class="notice-icon" src="../resources/WIP.png" title="This is still a work-in-progress" />
+						</div>
+					</div>
 					<img class="item-img" src="../resources/weapons/spy/Red-Tape_Recorder.png" />
 					<p>
 						<span class="item-name">Red-Tape Recorder</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Reverses enemy building construction</span><br />
+						<span class="stat upside">Highlights the building its applied to</span><br />
+						<span class="stat upside">Buildings are disabled for 1.5s upon being destroyed</span><br />
+						<span class="stat downside">-100% sapper damage penalty</span><br />
+						<span class="stat downside">-50% sapper health</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Deleveling animation is no longer <span class="tooltip" title="from 3.4s to the normal 1.6s upgrade animation duration">twice as slow</span></span><br />
+						<span class="stat upside">Deconstruction is now <span class="tooltip" title="from 10.7s (12s) to 5.3s (6s) upgrade animation duration">twice as fast</span></span><br />
+						<span class="stat upside">Sapper effect includes outlining the building for your allies that can be seen through walls.</span><br />
+						<span class="stat downside">-50% sapper health</span><br />
+						<span class="stat item-name">Reversal of enemy building construction reworked:</span><br />
+						<span class="stat neutral">
+							<span class="tooltip" title="Deconstruction and highlight">Sapper effects</span> starts 2s after application.
+							If the building has any metal progress towards upgrading, 25 of that metal is destroy every 0.5s.
+							Upon reaching 0 metal, the building deconstructs into the <span class="tooltip" title="and destroys itself if level 1">previous level</span>.
+						</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3631,23 +3674,24 @@
 					<img class="item-img" src="../resources/weapons/spy/Big_Earner.png" />
 					<p>
 						<span class="item-name">Big Earner</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">+30% cloak on kill</span><br />
+						<span class="stat upside">Gain a speed boost on kill</span><br />
+						<span class="stat upside">+10% faster firing speed</span><br />
+						<span class="stat downside">-25 max health on wearer</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">+10% faster firing speed</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
+						<span class="item-name">Reason</span><br />
+						The Big Earner has grown to be a favorite for the chainstab playstyle.
+						It's speed bonus makes chaining enemy kills who are farther apart much easier.
+						A firing rate bonus was given to make this chainstab potential better for closer targets as well.<br />
 					</p>
 				</td>
 			</tr>
@@ -3655,26 +3699,45 @@
 			<!-- Conniver's Kunai -->
 			<tr id="conniverskunai">
 				<td class="item-card">
+					<div class="topleft-parent">
+						<div class="topleft">
+							<img class="notice-icon" src="../resources/WIP.png" title="This concept is still a work-in-progress" />
+						</div>
+					</div>
 					<img class="item-img" src="../resources/weapons/spy/Conniver's_Kunai.png" />
 					<p>
 						<span class="item-name">Conniver's Kunai</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">On Backstab: Temporarily increase max health to 150</span><br />
+						<span class="stat upside">On Backstab: Heal up to 50 health</span><br />
+						<span class="stat downside">-35 max health on wearer</span><br />
+						<span class="stat downside">-33% maximum overheal on wearer</span><br />
+						<span class="stat downside">20% slower swing speed</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Gain 60 max health on backstab which drains at a rate of 1.5 health per second</span><br />
+						<span class="stat downside">Backstab healing reduced from target's health to 50</span><br />
+						<span class="stat downside">
+							<span class="tooltip" title="Overheal stats:&#010;Base: 90 max -&#62; 120 overheal (105 QF overheal)&#010;On stab: 150 max -&#62; 200 overheal (175 QF overheal)">
+								-33% maximum overheal
+							</span> penalty
+						</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The health gained on kill is absurdly high, and makes a Spy practically invincible if he is able to chain off other players.
+						A Spy who gets a stab can tank nearly 200 damage, then get another stab to tank 200 more damage.
+						Pairing it with the Dead Ringer, gets even worse.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						The health on kill has been greatly reduced, but has also been paired with a max health increase on backstab kills.
+						This allows for Spy to have higher health thresholds, without obtaining even higher amounts of health from successive kills.
+						The max health increase brings up the Spies percentage health, which initially yields higher health, but results lower yields if backstabbing while already at that higher health.
 					</p>
 				</td>
 			</tr>
@@ -3682,26 +3745,52 @@
 			<!-- Spy-cicle -->
 			<tr id="spy-cicle">
 				<td class="item-card">
+					<div class="topleft-parent">
+						<div class="topleft">
+							<img class="notice-icon" src="../resources/WIP.png" title="This concept is still a work-in-progress" />
+						</div>
+					</div>
 					<img class="item-img" src="../resources/weapons/spy/Spy-cicle.png" />
 					<p>
 						<span class="item-name">Spy-cicle</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">When weapon is active:</span><br />
+						<span class="stat upside">On Backstab: Become fireproof and debuff immune and do no flicker while cloaked for 5s</span><br />
+						<span class="stat upside">Press reload to throw your knife, dealing critical damage when thrown at the back</span><br />
+						<span class="stat downside">On Backstab: Knife shatters and victims turn into ice</span><br />
+						<span class="stat downside">30% damage vulnerability on wearer while active</span><br />
+						<span class="stat downside">15% damage penalty</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Afterburn immunity improved to debuff immunity and duration reduced from 10s to 5s</span><br />
+						<span class="stat upside">Fireproof duration increased from 1s to 5s</span><br />
+						<span class="stat upside">No longer melts upon being hit by fire</span><br />
+						<span class="stat upside">Recharge time improved from 15s to 5s</span><br />
+						<span class="stat upside">
+							While active, can be
+							<span class="tooltip" title="Thrown projectile initially goes in a straight line, then arcs downwards drastically.&#010;Projectile shatters when in hits a surface.">thrown</span>
+							dealing its base damage or critical damage upon hitting the back of a target
+						</span><br />
+						<span class="stat downside">No longer reduces recharge time through ammo packs</span><br />
+						<span class="stat downside"><span class="tooltip" title="including backstabs that do not kill">Backstabs</span> shatter the knife</span><br />
+						<span class="stat downside">30% damage vulnerability on wearer while active</span><br />
+						<span class="stat downside">Base damage reduced from 40 to 34</span><br />
+
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The Spy-cicle is just too similar to stock while also being either completely useless becuase of a Pyro or being a complete counter to Pyro.
+						Its unique design leaves something to be desired in terms of stats.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						The knife resistances have been made proactive instead of reactive, requiring you to perform a <span class="tooltip" title="normal or thrown">backstab</span> to recieve the benefits.
+						The damage vulnerability while active forces you to have it out only if you can make use of it, but makes escaping after a pick off effortless.
+						Its ability to be thrown for up to 102 damage crits assists in picking off targets that are just out of reach.
 					</p>
 				</td>
 			</tr>
@@ -3712,23 +3801,33 @@
 					<img class="item-img" src="../resources/weapons/spy/Your_Eternal_Reward.png" />
 					<p>
 						<span class="item-name">Your Eternal Reward</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">On Backstab: Rapidly disguise as your victim</span><br />
+						<span class="stat upside">Silent Killer: No attack noise from backstabs</span><br />
+						<span class="stat upside">+20% ranged damage resistance while disguised</span><br />
+						<span class="stat downside">The disguise kit requires and consumes a full cloak meter to use</span><br />
+						<span class="stat downside">-33% cloak regen rate</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Kills make airborne ragdolls lose momentum</span><br />
+						<span class="stat neutral">Applying a disguise while cloaked with the Cloak and Dagger no longer makes you blink</span><br />
+						<span class="stat upside">Disguises provide 20% damage resistance from ranged sources while uncloaked</span><br />
+						<span class="stat upside">Removed cloak drain penalty</span><br />
+						<span class="stat downside">Added -33% cloak regen rate penalty</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The cloak penalties are too overbearing for the ability to disguise once.
+						Disguising on the field leaves you with no option to escape, relying on the disguise to fool people which does not always work.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						Changing the cloak drain penalty to a cloak regen penalty will allow you to fully utilize cloak, while still making it a sacrifice to disguise.
+						Disguises have been given a 20% damage resistance from ranged sources, to make it easier to fool enemies who spy check you.
 					</p>
 				</td>
 			</tr>
@@ -3739,23 +3838,21 @@
 					<img class="item-img" src="../resources/weapons/spy/Invis_Watch.png" />
 					<p>
 						<span class="item-name">Invis Watch</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat subtle">Changes apply to all Watches</span><br />
+						<span class="stat neutral">Alt-fire: Become invisible to enemies</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Decreased base time to cloak from 1s to 0.75s</span><br />
+						<span class="stat upside">Decreased base time to decloak from 2s to 1.5s</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
+						<span class="item-name">Reason</span><br />
+						Spy could use more fluid engagement. This change allows him to more reliably make plays and gives him more of a chance to escape.<br />
 					</p>
 				</td>
 			</tr>
@@ -3766,23 +3863,41 @@
 					<img class="item-img" src="../resources/weapons/spy/Cloak_and_Dagger.png" />
 					<p>
 						<span class="item-name">Cloak and Dagger</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Alt-fire: Become invisible to enemies</span><br />
+						<span class="stat neutral">Cloak Type: Motion Sensitive</span><br />
+						<span class="stat neutral">Cloak drain rate based on movement speed</span><br />
+						<span class="stat upside">+100% faster cloak regen rate</span><br />
+						<span class="stat upside">33% faster decloak speed</span><br />
+						<span class="stat downside">0.5 increase in cloak blink time</span><br />
+						<span class="stat downside">No cloak meter from ammo boxes when invisible</span><br />
+						<span class="stat downside">-35% cloak meter from ammo boxes</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">
+							Motion to cloak conversion slightly improved. Total duration while running improved from
+							<span class="tooltip" title="-33% cloak duration">6.6s</span> to
+							<span class="tooltip" title="-20% cloak duration">8s</span>
+						</span><br />
+						<span class="stat upside">
+							Decreased time to decloak from
+							<span class="tooltip" title="Base time to decloak on all watches improved from 2s to 1.5s">1.5s</span> to 1s
+						</span><br />
+						<span class="stat downside">Cloak blink time increased from 0.5s to 1s</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The benefit of 'infinite cloak' sounds enticing, but the means of getting it forces you fall into a playstyle where you are idling for long periods.
+						While balanced, some additional stats could be added to make the weapon more interesting and lessen the idling aspect.
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						Increasing the 'cloak duration' and quickening the decloak time can help reduce idling by opening up more oppurtunities to position and quickly pick off key targets.
+						The increase in blink time makes it more punishing if you are caught out, encouraging you to position properly and only engage when you can.
 					</p>
 				</td>
 			</tr>
@@ -3790,26 +3905,42 @@
 			<!-- Dead Ringer -->
 			<tr id="deadringer">
 				<td class="item-card">
+					<div class="topleft-parent"><div class="topleft">
+						<a href="https://www.badweaponrehab.tf/" target="_blank"><img class="notice-icon" src="../resources/BWR.png" title="This idea originates from badweaponrehab.tf" /></a>
+					</div></div>
 					<img class="item-img" src="../resources/weapons/spy/Dead_Ringer.png" />
 					<p>
 						<span class="item-name">Dead Ringer</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Cloak Type: Feign Death</span><br />
+						<span class="stat neutral">Leave a fake corpse on taking damage and temporarily gain speed and damage resistance.</span><br />
+						<span class="stat upside">+25% cloak regen rate</span><br />
+						<span class="stat downside">-20% cloak meter upon decloaking</span><br />
+						<span class="stat downside">-50% cloak meter when Feign Death is activated while above 50% health</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">
+							Feign Death activation only consumes 50% cloak meter if activated at
+							<span class="tooltip" title="Damage taken to activate Feign Death (after resistances) is considered in this calculation.">above 50% HP</span>
+						</span><br />
+						<span class="stat downside">Reduced cloak regen rate from 50% to 25%</span><br />
+						<span class="stat downside">Up to 20% cloak is consumed upon decloaking</span><br />
+						<span class="stat downside">Removed cloak duration bonus</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						The Dead Ringer has had a bad reputation, offering quick escapes with little consequences.
+						Many players purely use it for the speed boost and to tank damage to gap close.
+						There seems to be no effort to utilize its intended design of 'feigning death'.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						The watch has been made more rewarding to incentivize players to uses it convincingly, providing significantly longer duration.
+						However, it is more punishing for using it haphazardly, consuming even more cloak and requiring more time to recover. 
 					</p>
 				</td>
 			</tr>
@@ -3820,23 +3951,24 @@
 					<img class="item-img" src="../resources/weapons/spy/Disguise_Kit.png" />
 					<p>
 						<span class="item-name">Disguise Kit</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Hold 'Special Attack' to ignore set disguise speed</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Hold 'Special Attack' to run at normal speed regardless of disguise</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						TODO<br />
+						Spy needs to be able to freely gap-close to get stabs.
+						Disguising as classes that are slower than Spy's speed are unoptimal to catch out enemies, resulting in Scout, Medic and Spy being the best disguise options.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
-						TODO
+						Allowing the Spy to freely move at his own speed or his disguise speed will open more oppurtunities to utilize other disguise options.
 					</p>
 				</td>
 			</tr>
