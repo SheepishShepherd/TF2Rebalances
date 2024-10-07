@@ -55,6 +55,7 @@ a {
 	border-radius: 10px;
 }
 
+/* Stat colors */
 .stat {
 	font-family: TF2Secondary;
 	font-size: 15px;
@@ -65,6 +66,26 @@ a {
 .neutral { color: #EBE2CA; }
 .subtle { color: #756B5E; }
 .tooltip { cursor: help; border-bottom: 1px dotted; color: inherit; } .tooltip-link:hover { color: #FFD700; }
+
+/* Item Quality colors */
+.q-stock { color: #B2B2B2; }
+.q-unique { color: #FFD700; }
+.q-vintage { color: #476291; }
+.q-genuine { color: #4D7455; }
+.q-strange { color: #CF6A32; }
+.q-unusual { color: #8650AC ; }
+.q-haunted { color: #38F3AB; }
+.q-collectors { color: #AA0000; }
+.q-community { color: #70B04A ; }
+.q-valve { color: #A50F79; }
+
+/* Item Grade colors */
+.g-civilian { color: #B0C3D9; }
+.g-freelance { color: #5E98D9; }
+.g-mercenary { color: #4B69FF; }
+.g-commando { color: #8847FF; }
+.g-assassin { color: #D32CE6; }
+.g-elite { color: #EB4B4B; }
 
 .nav-btn {
 	height: 50px;
