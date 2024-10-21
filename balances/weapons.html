@@ -28,6 +28,76 @@
 			<a href="#spy"><img class="class-portrait" src="../resources/class/portrait_spy.jpg" /></a>
 		</div>
 
+		<!-- General -->
+		<table id="general">
+			<tr>
+				<th colspan="3"><img class="class-icon" src="../resources/class/emblem_general.png" />General</th>
+			</tr>
+
+			<!-- Random Crits -->
+			<tr id="randomcrits">
+				<td class="item-card">
+					<div class="topleft-parent">
+						<div class="topleft">
+							<a href="https://www.badweaponrehab.tf/" target="_blank"><img class="notice-icon" src="../resources/BWR.png" title="This idea originates from badweaponrehab.tf" /></a>
+						</div>
+					</div>
+					<img class="item-img" src="../resources/weapons/heavy/Fists.png" />
+					<p>
+						<span class="item-name">Triple Hit Combo</span><br />
+						<span class="stat neutral">Replaces 'Random Critical Hits'</span><br />
+					</p>
+				</td>
+				<td class="item-card">
+					<p>
+						<span class="item-name">Changes</span><br />
+						<span class="stat upside">Melee attacks can deal additional damage from consecutive hits! A 2nd hit deals a mini-crit and a 3rd deals a guaranteed critical hit!</span><br />
+						<span class="stat downside">All ranged and melee weapons no longer have 'Random Critical Hits'</span><br />
+					</p>
+				</td>
+				<td class="item-card">
+					<p class="stat neutral">
+						<span class="item-name">Problem</span><br />
+						TODO<br />
+					</p>
+					<p class="stat neutral" style="margin-top: 15px;">
+						<span class="item-name" style="">Solution</span><br />
+						TODO
+					</p>
+				</td>
+			</tr>
+
+			<!-- Bleed -->
+			<tr id="bleed">
+				<td class="item-card">
+					<img class="item-img" src="../resources/elements/bleed.png" />
+					<p>
+						<span class="item-name">Status Effect: Bleed</span><br />
+						<span class="stat neutral">-50% health from healers and pickups</span><br />
+					</p>
+				</td>
+				<td class="item-card">
+					<p>
+						<span class="item-name">Changes</span><br />
+						<span class="stat neutral">New bleed duration applications are only applied if greater than the remaning duration</span><br />
+						<span class="stat upside">All health gained from medi-beams and pickups are reduced by 50% until the effect has worn off</span><br />
+						<span class="stat upside">Bleed damage now stacks from the same source</span><br />
+						<span class="stat downside">Bleed stack damage decreased from +4 to +2</span><br />
+					</p>
+				</td>
+				<td class="item-card">
+					<p class="stat neutral">
+						<span class="item-name">Problem</span><br />
+						TODO<br />
+					</p>
+					<p class="stat neutral" style="margin-top: 15px;">
+						<span class="item-name" style="">Solution</span><br />
+						TODO
+					</p>
+				</td>
+			</tr>
+		</table>
+
 		<!-- Scout -->
 		<table id="scout">
 			<tr>
@@ -3069,17 +3139,20 @@
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat subtle">Changes apply to all Sniper Rifles</span><br />
+						<span class="stat downside">Given a base clip of 4 with a <span class="tooltip" title="Does not apply to the firing rate of the rifle">reload time</span> of 2s</span><br />
+						<span class="stat downside">Reloading emits a sound that can be heard from afar</span><br />
+						<span class="stat downside">Reserve ammo reduced from 25 to <span class="tooltip" title="Net loss of 5 total ammo">16</span></span><br />
+						<span class="stat downside">While scoped, the scope emits a small lens flare</span><br />
+						<span class="stat downside">Fires <a href="#classic" class="tooltip tooltip-link" title="Click to jump to">Classic</a>-style tracer rounds (except the Machina)</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
+						<span class="item-name">Reason</span><br />
+						Sniper can be overbearing with how constant of a threat he is.
+						The aim is to give him more downtime and make his presence more obvious, which provides players a clear window of oppurtunity to engage.
+						The Sniper should also be wary of these changes and consider repositioning often.<br />
 					</p>
 				</td>
 			</tr>
@@ -3138,19 +3211,25 @@
 				</td>
 			</tr>
 
-			<!-- Hitman' Heatmaker -->
+			<!-- Hitman's Heatmaker -->
 			<tr id="hitmansheatmaker">
 				<td class="item-card">
 					<img class="item-img" src="../resources/weapons/sniper/Hitman's_Heatmaker.png" />
 					<p>
 						<span class="item-name">Hitman's Heatmaker</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">On Kill: Stay focused and remain scoped.</span><br />
+						<span class="stat upside">20% faster firing speed</span><br />
+						<span class="stat downside">20% slower reload speed</span><br />
+						<span class="stat downside">20% damage penalty on body shot</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Focus no longer has a duration and is only gained from scoped kills. On kill, focus is automatically activated.</span><br />
+						<span class="stat upside">Firing rate improved from 1.5s to 1.2s</span><br />
+						<span class="stat upside">Reload rate increased from 2s to 2.4s</span><br />
+						<span class="stat downside">Focus no longer grants 25% faster charge rate</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3171,13 +3250,22 @@
 					<img class="item-img" src="../resources/weapons/sniper/Huntsman.png" />
 					<p>
 						<span class="item-name">Huntsman</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">This weapon will reload when not active</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">This weapon will reload automatically when not active</span><br />
+						<span class="stat downside"><span class="tooltip" title="Damage with no charge. Max charge damage is unaffected.">Base damage</span> reduced from 50 to 40</span><br />
+						<span class="stat neutral">Projectile can only headshot when charged for 0.2s</span><br />
+						<span class="stat neutral">Flaming arrow afterburn duration reduced from 7.5s to 5s</span><br />
+						<span class="stat item-name">Revamped Headshot Registration:</span><br />
+						<span class="stat neutral">
+							The '<a href="https://youtu.be/jvOaUF1Sl5c?t=86" target="_blank" class="tooltip tooltip-link" title="shounic visualization of the extension check">extension check</a>'
+							has been changed to make a line from the point of contact, following the trajectory of the arrow.
+							If the closest point from the line to the head hitbox is within 4HU apart, a headshot registers.
+						</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3279,13 +3367,18 @@
 					<img class="item-img" src="../resources/weapons/sniper/Cozy_Camper.png" />
 					<p>
 						<span class="item-name">Cozy Camper</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">+4 health regenerated per second on wearer</span><br />
+						<span class="stat upside">+25% clip size to primary weapon</span><br />
+						<span class="stat upside">+25% max primary ammo on wearer</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Max primary ammo increased from <span class="tooltip" title="Base primary ammo on all rifles were reduced from 25 to 16">16</span> to 20</span><br />
+						<span class="stat upside"><span class="tooltip" title="The Huntsman is unaffect by the change">Sniper Rifle</span> clip sizes increased from 4 to 5</span><br />
+						<span class="stat downside">No longer provides flinch immunity</span><br />
+						<span class="stat downside">No longer provides knockback resistance</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3303,16 +3396,25 @@
 			<!-- Darwin's Danger Shield -->
 			<tr id="darwinsdangershield">
 				<td class="item-card">
+					<div class="topleft-parent">
+						<div class="topleft">
+							<a href="https://www.badweaponrehab.tf/" target="_blank"><img class="notice-icon" src="../resources/BWR.png" title="This idea originates from badweaponrehab.tf" /></a>
+						</div>
+					</div>
 					<img class="item-img" src="../resources/weapons/sniper/Darwin's_Danger_Shield.png" />
 					<p>
 						<span class="item-name">Darwin's Danger Shield</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">+15 max health on wearer</span><br />
+						<span class="stat upside">Debuffs expire 33% faster</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Max health increased by 15 (to 140)</span><br />
+						<span class="stat upside">Debuff durations last 66% as long</span><br />
+						<span class="stat downside">No longer provides 50% fire resistance</span><br />
+						<span class="stat downside">No longer provides afterburn immunity</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3441,13 +3543,16 @@
 					<img class="item-img" src="../resources/weapons/sniper/Tribalman's_Shiv.png" />
 					<p>
 						<span class="item-name">Tribalman's Shiv</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">On Hit: Bleed for 6 seconds</span><br />
+						<span class="stat upside">+25% faster firing rate</span><br />
+						<span class="stat downside">-50% damage penalty</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat neutral">Benefits from the changes made to <a href="#bleed" class="tooltip tooltip-link" title="Click to jump to">&#129656;Bleed</a></span><br />
+						<span class="stat upside">Firing rate improved from 0.8s to 0.68s</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3483,7 +3588,8 @@
 						<span class="stat subtle">Changes apply to all Revolvers</span><br />
 						<span class="stat upside">
 							<span class="tooltip" title="The time it takes for your next shot to become perfectly accurate after firing.">
-							Bullet spread recovery time</span> reduced from 1.25s to 1
+								Bullet spread recovery time
+							</span> reduced from 1.25s to 1
 						</span><br />
 						<span class="stat upside">Bullet spread recovery now occurs gradually</span><br />
 
@@ -3620,7 +3726,7 @@
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
 						This change encourages the Spy to maintain a proper distance to capitalize on the benefit.
-						Being too close would make it more difficult to escape.
+						Being close has higher value, but it becomes more difficult to escape.
 					</p>
 				</td>
 			</tr>
@@ -3667,8 +3773,10 @@
 					<img class="item-img" src="../resources/weapons/spy/Sapper_Broken.png" />
 					<p>
 						<span class="item-name">Sapper State: Malformed</span><br />
-						<span class="stat neutral">Upon being struck by specific melees, the sapper becomes damaged.
-						While in this state, the sapper continues disabling the building its applied to, but deals no damage and has no additional effects.</span><br />
+						<span class="stat neutral">
+							Upon being struck by specific melees, the sapper becomes damaged.
+							While in this state, the sapper continues disabling the building its applied to, but deals no damage and has no additional effects.
+						</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3687,14 +3795,14 @@
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						The Spy goes through a lot of effort to infultrate a nest, especially if with the presence of a Pyro.<br />
-						Giving the Pyro another tool to completely nullify one of Spy's tools is just salt to the wound.
+						The Spy puts in a lot of effort to infultrate a nest, especially with the presence of a Pyro.
+						Giving the Pyro another means of nullifying Spy is overkill.
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
 						Rather than outright removal of this feature, the effects are lessened.
 						With these changes, the Sentry Gun still remains disabled after the sapper is struck.
-						This allows for the Spy or his team to follow up if the Engineer is not present to remove the sapper.
+						This allows for the Spy or his team to follow up if an Engineer is not present to remove the sapper.
 					</p>
 				</td>
 			</tr>
@@ -3859,7 +3967,7 @@
 				<td class="item-card">
 					<p class="stat neutral">
 						<span class="item-name">Problem</span><br />
-						The Spy-cicle is just too similar to q-stock while also being either completely useless becuase of a Pyro or being a complete counter to Pyro.
+						The Spy-cicle is too similar to while also being either completely useless becuase of a Pyro or being a complete counter to Pyro.
 						Its unique design leaves something to be desired in terms of stats.<br />
 					</p>
 					<p class="stat neutral" style="margin-top: 15px;">
@@ -3981,9 +4089,11 @@
 			<!-- Dead Ringer -->
 			<tr id="deadringer">
 				<td class="item-card">
-					<div class="topleft-parent"><div class="topleft">
-						<a href="https://www.badweaponrehab.tf/" target="_blank"><img class="notice-icon" src="../resources/BWR.png" title="This idea originates from badweaponrehab.tf" /></a>
-					</div></div>
+					<div class="topleft-parent">
+						<div class="topleft">
+							<a href="https://www.badweaponrehab.tf/" target="_blank"><img class="notice-icon" src="../resources/BWR.png" title="This idea originates from badweaponrehab.tf" /></a>
+						</div>
+					</div>
 					<img class="item-img" src="../resources/weapons/spy/Dead_Ringer.png" />
 					<p>
 						<span class="item-name">Dead Ringer</span><br />
@@ -4016,7 +4126,7 @@
 					<p class="stat neutral" style="margin-top: 15px;">
 						<span class="item-name" style="">Solution</span><br />
 						The watch has been made more rewarding to incentivize players to uses it convincingly, providing significantly longer duration.
-						However, it is more punishing for using it haphazardly, consuming even more cloak and requiring more time to recover. 
+						However, it is more punishing for using it haphazardly, consuming even more cloak and requiring more time to recover.
 					</p>
 				</td>
 			</tr>
