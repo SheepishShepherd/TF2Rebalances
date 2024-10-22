@@ -1,6 +1,9 @@
 @font-face { font-family: "TF2"; src: url('fonts/TF2.ttf') format('truetype'); }
 @font-face { font-family: "TF2Secondary"; src: url('fonts/TF2secondary.ttf') format('truetype'); }
 @font-face { font-family: "TF2Build"; src: url('fonts/tf2build.ttf') format('truetype'); }
+@font-face { font-family: "GhoulishFright"; src: url('fonts/ghoulishfright.ttf') format('truetype'); }
+@font-face { font-family: "Samdan"; src: url('fonts/samdan.ttf') format('truetype'); }
+@font-face { font-family: "PostCrypt"; src: url('fonts/postcryp.ttf') format('truetype'); }
 
 /* These stylizations are used by multiple pages */
 
@@ -115,7 +118,7 @@ a {
 	height: 50px;
 	padding: 0px;
 	text-align: center;
-	position: sticky;
+	position: fixed;
 	top: 10px;
 	left: 10px;
 }
@@ -128,4 +131,10 @@ a {
 	position: fixed;
 	bottom: 10px;
 	left: 10px;
+}
+
+.halloween-backdrop {
+	background-image: url('resources/halloween_backdrop.jpg');
+	background-size: cover;
+	background-attachment: fixed;
 }
