@@ -38,3 +38,11 @@ th {
 	height: 30px;
 	margin-right: 10px;
 }
+
+/* -- Perks -- */
+
+.item-perk {
+	background-color: #3C362F;
+	border-radius: 10px;
+	max-width: 150px;
+}
