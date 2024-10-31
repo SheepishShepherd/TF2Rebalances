@@ -1,0 +1,502 @@
+<head>
+	<link rel="stylesheet" type="text/css" href="../main.css" />
+	<link rel="stylesheet" type="text/css" href="weapons_style.css" />
+</head>
+<body class="halloween-backdrop">
+	<a href="../halloween.html"><div class="home-btn nav-btn"><</div></a>
+	<h1 style="font-family: Samdan; color: #D8D262">General Halloween Features</h1>
+
+	<!-- Spells -->
+	<table id="spells">
+		<tr>
+			<th colspan="3"><img class="class-icon" src="../resources/halloween/spellbook.png" />Spells</th>
+		</tr>
+
+		<!-- Spells General -->
+		<tr id="spellsgeneral">
+			<td class="item-card">
+				<img class="item-perk" src="../resources/halloween/spellbook.png" />
+				<p>
+					<span class="item-name">Spells</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat q-haunted">Spell pickups now randomly cycle through 4 basic spells with a 20% chance of being a class-specific rare spell.</span><br />
+					<span class="stat q-unusual">Rare spell pickups guarantee the class-specific spell.</span><br />
+					<span class="stat q-haunted">Escaping hell or entering a portal upgrades your current spell into a random rare spell.</span><br />
+					<span class="stat q-unusual">Hell now only contains rare spell pickups and is the <span class="tooltip" title="aside from niche cases where there is no hell">only means</span> of getting the other class-specific spells.</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Rare spells are quite problematic in power.
+					Aside from just reducing their lethality, they been made a bit more predictable.
+					The weaker basic spells have been fleshed out to be more potent and rare spells will appear much less often.
+					A few new spells have also been added so try to experiment with what you can take advantage of.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Shadow Walk -->
+		<tr id="shadowwalk">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_teleport.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/pile_of_ash.png" />
+				<p>
+					<span class="item-name">Ipsum Instantarium</span><br />
+					<span class="stat subtle">No longer obtainable</span>
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat downside">Removed</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					This spell has caused problems with out-of-bounds exploits and has been made only available on Helltower and Sandcastle.
+					There is no point in attempting to fix the issue for all maps.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Blast Jump -->
+		<tr id="blastjump">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_blastjump.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_mag.png" />
+				<p>
+					<span class="item-name">Amplus Tripudio</span><br />
+					<span class="stat subtle">Basic Spell - Blast Jump</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat upside">-75% less fall damage while jump is active</span><br />
+					<span class="stat upside">Horizontal momentum slightly increased</span><br />
+					<span class="stat downside">Vertical momentum slightly decreased</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					All classes can make use of a free rocket jump.
+					The high amount of fall damage counteracted the minimal amount of healing, so a fall damage reduction was given to the jump.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Overheal -->
+		<tr id="overheal">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_heal.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_mag.png" />
+				<p>
+					<span class="item-name">Deus Invictus</span><br />
+					<span class="stat subtle">Basic Spell - Overheal</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Fixed cast name being swapped with Swarm of Bats</span><br />
+					<span class="stat upside">Heal duration increased from 3s to 4s</span><br />
+					<span class="stat downside">Heal rate reduced from 47 hps to 36 hps</span><br />
+					<span class="stat subtle">(Total health gained changed from 141 to 144)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					This basic spell was quite powerful and on any class.
+					Applying a large amount of healing to your nearby teammates is always a game-changer.
+					The healing was slowed down to offer some easier counterplay for the enemy.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Pumpkin MIRV -->
+		<tr id="pumpkin">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_pumpkin.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_mag.png" />
+				<p>
+					<span class="item-name">Pactum Diabolus</span><br />
+					<span class="stat subtle">Basic Spell - Pumpkin MIRV</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">No longer detonates when fired at by an ally. Now detonates when an enemy enters the ring radius.</span><br />
+					<span class="stat upside">Kills from this spell now also count towards the pumpkin bomb kills task given by the Contracker</span><br />
+					<span class="stat downside">Decreased ring size by 20%</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Allowing an ally to detonate your pumpkins and potentially waste it was a tad annoying.
+					The spell has been changed to automatically detonate when an enemy steps within the ring, allowing it to be more threatening of an area denial tool.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Stealth -->
+		<tr id="stealth">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_stealth.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_mag.png" />
+				<p>
+					<span class="item-name">Barpo Invisium</span><br />
+					<span class="stat subtle">Basic Spell - Stealth</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat upside">Provides 20% damage resistance while cloaked</span><br />
+					<span class="stat upside">Clears debuffs on use</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					This spell is pretty good for initiation, but not as good for escaping. The changes were implemented to improve this use case.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Skeleton Horde -->
+		<tr id="summonskeletons">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_skeletons.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Mortis Animataris</span><br />
+					<span class="stat subtle">Rare Spell - Skeleton Horde</span><br />
+					<span class="stat upside">Scout has a 20% chance of getting this spell</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat upside">Skeleton kills and assists will spawn a new skeleton at the victim's death position</span><br />
+					<span class="stat upside">Skeleton health increased from 50 to 150</span><br />
+					<span class="stat upside">Skeleton damage increased from 30 to 40</span><br />
+					<span class="stat downside">No longer has a projectile. Skeletons spawn nearby.</span><br />
+					<span class="stat downside">Cast summons 2 skeletons instead of 3</span><br />
+					<span class="stat downside">Skeletons split into 2 mini-skeletons instead of 3</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Curse-a-Nature'</span><br />
+					Spells on Scout can be troublesome, as he can traverse the map to gather up all the spellbooks.
+					The Skeleton Horde spell seems the most tame to give to him as the Skeletons act independently of the Scout and does not deal immediate damage.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Summon Monoculus -->
+		<tr id="monoculus">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_monoculus.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Invokum Monoculus</span><br />
+					<span class="stat subtle">Rare Spell - Summon Monoculus</span><br />
+					<span class="stat upside">Soldier has a 20% chance of getting this spell</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">No changes</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Tin Soldier'</span><br />
+					Monoculus is fairly threatening, but not immediately. There is no reason to change its current power level.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Fireball -->
+		<tr id="fireball">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_fireball.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Caputus Crepitus</span><br />
+					<span class="stat subtle">Rare Spell - Fireball</span><br />
+					<span class="stat upside">Pyro has a 20% chance of getting this spell</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat downside">Base damage decreased from 100 to 90</span><br />
+					<span class="stat downside">Splash damage reduced from 100 to 65</span><br />
+					<span class="stat downside">Decreased afterburn duration from 4s to 3s</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Infernal Imp'</span><br />
+					The Fireball spell is way to strong. Dealing 100 damage to every enemy hit plus after burn is just too much.
+					The damage was heavily reduced to keep how easy it is to land on multiple enemies.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Explosive Roar -->
+		<tr id="overheal">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/alert.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Seismela Tremoro</span><br />
+					<span class="stat subtle">Rare Spell - Explosive Roar</span><br />
+					<span class="stat upside">Demoman has a 20% chance of getting this spell</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Incoming Spell!</span><br />
+					<span class="stat neutral">Replaces the Meteor Shower spell</span><br />
+					<span class="stat upside">Upon cast, an explosion occurs on top of the caster with a 900HU splash radius and <span class="tooltip" title="with no splash fall-off&#0010;Damage is also dealt to the caster">dealing 50 damage</span></span><br />
+					<span class="stat upside">Cast also applies the 'Mark For Death' debuff to all enemies within the <span class="tooltip" title="regardless of line-of-sight">radius</span> for 7s</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Highland Hound'</span><br />
+					Meteor Shower was stupidly strong, killing everything in its path and being persistent.
+					This new spell applies a lot of pressure on the enemy.
+					Mark For Death can make quick work of enemies, though requiring some follow up attacks.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Beastify -->
+		<tr id="beastify">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/alert.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Perampla Monstrum</span><br />
+					<span class="stat subtle">Rare Spell - Beastify</span><br />
+					<span class="stat upside">Heavy has a 20% chance of getting this spell</span>
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Incoming spell!</span><br />
+					<span class="stat upside">Grants +50 max health, a speed boost, double melee damage, and 50% knockback reduction for the duration</span><br />
+					<span class="stat downside">Reduces melee firing speed by 25%</span><br />
+					<span class="stat downside">
+						<span class="tooltip" title="except for the head">Player model</span>
+						<span class="tooltip" title="to about the size of a semi-giant robot in MvM&#0010;Shortstop Scout, Samurai Demoman, Fists of Steel Heavy, etc.">grows</span>
+						and voice deepens
+					</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The FrankenHeavy'</span><br />
+					Beastify is the opposite of Minify. The caster becomes a huge target for attacks but gains several perks to tank them up and make them threatening.
+					The melee bonus and penalty makes you a big threat up close, reenforcing the Heavy's traits.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Minify -->
+		<tr id="shadowwalk">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_minify.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Paidum Celeris</span><br />
+					<span class="stat subtle">Rare Spell - Minify</span><br />
+					<span class="stat upside">Engineer has a 20% chance of getting this spell</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Now heals <span class="tooltip" title="does not overheal">50% max health</span> instead of 100 health</span><br />
+					<span class="stat upside">Once the duration expires, the caster only returns to normal size once there is enough space.</span><br />
+					<span class="stat upside">Knockback on damage taken heavily reduced</span><br />
+					<span class="stat upside">No longer puts the caster in third person</span><br />
+					<span class="stat downside">Model size slightly increased</span><br />
+					<span class="stat downside">Reduced firing and reload speed by half</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Brundle Bundle'</span><br />
+					<span>
+						The Minify spell has been made less powerful, but also more usable.
+						The Engineer seemed fitting as his damage output is not crazy and he can make use of it outside of just attacking.
+						It can be used as an escape, an edge in a fight or an easy way to setup buildings in out-of-reach areas.
+					</span><br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Ball O'Lightning' -->
+		<tr id="ballolightning">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_tesla.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Imputum Fulmenus</span><br />
+					<span class="stat subtle">Rare Spell - Ball O' Lightning</span><br />
+					<span class="stat upside">Medic has a 20% chance of getting this spell</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat upside">Attacks slow enemies for 0.5s</span><br />
+					<span class="stat upside">Attacks damage and disable buildings for 0.5s</span><br />
+					<span class="stat downside">Projectile size and pull radius reduced by 30%</span><br />
+					<span class="stat downside">Attack interval changed from 0.3s to 0.5s</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Mad Doktor'</span><br />
+					Decreased the power level a bit to match the strength of the other rare spells. The slow will help with keeping enemies within the radius.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Swarm of Bats -->
+		<tr id="swarmofbats">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/halloween/spell_bats.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Barpo Kabalto</span><br />
+					<span class="stat subtle">Rare Spell - Swarm of Bats</span><br />
+					<span class="stat upside">Sniper has a 20% chance of getting this spell</span>
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Fixed cast name being swapped with Overheal</span><br />
+					<span class="stat upside">Bleed duration increased from 3s to 4s</span><br />
+					<span class="stat downside">Knockback reduced by 50%</span><br />
+					<span class="stat downside">No longer melts the Spy-cicle</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'Camper Van Helsing'</span><br />
+					This spell is a good tool for decent damage and keeping the enemy at bay. Knockback reduced so enemies do not fly into the skybox while still disorientating them.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Spook -->
+		<tr id="spook">
+			<td class="item-card">
+				<div class="topleft-parent">
+					<div class="topleft">
+						<img class="notice-icon" style="cursor:default;" src="../resources/alert.png" />
+					</div>
+				</div>
+				<img class="item-perk" src="../resources/halloween/spellbook_fancy.png" />
+				<p>
+					<span class="item-name">Luridum Inpulsa</span><br />
+					<span class="stat subtle">Rare Spell - Spook</span><br />
+					<span class="stat upside">Spy has a 20% chance of getting this spell</span>
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Incoming spell!</span><br />
+					<span class="stat upside">Upon spell cast, all enemy players within 325HU become <span class="tooltip" title="the same debuff given by Ghosts">'Spooked!'</span> for 4s</span><br />
+					<span class="stat upside">Disables buildings in the same radius for 4s</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					<span class="q-haunted">'The Invisible Rogue'</span><br />
+					This spell is a powerful tool of disarming and slowing enemies as well as nest disruption. Great for initiations, escapes, and team support.
+				</p>
+			</td>
+		</tr>
+	</table>
+</body>
