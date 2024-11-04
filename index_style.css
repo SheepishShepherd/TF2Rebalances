@@ -25,7 +25,7 @@
 }
 
 h1 {
-	font-family: 'TF2 Build';
+	font-family: TF2 Build;
 	color: #E6E6E6;
 	font-size: 24px;
 	text-shadow: 3px 3px #141414;
@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'TF2 Build';
+	font-family: TF2 Build;
 	font-size: 64px;
 	text-align: center;
 	color: #F4722B;
@@ -44,7 +44,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'TF2 Build';
+	font-family: TF2 Build;
 	font-size: 18px;
 	color: #F3A957;
 	text-shadow: 3px 3px #141414;
