@@ -22,9 +22,10 @@ th {
 }
 
 .quick-access {
-	width: fit-content;
+	width: 100%;
+	max-width: fit-content;
 	height: fit-content;
-	margin: 25px auto;
+	margin: auto;
 	text-align: center;
 	background-color: #F3A957;
 	padding: 3px 3px 0px 3px;
