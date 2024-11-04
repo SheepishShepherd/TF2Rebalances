@@ -21,19 +21,17 @@ th {
 	border-radius: 10px 10px 10px 10px;
 }
 
-.quick-access {
-	width: 100%;
-	max-width: fit-content;
-	height: fit-content;
-	margin: auto;
+#quick-access {
+	width: auto;
 	text-align: center;
 	background-color: #F3A957;
-	padding: 3px 3px 0px 3px;
+	padding: 2px;
 	border-radius: 4px;
 }
 
 .class-portrait {
 	max-width: 120px;
+	display: block;
 }
 
 .class-icon {
