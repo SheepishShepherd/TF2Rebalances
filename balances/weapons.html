@@ -51,8 +51,36 @@
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat upside">Melee attacks can deal additional damage from consecutive hits! A 2nd hit deals a mini-crit and a 3rd deals a guaranteed critical hit!</span><br />
+						<span class="stat upside">Melee attacks can deal additional damage from consecutive hits! A 2nd hit deals a mini-crit and a 3rd hit deals a guaranteed critical hit!</span><br />
 						<span class="stat downside">All ranged and melee weapons no longer have 'Random Critical Hits'</span><br />
+					</p>
+				</td>
+				<td class="item-card">
+					<p class="stat neutral">
+						<span class="item-name">Problem</span><br />
+						TODO<br />
+					</p>
+					<p class="stat neutral" style="margin-top: 15px;">
+						<span class="item-name" style="">Solution</span><br />
+						TODO
+					</p>
+				</td>
+			</tr>
+
+			<!-- Afterburn -->
+			<tr id="afterburn">
+				<td class="item-card">
+					<img class="item-img" src="../resources/class/token_pyro.png" />
+					<p>
+						<span class="item-name">Status Effect: Afterburn</span><br />
+						<span class="stat neutral">-50% health from healers</span><br />
+					</p>
+				</td>
+				<td class="item-card">
+					<p>
+						<span class="item-name">Changes</span><br />
+						<span class="stat neutral">Fixed <span class="tooltip" title="Huntsman, Cow Mangler 5000, etc.">some weapons</span> not properly applying the 50% healing reduction upon igniting an enemy</span><br />
+						<span class="stat downside">Afterburn removed 200% faster by healing sources</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -73,16 +101,17 @@
 					<img class="item-img" src="../resources/elements/bleed.png" />
 					<p>
 						<span class="item-name">Status Effect: Bleed</span><br />
-						<span class="stat neutral">-50% health from healers and pickups</span><br />
+						<span class="stat neutral">-50% health from pickups</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">New bleed duration applications are only applied if greater than the remaning duration</span><br />
-						<span class="stat upside">All health gained from medi-beams and pickups are reduced by 50% until the effect has worn off</span><br />
+						<span class="stat neutral">New bleed duration applications are only applied if greater than the remaining duration</span><br />
+						<span class="stat upside">Now reduces healing from pickups by 50%</span><br />
 						<span class="stat upside">Bleed damage now stacks from the same source</span><br />
 						<span class="stat downside">Bleed stack damage decreased from +4 to +2</span><br />
+						<span class="stat downside">Bleed removed 200% faster by healing sources</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -976,33 +1005,6 @@
 		<table id="pyro">
 			<tr>
 				<th colspan="3"><img class="class-icon" src="../resources/class/emblem_pyro.png" />Pyro</th>
-			</tr>
-
-			<!-- Afterburn -->
-			<tr id="afterburn">
-				<td class="item-card">
-					<img class="item-img" src="../resources/class/token_pyro.png" />
-					<p>
-						<span class="item-name">Afterburn</span><br />
-						<span class="stat neutral"></span><br />
-					</p>
-				</td>
-				<td class="item-card">
-					<p>
-						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
-					</p>
-				</td>
-				<td class="item-card">
-					<p class="stat neutral">
-						<span class="item-name">Problem</span><br />
-						TODO<br />
-					</p>
-					<p class="stat neutral" style="margin-top: 15px;">
-						<span class="item-name" style="">Solution</span><br />
-						TODO
-					</p>
-				</td>
 			</tr>
 
 			<!-- Flame Throwers -->
@@ -2889,7 +2891,8 @@
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Bolts now removes <a href="#bleed" class="tooltip tooltip-link" title="Click to jump to">&#129656;Bleed</a> and <a href="#afterburn" class="tooltip tooltip-link" title="Click to jump to">&#128293;Afterburn</a></span><br />
+						<span class="stat downside">-90% max primary ammo on wearer</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3859,7 +3862,7 @@
 					<p>
 						<span class="item-name">Big Earner</span><br />
 						<span class="stat upside">+30% cloak on kill</span><br />
-						<span class="stat upside">Gain a speed boost on backstab kill</span><br />
+						<span class="stat upside">Gain a speed boost on kill</span><br />
 						<span class="stat upside">+15% faster firing speed</span><br />
 						<span class="stat downside">-25 max health on wearer</span><br />
 					</p>
@@ -3868,7 +3871,6 @@
 					<p>
 						<span class="item-name">Changes</span><br />
 						<span class="stat upside">Firing rate improved from 0.8s to 0.68s</span><br />
-						<span class="stat downside">Speed boost no longer granted from <span class="tooltip" title="and taunt kills">normal kills</span></span><br />
 					</p>
 				</td>
 				<td class="item-card">
