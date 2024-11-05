@@ -1,9 +1,10 @@
-h1 {
+.title {
 	font-family: TF2Build;
 	font-size: 64px;
 	text-align: center;
 	color: #F4722B;
 	text-shadow: 3px 3px #141414;
+	margin: initial auto initial auto;
 }
 
 table {
@@ -23,6 +24,7 @@ th {
 
 #quick-access {
 	width: auto;
+	margin: 0px auto;
 	text-align: center;
 	background-color: #F3A957;
 	padding: 2px;
