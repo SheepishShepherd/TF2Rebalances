@@ -54,6 +54,8 @@ a {
 .item-img {
 	background-color: #3C362F;
 	border-radius: 10px;
+	max-width: 150px;
+	max-height: 113px;
 }
 
 /* Stat colors */
