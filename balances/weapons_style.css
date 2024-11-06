@@ -4,7 +4,7 @@
 	text-align: center;
 	color: #F4722B;
 	text-shadow: 3px 3px #141414;
-	margin: initial auto initial auto;
+	margin: initial auto;
 }
 
 table {
@@ -19,7 +19,7 @@ th {
 	font-family: TF2;
 	font-size: 36px;
 	padding: 5px 0px;
-	border-radius: 10px 10px 10px 10px;
+	border-radius: 10px;
 }
 
 #quick-access {
