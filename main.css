@@ -103,6 +103,7 @@ a {
 	margin: 10px 0px;
 	user-select: none;
 	cursor: pointer;
+	z-index: 2;
 }
 
 .nav-btn:hover {
