@@ -24,6 +24,7 @@ th {
 
 #quick-access {
 	width: auto;
+	max-width: 98%;
 	margin: 0px auto;
 	text-align: center;
 	background-color: #F3A957;
@@ -32,7 +33,8 @@ th {
 }
 
 .class-portrait {
-	max-width: 120px;
+	width: 120px;
+	max-width: 100%;
 	display: block;
 }
 

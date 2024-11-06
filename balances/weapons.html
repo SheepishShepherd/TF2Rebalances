@@ -11,7 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="../main.css" />
 		<link rel="stylesheet" type="text/css" href="weapons_style.css" />
 	</head>
-	<body><div style="width: 100%; text-align: center;">
+	<body>
 		<div class="home-btn nav-btn" onclick="location.href='../index.html'" title="Back to main menu"><img src="../resources/home.png" style="width: 32px; height: 32px;" /></div>
 		<div id="scrollup" class="up-btn nav-btn" onclick="location.href='#'" title="Back to top">^</div>
 		<h1 class="title">Weapons & Classes</h1>
@@ -75,7 +75,7 @@
 					<img class="item-img" src="../resources/weapons/heavy/Fists.png" />
 					<p>
 						<span class="item-name">Triple Hit Combo</span><br />
-						<span class="stat neutral">Replaces 'Random Critical Hits'</span><br />
+						<span class="stat neutral">Melee attacks deal more damage from successive hits!</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -84,6 +84,7 @@
 						<span class="stat upside">Melee attacks deal more damage from successive hits!</span><br />
 						<span class="stat upside">The 2nd hit deals a guaranteed mini-crit</span><br />
 						<span class="stat upside">The 3rd hit deals a guaranteed critical hit</span><br />
+						<span class="stat downside">Scout melees requires 4 hits to get the critical hit</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -111,7 +112,7 @@
 					<p>
 						<span class="item-name">Changes</span><br />
 						<span class="stat neutral">Fixed <span class="tooltip" title="Huntsman, Cow Mangler 5000, etc.">some weapons</span> not properly applying the 50% healing reduction upon igniting an enemy</span><br />
-						<span class="stat downside">Afterburn removed 200% faster by healing sources</span><br />
+						<span class="stat upside">Afterburn is removed 100% faster by <span class="tooltip" title="Mediguns, Dispensers and Payload Carts">healing sources</span> instead of being removed after a full second</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -142,7 +143,7 @@
 						<span class="stat upside">Now reduces healing from pickups by 50%</span><br />
 						<span class="stat upside">Bleed damage now stacks from the same source</span><br />
 						<span class="stat downside">Bleed stack damage decreased from +4 to +2</span><br />
-						<span class="stat downside">Bleed removed 200% faster by healing sources</span><br />
+						<span class="stat downside">Bleed removed 100% faster by healing sources</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -4197,5 +4198,5 @@
 				</td>
 			</tr>
 		</table>
-	</div></body>
+	</body>
 </html>
