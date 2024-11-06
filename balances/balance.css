@@ -45,14 +45,6 @@ th {
 	margin-right: 10px;
 }
 
-/* -- Perks -- */
-
-.item-perk {
-	background-color: #3C362F;
-	border-radius: 10px;
-	max-width: 150px;
-}
-
 .nav-text {
 	background-color: #3E3E3E;
 	color: #F5E5C1;
