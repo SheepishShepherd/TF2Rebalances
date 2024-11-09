@@ -68,6 +68,7 @@ a {
 .downside { color: #FF4040; }
 .neutral { color: #EBE2CA; }
 .subtle { color: #756B5E; }
+.credits { color: #7AC437; }
 .tooltip { cursor: help; border-bottom: 1px dotted; color: inherit; } .tooltip-link:hover { color: #FFD700; }
 
 /* Item Quality colors */
@@ -99,7 +100,7 @@ a {
 	font-size: 28px;
 	line-height: 50px;
 	border-radius: 10px;
-	padding-left: 7px;
+	padding: 10px;
 	margin: 10px 0px;
 	user-select: none;
 	cursor: pointer;
@@ -138,4 +139,15 @@ a {
 	background-image: url('resources/halloween_backdrop.jpg');
 	background-size: cover;
 	background-attachment: fixed;
+}
+
+.mvm-mini-item {
+	max-height: 20px;
+	background-color: #1B1B1B;
+	border-radius: 3px;
+	position: relative;
+	top: 5px;
+}
+.mvm-mini-item:hover {
+	background-color: #3C362F;
 }
