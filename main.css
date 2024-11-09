@@ -142,7 +142,7 @@ a {
 }
 
 .mvm-mini-item {
-	max-height: 20px;
+	height: 20px;
 	background-color: #1B1B1B;
 	border-radius: 3px;
 	position: relative;
