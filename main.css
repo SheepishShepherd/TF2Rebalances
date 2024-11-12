@@ -69,7 +69,6 @@ a {
 .neutral { color: #EBE2CA; }
 .subtle { color: #756B5E; }
 .credits { color: #7AC437; }
-.tooltip { cursor: help; border-bottom: 1px dotted; color: inherit; } .tooltip-link:hover { color: #FFD700; }
 
 /* Item Quality colors */
 .q-stock { color: #B2B2B2; }
@@ -90,6 +89,19 @@ a {
 .g-commando { color: #8847FF; }
 .g-assassin { color: #D32CE6; }
 .g-elite { color: #EB4B4B; }
+
+.tooltip {
+	cursor: help;
+	border-bottom: 1px dotted;
+	color: inherit;
+}
+
+.tooltip-link {
+	cursor: alias;
+	border-bottom: 1px dotted;
+	color: inherit;
+}
+.tooltip-link:hover { color: #FFD700; }
 
 .nav-btn {
 	height: 50px;
@@ -148,6 +160,8 @@ a {
 	border-radius: 3px;
 	position: relative;
 	top: 5px;
+	cursor: help;
+	user-select: none;
 }
 .mvm-mini-item:hover {
 	background-color: #3C362F;

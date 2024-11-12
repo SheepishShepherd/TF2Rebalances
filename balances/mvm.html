@@ -96,7 +96,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral">Canteens cannot be activated until wave start</span><br />
-					<span class="stat neutral">Current charges text changed to be yellow and moved to top of stats list</span><br />
+					<span class="stat neutral">Current held charges tooltip changed to be yellow and moved to top of the stats list</span><br />
+					<span class="stat downside">Sentry Guns only benefit from canteens when the <a class="tooltip-link tooltip" href="#buildingupgrades">Canteen Specialist</a> upgrade is purchased</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -121,6 +122,7 @@
 				<p>
 					<span class="item-name">Crits Canteen</span><br />
 					<span class="stat upside">Become Crit Boosted for 5s</span><br />
+					<span class="stat neutral">Triples sentry gun firing rate for 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -150,6 +152,7 @@
 					<span class="item-name">&#0220bercharge Canteen</span><br />
 					<span class="stat upside">Become Ubercharged for 5s</span><br />
 					<span class="stat upside">Applies a healing effect for 5s</span><br />
+					<span class="stat neutral">Applies a shield to sentry guns that blocks 75% of all incoming damage for 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -180,6 +183,7 @@
 					<span class="item-name">Ammo Refill Canteen</span><br />
 					<span class="stat upside">Instantly refill all weapon clips and ammo</span><br />
 					<span class="stat upside">Instantly recharge all damage meters</span><br />
+					<span class="stat neutral">All buildings upgrade one level</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -220,7 +224,7 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					This effect has been integrated into Ammo Refill by the <span class="tooltip-link tooltip" title="Click to jump to">Shared Canteens upgrade</span>.
+					This effect has been integrated into Ammo Refill by the <a class="tooltip-link tooltip" href="#buildingupgrades">Canteen Specialist</a> upgrade.
 				</p>
 			</td>
 		</tr>
@@ -238,12 +242,14 @@
 					<span class="item-name">Recall Canteen</span><br />
 					<span class="stat upside">Instantly teleport to spawn</span><br />
 					<span class="stat upside">Gain a speed boost for 5s</span><br />
+					<span class="stat upside">While dead, the canteen is automatically used and you instantly respawn</span><br />
+					<span class="stat neutral">...</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat downside">Cost increased to </span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -269,7 +275,7 @@
 					<span class="item-name q-stock">Innates</span><br />
 					<span class="stat upside">Extra-large cash collection radius</span><br />
 					<span class="stat upside">Health boosts from collected cash</span><br />
-					<span class="stat upside">Faster respawns</span><br />
+					<span class="stat upside">100% discount on Recall Canteens</span><br />
 				</p>
 			</td>
 
@@ -278,15 +284,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -302,19 +305,19 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
+					<span class="credits">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					+20% reload speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" title="Purchase points for reload speed on this weapon has been increased from 0 to 1" />
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" title="Purchase points for reload speed on this weapon has been increased from 0 to 1" />
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" title="Purchase points for reload speed on this weapon has been increased from 0 to 1" />
 					</span><br />
 
-					<span class="credits">[$200]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;]</span>
 					+10% firing speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for firing speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" title="Purchase points for firing speed on this weapon has been increased from 0 to 1" />
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" title="Purchase points for firing speed on this weapon has been increased from 0 to 1" />
 					</span><br />
 				</p>
 			</td>
@@ -327,11 +330,21 @@
 					<span class="item-name q-stock">Secondary Upgrades</span><br />
 				</p>
 			</td>
-			<td class="item-card" colspan="2">
-				<p>
-					<span class="stat upside">
-						<span class="stat credits">[$300]</span><span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						Buy thing
+
+			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
+				<span class="item-name">Changes</span><br />
+				<p class="stat upside">
+					<span class="credits">[$250]</span> <span class="q-strange">[&#9679;]</span>
+					+15% recharge rate
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Mad_Milk.png" title="Faster recharge rate upgrades no longer lessens the damage requirement" />
+					</span><br />
+
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;]</span>
+					Fast consumption
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Bonk!_Atomic_Punch.png" title="Purchase points for firing speed on this weapon has been increased from 0 to 1" />
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Crit-a-Cola.png" title="Purchase points for firing speed on this weapon has been increased from 0 to 1" />
 					</span><br />
 				</p>
 			</td>
@@ -344,11 +357,15 @@
 					<span class="item-name q-stock">Melee Upgrades</span><br />
 				</p>
 			</td>
-			<td class="item-card" colspan="2">
-				<p>
-					<span class="stat upside">
-						<span class="stat credits">[$300]</span><span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						Buy thing
+
+			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
+				<span class="item-name">Changes</span><br />
+				<p class="stat upside">
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;]</span>
+					Fast consumption
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Sandman.png" title="Purchase points for firing speed on this weapon has been increased from 0 to 1" />
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Purchase points for firing speed on this weapon has been increased from 0 to 1" />
 					</span><br />
 				</p>
 			</td>
@@ -375,15 +392,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -399,20 +413,17 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+20% reload speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span class="credits" style="border-bottom: 1px dotted; cursor: help;" title="Cost increased from $300 to $450">[$450]</span> <span class="q-strange">[&#9679;]</span>
+					Explosive Specialist
+					<span style="user-select: none; cursor: help;" title="Changes apply to all Rocket Launchers&#010;&#8226; Renamed Rocket Specialist to Explosive Specialist&#010;&#8226; Cost increased from $300 to $450&#010;&#8226; Now also provides +25% damage bonus per point">
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Launcher.png" />
+					</span>
+					<span style="user-select: none; cursor: help;" title="Removed upgrade from this weapon">
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Jumper.png" />
 					</span><br />
 
-					<span class="credits">[$200]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+10% firing speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for firing speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removes)</span>
+					+25% damage bonus<br />
 				</p>
 			</td>
 		</tr>
@@ -470,23 +481,20 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Class Upgrade Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
-					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
-
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
-
 					<span class="credits">[$300]</span> <span class="q-strange">[&#9679;&#9679;]</span>
 					Arson Specialist: +50% burn damage, time and maximum
-					<span style="user-select: none; cursor: help;" title="Upgrade can only be purchased by Pyro.&#010;+50% universal afterburn damage&#010;+50% universal afterburn duration&#010;+50% maximum afterburn duration&#010;Afterburn durations stack">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/emblem_pyro.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/emblem_pyro.png" title="Upgrade can only be purchased by Pyro.&#010;+50% universal afterburn damage&#010;+50% universal afterburn duration&#010;+50% maximum afterburn duration&#010;Afterburn durations stack" />
 					</span><br />
+
+					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+					+15 max health
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
+					</span><br />
+
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -527,12 +535,32 @@
 					<span class="item-name q-stock">Secondary Upgrades</span><br />
 				</p>
 			</td>
-			<td class="item-card" colspan="2">
-				<p>
-					<span class="stat upside">
-						<span class="stat credits">[$300]</span><span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						Buy thing
+			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
+				<span class="item-name">Changes</span><br />
+				<p class="stat upside">
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					+25% damage bonus
+					<span style="user-select: none; cursor: help;" title="Added a +25% damage bonus upgrade to all Flare Guns">
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Scorch_Shot.png" />
 					</span><br />
+
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					+25% firing delay
+					<span style="user-select: none; cursor: help;" title="Added a +25% damage bonus upgrade to all Flare Guns">
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Scorch_Shot.png" />
+					</span><br />
+
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+20% reload speed<br />
+
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+10% firing speed<br />
 				</p>
 			</td>
 		</tr>
@@ -575,15 +603,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -599,20 +624,20 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+20% reload speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span class="credits">[$450]</span> <span class="q-strange">[&#9679;]</span>
+					Explosive Specialist
+					<span style="user-select: none; cursor: help;" title="Changes apply to all Grenade Launchers Launchers&#010;&#8226; Renamed Rocket Specialist to Explosive Specialist&#010;&#8226; Cost increased from $300 to $450&#010;&#8226; Now also provides +20% damage bonus per point">
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Grenade_Launcher.png" />
+					</span>
+					<span style="user-select: none; cursor: help;" title="The Loose Cannon does not recieve this upgrade and will retain its 20% damage upgrade">
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Loose_Cannon.png" />
 					</span><br />
 
-					<span class="credits">[$200]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+10% firing speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for firing speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removes)</span>
+					+20% damage bonus<br />
+
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removes)</span>
+					+15% projectile speed<br />
 				</p>
 			</td>
 		</tr>
@@ -673,15 +698,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -775,11 +797,8 @@
 						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 
 					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					+50% max metal capacity
@@ -787,11 +806,8 @@
 						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/emblem_engineer.png" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+5 metal regen
-					<span style="user-select: none; cursor: help;" title="Removed from Engineer">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/emblem_engineer.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+5 metal regen<br />
 				</p>
 			</td>
 		</tr>
@@ -832,11 +848,13 @@
 					<span class="item-name q-stock">Secondary Upgrades</span><br />
 				</p>
 			</td>
-			<td class="item-card" colspan="2">
-				<p>
-					<span class="stat upside">
-						<span class="stat credits">[$300]</span><span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						Buy thing
+			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
+				<span class="item-name">Changes</span><br />
+				<p class="stat upside">
+					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;&#9679;&#9679;]</span>
+					+15% shield resistance (TODO)
+					<span style="user-select: none; cursor: help;" title="">
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Wrangler.png" />
 					</span><br />
 				</p>
 			</td>
@@ -859,19 +877,43 @@
 			</td>
 		</tr>
 
-		<tr>
+		<tr id="buildingupgrades">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/engineer/Toolbox.png" />
 				<p>
 					<span class="item-name q-stock">Building Upgrades</span><br />
 				</p>
 			</td>
-			<td class="item-card" colspan="2">
-				<p>
-					<span class="stat upside">
-						<span class="stat credits">[$300]</span><span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						Buy thing
+			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
+				<span class="item-name">Changes</span><br />
+				<p class="stat upside">
+					<span class="neutral">Note: The <a class="tooltip-link" href="#engineer">+50% Max Metal Capacity</a> upgrade was moved to Class Upgrades</span><br />
+
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;] [&#9679;&#9679;]</span>
+					+1 disposable sentry gun
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Wrench.png" title="Changes applies to all wrenches:&#010;&#8226; Cost reduced from $500 to $400&#010;&#8226; The disposable sentry gun now fires as fast as a combat mini-sentry&#010;&#8226; The disposable sentry gun can now be repaired and resupplied" />
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Gunslinger.png" title="Upgrade points increased from 1 to 2" />
 					</span><br />
+
+					<span class="credits">[$250]</span> <span class="q-strange">[&#9679;]</span>
+					2-way teleporters
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Toolbox.png" title="Now also improves teleporter recharge rate by 100% (Lvl3 teleporter charges in 1.5s)" />
+					</span><br />
+
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					Canteen Specialist: Share canteens with your Sentry Gun
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/mvm/canteen_item.png" title="Canteen costs now update in real time. Any pending purchase for a canteen powerup that is active locks the ability to remove this upgrade. The player must remove all pending canteen powerups or accept/cancel the purchases." />
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Toolbox.png" title="Engineer now requires this upgrade to share canteen bonuses with his Sentry Gun" />
+					</span><br />
+
+					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					+20% max capacity for buildings
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Toolbox.png" title="+20% ammo capacity for sentry guns per point&#010;+20% metal capacity for dispensers per point" />
+					</span>
 				</p>
 			</td>
 		</tr>
@@ -899,15 +941,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -997,15 +1036,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -1021,19 +1057,16 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+20% reload speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					Explosive Headshot
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/sniper/Sniper_Rifle.png" title="Explosion damage changed from 150/170/190 to 100%/200%/300% of the base damage&#010;Slow strength changed from 50%/65%/80% to 50% at all levels&#010;Slow duration changed from 2/3/4s to 3s at all levels" />
 					</span><br />
 
-					<span class="credits">[$200]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+10% firing speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for firing speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					+50% clip size
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/sniper/Sniper_Rifle.png" title="All sniper rifles benefit from the clip size upgrade" />
 					</span><br />
 				</p>
 			</td>
@@ -1097,15 +1130,12 @@
 				<p class="stat upside">
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
-					<span style="user-select: none; cursor: help;" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" title="Purchasable for all classes&#010;Replaces the +2 health regen upgrade" />
 					</span><br />
 
-					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removed)</span>
-					+2 health regen
-					<span style="user-select: none; cursor: help;" title="Removed from all classes">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/allclass.png" />
-					</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Replaces)</span>
+					+2 health regen<br />
 				</p>
 			</td>
 		</tr>
@@ -1121,19 +1151,10 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+20% reload speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
-					</span><br />
-
-					<span class="credits">[$200]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
-					+10% firing speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for firing speed on this weapon has been increased from 0 to 1">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					+25% damage bonus
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Revolver.png" title="All revolvers benefit from this upgrade" />
 					</span><br />
 				</p>
 			</td>
