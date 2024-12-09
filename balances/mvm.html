@@ -11,8 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="balance.css" />
 </head>
 <body>
-	<div class="home-btn nav-btn" onclick="location.href='../index.html'" title="Back to main menu"><img src="../resources/home.png" style="width: 32px; height: 32px;" /></div>
-	<div id="scrollup" class="up-btn nav-btn" onclick="location.href='#'" title="Back to top">^</div>
+	<div class="nav-panel">
+		<div class="img-nav-btn nav-btn" onclick="location.href='../index.html'" title="Main menu"><img src="../resources/home.png" style="width: 20px; height: 20px;" /></div>
+		<a href="https://github.com/SheepishShepherd/TF2Rebalances"><div class="img-nav-btn nav-btn" title="Github source"><img src="../resources/github.png" style="width: 20px; height: 20px;" /></div></a>
+		<div class="up-btn img-nav-btn nav-btn" onclick="location.href=''" title="Back to top"><img src="../resources/back_to_top.png" style="width: 20px; height: 20px;" /></div>
+	</div>
 	<h1><img src="../resources/mvm_banner.png" /></h1>
 
 	<table id="quick-access" style="background-color: transparent;" cellspacing="2" cellpadding="5">
@@ -414,8 +417,8 @@
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
 					<span class="credits" style="border-bottom: 1px dotted; cursor: help;" title="Cost increased from $300 to $450">[$450]</span> <span class="q-strange">[&#9679;]</span>
-					Explosive Specialist
-					<span style="user-select: none; cursor: help;" title="Changes apply to all Rocket Launchers&#010;&#8226; Renamed Rocket Specialist to Explosive Specialist&#010;&#8226; Cost increased from $300 to $450&#010;&#8226; Now also provides +25% damage bonus per point">
+					<span class="tooltip" title="Rocket Specialist">Explosive Specialist</span>
+					<span style="user-select: none; cursor: help;" title="Changes apply to all Rocket Launchers&#010;&#8226; Renamed Rocket Specialist to Explosive Specialist&#010;&#8226; Cost increased from $300 to $450&#010;&#8226; Now also provides a +20% damage bonus per point">
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Launcher.png" />
 					</span>
 					<span style="user-select: none; cursor: help;" title="Removed upgrade from this weapon">
@@ -435,12 +438,17 @@
 					<span class="item-name q-stock">Secondary Upgrades</span><br />
 				</p>
 			</td>
-			<td class="item-card" colspan="2">
-				<p>
-					<span class="stat upside">
-						<span class="stat credits">[$300]</span><span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						Buy thing
-					</span><br />
+
+			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
+				<span class="item-name">Changes</span><br />
+				<p class="stat upside">
+					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					Global Buff Radius
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Buff_Banner.png" title="Banner effects apply to the whole team, regardless of radius." />
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Battalion's_Backup.png" title="Banner effects apply to the whole team, regardless of radius." />
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Concheror.png" title="Banner effects apply to the whole team, regardless of radius." />
+					</span>
 				</p>
 			</td>
 		</tr>
@@ -484,8 +492,13 @@
 					<span class="credits">[$300]</span> <span class="q-strange">[&#9679;&#9679;]</span>
 					Arson Specialist: +50% burn damage, time and maximum
 					<span style="user-select: none;">
-						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/emblem_pyro.png" title="Upgrade can only be purchased by Pyro.&#010;+50% universal afterburn damage&#010;+50% universal afterburn duration&#010;+50% maximum afterburn duration&#010;Afterburn durations stack" />
+						<img class="mvm-mini-item" style="background-color: transparent; width: 20px;" src="../resources/class/emblem_pyro.png" title="Upgrade can only be purchased by Pyro.&#010;+50% universal afterburn damage&#010;+50% universal afterburn duration&#010;+50% maximum afterburn duration&#010;Afterburn durations fully stack" />
 					</span><br />
+
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removes)</span>
+					+50% burn damage (all instances)<br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removes)</span>
+					+50% burn time (all instances)<br />
 
 					<span class="credits">[$150]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					+15 max health
@@ -512,7 +525,7 @@
 				<p class="stat upside">
 					<span class="credits">[$250]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
 					+20% reload speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
+					<span style="user-select: none;" title="Purchase points for reload speed on this weapon has been increased from 0 to 1">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
@@ -520,7 +533,7 @@
 
 					<span class="credits">[$200]</span> <span class="q-strange" style="border-bottom: 1px dotted;">[&#9679;]</span>
 					+10% firing speed
-					<span style="user-select: none; cursor: help;" title="Purchase points for firing speed on this weapon has been increased from 0 to 1">
+					<span style="user-select: none;" title="Combined reload speed and firing speed into one upgrade">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" />
 					</span><br />
@@ -540,7 +553,7 @@
 				<p class="stat upside">
 					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					+25% damage bonus
-					<span style="user-select: none; cursor: help;" title="Added a +25% damage bonus upgrade to all Flare Guns">
+					<span style="user-select: none;" title="Added a +25% damage bonus upgrade to all Flare Guns">
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" />
@@ -549,7 +562,7 @@
 
 					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					+25% firing delay
-					<span style="user-select: none; cursor: help;" title="Added a +25% damage bonus upgrade to all Flare Guns">
+					<span style="user-select: none;" title="Combined reload speed and firing speed into one upgrade for all Flare Guns">
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" />
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" />
@@ -625,7 +638,7 @@
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
 					<span class="credits">[$450]</span> <span class="q-strange">[&#9679;]</span>
-					Explosive Specialist
+					<span class="tooltip" title="Rocket Specialist">Explosive Specialist</span>
 					<span style="user-select: none; cursor: help;" title="Changes apply to all Grenade Launchers Launchers&#010;&#8226; Renamed Rocket Specialist to Explosive Specialist&#010;&#8226; Cost increased from $300 to $450&#010;&#8226; Now also provides +20% damage bonus per point">
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Grenade_Launcher.png" />
 					</span>
@@ -1057,11 +1070,14 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<span class="item-name">Changes</span><br />
 				<p class="stat upside">
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					Explosive Headshot
+					<span class="credits">[$450]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="tooltip" title="Explosive Headshot">Hitman Specialist</span>
 					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/sniper/Sniper_Rifle.png" title="Explosion damage changed from 150/170/190 to 100%/200%/300% of the base damage&#010;Slow strength changed from 50%/65%/80% to 50% at all levels&#010;Slow duration changed from 2/3/4s to 3s at all levels" />
+						<img class="mvm-mini-item" src="../resources/weapons/sniper/Sniper_Rifle.png" title="Applies to all Rifles&#010;Renamed Explosive Headshots to Hitman Specialist&#010;&#8226; Cost increased from $350 to $450&#010;&#8226; Purchase points increased from 3 to 5&#010;&#8226; Now also provides a +20% damage bonus per point&#010;&#8226; Explosion damage changed from 150/170/190 to 50% of the damage dealt&#010;&#8226; Slow strength changed from 50%/65%/80% to 50% at all levels&#010;&#8226; Slow duration changed from 2/3/4s to 2-5s base on charge percentage" />
 					</span><br />
+
+					<span class="downside" style="margin-left: 15px;">&#x21AA; (Removes)</span>
+					+25% damage bonus<br />
 
 					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					+50% clip size

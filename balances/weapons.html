@@ -12,8 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="balance.css" />
 	</head>
 	<body>
-		<div class="home-btn nav-btn" onclick="location.href='../index.html'" title="Back to main menu"><img src="../resources/home.png" style="width: 32px; height: 32px;" /></div>
-		<div id="scrollup" class="up-btn nav-btn" onclick="location.href='#'" title="Back to top">^</div>
+		<div class="nav-panel">
+			<div class="img-nav-btn nav-btn"  onclick="location.href='../index.html'" title="Main menu"><img src="../resources/home.png" style="width: 20px; height: 20px;" /></div>
+			<a href="https://github.com/SheepishShepherd/TF2Rebalances"><div class="img-nav-btn nav-btn" title="Github source"><img src="../resources/github.png" style="width: 20px; height: 20px;" /></div></a>
+			<div class="up-btn img-nav-btn nav-btn" onclick="location.href=''" title="Back to top"><img src="../resources/back_to_top.png" style="width: 20px; height: 20px;" /></div>
+		</div>
 		<h1>Weapons & Classes</h1>
 
 		<table id="quick-access" cellspacing="2" cellpadding="0">
@@ -1188,13 +1191,23 @@
 					<img class="item-img" src="../resources/weapons/pyro/Gas_Passer.png" />
 					<p>
 						<span class="item-name">Gas Passer</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Gas meter builds with damage done and/or time</span><br />
+						<span class="stat upside">Extinguishing an ally reduces cooldown by -25%</span><br />
+						<span class="stat downside">Spawning and resupply do not affect the Gas meter</span><br />
+						<span class="stat downside">Gas meter starts empty</span><br />
+						<span class="stat neutral">Creates a horrific visible gas cloud that coats enemies with a flammable material, which then explodes into an inferno if they take damage (even enemy Pyros!)</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Extinguishing an ally reduces cooldown by -25%</span><br />
+						<span class="stat upside">Recharge time needed reduced from 60s to <span class="tooltip" title="30s if an ally is extinguished">40s</span></span><br />
+						<span class="stat upside">Recharge damage needed reduced from 750 to <span class="tooltip" title="375 damage if an ally is extinguished">500</span></span><br />
+						<span class="stat upside">Now applies inferno instead of afterburn</span><br />
+						<span class="stat upside">Now explodes on ignite, dealing 15 damage to the target and nearby enemies</span><br />
+						<span class="stat downside">Minimum damage to trigger increased from 1 to <span class="tooltip" title="accumulative, until gas duration expires">15</span></span><br />
+						<span class="stat downside">Charge progress resets on respawn</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -1225,7 +1238,6 @@
 						<span class="item-name">Stats</span><br />
 						<span class="stat neutral">Inferno cannot be extinguished through normal means</span><br />
 						<span class="stat neutral">Deals 5 damage every half second</span><br />
-						<span class="stat neutral">Inferno cannot be extinguished through normal means</span><br />
 						<span class="stat neutral">Pyros are susceptible to it effects</span><br />
 						<span class="stat neutral">Takes priority over <a href="#afterburn" class="tooltip-link">&#128293;Afterburn</a>. Applied afterburn is added towards Inferno for half the duration.</span><br />
 					</p>
@@ -1249,13 +1261,22 @@
 					<p>
 						<span class="item-name">Mannmelter*</span><br />
 						<span class="stat subtle">Previouly known as: Manmelter</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Alt-Fire: Extinguish teammates to fill a Melter meter</span><br />
+						<span class="stat upside">+25% faster firing speed</span><br />
+						<span class="stat upside">+50% faster projectile speed</span><br />
+						<span class="stat upside">Does not require ammo</span><br />
+						<span class="stat downside">-40% afterburn duration</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat subtle">Heavily inspired by Bad Weapon Rehab</span><br />
+						<span class="stat upside"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
+						<span class="stat upside">Hitting a burning enemy will extinguish them, dealing the remaining afterburn time as bonus damage and dealing mini-crit damage.</span><br />
+						<span class="stat upside">+25% faster firing speed</span><br />
+						<span class="stat downside">Base afterburn duration reduced from 7.5s to <span class="tooltip" title="4.5s on critical hit">3s</span></span><br />
+						<span class="stat downside">Removed Alt-fire extinguishing mechanic</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -1466,13 +1487,19 @@
 					<img class="item-img" src="../resources/weapons/pyro/Homewrecker.png" />
 					<p>
 						<span class="item-name">Homewrecker</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Damage malforms sappers</span><br />
+						<span class="stat upside">+100% damage vs buildings</span><br />
+						<span class="stat upside">+40% knockback resistance while active</span><br />
+						<span class="stat upside">+40% knockback resistance while active</span><br />
+						<span class="stat upside">Damage malforms sappers</span><br />
+						<span class="stat upside">Damage malforms sappers</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Hammer type weapons now <a class="tooltip-link" href="#malformedsapper">malform sappers</a> on hit</span><br />
+						<span class="stat neutral">+100% bonus damage vs buildings</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -1526,6 +1553,7 @@
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
+						<span class="stat upside">Hammer type weapons now <a class="tooltip-link" href="#malformedsapper">malform sappers</a> on hit</span><br />
 						<span class="stat neutral">TODO</span><br />
 					</p>
 				</td>
@@ -1547,13 +1575,20 @@
 					<img class="item-img" src="../resources/weapons/pyro/Powerjack.png" />
 					<p>
 						<span class="item-name">Powerjack</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Damage malforms sappers</span><br />
+						<span class="stat upside">+15% move speed on wearer while active</span><br />
+						<span class="stat upside">+15% damage bonus</span><br />
+						<span class="stat downside">-25 max health on wearer</span><br />
 					</p>
 				</td>
 				<td class="item-card">
 					<p>
 						<span class="item-name">Changes</span><br />
-						<span class="stat neutral">TODO</span><br />
+						<span class="stat upside">Hammer type weapons now <a class="tooltip-link" href="#malformedsapper">malform sappers</a> on hit</span><br />
+						<span class="stat upside">No longer has a 20% damage vulnerabiltiy while active</span><br />
+						<span class="stat upside">Added: +15% damage bonus</span><br />
+						<span class="stat downside">Added: -25 max health on wearer</span><br />
+						<span class="stat downside">No longer grants 25 health on kill</span><br />
 					</p>
 				</td>
 				<td class="item-card">
@@ -3259,6 +3294,7 @@
 						<span class="item-name">Hitman's Heatmaker</span><br />
 						<span class="stat upside">On Kill: Stay focused and remain scoped.</span><br />
 						<span class="stat upside">20% faster firing speed</span><br />
+						<span class="stat upside">+25% larger clip size</span><br />
 						<span class="stat downside">20% slower reload speed</span><br />
 						<span class="stat downside">20% damage penalty on body shot</span><br />
 					</p>
@@ -3268,7 +3304,8 @@
 						<span class="item-name">Changes</span><br />
 						<span class="stat neutral">Focus no longer has a duration and is only gained from scoped kills. On kill, focus is automatically activated.</span><br />
 						<span class="stat upside">Firing rate improved from 1.5s to 1.2s</span><br />
-						<span class="stat upside">Reload rate increased from 2s to 2.4s</span><br />
+						<span class="stat upside">Clip size increased from 4 to 5</span><br />
+						<span class="stat downside">Reload rate increased from 2s to 2.4s</span><br />
 						<span class="stat downside">Focus no longer grants 25% faster charge rate</span><br />
 					</p>
 				</td>
