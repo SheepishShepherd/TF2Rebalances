@@ -69,6 +69,7 @@ a {
 .neutral { color: #EBE2CA; }
 .subtle { color: #756B5E; }
 .credits { color: #7AC437; }
+.consumable { color: #00A000; }
 
 /* Item Quality colors */
 .q-stock { color: #B2B2B2; }
@@ -89,6 +90,12 @@ a {
 .g-commando { color: #8847FF; }
 .g-assassin { color: #D32CE6; }
 .g-elite { color: #EB4B4B; }
+
+/* Paint Can colors */
+.p-australium { color: #E7B53B; }
+.p-mannco { color: #CF7336; }
+.p-moustache { color: #7E7E7E; }
+.p-zepheniah { color: #424F3B; }
 
 .tooltip {
 	cursor: help;

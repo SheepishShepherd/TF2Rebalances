@@ -20,9 +20,10 @@
 
 	<table id="quick-access" style="background-color: transparent;" cellspacing="2" cellpadding="5">
 		<tr>
+			<td colspan="2"><a class="nav-btn" href="#mvm-rewards">Rewards</a></td>
+			<td colspan="2"><a class="nav-btn" href="#robots">Robots</a></td>
+			<td colspan="2"><a class="nav-btn" href="#credits">Credits</a></td>
 			<td colspan="2"><a class="nav-btn" href="#canteens">Canteens</a></td>
-			<td colspan="2"><a class="nav-btn" href="#perks">Robots</a></td>
-			<td colspan="2"><a class="nav-btn" href="#perks">Credits</a></td>
 		</tr>
 	</table>
 
@@ -40,10 +41,283 @@
 		</tr>
 	</table>
 
-	<!-- MvM Gnereal -->
-	<table id="mvmgeneral">
+	<!-- MvM Rewards -->
+	<table id="mvm-rewards">
 		<tr>
-			<th colspan="3" style="background-color: #B2B2B2;">Power Up Canteens</th>
+			<th colspan="3" style="background-color: #B2B2B2;">Rewards</th>
+		</tr>
+
+		<!-- Botkillers -->
+		<tr id="Botkillers">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Botkiller_Minigun.png" />
+				<p>
+					<span class="item-name q-strange">Botkiller Weapons</span><br />
+					<span class="stat subtle">Kills: 0</span><br />
+					<span class="stat subtle">(Robots Destroyed: 0)</span><br />
+					<span class="stat upside">Silver attachment applied</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat upside">All Botkiller weapon reward drops have a 'Strange Part: Robots Destroyed' attached</span><br />
+					<span class="stat upside">Botkiller weapons now have alternative styles to change the botkiller attachment type</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					This may encourage MvM players to use these weapons more as they have in-built robot kill tracking.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Botkiller Dismantler -->
+		<tr id="Bottkiller_Dismantler">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Botkiller_Wrench.png" />
+				<p>
+					<span class="item-name">Botkiller Dismantler</span><br />
+					<span class="stat neutral">Use on Botkiller weapon to consume the weapon and redeem the Botkiller attachment, which can be applied to another Botkiller weapon of a different type to unlock an alternative style.</span><br /><br />
+					<span class="stat consumable">This is a limited use item. Uses: 1</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Botkiller dismantlers are the only way of applying new alternative styles to Botkiller weapons</span><br />
+					<span class="stat neutral">Botkiller weapons lists every attachment type assigned within the stats</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					This is mainly to reduce inventory bloat and to provide somewhat of a sink for botkiller rewards.
+					Regular MvM players can work towards earning 'Trophy' botkillers that have every botkiller type attached.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Squad Surplus Voucher -->
+		<tr id="Squad_Surplus_Voucher">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Squad_Surplus_Voucher.png" />
+				<p>
+					<span class="item-name">Squad Surplus Voucher</span><br />
+					<span class="stat neutral">Present this voucher in Mann vs. Machine when starting Mann Up Mode. Each team member that activates one will add an additional reward for all members upon completing the mission.</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Guarantees one of the following rewards upon completing any mission:</span><br />
+					<span class="stat upside">40% chance to receive 1 random weapon drop</span><br />
+					<span class="stat upside">30% chance to receive 2 random robot parts</span><br />
+					<span class="stat upside">20% chance to receive 1 random rare robot part</span><br />
+					<span class="stat upside">10% chance to receive 1 random robot cosmetic item</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Many find the cost of $1.99 to be a bit steep for 6 weapons and a rare chance at a robot cosmetic. The pool of rewards has been expanded on and chances of getting alternative rewards are more probable.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Operation Oil Spill -->
+		<tr id="Operation_Oil_Spill">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Operation_Oil_Spill.png" />
+				<p>
+					<span class="item-name">Operation Oil Spill</span><br />
+					<span class="stat neutral">Difficulty: Intermediate</span><br />
+					<span class="stat upside">Doe's Doom (Decoy)</span><br />
+					<span class="stat upside">Day of Wreckening (Decoy)</span><br />
+					<span class="stat upside">Cave-in (Coal Town)</span><br />
+					<span class="stat upside">Quarry (Coal Town)</span><br />
+					<span class="stat upside">Mean Machines (Mannworks)</span><br />
+					<span class="stat upside">Mannhunt (Mannworks)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Rewards</span><br />
+					<span class="stat neutral">Upon completing a mission:</span><br />
+					<span class="stat upside">1 weapon item drop (gauranteed)</span><br />
+					<span class="stat upside">5-7 robot parts (gauranteed)</span><br />
+					<span class="stat neutral">Upon completing a tour:</span><br />
+					<span class="stat upside">2 rare robot parts (gauranteed)</span><br />
+					<span class="stat upside">1 Rust Botkiller MK.I weapon (gauranteed)</span><br />
+					<span class="stat upside"><span class="neutral"><i>or</i></span> 1 Blood Botkiller MK.I weapon (rare)</span><br />
+					<span class="stat p-australium">1 Australium weapon (extremely rare)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					As the easiest mission to complete, while also having the most missions (6) to complete its tour. It seems appropriate to offer a grinding purpose to play through it.
+					Each mission complete offers a significant amount of robot parts to nearly ensure youll get what you need to complete your fabricators.
+					The small chance for an Australium weapon was put in so players do not feel like they are sacrificing the chance.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Operation Steel Trap -->
+		<tr id="Operation_Steel_Trap">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Operation_Steel_Trap.png" />
+				<p>
+					<span class="item-name">Operation Steel Trap</span><br />
+					<span class="stat neutral">Difficulty: Advanced</span><br />
+					<span class="stat upside">Disk Deletion (Decoy)</span><br />
+					<span class="stat upside">Data Demolition (Decoy)</span><br />
+					<span class="stat upside">Ctrl+Alt+Destruction (Coal Town)</span><br />
+					<span class="stat upside">CPU Slaughter (Coal Town)</span><br />
+					<span class="stat upside">Machine Massacre (Mannworks)</span><br />
+					<span class="stat upside">Mech Mutilation (Mannworks)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Rewards</span><br />
+					<span class="stat neutral">Upon completing a mission:</span><br />
+					<span class="stat upside">1 weapon item drop (gauranteed)</span><br />
+					<span class="stat upside">1-2 robot parts (gauranteed)</span><br />
+					<span class="stat p-moustache">1 Botkiller Dismantler (rare)</span><br />
+					<span class="stat neutral">Upon completing a tour:</span><br />
+					<span class="stat upside">1 Rust Botkiller MK.I weapon (gauranteed)</span><br />
+					<span class="stat upside"><span class="neutral"><i>or</i></span> 1 Blood Botkiller MK.I weapon (rare)</span><br />
+					<span class="stat p-moustache">1 Botkiller Dismantler (garunteed)</span><br />
+					<span class="stat p-australium">1 Australium weapon (extremely rare)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Offering additional alternative rewards allows for variation in tour selection.
+					This tour adds a new reward that will help build up botkiller weapons, known as Botkiller Dismantlers.
+					One is gauranteed every tour, but a rare chance to get one from 6 different missions you are bound to find an extra one every so often.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Operation Mecha Engine -->
+		<tr id="Operation_Mecha_Engine">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Operation_Mecha_Engine.png" />
+				<p>
+					<span class="item-name">Operation Mecha Engine</span><br />
+					<span class="stat neutral">Difficulty: Advanced</span><br />
+					<span class="stat upside">Disintegration (Decoy)</span><br />
+					<span class="stat upside">Broken Parts (Bigrock)</span><br />
+					<span class="stat upside">Bone Shaker (Bigrock)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Rewards</span><br />
+					<span class="stat neutral">Upon completing a mission:</span><br />
+					<span class="stat upside">1 weapon item drop (gauranteed)</span><br />
+					<span class="stat upside">1-2 robot parts (gauranteed)</span><br />
+					<span class="stat q-strange">1 Strange Part (rare)</span><br />
+					<span class="stat neutral">Upon completing a tour:</span><br />
+					<span class="stat upside">1 Silver Botkiller MK.II weapon (gauranteed)</span><br />
+					<span class="stat upside"><span class="neutral"><i>or</i></span> 1 Gold Botkiller MK.II weapon (rare)</span><br />
+					<span class="stat q-strange">1 Strangifier <span class="tooltip" title="Chemistry Sets are discontinued">Fabricator</span> (rare)</span><br />
+					<span class="stat p-australium">1 Australium weapon (extremely rare)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Offering additional alternative rewards allows for variation in tour selection.
+					This tour adds the reward of Strangifier Fabricators, which will require robot parts to complete, as well as Strange Parts.
+					The pool of items that can be Strangified has been expanded, giving an incentive to seek out ones you cannot normally obtain elsewhere.
+					Requiring only 3 missions to complete, there are no gaurantees of getting either exclusive reward.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Operation Two Cities -->
+		<tr id="Operation_Two_Cities">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Operation_Two_Cities.png" />
+				<p>
+					<span class="item-name">Operation Two Cities</span><br />
+					<span class="stat neutral">Difficulty: Advanced</span><br />
+					<span class="stat upside">Empire Escalation (Mannhattan)</span><br />
+					<span class="stat upside">Metro Malice (Mannhattan)</span><br />
+					<span class="stat upside">Hamlet Hostility (Rottenburg)</span><br />
+					<span class="stat upside">Bavarian Botbash (Rottenburg)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Rewards</span><br />
+					<span class="stat neutral">Upon completing a mission:</span><br />
+					<span class="stat upside">1 weapon item drop (gauranteed)</span><br />
+					<span class="stat upside"><span class="tooltip" title="from minimum of 5 parts">2-4</span> robot parts (gauranteed)</span><br />
+					<span class="stat upside">1 rare robot parts (rare)</span><br />
+					<span class="stat q-genuine">1 Specialized Killstreak Fabricator (rare)</span><br />
+					<span class="stat neutral">Upon completing a tour:</span><br />
+					<span class="stat upside">1 Killstreak Kit (gauranteed)</span><br />
+					<span class="stat q-genuine">1 Specialized Killstreak Fabricator (gauranteed)</span><br />
+					<span class="stat p-mannco">1 Professional Killstreak Fabricator (rare)</span><br />
+					<span class="stat p-australium">1 Australium weapon (extremely rare)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Previously the only tour worth doing for its amount of gauranteed rewards, Operation Two Cities has had its robot part reward count dropped.
+					Instead, Operation Oil Spill (the easiest and longest mission) has been given the title of robot part grinding.
+					Operation Two Cities will keep its Killstreak rewards as is for those who wish to grind for them.
+				</p>
+			</td>
+		</tr>
+
+		<!-- Operation Gear Grinder -->
+		<tr id="Operation_Gear_Grinder">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Operation_Gear_Grinder.png" />
+				<p>
+					<span class="item-name">Operation Gear Grinder</span><br />
+					<span class="stat neutral">Difficulty: Expert</span><br />
+					<span class="stat upside">Desperation (Decoy)</span><br />
+					<span class="stat upside">Cataclysm (Coal Town)</span><br />
+					<span class="stat upside">Mannslaughter (Mann Works)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Rewards</span><br />
+					<span class="stat neutral">Upon completing a mission:</span><br />
+					<span class="stat upside">1 weapon item drop (gauranteed)</span><br />
+					<span class="stat upside">1-2 robot parts (gauranteed)</span><br />
+					<span class="stat neutral">Upon completing a tour:</span><br />
+					<span class="stat upside">1 Carbonado Botkiller MK.I weapon (gauranteed)</span><br />
+					<span class="stat upside"><span class="neutral"><i>or</i></span> 1 Diamond Botkiller MK.I weapon (rare)</span><br />
+					<span class="stat q-collectors">1 Collector's Kit <span class="tooltip" title="Chemistry Sets are discontinued">Fabricator</span> (very rare)</span><br />
+					<span class="stat p-australium">1 Australium weapon (extremely rare)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Offering additional alternative rewards allows for variation in tour selection.
+					This tour has a very rare chance of rewarding a Collector's Kit Fabricator, which will require robot parts to complete.
+					What used to be obtainable can now be grinded out through a 3 mission tour, though with no gaurantees.<br /><br />Gamble with caution.
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<!-- MvM Robots -->
+	<table id="robots">
+		<tr>
+			<th colspan="3" style="background-color: #B2B2B2;">Robots</th>
 		</tr>
 
 		<!-- Power Up Canteen -->
@@ -63,6 +337,35 @@
 					<span class="stat upside">Bleed damage increased from 4 to 5</span><br />
 					<span class="stat upside">Bleed stack damage increased from 2 to 5</span><br />
 					<span class="stat downside">Bleed is removed if the robot is <span class="tooltip" title="by Medic robots or heal on hit/kill">healed</span></span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<!-- MvM Credits -->
+	<table id="credits">
+		<tr>
+			<th colspan="3" style="background-color: #B2B2B2;">Credits System</th>
+		</tr>
+
+		<!-- Power Up Canteen -->
+		<tr id="powerupcanteen">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Medium_Credits.png" />
+				<p>
+					<span class="item-name">Credits</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">TODO</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -137,7 +440,7 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					Because f*** you
+					TODO
 				</p>
 			</td>
 		</tr>
@@ -168,7 +471,7 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					Because f*** you
+					TODO
 				</p>
 			</td>
 		</tr>
@@ -199,7 +502,7 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					Because f*** you
+					TODO
 				</p>
 			</td>
 		</tr>
@@ -258,7 +561,7 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					Because f*** you
+					TODO
 				</p>
 			</td>
 		</tr>
