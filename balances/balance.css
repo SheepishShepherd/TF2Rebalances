@@ -55,3 +55,24 @@ th {
 	padding: 1px 15px;
 	border-radius: 5px;
 }
+
+#halloween-backdrop {
+	background-image: url('../resources/halloween_backdrop.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.mvm-mini-item {
+	width: 26px;
+	height: 20px;
+	background-color: #1B1B1B;
+	border-radius: 3px;
+	position: relative;
+	top: 5px;
+	cursor: help;
+	user-select: none;
+}
+
+.mvm-mini-item:hover {
+	background-color: #3C362F;
+}
