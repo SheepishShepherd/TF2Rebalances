@@ -164,27 +164,50 @@ a {
 	cursor: pointer;
 	z-index: 2;
 }
-
 .nav-btn:hover {
 	background-color: #F4722B;
 	box-shadow: #B46032 3px 3px inset;
 }
-
 .img-nav-btn {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	float: left;
 	width: 32px;
 	height: 32px;
 	margin: 5px 0px 0px 5px;
 	padding: 0px;
-	text-align: center;
-	float: left;
+	background: none no-repeat #F5E5C1;
+	background-size: 20px;
+	background-position: 5px 5px;
+}
+.img-nav-btn:hover  {
+	background-position: 6px 6px;
 }
 
-.up-btn {
+/* Navigation Button Types */
+.nav-menu {
+	background-image: url('resources/icons/Nav_Menu.png');
+}
+.nav-menu-still {
+	background-image: url('resources/icons/Nav_Menu.png');
+	background-position: 6px 6px;
+	background-color: #F3A957;
+	box-shadow: none;
+	cursor: default;
+}
+.nav-menu-still:hover {
+	background-color: #F3A957;
+	box-shadow: none;
+}
+.nav-github {
+	background-image: url('resources/icons/Nav_GitHub.png');
+}
+.nav-top {
 	width: 70px;
 	margin: 5px 0px 5px 5px;
+	background-image: url('resources/icons/Nav_Top.png');
+	background-position: 25px 5px;
+}
+.nav-top:hover {
+	background-position: 26px 6px;
 }
 
 .halloween-backdrop {
