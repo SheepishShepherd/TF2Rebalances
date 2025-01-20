@@ -57,7 +57,7 @@ th {
 }
 
 #halloween-backdrop {
-	background-image: url('../resources/halloween_backdrop.jpg');
+	background-image: url('../resources/halloween/backdrop.png');
 	background-size: cover;
 	background-attachment: fixed;
 }
