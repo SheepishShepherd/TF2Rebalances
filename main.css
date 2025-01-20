@@ -104,6 +104,27 @@ a {
 .a-orange { background-color: #F4772B; }
 .a-orange-dark { background-color: #B46032; }
 
+/* Changes stat icons */
+.modified {
+	background: url('resources/icons/Pictogram_neutral.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
+.added {
+	background: url('resources/icons/Pictogram_plus.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
+.removed {
+	background: url('resources/icons/Pictogram_minus.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
+.info {
+	background: url('resources/icons/Pictogram_info.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
 
 .tooltip {
 	cursor: help;
