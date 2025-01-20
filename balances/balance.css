@@ -62,6 +62,19 @@ th {
 	background-attachment: fixed;
 }
 
+/* Spell Icons */
+.icon-SummonMonoculus { background-image: url('../resources/halloween/spell_monoculus.png'); }
+.icon-BallOLightning { background-image: url('../resources/halloween/spell_tesla.png'); }
+.icon-SkeletonHorde { background-image: url('../resources/halloween/spell_skeletons.png'); }
+.icon-SwarmsOfBats { background-image: url('../resources/halloween/spell_bats.png'); }
+.icon-PumpkinBomb { background-image: url('../resources/halloween/spell_pumpkin.png'); }
+.icon-ShadowWalk { background-image: url('../resources/halloween/spell_teleport.png'); }
+.icon-BlastJump { background-image: url('../resources/halloween/spell_blastjump.png'); }
+.icon-Overheal { background-image: url('../resources/halloween/spell_heal.png'); }
+.icon-Stealth { background-image: url('../resources/halloween/spell_stealth.png'); }
+.icon-Minify { background-image: url('../resources/halloween/spell_minify.png'); }
+.icon-Fireball { background-image: url('../resources/halloween/spell_fireball.png'); }
+
 .mvm-mini-item {
 	width: 26px;
 	height: 20px;
@@ -76,3 +89,10 @@ th {
 .mvm-mini-item:hover {
 	background-color: #3C362F;
 }
+
+/* Canteen Icons */
+.icon-CanteenUpgrade { background-image: url('../resources/mvm/canteen_upgrade.png'); }
+.icon-CanteenRefill { background-image: url('../resources/mvm/canteen_refill.png'); }
+.icon-CanteenKritz { background-image: url('../resources/mvm/canteen_kritz.png'); }
+.icon-CanteenUber { background-image: url('../resources/mvm/canteen_uber.png'); }
+.icon-CanteenRecall { background-image: url('../resources/mvm/canteen_recall.png'); }
