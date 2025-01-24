@@ -82,7 +82,7 @@ th {
 	border-radius: 3px;
 	position: relative;
 	top: 5px;
-	cursor: help;
+	cursor: pointer;
 	user-select: none;
 }
 

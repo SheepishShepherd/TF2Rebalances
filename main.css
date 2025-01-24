@@ -119,7 +119,6 @@ a {
 .tooltip {
 	cursor: help;
 	border-bottom: 1px dotted;
-	color: inherit;
 }
 
 .tooltip-link {
