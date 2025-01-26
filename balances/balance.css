@@ -39,7 +39,6 @@ th {
 	max-width: 100%;
 	display: block;
 }
-
 .class-portrait:hover {
 	filter: brightness(110%) contrast(70%);
 }
@@ -85,7 +84,6 @@ th {
 	cursor: pointer;
 	user-select: none;
 }
-
 .mvm-mini-item:hover {
 	background-color: #3C362F;
 }
