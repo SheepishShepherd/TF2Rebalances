@@ -161,17 +161,20 @@
 				<img class="item-img" src="../resources/weapons/pyro/Inferno.png" />
 				<p>
 					<span class="item-name">Status Effect: Inferno</span><br />
+					<span class="stat subtle">"Greater Afterburn"</span><br />
 					<span class="stat neutral">Extinguishing reduces its effect to afterburn</span><br />
+					<span class="stat neutral">+33% vulnerability to fire damage</span><br />
 					<span class="stat neutral">-50% health from healers</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Stats</span><br />
-					<span class="stat neutral">Inferno cannot be extinguished through normal means</span><br />
-					<span class="stat neutral">Deals 5 damage every half second</span><br />
-					<span class="stat neutral">Pyros are susceptible to it effects</span><br />
-					<span class="stat neutral">Takes priority over <a href="#Afterburn" class="tooltip-link">&#128293;Afterburn</a>. Applied afterburn is added towards Inferno for half the duration.</span><br />
+					<span class="stat upside modified">Deals 5 damage every half second</span><br />
+					<span class="stat upside added">Pyros are susceptible to it effects</span><br />
+					<span class="stat upside added">33% fire damage vulnerability while under the effect</span><br />
+					<span class="stat neutral info">Takes priority over <a href="#Afterburn" class="tooltip-link">&#128293;Afterburn</a>. Applied afterburn is added towards Inferno for half the duration</span><br />
+					<span class="stat neutral info">When extinguished <span class="tooltip" title="except from submerging in water or touching a resupply cabinet">by any means</span>, effect becomes afterburn for the remaining duration</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1286,13 +1289,13 @@
 
 		<!-- Gas Passer -->
 		<tr id="Gas_Passer">
-			<td class="item-card item-icon icon-WIP">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/pyro/Gas_Passer.png" />
 				<p>
 					<span class="item-name">Gas Passer</span><br />
 					<span class="stat upside">Gas meter builds with damage done and/or time</span><br />
 					<span class="stat upside">Extinguishing an ally reduces cooldown by -25%</span><br />
-					<span class="stat downside">Spawning and resupply do not affect the Gas meter</span><br />
+					<span class="stat downside">Does not refill from resupply cabinets</span><br />
 					<span class="stat downside">Gas meter starts empty</span><br />
 					<span class="stat neutral">Creates a horrific visible gas cloud that coats enemies with a flammable material, which then explodes into an inferno if they take damage (even enemy Pyros!)</span><br />
 				</p>
@@ -1301,22 +1304,24 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside added">Extinguishing an ally reduces cooldown by -25%</span><br />
-					<span class="stat upside modified">Recharge time needed reduced from 60s to <span class="tooltip" title="30s if an ally is extinguished">40s</span></span><br />
-					<span class="stat upside modified">Recharge damage needed reduced from 750 to <span class="tooltip" title="375 damage if an ally is extinguished">500</span></span><br />
-					<span class="stat upside modified">Now applies inferno instead of afterburn</span><br />
-					<span class="stat upside added">Now explodes on ignite, dealing 15 damage to the target and nearby enemies</span><br />
-					<span class="stat downside modified">Minimum damage to trigger increased from 1 to <span class="tooltip" title="accumulative, until gas duration expires">15</span></span><br />
+					<span class="stat upside modified">Reduced recharge time needed from 60s to <span class="tooltip" title="30s if an ally is extinguished">40s</span></span><br />
+					<span class="stat upside modified">Reduced recharge damage needed from 750 to <span class="tooltip" title="375 damage if an ally is extinguished">500</span></span><br />
+					<span class="stat upside added">Explodes on ignite, dealing 15 damage to the target and any <span class="tooltip" title="within ####hu">nearby enemies</span></span><br />
+					<span class="stat upside modified">Changed the gas triggered effect on damage taken from afterburn to <a class="tooltip-link" href="#Inferno">&#128293;Inferno</a></span><br />
+					<span class="stat downside modified">Reduced effect duration from 10s to 7.5s</span><br />
 					<span class="stat downside added">Charge progress resets on respawn</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The gas meter takes an extraordinary amount of effort to fill and the effect is subpar.
+					It is able to apply afterburn to a group of enemies and deny area, but isn't hugely threatening on its own.<br />
 				</p>
 				<p class="stat neutral" style="margin-top: 15px;">
 					<span class="item-name" style="">Solution</span><br />
-					TODO
+					The meter recharge has been greatly improved to help it be more applicable.
+					Applying the inferno effect and a soft version of the 'explode on ignite' upgrade from MvM will also certainly make it more threatening to large groups of enemies.
 				</p>
 			</td>
 		</tr>
@@ -1622,23 +1627,28 @@
 				<img class="item-img" src="../resources/weapons/pyro/Sharpened_Volcano_Fragment.png" />
 				<p>
 					<span class="item-name">Sharpened Volcano Fragment</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">On Hit: Target explodes into an inferno and becomes more susceptible fire</span><br />
+					<span class="stat downside">This weapon deploys 35% slower</span><br />
+					<span class="stat downside">-20% damage penalty</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside modified">Changed on hit effect from afterburn to <a class="tooltip-link" href="#Inferno">&#128293;Inferno</a></span><br />
+					<span class="stat downside added">Increased deploy time from 0.5s to 0.675s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Giving the class that can easily apply afterburn a melee that just applies afterburn on hit is completely redundant and uninteresting.<br />
 				</p>
 				<p class="stat neutral" style="margin-top: 15px;">
 					<span class="item-name" style="">Solution</span><br />
-					TODO
+					The melee was made into a great opener.
+					By applying inferno, your ranged fire damage becomes much more dangerous.
+					As opposed to the Gas Passer, this is limited by range and individual targeting.
 				</p>
 			</td>
 		</tr>
