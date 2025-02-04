@@ -108,8 +108,8 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">Fixed <span class="tooltip" title="Huntsman, Cow Mangler 5000, etc.">some weapons</span> not properly applying the 50% healing reduction upon igniting an enemy</span><br />
-					<span class="stat upside">Afterburn is removed 100% faster by <span class="tooltip" title="Mediguns, Dispensers and Payload Carts">healing sources</span> instead of being removed after a full second</span><br />
+					<span class="stat neutral info">Fixed <span class="tooltip" title="Huntsman, Cow Mangler 5000, etc.">some weapons</span> not properly applying the 50% healing reduction upon igniting an enemy</span><br />
+					<span class="stat upside modified">Afterburn is removed 100% faster by <span class="tooltip" title="Mediguns, Dispensers and Payload Carts">healing sources</span> instead of being removed after a full second</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -136,11 +136,11 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">New bleed duration applications are only applied if greater than the remaining duration</span><br />
-					<span class="stat upside">Now reduces healing from pickups by 50%</span><br />
-					<span class="stat upside">Bleed damage now stacks from the same source</span><br />
-					<span class="stat downside">Bleed stack damage decreased from +4 to +2</span><br />
-					<span class="stat downside">Bleed removed 100% faster by healing sources</span><br />
+					<span class="stat neutral modified">New bleed duration applications are only applied if greater than the remaining duration</span><br />
+					<span class="stat upside added">Reduces healing from pickups by 50%</span><br />
+					<span class="stat upside modified">Bleed damage now stacks from the same source</span><br />
+					<span class="stat downside modified">Bleed stack damage decreased from +4 to +2</span><br />
+					<span class="stat downside added">Bleed dissipates 100% faster by healing sources</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -448,7 +448,7 @@
 
 		<!-- Bonk! Atomic Punch-->
 		<tr id="Bonk!_Atomic_Punch">
-			<td class="item-card">
+			<td class="item-card item-icon icon-WIP">
 				<img class="item-img" src="../resources/weapons/scout/Bonk!_Atomic_Punch.png" />
 				<p>
 					<span class="item-name">Bonk! Atomic Punch</span><br />
@@ -460,14 +460,13 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral modified">Effect no longer gives thirdperson view and applies a distortion effect around the first-person view.</span><br />
-					<span class="stat neutral modified">Initial slowdown (25%) requirement changed from <200 damage taken to >250 damage taken</span><br />
-					<span class="stat neutral modified">Max damage slowdown (50%) requirement changed >250 damage taken to if the buff expires prematurely</span><br />
-					<span class="stat upside added">Effect provides 50% knockback status resistance.</span><br />
-					<span class="stat upside info">Able to switch between weapons during the effect.</span><br />
-					<span class="stat upside modified">Drinking soda no longer requires a 'taunt' to occur, and allows unrestricted movement while drinking.</span><br />
-					<span class="stat downside modified">Consumption time increased to 2.6s from 1.2s</span><br />
-					<span class="stat downside added">Effect ends if 500 damage is taken. Half of incoming sentry damage is accounted for.</span><br />
+					<span class="stat neutral removed">Effect no longer puts the Scout in <span class="tooltip" title="Scout will remain in firstperson view with a distortion effect around the screen border">thirdperson view</span></span><br />
+					<span class="stat neutral modified">Changed slow scaling from '25%-50% based on damage taken' to a static 25% at &#62;250 damage taken and 50% if the effect expires prematurely</span><br />
+					<span class="stat upside modified">Consumption <span class="tooltip" title="Now allowing unrestricted movement while drinking">no longer forces the user into a taunt</span></span><br />
+					<span class="stat upside info">Able to switch between weapons during the effect</span><br />
+					<span class="stat upside added">Effect provides 50% knockback status resistance</span><br />
+					<span class="stat downside modified">Increased consumption time from 1.2s to <span class="tooltip" title="Now matching the time in takes to blow a banner on Soldier">2.645s</span></span><br />
+					<span class="stat downside added">Effect ends if 500 damage is taken with half of incoming sentry damage being accounted for</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -497,7 +496,8 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside modified">Consumption <span class="tooltip" title="Now allowing unrestricted movement while drinking">no longer forces the user into a taunt</span></span><br />
+					<span class="stat downside modified">Increased consumption time from 1.2s to <span class="tooltip" title="Now matching the time in takes to blow a banner on Soldier">2.645s</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -595,7 +595,7 @@
 
 		<!-- Winger -->
 		<tr id="Winger">
-			<td class="item-card">
+			<td class="item-card item-icon icon-WIP">
 				<img class="item-img" src="../resources/weapons/scout/Winger.png" />
 				<p>
 					<span class="item-name">Winger</span><br />
@@ -608,7 +608,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added">+10% faster firing rate</span><br />
+					<span class="stat upside added">Increased firing rate from 0.15s to 0.135s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -685,15 +685,15 @@
 				<p>
 					<span class="item-name">Candy Cane</span><br />
 					<span class="stat upside">On Kill: A moderate health pack is dropped</span><br />
-					<span class="stat downside">Health pickups heal over time</span><br />
+					<span class="stat downside">Health pickups heal over time on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside removed">Removed: 25% explosive damage vulnerability</span><br />
-					<span class="stat upside modified">Healing from packs on kill <span class="tooltip" title="Drops a new health kit type rather than a small one">increased from 20% to 33%</span></span><br />
-					<span class="stat downside added">Health pickups no longer grant immediate health, instead granting <span class="tooltip" title="The health regen ends once the health pack value is healed or until max hp is reached. Picking up multiple health packs does stack the regen.">20 health per second</span></span><br />
+					<span class="stat upside removed">Removed explosive damage vulnerability</span><br />
+					<span class="stat upside modified">Increased health restored by a <span class="tooltip" title="Drops a new health kit type rather than a small one">dropped health pack</span> from 20% to 33%</span><br />
+					<span class="stat downside added">Health pickups no longer grant immediate health on wearer, instead granting <span class="tooltip" title="The health regen ends once the health pack value is healed or until max hp is reached. Picking up multiple health packs stacks the regen.">20 health per second</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -712,7 +712,7 @@
 
 		<!-- Sandman -->
 		<tr id="Sandman">
-			<td class="item-card">
+			<td class="item-card item-icon icon-WIP">
 				<img class="item-img" src="../resources/weapons/scout/Sandman.png" />
 				<p>
 					<span class="item-name">Sandman</span><br />
@@ -726,11 +726,11 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral added">Ball no longer recharges and is instead earned from kills. Starts with 1 ball when spawning.</span><br />
 					<span class="stat upside added"> +100% max misc ammo on wearer</span><br />
-					<span class="stat upside modified">Ball base damage increased from 15 to <span class="tooltip" title="Ball damage now matches melee damage">35</span></span><br />
+					<span class="stat upside modified">Increased ball base damage from 15 to <span class="tooltip" title="Ball damage now matches melee damage">35</span></span><br />
 					<span class="stat upside added">Ball deals mini-crit damage on a moonshot</span><br />
 					<span class="stat downside removed">Ball no longer deals bonus damage at long ranges</span><br />
 					<span class="stat downside removed">Ball no longer slows enemies on impact</span><br />
-					<span class="stat downside modified">Ball lauch rate reduced from 0.25s to <span class="tooltip" title="Ball launch rate now matches melee firing rate">0.5s</span></span><br />
+					<span class="stat downside modified">Reduced ball lauch rate from 0.25s to <span class="tooltip" title="Ball launch rate now matches melee firing rate">0.5s</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -757,7 +757,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside added">Ball deals mini-crit damage on a moonshot</span><br />
+					<span class="stat downside modified">Reduced ball base damage from 15 to <span class="tooltip" title="Ball damage now matches melee damage">12</span></span><br />
+					<span class="stat downside modified">Reduced ball lauch rate from 0.25s to <span class="tooltip" title="Ball launch rate now matches melee firing rate">0.5s</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -928,7 +930,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Damage requirement decreased from 600 to 540</span><br />
+					<span class="stat upside modified">Reduced damage requirement from 600 to 540</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -957,8 +959,8 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Damage requirement decreased from 600 to 540</span><br />
-					<span class="stat upside added">Increases primary ammo capacity from 20 to 28</span><br />
+					<span class="stat upside modified">Reduced damage requirement from 600 to 540</span><br />
+					<span class="stat upside added">Increases max primary ammo from 20 to 28</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -987,7 +989,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat downside modified">Damage requirement increased from 480 to 540</span><br />
+					<span class="stat downside modified">Increased damage requirement from 480 to 540</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1242,8 +1244,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
-					<span class="stat downside modified">Base afterburn duration reduced from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
-					<span class="stat downside added">25% afterburn damage penalty</span><br />
+					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
+					<span class="stat downside added">Reduced afterburn damage from 4 to 3</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1272,7 +1274,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
-					<span class="stat downside modified">Base afterburn duration reduced from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
+					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1343,11 +1345,10 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat subtle">Heavily inspired by Bad Weapon Rehab</span><br />
 					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
 					<span class="stat upside added">Hitting a burning enemy will extinguish them, dealing the remaining afterburn time as bonus damage and dealing mini-crit damage.</span><br />
-					<span class="stat upside added">+25% faster firing speed</span><br />
-					<span class="stat downside modified">Base afterburn duration reduced from 7.5s to <span class="tooltip" title="4.5s on critical hit">3s</span></span><br />
+					<span class="stat upside added">Increased firing rate from 2s to 1.5s</span><br />
+					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="4.5s on critical hit">3s</span></span><br />
 					<span class="stat downside removed">Removed Alt-fire extinguishing mechanic</span><br />
 				</p>
 			</td>
@@ -1375,7 +1376,8 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
+					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1894,12 +1896,12 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral removed">No longer detonates stickybombs at your feet</span><br />
 					<span class="stat neutral info">Stickybomb detonation modified to a <span class="tooltip" title="The nearest stickybomb from your crosshair within the cone is selected for detonation. All stickybombs within 140HU of the selected stickybomb also detonates alongside it.">clump system</span></span><br />
-					<span class="stat upside added">Max charge time reduced from 4s to 2s</span><br />
+					<span class="stat upside added">Reduced max charge time from 4s to 2s</span><br />
 					<span class="stat upside added">Increases the amount of stickybombs fired at once by 1 for every 0.5s charged, <span class="tooltip" title="The charge meter will be split into 3 segments to better visualize count">up to 4</span>. Stickybombs fired together have minimal deviation.</span><br />
-					<span class="stat downside modified">Max stickybombs out reduced from 14 to 12</span><br />
+					<span class="stat downside modified">Reduced max stickybombs out from 14 to 12</span><br />
 					<span class="stat downside added">Stickybombs are destroyed by enemy <span class="tooltip" title="Any explosive that deals damage, including Rocket Launchers, Stickybomb Launcers, etc">explosives</span></span><br />
-					<span class="stat downside removed">No longer able to destroy enemy stickybombs</span><br />
-					<span class="stat downside removed">Firing speed bonus removed</span><br />
+					<span class="stat downside removed">Removed ability to destroy enemy stickybombs</span><br />
+					<span class="stat downside removed">Removed firing speed bonus</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2016,7 +2018,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside added">Charging with a shield grants +30% resistance to all incoming damage</span><br />
 					<span class="stat upside removed">Removed max health penalty</span><br />
-					<span class="stat downside added">Firing rate lowered from 0.8s to 0.96s</span><br />
+					<span class="stat downside added">Reduced firing rate from 0.8s to 0.96s</span><br />
 					<span class="stat downside modified">Collected heads no longer grant bonus movement speed or bonus bash damage</span><br />
 				</p>
 			</td>
@@ -2084,7 +2086,7 @@
 					<span class="stat upside added">Collects heads that grant <span class="tooltip" title="0 heads: 65&#010;1 head: 72&#010;2 heads: 78&#010;3 heads: 85&#010;4 heads: 91">10% bonus melee damage</span> and <span class="tooltip" title="0 heads: 50&#010;1 head: 55&#010;2 heads: 60&#010;3 heads: 65&#010;4 heads: 70">10% shield bash damage</span> each</span><br />
 					<span class="stat upside added">Shield bashes will deal maximum base damage regardless of distance</span><br />
 					<span class="stat upside modified">Movement speed penalty no longer affects speed while charging with a shield</span><br />
-					<span class="stat downside removed">Removed +20% damage bonus</span><br />
+					<span class="stat downside removed">Removed damage bonus</span><br />
 					<span class="stat downside modified">Speed penalty is always active on wearer</span><br />
 				</p>
 			</td>
@@ -2753,7 +2755,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral info">Double firing rate stat is no longer hidden</span><br />
 					<span class="stat downside modified">Reduced shield damage resistance from 66% to 50%</span><br />
-					<span class="stat downside added">Added 20% vulnerability penalty while active</span><br />
+					<span class="stat downside added">20% vulnerability on wearer while active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2861,7 +2863,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral info">Now equippable in the Construction PDA slot</span><br />
+					<span class="stat neutral info">Equippable in the Construction PDA slot</span><br />
 					<span class="stat neutral info">Functions as a stock Construction PDA</span><br />
 				</p>
 			</td>
@@ -2976,9 +2978,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral info">The 'No Headshots' stat is now hidden</span><br />
-					<span class="stat upside added">Bolts now reduce <a href="#Afterburn" class="tooltip-link">&#128293;Afterburn</a> durations by half</span><br />
-					<span class="stat upside added">Bolts now fully remove <a href="#bleed" class="tooltip-link">&#129656;Bleed</a></span><br />
+					<span class="stat neutral info">No Headshots stat is now hidden</span><br />
 					<span class="stat downside modified">Decreased max primary ammo from 38 to 15</span><br />
 				</p>
 			</td>
@@ -3231,7 +3231,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat subtle">Changes apply to all Sniper Rifles</span><br />
 					<span class="stat downside added">Given a base clip of 4 with a <span class="tooltip" title="Does not apply to the firing rate of the rifle">reload time</span> of 2s</span><br />
-					<span class="stat downside modified">Reserve ammo reduced from 25 to <span class="tooltip" title="Net loss of 5 total ammo">16</span></span><br />
+					<span class="stat downside modified">Reduced reserve ammo from 25 to <span class="tooltip" title="Net loss of 5 total ammo">16</span></span><br />
 					<span class="stat downside added">Reloads emit a sound that can be heard from afar</span><br />
 					<span class="stat downside added">While scoped, the scope emits a small lens flare</span><br />
 					<span class="stat downside added">Fires <a href="#Classic" class="tooltip-link">Classic</a>-style tracer rounds</span><br />
@@ -3317,11 +3317,16 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral modified">Focus no longer has a duration and is only gained from scoped kills. On kill, focus is automatically activated.</span><br />
-					<span class="stat upside added">Firing rate improved from 1.5s to 1.2s</span><br />
-					<span class="stat upside added">Clip size increased from 4 to 5</span><br />
-					<span class="stat downside added">Reload rate increased from 2s to 2.4s</span><br />
+					<span class="stat upside added">Increased firing rate from 1.5s to 1.2s</span><br />
+					<span class="stat upside added">Increased clip size from 4 to 5</span><br />
+					<span class="stat downside added">Reduced reload rate from 2s to 2.4s</span><br />
 					<span class="stat downside removed">Focus no longer grants 25% faster charge rate</span><br />
+					<span class="stat item-set-active info">Reworked Focus Ability:</span><br />
+					<span class="stat item-set-inactive">
+						Focus no longer functions around a meter.
+						Instead, earning a kill while scoped in will keep you scoped in for the next shot.
+						Reloading the clip still requires unscoping.
+					</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3349,11 +3354,11 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside added">Reloads automatically when not active</span><br />
-					<span class="stat downside modified"><span class="tooltip" title="Damage with no charge. Max charge damage is unaffected.">Base damage</span> reduced from 50 to 40</span><br />
-					<span class="stat neutral modified">Projectile can only headshot when charged for 0.2s</span><br />
-					<span class="stat neutral modified">Reduced afterburn duration from ignited arrows from 7.5s to 5s</span><br />
-					<span class="stat item-name info">Revamped Headshot Registration:</span><br />
-					<span class="stat neutral">
+					<span class="stat downside modified">Reduced <span class="tooltip" title="Damage with no charge. Max charge damage is unaffected.">base damage</span> from 50 to 40</span><br />
+					<span class="stat downside modified">Arrows only headshot if charged for at least 0.2s</span><br />
+					<span class="stat downside modified">Reduced afterburn duration applied by ignited arrows from 7.5s to 5s</span><br />
+					<span class="stat item-set-active info">Revamped Headshot Registration:</span><br />
+					<span class="stat item-set-inactive">
 						The '<a href="https://youtu.be/jvOaUF1Sl5c?t=86" target="_blank" class="tooltip-link" title="click to open a video of shounic's visualization of the extension check">extension check</a>'
 						has been changed to make a line from the point of contact, following the trajectory of the arrow.
 						If the closest point from the line to the head hitbox is within 4HU apart, a headshot registers.
@@ -3467,10 +3472,10 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added">Max primary ammo increased from <span class="tooltip" title="Base primary ammo on all rifles were reduced from 25 to 16">16</span> to 20</span><br />
-					<span class="stat upside added"><span class="tooltip" title="The Huntsman is unaffect by the change">Sniper Rifle</span> clip sizes increased from 4 to 5</span><br />
-					<span class="stat downside removed">No longer provides flinch immunity</span><br />
-					<span class="stat downside removed">No longer provides knockback resistance</span><br />
+					<span class="stat upside added">Increases max primary ammo from <span class="tooltip" title="Base primary ammo on all rifles were reduced from 25 to 16">16</span> to 20</span><br />
+					<span class="stat upside added">Increases <span class="tooltip" title="The Huntsman is unaffect by the change">primary</span> clip sizes from 4 to 5</span><br />
+					<span class="stat downside removed">Removed flinch immunity on full charge bonus</span><br />
+					<span class="stat downside removed">Removed knockback resistance bonus</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3498,10 +3503,10 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added">Max health increased by 15 (to 140)</span><br />
-					<span class="stat upside added">Debuff durations last 66% as long</span><br />
-					<span class="stat downside removed">No longer provides 50% fire resistance</span><br />
-					<span class="stat downside removed">No longer provides afterburn immunity</span><br />
+					<span class="stat upside added">Increases max health from 125 to 140 on wearer</span><br />
+					<span class="stat upside added">Reduces debuff durations by 33% on wearer</span><br />
+					<span class="stat downside removed">Removed fire resistance bonus</span><br />
+					<span class="stat downside removed">Removed afterburn immunity bonus</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3639,7 +3644,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral info">Benefits from the changes made to <a href="#Bleed" class="tooltip-link">&#129656;Bleed</a></span><br />
-					<span class="stat upside added">Firing rate improved from 0.8s to 0.6s</span><br />
+					<span class="stat upside added">Increased firing rate from 0.8s to 0.6s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3673,8 +3678,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat subtle">Changes apply to all Revolvers</span><br />
-					<span class="stat upside modified"><span class="tooltip" title="The time it takes for your next shot to become perfectly accurate after firing.">Bullet spread recovery time</span> reduced from 1.25s to 1</span><br />
-					<span class="stat upside modified">Bullet spread recovery now occurs gradually</span><br />
+					<span class="stat upside modified">Reduced <span class="tooltip" title="The time it takes for your next shot to become perfectly accurate after firing.">bullet spread recovery time</span> from 1.25s to 1s</span><br />
+					<span class="stat upside modified">Bullet spread recovery now <span class="tooltip" title="Identically to the Ambassador">occurs gradually</span></span><br />
 
 				</p>
 			</td>
@@ -3683,7 +3688,6 @@
 					<span class="item-name">Reason</span><br />
 					This change is meant to aid Spy's self-defense when creating distance from threats.
 					Fall-off damage is enough to keep this from being too beneficial for offensive improvements.<br />
-					To note, this is makes all revolvers match the <a href="#Ambassador" class="tooltip-link">Ambassador</a>'s bullet spread recovery.<br />
 				</p>
 			</td>
 		</tr>
@@ -3758,11 +3762,11 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Attack piercing also applies to sapper armor</span><br />
-					<span class="stat upside modified">Increased damage bonus from 20% to 25%</span><br />
+					<span class="stat upside modified">Attack piercing applies to sapper armor</span><br />
+					<span class="stat upside modified">Increased damage while disguised from 48 to 50</span><br />
 					<span class="stat upside added">Killing an enemy while disguised will not remove your current disguise. The shot fired can still be heard.</span><br />
-					<span class="stat downside modified">Increased firing speed penalty from 20% to 25%</span><br />
-					<span class="stat downside added">Disguise activation time increased from 2s to 3s</span><br />
+					<span class="stat downside modified">Reduced firing speed from 0.6s to 0.625s</span><br />
+					<span class="stat downside added">Increased <span class="tooltip" title="Changing active disguise unaffected">disguise activation time</span> from 2s to 3s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3798,7 +3802,7 @@
 						<span class="tooltip" title="Affected by range and unaffected by damage modifiers">50% of the damage dealt</span>
 						resulting in <span class="tooltip" title="Dealing base damage still results in 15 cloak on hit">8-24% cloak</span>
 					</span><br />
-					<span class="stat downside modified">Base damage reduced from 32 to 30</span><br />
+					<span class="stat downside modified">Reduced base damage from 32 to 30</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3903,9 +3907,9 @@
 					<span class="stat upside modified">Deleveling animation is no longer <span class="tooltip" title="from 3.4s to the normal 1.6s upgrade animation duration">twice as slow</span></span><br />
 					<span class="stat upside modified">Deconstruction is now <span class="tooltip" title="from 10.7s (12s) to 5.3s (6s) upgrade animation duration">twice as fast</span></span><br />
 					<span class="stat upside added">Sapper effect includes outlining the building for your allies that can be seen through walls.</span><br />
-					<span class="stat downside added">-50% sapper health</span><br />
-					<span class="stat item-name info">Reversal of enemy building construction reworked:</span><br />
-					<span class="stat neutral">
+					<span class="stat downside added">Reduced sapper health from 100 to 50</span><br />
+					<span class="stat item-set-active info">Reversal of enemy building construction reworked:</span><br />
+					<span class="stat item-set-inactive">
 						<span class="tooltip" title="Deconstruction and highlight">Sapper effects</span> starts 2s after application.
 						If the building has any metal progress towards upgrading, 25 of that metal is destroy every 0.5s.
 						Upon reaching 0 metal, the building deconstructs into the <span class="tooltip" title="and destroys itself if level 1">previous level</span>.
@@ -3939,7 +3943,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added">Firing rate improved from 0.8s to 0.68s</span><br />
+					<span class="stat upside added">Increased firing rate from 0.8s to 0.68s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3969,7 +3973,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside added">Gain 60 max health (instead of overheal) upon a backstab which drains at a rate of 1.5 health per second</span><br />
-					<span class="stat downside modified">Backstab healing reduced from target's health to 50</span><br />
+					<span class="stat downside modified">Reduced backstab healing from target's health to 50</span><br />
 					<span class="stat downside added">
 						<span class="tooltip" title="Overheal stats:&#010;Base: 90 max -&#62; 120 overheal (105 QF overheal)&#010;On stab: 150 max -&#62; 200 overheal (175 QF overheal)">
 							-33% maximum overheal
@@ -4010,9 +4014,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral modified">Afterburn immunity improved to debuff immunity and duration reduced from 10s to 5s</span><br />
-					<span class="stat upside modified">Fireproof duration increased from 1s to 5s</span><br />
+					<span class="stat upside modified">Increased fireproof duration from 1s to 5s</span><br />
 					<span class="stat upside removed">No longer melts upon being hit by fire</span><br />
-					<span class="stat upside modified">Recharge time improved from 15s to 5s</span><br />
+					<span class="stat upside modified">Reduced recharge time from 15s to 5s</span><br />
 					<span class="stat upside added">
 						While active, can be
 						<span class="tooltip" title="Thrown projectile initially goes in a straight line, then arcs downwards drastically.&#010;Projectile shatters when in hits a surface.">thrown</span>,
@@ -4021,7 +4025,7 @@
 					<span class="stat downside removed">No longer reduces recharge time from ammo packs</span><br />
 					<span class="stat downside added"><span class="tooltip" title="including backstabs that do not kill">Backstabs</span> shatter the knife</span><br />
 					<span class="stat downside added">30% damage vulnerability on wearer while active</span><br />
-					<span class="stat downside modified">Base damage reduced from 40 to 34</span><br />
+					<span class="stat downside modified">Reduced base damage from 40 to 34</span><br />
 
 				</p>
 			</td>
@@ -4060,7 +4064,7 @@
 					<span class="stat neutral info">Applying a disguise while cloaked with the Cloak and Dagger no longer makes you blink</span><br />
 					<span class="stat upside added">Disguises provide 20% damage resistance from ranged sources while uncloaked</span><br />
 					<span class="stat upside removed">Removed cloak drain penalty</span><br />
-					<span class="stat downside added">Added -33% cloak regen rate penalty</span><br />
+					<span class="stat downside added">Reduces cloak regen rate by -33% on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -4090,8 +4094,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat subtle">Changes apply to all Watches</span><br />
-					<span class="stat upside modified">Decreased base time to cloak from 1s to 0.75s</span><br />
-					<span class="stat upside modified">Decreased base time to decloak from 2s to 1.5s</span><br />
+					<span class="stat upside modified">Reduced base time to cloak from 1s to 0.75s</span><br />
+					<span class="stat upside modified">Reduced base time to decloak from 2s to 1.5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -4127,10 +4131,10 @@
 						<span class="tooltip" title="-20% cloak duration">8s</span>
 					</span><br />
 					<span class="stat upside added">
-						Decreased time to decloak from
+						Reduced time to decloak from
 						<span class="tooltip" title="Base time to decloak on all watches improved from 2s to 1.5s">1.5s</span> to 1s
 					</span><br />
-					<span class="stat downside added">Cloak blink time increased from 0.5s to 1s</span><br />
+					<span class="stat downside added">Increased cloak blink time from 0.5s to 1s</span><br />
 				</p>
 			</td>
 			<td class="item-card">

@@ -46,7 +46,7 @@ a {
 }
 .icon-NEW { background-image: url('resources/icons/Alert.png'); }
 .icon-BWR { background-image: url('resources/icons/BWR.png'); }
-.icon-WIP { background-image: url('resources/icons/Work-In-Progress.png'); }
+.icon-WIP { background-image: url('resources/icons/Work-In-Progress_tab.png'); background-size: 60px; background-position: 0px 0px; }
 
 /* Stat colors */
 .stat {
@@ -60,6 +60,9 @@ a {
 .subtle { color: #756B5E; }
 .credits { color: #7AC437; }
 .consumable { color: #00A000; }
+.limited { color: yellow; }
+.item-set-active { color: #DCF42E; }
+.item-set-inactive { color: #9EB617; }
 
 /* Item Quality colors */
 .q-stock { color: #B2B2B2; }
@@ -67,10 +70,10 @@ a {
 .q-vintage { color: #476291; }
 .q-genuine { color: #4D7455; }
 .q-strange { color: #CF6A32; }
-.q-unusual { color: #8650AC ; }
+.q-unusual { color: #8650AC; }
 .q-haunted { color: #38F3AB; }
 .q-collectors { color: #AA0000; }
-.q-community { color: #70B04A ; }
+.q-community { color: #70B04A; }
 .q-valve { color: #A50F79; }
 
 /* Item Grade colors */
