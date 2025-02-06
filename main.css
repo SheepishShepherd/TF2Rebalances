@@ -45,7 +45,6 @@ a {
 	background-position: 7px 7px;
 }
 .icon-NEW { background-image: url('resources/icons/Alert.png'); }
-.icon-BWR { background-image: url('resources/icons/BWR.png'); }
 .icon-WIP { background-image: url('resources/icons/Work-In-Progress_tab.png'); background-size: 60px; background-position: 0px 0px; }
 
 /* Stat colors */
@@ -61,8 +60,8 @@ a {
 .credits { color: #7AC437; }
 .consumable { color: #00A000; }
 .limited { color: yellow; }
-.item-set-active { color: #DCF42E; }
-.item-set-inactive { color: #9EB617; }
+.item-set-active { color: #E1FF0F; }
+.item-set-inactive { color: #95AF0C; }
 
 /* Item Quality colors */
 .q-stock { color: #B2B2B2; }
@@ -118,6 +117,11 @@ a {
 	background-size: 16px;
 	padding-left: 20px;
 }
+.wip {
+	background: url('resources/icons/Work-In-Progress.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
 
 .tooltip {
 	cursor: help;
@@ -130,6 +134,24 @@ a {
 	color: inherit;
 }
 .tooltip-link:hover { color: #FFD700; }
+
+.BWR-link {
+	margin-top: 8px;
+	display: inline-block;
+	line-height: 1;
+	padding: 2px 4px;
+	border: 3px solid #608080;
+	border-right-color: #C04040;
+	border-bottom-color: #C04040;
+	color: #FFFBF0;
+	background-color: #504d56;
+	font-family: 'TF2 Build';
+	font-size: 18px;
+	border-radius: 4px;
+	text-shadow: 2px 2px 3px black;
+	cursor: alias;
+}
+.BWR-link:hover { color: #FFD700; }
 
 .nav-panel {
 	position: fixed;
