@@ -18,18 +18,25 @@ a {
 	user-select: none;
 }
 
+p {
+	padding: 5px;
+	margin: 0.5em 0;
+}
+
 .item-card {
 	border-radius: 10px;
-	background-color: #222222;
+	background-color: #24201B;
 	text-align: center;
 	line-height: 1.6;
-	padding: 7px;
+	padding: 7px 0;
+	margin: 0 7px;
 }
 
 .item-name {
 	font-family: TF2Build;
 	color: #FFD700;
 	font-size: 18px;
+	text-shadow: 2px 1px 1px #24201B;
 }
 
 .item-img {
@@ -40,7 +47,7 @@ a {
 }
 
 .item-icon {
-	background: none no-repeat #222222;
+	background: none no-repeat #24201B;
 	background-size: 44px;
 	background-position: 7px 7px;
 }
@@ -51,7 +58,6 @@ a {
 .stat {
 	font-family: TF2Secondary;
 	font-size: 15px;
-	margin: 0px 7px;
 }
 .upside { color: #99CCFF; }
 .downside { color: #FF4040; }
@@ -145,7 +151,7 @@ a {
 	border-bottom-color: #C04040;
 	color: #FFFBF0;
 	background-color: #504d56;
-	font-family: 'TF2 Build';
+	font-family: TF2Build;
 	font-size: 18px;
 	border-radius: 4px;
 	text-shadow: 2px 2px 3px black;
