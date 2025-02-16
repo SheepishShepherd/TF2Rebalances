@@ -29,7 +29,6 @@ p {
 	text-align: center;
 	line-height: 1.6;
 	padding: 7px 0;
-	margin: 0 7px;
 }
 
 .item-name {
@@ -44,6 +43,10 @@ p {
 	border-radius: 10px;
 	width: 150px;
 	height: 113px;
+}
+
+.item-stats {
+	margin: 0.5em 7px;
 }
 
 .item-icon {
