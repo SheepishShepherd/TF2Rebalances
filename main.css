@@ -126,6 +126,11 @@ p {
 	background-size: 16px;
 	padding-left: 20px;
 }
+.proposal {
+	background: url('resources/icons/Pictogram_question.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
 .wip {
 	background: url('resources/icons/Work-In-Progress.png') no-repeat;
 	background-size: 16px;
