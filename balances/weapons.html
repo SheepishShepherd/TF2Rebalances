@@ -2548,17 +2548,31 @@
 
 		<!-- Buffalo Steak Sandvich -->
 		<tr id="Buffalo_Steak_Sandvich">
-			<td class="item-card">
+			<td class="item-card item-icon icon-WIP">
 				<img class="item-img" src="../resources/weapons/heavy/Buffalo_Steak_Sandvich.png" />
 				<p class="item-stats">
 					<span class="item-name">Buffalo Steak Sandvich</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Eat to regain up to 150 health and gain increased move speed and mini-crits on attacks. Lasts 16 seconds. Effect duration extends on melee kill and expires if melee is holstered.</span><br />
+					<span class="stat upside">Food builds with kills and/or time</span><br />
+					<span class="stat downside">Does not refill from resupply cabinets</span><br />
+					<span class="stat downside">Food meter starts empty</span><br />
+					<span class="stat downside">33% more recharge time</span><br />
+					<span class="stat neutral">Alt-fire: Share a steak with a friend<br />(Medium Health Kit)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat upside modified">Reduced healing penalty from -100% to -50%</span><br />
+					<span class="stat upside removed">Removed damage vulnerability penalty</span><br />
+					<span class="stat upside modified">No longer <span class="tooltip" title="Holstering your melee will end the effect duration prematurely">restricts user to melee</span></span><br />
+					<span class="stat upside added">Effect duration extends by 2s for every melee kill</span><br />
+					<span class="stat upside added">Kills recharge <span class="tooltip" title="8 seconds">20%</span> of the food meter</span><br />
+					<span class="stat downside added">No longer refilled from resupply cabinets</span><br />
+					<span class="stat downside added">No longer refilled from health pickups (hidden)</span><br />
+					<span class="stat downside added">Recharge resets to empty when spawning</span><br />
+					<span class="stat downside added">Increased recharge time from 30s to 40s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2589,10 +2603,11 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral info">'Recharge rate bonus' stat is no longer hidden</span><br />
+					<span class="stat neutral info">While under the effects and above 300 health, overheal particles will appear</span><br />
 					<span class="stat neutral modified">Max health bonus now <span class="tooltip" title="10 health per second, similarly to the Gloves of Running Urgently">builds and decays over 5s</span></span><br />
 					<span class="stat upside added">Reduced consumption duration from 4.3s to 2.3s</span><br />
 					<span class="stat upside added">Effect also <span class="tooltip" title="varies depending on how recently damaged">regenerates up to 10 health per second</span></span><br />
-					<span class="stat downside removed">No longer heals 100 health when eaten</span><br />
+					<span class="stat downside removed">Increased healing penalty from -66% to -100%</span><br />
 					<span class="stat downside modified">Increased recharge time from 10s to 15s</span><br />
 				</p>
 			</td>
