@@ -189,6 +189,44 @@
 			</td>
 		</tr>
 
+		<!-- Shield Attack -->
+		<tr id="Shield_Attack">
+			<td class="item-card item-icon icon-NEW">
+				<img class="item-img" src="../resources/weapons/demoman/Shield_Attack.png" />
+				<p class="item-stats">
+					<span class="item-name">Shield Attack</span><br />
+					<span class="stat neutral">
+						With a shield equipped, pressing the Special Attack key will perform a melee attack with the shield, regardless of what weapon is currently active. The shield attack does increased knockback to target.
+					
+					</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Stats</span><br />
+					<span class="stat subtle">Base stats taken from the Shortstop shove</span><br />
+					<span class="stat neutral info">Deals 35 base damage with stock melee range</span><br />
+					<span class="stat neutral info">Attack is crit-boosted by the Charge ability</span><br />
+					<span class="stat neutral info">Minicrits whenever it would normally crit</span><br />
+					<span class="stat neutral info">Attack interval of 1.5s with a delay of 0.1s</span><br />
+					<span class="stat neutral info">Cannot perform weapon actions (firing, reloading, switching, etc.) until 0.8s after attack occurs</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Problem</span><br />
+					The Spy puts in a lot of effort to infultrate a nest, especially with the presence of a Pyro.
+					Giving the Pyro another means of nullifying Spy is overkill.
+				</p>
+				<p class="stat neutral" style="margin-top: 15px;">
+					<span class="item-name" style="">Solution</span><br />
+					Rather than outright removal of this feature, the effects are lessened.
+					With these changes, the Sentry Gun still remains disabled after the sapper is struck.
+					This allows for the Spy or his team to follow up if an Engineer is not present to remove the sapper.
+				</p>
+			</td>
+		</tr>
+
 		<!-- Malformed Sapper -->
 		<tr id="Malformed_Sapper">
 			<td class="item-card item-icon icon-NEW">
@@ -2191,13 +2229,19 @@
 				<img class="item-img" src="../resources/weapons/demoman/Chargin'_Targe.png" />
 				<p class="item-stats">
 					<span class="item-name">Chargin' Targe</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward, gaining debuff immunity and damaging any enemy you impact with. Gain critical melee damage based on distance charged.</span><br />
+					<span class="stat neutral">Special Attack: Perform a melee attack with the shield</span><br />
+					<span class="stat upside">+50% fire damage resistance on wearer</span><br />
+					<span class="stat upside">+30% explosive damage resistance on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral added">Shields can now <a class="tooltip-link" href="#Shield_Attack">perform an attack</a> with increased knockback by pressing the Special Attack key</span><br />
+					<span class="stat neutral info">Kills with a shield now contribute towards melee-specific on kill effects</span><br />
+					<span class="stat upside added">Immune to new debuff applications while charging</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2287,13 +2331,22 @@
 				<img class="item-img" src="../resources/weapons/demoman/Splendid_Screen.png" />
 				<p class="item-stats">
 					<span class="item-name">Splendid Screen</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward, removing debuffs and damaging any enemy you impact with. Gain critical melee damage based on distance charged.</span><br />
+					<span class="stat neutral">Special Attack: Perform a melee attack with the shield</span><br />
+					<span class="stat upside">+20% fire damage resistance on wearer</span><br />
+					<span class="stat upside">+20% explosive damage resistance on wearer</span><br />
+					<span class="stat upside">+30% increase in charge impact damage</span><br />
+					<span class="stat upside">+50% increase in charge recharge rate</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral added">Shields can now <a class="tooltip-link" href="#Shield_Attack">perform an attack</a> with increased knockback by pressing the Special Attack key</span><br />
+					<span class="stat neutral info">Kills with a shield now contribute towards melee-specific on kill effects</span><br />
+					<span class="stat upside modified">Increased shield attack damage from 35 to 65</span><br />
+					<span class="stat downside modified">Reduced max impact damage from 85 to 65</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2314,13 +2367,22 @@
 				<img class="item-img" src="../resources/weapons/demoman/Tide_Turner.png" />
 				<p class="item-stats">
 					<span class="item-name">Tide Turner</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward, removing debuffs and damaging any enemy you impact with. Gain mini-crit melee damage based on distance charged.</span><br />
+					<span class="stat neutral">Special Attack: Perform a melee attack with the shield</span><br />
+					<span class="stat upside">+15% fire damage resistance on wearer</span><br />
+					<span class="stat upside">+15% explosive damage resistance on wearer</span><br />
+					<span class="stat upside">Full turning control while charging</span><br />
+					<span class="stat upside">Melee kills refill 75% of your charge meter</span><br />
+					<span class="stat downside">Taking 50 damage while shield charging prematurely ends your charge</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral added">Shields can now <a class="tooltip-link" href="#Shield_Attack">perform an attack</a> with increased knockback by pressing the Special Attack key</span><br />
+					<span class="stat neutral info">Kills with a shield now contribute towards <span class="tooltip" title="including the Tide Turner's 75% charge refill">melee-specific on kill effects</span></span><br />
+					<span class="stat downside modified">Taking 50 damage (<span class="tooltip" title="this can be a buff in certain situations, but a net-negative overall, as most interactions with aware players will incur at least 50 damage">accumulative</span>) while shield charging will end the charge abruptly</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -4078,7 +4140,7 @@
 				<p class="item-stats">
 					<span class="item-name">Darwin's Danger Shield</span><br />
 					<span class="stat upside">+15 max health on wearer</span><br />
-					<span class="stat upside">33% faster debuff expiration on wearer</span><br />
+					<span class="stat upside">33% shorter debuffs on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
