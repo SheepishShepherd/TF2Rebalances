@@ -88,6 +88,17 @@ th {
 	background-color: #3C362F;
 }
 
+.upgrade-icon {
+	width: 24px;
+	vertical-align: middle;
+	position: relative;
+	bottom: 1px;
+	border: 1px solid #ECE3CB;
+	border-radius: 4px;
+	margin-bottom: 2px;
+	user-select: none;
+}
+
 /* Canteen Icons */
 .icon-CanteenUpgrade { background-image: url('../resources/mvm/canteen_upgrade.png'); }
 .icon-CanteenRefill { background-image: url('../resources/mvm/canteen_refill.png'); }
