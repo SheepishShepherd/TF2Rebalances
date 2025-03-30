@@ -77,7 +77,7 @@ th {
 .mvm-mini-item {
 	width: 26px;
 	height: 20px;
-	background-color: #1B1B1B;
+	background-color: #3C362F; /* #1B1B1B or #0F0E0C */
 	border-radius: 3px;
 	position: relative;
 	top: 5px;
@@ -85,7 +85,7 @@ th {
 	user-select: none;
 }
 .mvm-mini-item:hover {
-	background-color: #3C362F;
+	background-color: #C9BBA1;
 }
 
 .upgrade-icon {
