@@ -88,6 +88,19 @@ th {
 	background-color: #C9BBA1;
 }
 
+.mvm-mini-class {
+	background-color: transparent !important;
+	width: 20px !important;
+	cursor: help;
+	margin-left: 1px;
+}
+.mvm-mini-allclass {
+	background-color: transparent !important;
+	width: 20px !important;
+	cursor: help;
+	margin-left: 5px;
+}
+
 .upgrade-icon {
 	width: 24px;
 	vertical-align: middle;
@@ -95,7 +108,7 @@ th {
 	bottom: 1px;
 	border: 1px solid #ECE3CB;
 	border-radius: 4px;
-	margin-bottom: 2px;
+	margin: 0 5px 2px 5px;
 	user-select: none;
 }
 
@@ -105,3 +118,11 @@ th {
 .icon-CanteenKritz { background-image: url('../resources/mvm/canteen_kritz.png'); }
 .icon-CanteenUber { background-image: url('../resources/mvm/canteen_uber.png'); }
 .icon-CanteenRecall { background-image: url('../resources/mvm/canteen_recall.png'); }
+
+#upgrade_info {
+	display: none;
+}
+
+:checked + #upgrade_info {
+	display: initial;
+}

@@ -141,6 +141,9 @@ p {
 	cursor: help;
 	border-bottom: 1px dotted;
 }
+label {
+	cursor: pointer !important;
+}
 
 .tooltip-link {
 	cursor: alias;
