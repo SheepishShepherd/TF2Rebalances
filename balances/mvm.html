@@ -608,6 +608,14 @@
 				<p class="stat upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- Weapon modified notice -->
+					<span class="neutral info"><label class="tooltip" title="Click for more info" for="scout_silent_killer">Silent Killer: Critical damage attacks will not aggro robots</label></span>
+					<img class="mvm-mini-item" src="../resources/weapons/scout/Back_Scatter.png" title="Back Scatter" /><br />
+					<input type="checkbox" id="scout_silent_killer" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Robots can still aggro onto Scout from attacking while within FOV</span><br />
+					</span>
+
 					<!-- +20% reload speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_CrockBlock.png" /><span>+20% reload speed</span>
 					<span class="credits">[$250]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 1 for all listed weapons">[&#9679;]</span>
@@ -1836,6 +1844,9 @@
 				<p class="stat upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- Weapon modified notice -->
+					<span class="neutral info">Silent Killer: Non-giant robots take twice as long to aggro from attacks <img class="mvm-mini-item" src="../resources/weapons/sniper/Hitman's_Heatmaker.png" title="Hitman's Heatmaker" /></span><br />
+
 					<!-- Hitman Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Engineer_FrontierJustice.png" /><label class="tooltip" title="Click for more info" for="sniper_hitman_specialist">Hitman Specialist</label>
 					<span class="credits tooltip" title="Cost increased from $350 to $500 for all listed weapons">[$500]</span> <span class="q-strange tooltip" title="Purchase points increased from 3 to 5 for all listed weapons">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
@@ -2131,6 +2142,17 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<p class="stat upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
+
+					<!-- Weapon modified notice -->
+					<span class="neutral info"><label class="tooltip" title="Click for more info" for="spy_silent_killer">Weapons with Silent Killer attributes will reduce robot aggro</label></span>
+					<img class="mvm-mini-item" src="../resources/weapons/spy/Your_Eternal_Reward.png" title="Your Eternal Reward" /><br />
+					<input type="checkbox" id="spy_silent_killer" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral modified" style="margin-left: 15px;">Non-giant robots do not aggro from backstab kills</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">All robots take twice as long to aggro from backstabs that do not kill</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Robots can still aggro (and are not fooled) by attacking while within FOV</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Disguise time on backstab kills changed from 2s to instantaneous</span><br />
+					</span>
 
 					<!-- Assassin Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Spy_DeepUndercover.png" /><label class="tooltip" title="Click for more info" for="spy_assassin_specialist">Assassin Specialist</label>
