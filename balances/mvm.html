@@ -1067,14 +1067,30 @@
 				<p class="stat upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
-					<!-- Destroys sappers -->
-					<img class="upgrade-icon" src="../resources/achievements/Engineer_FistfulOfSappers.png" /><span class="tooltip" title="Added an upgrade for all listed weapons to remove sappers on top of malforming them">Damage removes Sappers</span>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					<!-- Weapon Change Notice -->
+					<span class="neutral added"><label class="neutral tooltip" title="Click for more info" for="pyro_destroy_sappers">Weapons that malform sappers will instead destroy them</label></span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Homewrecker.png" title="Homewrecker" />
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Neon_Annihilator.png" title="Neon Annihilator" />
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Powerjack.png" title="Powerjack" />
 					</span><br />
+					<input type="checkbox" id="pyro_destroy_sappers" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Destroys them in one hit, regardless of damage dealt</span><br />
+					</span>
+
+					<!-- +25% damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><label class="tooltip" title="Click for more info" for="pyro_hammer_damage">+25% damage</label>
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Homewrecker.png" title="Homewrecker" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Neon_Annihilator.png" title="Neon Annihilator" />
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Powerjack.png" title="Powerjack" />
+					</span><br />
+					<input type="checkbox" id="pyro_hammer_damage" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral added" style="margin-left: 15px;">Hammers benefit from a damage upgrade, similarly to swords</span><br />
+					</span>
 
 					<!-- +25 health on kill -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
