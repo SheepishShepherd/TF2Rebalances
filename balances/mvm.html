@@ -22,8 +22,8 @@
 		<tr>
 			<td colspan="2"><a class="nav-btn" href="#Rewards">Rewards</a></td>
 			<td colspan="2"><a class="nav-btn" href="#Robots">Robots</a></td>
-			<td colspan="2"><a class="nav-btn" href="#Credits">Credits</a></td>
 			<td colspan="2"><a class="nav-btn" href="#Canteens">Canteens</a></td>
+			<td colspan="2"><a class="nav-btn" href="#Upgrade_Station">Upgrades</a></td>
 		</tr>
 	</table>
 
@@ -346,62 +346,6 @@
 		</tr>
 	</table>
 
-	<!-- MvM Credits -->
-	<table id="Credits">
-		<tr>
-			<th colspan="3" style="background-color: #B2B2B2;">Credits System</th>
-		</tr>
-
-		<!-- Power Up Canteen -->
-		<tr id="powerupcanteen">
-			<td class="item-card">
-				<img class="item-img" src="../resources/mvm/Credits_Medium.png" />
-				<p>
-					<span class="item-name">Credits</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">TODO</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Reason</span><br />
-					TODO
-				</p>
-			</td>
-		</tr>
-
-		<!-- Upgrade Refund Credit Pool -->
-		<tr id="Upgrade_Refund_Credit_Pool">
-			<td class="item-card">
-				<img class="item-img" src="../resources/mvm/Credits_Small.png" />
-				<p>
-					<span class="item-name">Refund Credit Pool</span><br />
-					<span class="stat neutral">Each player has an upgrade refund credit pool, which allows them to refund any singular upgrade point if the cost is not larger than the refund pool</span><br />
-					<span class="stat upside">Refund pools carry over into every wave</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">The refund pool amount will appear in the bottom right corner of the upgrade station HUD</span><br />
-					<span class="stat upside">After wave completion, all bonus credits earned and 25% of credits collected are added to the refund pool</span><br />
-					<span class="stat downside">Refunding an upgrade reduces the pool by the upgrade cost.</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Reason</span><br />
-					This allows some upgrade flexibility while keeping the challenge of the waves/missions.
-					For instance, some upgrades such as fire resistance, can be refunded if the future waves do not require it.
-				</p>
-			</td>
-		</tr>
-	</table>
-
 	<!-- Canteens -->
 	<table id="Canteens">
 		<tr>
@@ -562,6 +506,63 @@
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
 					TODO
+				</p>
+			</td>
+		</tr>
+	</table>
+
+	<!-- Upgrade Station -->
+	<table id="Upgrade_Station">
+		<tr>
+			<th colspan="3" style="background-color: #B2B2B2;">Upgrade Station</th>
+		</tr>
+
+		<!-- Power Up Canteen -->
+		<tr id="powerupcanteen">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Credits_Medium.png" />
+				<p>
+					<span class="item-name">Upgrades</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Upgrade values will stack additively with existing upsides/downsides</span><br />
+					<span class="stat neutral">Example: The Winger's clip size would go from 5->8/10/12/15 to 5->11/17/23</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
+		<!-- Upgrade Refund Credit Pool -->
+		<tr id="Upgrade_Refund_Credit_Pool">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Credits_Small.png" />
+				<p>
+					<span class="item-name">Refund Credit Pool</span><br />
+					<span class="stat neutral">Each player has an upgrade refund credit pool, which allows them to refund any singular upgrade point if the cost is not larger than the refund pool</span><br />
+					<span class="stat upside">Refund pools carry over into every wave</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">The refund pool amount will appear in the bottom right corner of the upgrade station HUD</span><br />
+					<span class="stat upside">After wave completion, all bonus credits earned and 25% of credits collected are added to the refund pool</span><br />
+					<span class="stat downside">Refunding an upgrade reduces the pool by the upgrade cost.</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					This allows some upgrade flexibility while keeping the challenge of the waves/missions.
+					For instance, some upgrades such as fire resistance, can be refunded if the future waves do not require it.
 				</p>
 			</td>
 		</tr>
