@@ -16,7 +16,7 @@
 
 .title-banner {
 	width: fit-content;
-	margin: 0px auto 50px auto;
+	margin: 50px auto;
 }
 
 .menu {
@@ -24,7 +24,7 @@
 	height: fit-content;
 	border-radius: 4px;
 	background-color: #37322C;
-	margin: auto;
+	margin: 0 auto 50px auto;
 	padding: 5px 10px;
 }
 

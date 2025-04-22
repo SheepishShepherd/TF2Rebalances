@@ -126,3 +126,17 @@ th {
 :checked + #upgrade_info {
 	display: initial;
 }
+
+.mini-cosmetic {
+	width: 75px;
+	height: 56px;
+	background-color: #3C362F;
+	border-radius: 8px;
+	position: relative;
+	top: 5px;
+	cursor: pointer;
+	user-select: none;
+}
+.mini-cosmetic:hover {
+	background-color: #C9BBA1;
+}
