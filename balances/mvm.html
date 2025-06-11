@@ -332,8 +332,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral">&#129656;Bleed is stronger against robots</span><br />
-					<span class="stat upside">Bleed duration from any weapon is set to 15s</span><br />
-					<span class="stat upside">Bleed stack damage increased from 2 to 4</span><br />
+					<span class="stat upside">Increased bleed duration from any weapon by <span class="tooltip" title="in most instances from 5s to 15s">200%</span></span><br />
+					<span class="stat upside">Increased bleed stack damage by <span class="tooltip" title="from 2 to 4">100%</span></span><br />
 					<span class="stat downside">Bleed is removed if the robot is <span class="tooltip" title="by Medic robots or heal on hit/kill">healed</span></span><br />
 				</p>
 			</td>
@@ -398,13 +398,13 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">Unchanged</span><br />
+					<span class="stat downside">Cost increased from $100 to $125</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					TODO
+					Making this canteen more expensive will make it dip into the player's upgrade credits pool a little more while maintaining its strong power.
 				</p>
 			</td>
 		</tr>
@@ -554,8 +554,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral">The refund pool amount will appear in the bottom right corner of the upgrade station HUD</span><br />
-					<span class="stat upside">After wave completion, all bonus credits earned and 25% of credits collected are added to the refund pool</span><br />
-					<span class="stat downside">Refunding an upgrade reduces the pool by the upgrade cost.</span><br />
+					<span class="stat upside">After wave completion, 25% of credits collected and all bonus credits earned are added to the refund pool</span><br />
+					<span class="stat downside">Refunding any upgrade reduces the pool by its cost</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -717,7 +717,7 @@
 						<span class="neutral added" style="margin-left: 15px;">Ball stuns robots based on distance (2-7s)</span><br />
 						<span class="neutral added" style="margin-left: 15px;">Giant robots are instead slowed by 35%</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Giant robots are unable to move for 7s if hit by a moonshot (unchanged)</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Note: The innate ability to 'stun' giant robots with moonshots was removed</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Note: The innate ability to 'stun' giant robots with moonshots was removed</span><br />
 					</span>
 
 					<!-- +15% recharge rate -->
@@ -1274,6 +1274,7 @@
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
 					<span class="stat downside">-66% primary damage penalty vs Tanks</span><br />
+					<span class="stat downside">-40% primary damage penalty vs Giant Robots</span><br />
 				</p>
 			</td>
 
@@ -1305,7 +1306,7 @@
 
 					<!-- Metal Shredder -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_PermanentRevolution.png" /><label class="tooltip" title="Click for more info" for="heavy_metal_shredder">Metal Shredder</label>
-					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span class="credits">[$500]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
@@ -1316,12 +1317,15 @@
 					<input type="checkbox" id="heavy_metal_shredder" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Grants a RAGE meter that can be activated with the Reload Key when full</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Building RAGE to full requires 4000/3500/3000 damage</span><br />
-						<span class="neutral added" style="margin-left: 15px;">RAGE increases damage ramp-up by 25% (175%)</span><br />
-						<span class="neutral added" style="margin-left: 15px;">RAGE fires +2 additional bullets per shot</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Building RAGE to full requires 2400/1800/1200 damage</span><br />
+						<span class="neutral info" style="margin-left: 30px;">or 6000/4500/3000 damage against Tanks</span><br />
+						<span class="neutral info" style="margin-left: 15px;">RAGE effect has a duration of 5s</span><br />
+						<span class="neutral added" style="margin-left: 15px;">RAGE causes bullets to penetrate robots up to medium range (base damage)</span><br />
+						<span class="neutral added" style="margin-left: 15px;">RAGE fires +2 additional bullets per shot (50% damage increase)</span><br />
 						<span class="neutral added" style="margin-left: 15px;">RAGE decreases accuracy by 35%/25%/15% (updates crosshair size)</span><br />
 					</span>
 					<span class="downside" style="margin-left: 30px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/Scout_FirstBlood.png" /><span>Knockback Rage</span><br />
+					<span class="downside" style="margin-left: 30px;">&#x21AA; Removes</span><img class="upgrade-icon" src="../resources/achievements/Sniper_PartingShot.png" /><span>Projectile Penetration</span><br />
 
 					<!-- +15% Firing Speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_CrimeAndPunishment.png" /><label class="tooltip" title="Click for more info" for="heavy_firing_speed">+15% firing speed</label>
@@ -1336,9 +1340,25 @@
 					<input type="checkbox" id="heavy_firing_speed" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral modified" style="margin-left: 15px;">Increased firing speed per point from 10% to 15%</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Note: This fixes some purchase points not accurately increasing firing speed</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Note: This fixes some purchase points not accurately increasing firing speed</span><br />
 						<span class="neutral info" style="margin-left: 30px;">Attack interval per point: 0.090s/0.075s/0.060s (0.105s at base <img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" /> )</span><br />
 						<span class="neutral info" style="margin-left: 30px;">Attack interval per point: 0.120s/0.105s/0.090s (0.135s at base <img class="mvm-mini-item" src="../resources/weapons/heavy/Tomislav.png" title="Tomislav" /> )</span><br />
+					</span>
+
+					<!-- Armor Penetration -->
+					<img class="upgrade-icon" src="../resources/achievements/General_SentryGunner_lowres.png" /><label class="tooltip" title="Click for more info" for="heavy_armor_penetration">Armor Penetration</label>
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Natascha.png" title="Natascha" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Tomislav.png" title="Tomislav" />
+					</span><br />
+					<input type="checkbox" id="heavy_armor_penetration" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral modified" style="margin-left: 15px;">Reduces the damage penalty vs Giant Robots by 25% per point (10% damage)</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Minigun damage per point: -30%/-20%/-10%/0%</span><br />
 					</span>
 
 					<!-- Destroy Projectiles -->
@@ -1357,6 +1377,28 @@
 						<span class="neutral modified" style="margin-left: 15px;">Cooldown for projectile deletion changed from 0.3/0.1s to 0.3/0.15s</span><br />
 						<span class="neutral added" style="margin-left: 15px;">The fire ring from the <img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" /> can also destroy projectiles</span><br />
 					</span>
+
+					<!-- +50% ammo capacity -->
+					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+50% ammo capacity</span>
+					<span class="credits tooltip" title="Cost increased from $250 to $300 for all listed weapons">[$300]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Natascha.png" title="Natascha" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Tomislav.png" title="Tomislav" />
+					</span><br />
+
+					<!-- +25 health on kill -->
+					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $250 for all listed weapons">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Natascha.png" title="Natascha" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Tomislav.png" title="Tomislav" />
+					</span><br />
 				</p>
 			</td>
 		</tr>
@@ -1600,7 +1642,7 @@
 
 					<!-- Canteen Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/MvM_Undelete_lowres.png" /><label class="tooltip" title="" for="engineer_canteen_specialist">Canteen Specialist</label>
-					<span class="credits tooltip" title="Cost increased from $200 to $500">[$500]</span> <span class="q-strange tooltip" title="Purchase points decreased from 3 to 1">[&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $350">[$350]</span> <span class="q-strange tooltip" title="Purchase points decreased from 3 to 2">[&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/mvm/canteen_item.png" title="Canteen" />
 					</span><br />
@@ -1608,9 +1650,10 @@
 					<span id="upgrade_info">
 						<span class="neutral removed" style="margin-left: 15px;">Engineer now requires this upgrade to share canteen bonuses with his Sentry Gun</span><br />
 						<span class="neutral info" style="margin-left: 15px;">Canteen costs now update in real time, but lock the ability to refund this upgrade</span><br />
-						<span class="neutral info" style="margin-left: 15px;">To unlock, use or refund all canteens or cancel the final purchase</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">Canteen bonus duration changed from 1/2/3s to 3s</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">Canteen cost reduction changed from 10/20/30 to 50</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Refunding this upgrade only becomes available when the canteen is empty</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Canteen cost reduction changed from 10/20/30 to 25/50</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Each point increases maximum canteens held by +1 (up to 5 canteens)</span><br />
+						<span class="neutral removed" style="margin-left: 15px;">Removed the canteen duration bonus</span><br />
 					</span>
 
 					<!-- +15% Sentry Firing Speed -->
@@ -1622,9 +1665,9 @@
 					<input type="checkbox" id="engineer_sentry_firing_speed" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral modified" style="margin-left: 15px;">Increased firing speed per point from 10% to 15%</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Note: This fixes some purchase points not accurately increasing firing speed</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Attack interval per point: 0.120s/0.090s/0.075s (0.135s at base <img class="mvm-mini-item" src="../resources/weapons/engineer/Toolbox.png" title="Sentry Guns" /> )</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Firing rate bonus caps at 0.060s for the <img class="mvm-mini-item" src="../resources/weapons/engineer/Wrangler.png" title="Wrangler" /></span><br />
+						<span class="neutral info" style="margin-left: 30px;">Note: This fixes some purchase points not accurately increasing firing speed</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Attack interval per point: 0.120s/0.090s/0.075s (0.135s at base <img class="mvm-mini-item" src="../resources/weapons/engineer/Toolbox.png" title="Sentry Guns" /> )</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Firing rate bonus caps at 0.060s for the <img class="mvm-mini-item" src="../resources/weapons/engineer/Wrangler.png" title="Wrangler" /></span><br />
 					</span>
 
 					<!-- 2-way Teleporters -->
@@ -1777,7 +1820,7 @@
 
 					<!-- Canteen Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/MvM_German_Engineering_lowres.png" /><label class="tooltip" title="Click for more info" for="medic_canteen_specialist">Canteen Specialist</label>
-					<span class="credits tooltip" title="Cost increased from $200 to $500">[$500]</span> <span class="q-strange tooltip" title="Purchase points decreased from 3 to 1">[&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $350">[$350]</span> <span class="q-strange tooltip" title="Purchase points decreased from 3 to 2">[&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/mvm/canteen_item.png" title="Canteen" />
 					</span><br />
@@ -1785,9 +1828,79 @@
 					<span id="upgrade_info">
 						<span class="neutral info" style="margin-left: 15px;">Patients now see which and how many canteens you are holding via the Healer HUD</span><br />
 						<span class="neutral info" style="margin-left: 15px;">Canteen costs now update in real time, but lock the ability to refund this upgrade</span><br />
-						<span class="neutral info" style="margin-left: 15px;">To unlock, use or refund all canteens or cancel the final purchase</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">Canteen bonus duration changed from 1/2/3s to 3s</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">Canteen cost reduction changed from 10/20/30 to 50</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Refunding this upgrade only becomes available when the canteen is empty</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Canteen cost reduction changed from 10/20/30 to 25/50</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Each point increases maximum canteens held by +1 (up to 5 canteens)</span><br />
+						<span class="neutral removed" style="margin-left: 15px;">Removed the canteen duration bonus</span><br />
+					</span>
+
+					<!-- Projectile Shield -->
+					<img class="upgrade-icon" src="../resources/achievements/Demoman_Bravehurt.png" /><label class="tooltip" title="Click for more info" for="medic_projectile_shield">Projectile Shield</label>
+					<span class="credits tooltip" title="Cost increased from $300 to $350">[$350]</span> <span class="q-strange">[&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
+					</span><br />
+					<input type="checkbox" id="medic_projectile_shield" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral modified" style="margin-left: 15px;">Shield no longer doubles its attack interval with the second point</span><br />
+					</span>
+
+					<!-- +2s Uber Duration -->
+					<img class="upgrade-icon" src="../resources/achievements/modified/Sniper_BeauxAndArrows.png" /><span>+2s &#220;ber duration</span>
+					<span class="credits tooltip" title="Cost increased from $250 to $300">[$300]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
+					</span><br />
+
+					<!-- +25% ubercharge rate -->
+					<img class="upgrade-icon" src="../resources/achievements/Medic_MedicalBreakthrough.png" /><span>+25% &#220;bercharge rate</span>
+					<span class="credits tooltip" title="Cost decreased from $300 to $250">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
+					</span>
+					<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
+					</span>
+					<span class="q-strange">[&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
+					</span><br />
+
+					<!-- +25% max overheal
+	<img class="upgrade-icon" src="../resources/achievements/Scout_DoctoringTheBall.png" /><label class="tooltip" title="Click for more info" for="medic_max_overheal">+25% max overheal</label>
+	<span class="credits">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+	<span style="user-select: none;">
+		<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
+		<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
+		<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
+		<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
+	</span><br />
+	<input type="checkbox" id="medic_max_overheal" style="display: none;" />
+	<span id="upgrade_info">
+		<span class="neutral modified" style="margin-left: 15px;">&#220;berCharge build rate is halved if the patient is at >142.5% health at all levels</span><br />
+	</span> -->
+					<!-- +25% heal rate -->
+					<img class="upgrade-icon" src="../resources/achievements/Heavy_RedistributionOfHealth.png" /><label class="tooltip" title="Click for more info" for="medic_heal_rate">+25% heal rate</label>
+					<span class="credits">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
+					</span><br />
+					<input type="checkbox" id="medic_heal_rate" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral removed" style="margin-left: 15px;">No longer provides +25% faster revive rate</span><br />
+						<span class="neutral removed" style="margin-left: 15px;">No longer increases self-regen rate</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Quick-Fix still has increased self healing during its &#220;bercharge</span><br />
 					</span>
 				</p>
 			</td>
@@ -1870,7 +1983,7 @@
 						<span class="neutral added" style="margin-left: 15px;">No unscoping required until reload (with no charge delay between shots)</span><br />
 						<span class="neutral added" style="margin-left: 15px;">+20% bonus damage per point</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Explosive Headshot damage changed from 150/170/190 to base damage x 2</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">Slow strength changed from 50%/65%/80% to 65%</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Slow strength changed from 50%/65%/80% to 35% at all levels</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Slow duration changed from 2/3/4s to 2-5s (scaling with charge level)</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Explosion damage applies Jarate to robots for 2s with the <img class="mvm-mini-item" src="../resources/weapons/sniper/Sydney_Sleeper.png" title="Sydney Sleeper" /></span><br />
 					</span>
