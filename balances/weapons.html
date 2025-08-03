@@ -274,6 +274,54 @@
 			<th colspan="3"><img class="class-icon" src="../resources/class/emblem_multiclass.png" />Multi-class</th>
 		</tr>
 
+		<!-- Shotgun -->
+		<tr id="Shotgun">
+			<td class="item-card">
+				<img class="item-img" src="../resources/weapons/multiclass/Shotgun.png" />
+				<p class="item-stats">
+					<span class="item-name">Shotgun</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat downside modified">Reduced max ammo from 32 to 24 for Engineer</span><br />
+					<span class="stat downside modified">Reduced max ammo from 32 to 18 for all other classes</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Shotguns are typically used as a backup damage and are not meant to be a primary source of damage.
+					Even so, the shotgun's ammo pool size is overabundant, albiet mostly inconsequential.
+					Lowering them may prove to limit on excessive usage without being too egregious.<br />
+				</p>
+			</td>
+		</tr>
+
+		<!-- Pistol -->
+		<tr id="Pistol">
+			<td class="item-card">
+				<img class="item-img" src="../resources/weapons/multiclass/Pistol.png" />
+				<p class="item-stats">
+					<span class="item-name">Pistol</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat downside modified">Reduced max ammo from 200 to 48 for Engineer</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					Engineer hardly needs nearly 17 clips of pistol ammo.
+					This was reduced to give one more clip than Scout to disuade excessive usage.<br />
+				</p>
+			</td>
+		</tr>
+
 		<!-- B.A.S.E. Jumper -->
 		<tr id="B.A.S.E._Jumper">
 			<td class="item-card">
@@ -2765,7 +2813,7 @@
 					<span class="stat upside modified">No longer <span class="tooltip" title="Holstering your melee will end the effect duration prematurely">restricts user to melee</span></span><br />
 					<span class="stat upside added">Effect duration extends by 2s for every melee kill</span><br />
 					<span class="stat upside added">Remaining recharge time reduced by 8s on kill</span><br />
-					<span class="stat downside added">No longer refilled from resupply cabinets</span><br />
+					<span class="stat downside added">No longer refilled by resupply cabinets</span><br />
 					<span class="stat downside added">No longer refilled from health pickups (hidden)</span><br />
 					<span class="stat downside added">Recharge progress resets on respawn</span><br />
 					<span class="stat downside added">Increased recharge time from 30s to 40s</span><br />
@@ -3120,8 +3168,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Increased max health from 125 to 150</span><br />
-					<span class="stat downside added">Decreased upgrade rate by 20% (from 25 to 20) for buildings not owned by you</span><br />
+					<span class="stat downside added">Decreased upgrade rate for buildings not owned by you from 25 to 20 per swing</span><br />
 					<span class="stat downside added">Construction hit speed boost decreased by 50% for buildings not owned by you</span><br />
 				</p>
 			</td>
@@ -3148,9 +3195,10 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Reduced construction time for dispensers and teleporters from 21s to <span class="tooltip" title="5s if wrench boosted (4.5s with the Jag)">12.5s</span></span><br />
-					<span class="stat upside modified"><span class="tooltip" title="except the Combat Mini-sentry Gun">All buildings</span> begin construction with 15 health</span><br />
-					<span class="stat downside modified">Increased cost of teleporters from 50 to 70</span><br />
+					<span class="stat upside modified">All buildings begin construction with 25 health</span><br />
+					<span class="stat neutral info">The Combat Mini-sentry Gun remains at 50 health</span><br />
+					<span class="stat upside modified">Reduced base construction time for dispensers and teleporters from 21s to 12.5s</span><br />
+					<span class="stat downside modified">Reduced redeployment construction bonus for dispensers and teleporters from +300% to +100%</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3171,13 +3219,17 @@
 				<img class="item-img" src="../resources/weapons/engineer/Frontier_Justice.png" />
 				<p class="item-stats">
 					<span class="item-name">Frontier Justice</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">When your sentry gun is destroyed, gain 2 revenge crits for every sentry kill and 1 for every sentry assist</span><br />
+					<span class="stat downside">This weapon deploys 20% slower</span><br />
+					<span class="stat downside">-50% clip size</span><br />
+					<span class="stat neutral">Revenge crits are lost on death</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat downside added">Increased deploy speed from 0.5s to 0.6s</span><br />
+					<span class="stat downside modified">Reduced max revenge crits from 35 to <span class="tooltip" title="matching max ammo capacity">24</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3198,13 +3250,21 @@
 				<img class="item-img" src="../resources/weapons/engineer/Rescue_Ranger.png" />
 				<p class="item-stats">
 					<span class="item-name">Rescue Ranger</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Fires special bolts that can repair friendly buildings</span><br />
+					<span class="stat neutral">Alt-Fire: Consume 100 metal to pick up and haul a targeted building from long range</span><br />
+					<span class="stat upside">4-to-1 health-to-metal ratio when repairing buildings</span><br />
+					<span class="stat downside">-33% clip size</span><br />
+					<span class="stat downside">-33% max primary ammo on wearer</span><br />
+					<span class="stat downside">Does not refill from resupply cabinets</span><br />
+					<span class="stat downside">Self mark for death when hauling buildings</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">Restructered stat card</span><br />
+					<span class="stat neutral info">Reduced ammo penalty to keep count at 16</span><br />
+					<span class="stat downside added">Ammo no longer refilled by resupply cabinets</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3252,13 +3312,18 @@
 				<img class="item-img" src="../resources/weapons/engineer/Widowmaker.png" />
 				<p class="item-stats">
 					<span class="item-name">Widowmaker</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">On Hit: Damage dealt is returned as metal</span><br />
+					<span class="stat upside">No reload necessary</span><br />
+					<span class="stat upside">+10% firing rate vs your sentry's target</span><br />
+					<span class="stat downside">Uses metal for ammo, consuming 30 metal per shot</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">Can be deployed while out of metal</span><br />
+					<span class="stat neutral info">No longer holsters while out of metal</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3341,13 +3406,21 @@
 				<img class="item-img" src="../resources/weapons/engineer/Eureka_Effect.png" />
 				<p class="item-stats">
 					<span class="item-name">Eureka Effect</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Press your reload key to choose between teleporting to spawn or your exit teleporter</span><br />
+					<span class="stat upside">Dispensers constructed have +200% increased range</span><br />
+					<span class="stat upside">-50% metal cost when upgrading or constructing dispensers and teleporters</span><br />
+					<span class="stat downside">Construction hit speed boost decreased by 66%</span><br />
+					<span class="stat downside">20% less metal from pickups and dispensers</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">When choosing to teleport to an inactive exit, the exit briefly becomes active until the teleport is complete</span><br />
+					<span class="stat upside added">Increased range for newly constructed dispensers with this wrench active from 64hu to 192hu</span><br />
+					<span class="stat upside added">Extended 50% metal cost reductions to dispensers</span><br />
+					<span class="stat downside modified">Reduced wrench build boost from +75% to +50%</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3364,13 +3437,14 @@
 
 		<!-- Gunslinger -->
 		<tr id="Gunslinger">
-			<td class="item-card item-icon icon-WIP">
+			<td class="item-card item-icon">
 				<img class="item-img" src="../resources/weapons/engineer/Gunslinger.png" />
 				<p class="item-stats">
 					<span class="item-name">Gunslinger</span><br />
-					<span class="stat upside">-30 metal required for building costs</span><br />
+					<span class="stat upside">+25 max health on wearer</span><br />
 					<span class="stat upside">Building construction speed increased by 150%</span><br />
 					<span class="stat upside">No speed penalty when hauling buildings</span><br />
+					<span class="stat upside">Third successful punch in a row always crits</span><br />
 					<span class="stat downside">Replaces the Sentry with a Mini-Sentry</span><br />
 				</p>
 			</td>
@@ -3378,10 +3452,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat upside added">Decreases initial building costs by <span class="tooltip" title="Combat Mini-sentry cost unaffected (100 metal)&#010;Dispenser cost from 100 to 70 metal&#010;Teleporter cost from 70 to 40 metal">30</span></span><br />
-					<span class="stat upside modified">Bonus build speed now applies to all buildings</span><br />
-					<span class="stat upside added">No speed penalty when hauling buildings</span><br />
-					<span class="stat downside removed">Removed max health bonus</span><br />
+					<span class="stat upside added">Increased movement speed while hauling buildings from 90% (270hu/s) to 100% (300hu/s)</span><br />
+					<span class="stat upside modified">Extended build speed bonus to all buildings</span><br />
+					<span class="stat downside removed">Removed the ability to triple hit combo</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3434,6 +3507,10 @@
 				<img class="item-img" src="../resources/weapons/engineer/Southern_Hospitality.png" />
 				<p class="item-stats">
 					<span class="item-name">Southern Hospitality</span><br />
+					<span class="stat neutral">+25% sentry gun max ammo capacity</span><br />
+					<span class="stat neutral">+25% dispenser max metal capacity</span><br />
+					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">TODO</span><br />
 					<span class="stat neutral">TODO</span><br />
 				</p>
 			</td>
