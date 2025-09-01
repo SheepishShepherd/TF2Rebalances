@@ -110,6 +110,11 @@ p {
 .a-orange-dark { background-color: #B46032; }
 
 /* Changes stat icons */
+.nochange {
+	background: url('resources/icons/Pictogram_check.png') no-repeat;
+	background-size: 16px;
+	padding-left: 20px;
+}
 .modified {
 	background: url('resources/icons/Pictogram_neutral.png') no-repeat;
 	background-size: 16px;
@@ -153,6 +158,7 @@ label {
 	cursor: pointer;
 	border-bottom: 1px dotted;
 	color: inherit;
+	user-select: text;
 }
 .tooltip-link:hover { color: #FFD700; }
 

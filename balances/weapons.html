@@ -59,8 +59,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -92,8 +92,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -101,7 +101,7 @@
 
 		<!-- Triple hit Combo -->
 		<tr id="Triple_Hit_Combo">
-			<td class="item-card item-icon">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/heavy/Fists.png" />
 				<p class="item-stats">
 					<span class="item-name">Triple Hit Combo</span><br />
@@ -123,8 +123,39 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
+		<!-- Bleed -->
+		<tr id="Bleed">
+			<td class="item-card">
+				<img class="item-img" src="../resources/elements/bleed.png" />
+				<p class="item-stats">
+					<span class="item-name">Status Effect: Bleed</span><br />
+					<span class="stat neutral">-50% health from pickups</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral modified">All weapons that inflict bleed have a duration of 5s and reapplications of bleed resets the duration to 5s</span><br />
+					<span class="stat upside added">Reduces healing from pickups by 50%</span><br />
+					<span class="stat upside modified">Bleed damage now stacks from the same source</span><br />
+					<span class="stat downside modified">Bleed stack damage decreased from +4 to +2</span><br />
+					<span class="stat downside added">Bleed dissipates 100% faster by healing sources</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Problem</span><br />
+					TODO<br />
+				</p>
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -151,39 +182,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
-				</p>
-			</td>
-		</tr>
-
-		<!-- Bleed -->
-		<tr id="Bleed">
-			<td class="item-card">
-				<img class="item-img" src="../resources/elements/bleed.png" />
-				<p class="item-stats">
-					<span class="item-name">Status Effect: Bleed</span><br />
-					<span class="stat neutral">-50% health from pickups</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat neutral modified">New bleed duration applications are only applied if greater than the remaining duration</span><br />
-					<span class="stat upside added">Reduces healing from pickups by 50%</span><br />
-					<span class="stat upside modified">Bleed damage now stacks from the same source</span><br />
-					<span class="stat downside modified">Bleed stack damage decreased from +4 to +2</span><br />
-					<span class="stat downside added">Bleed dissipates 100% faster by healing sources</span><br />
-				</p>
-			</td>
-			<td class="item-card">
 				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO<br />
-				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -192,7 +192,7 @@
 		<!-- Inferno -->
 		<tr id="Inferno">
 			<td class="item-card item-icon icon-NEW">
-				<img class="item-img" src="../resources/weapons/pyro/Inferno.png" />
+				<img class="item-img" src="../resources/elements/Frontline_Jerry_can.png" />
 				<p class="item-stats">
 					<span class="item-name">Status Effect: Inferno</span><br />
 					<span class="stat subtle">"Greater Afterburn"</span><br />
@@ -206,8 +206,8 @@
 					<span class="item-name">Stats</span><br />
 					<span class="stat upside added"><span class="tooltip" title="including afterburn (5 damage per tick)">33% fire damage vulnerability</span> while under the effect</span><br />
 					<span class="stat upside added">Pyros are susceptible to it effects</span><br />
-					<span class="stat neutral info">Any new applications of <a href="#Afterburn" class="tooltip-link">&#128293;Afterburn</a> are added for half the duration while under the effect</span><br />
-					<span class="stat neutral info">When extinguished <span class="tooltip" title="except from submerging in water or touching a resupply cabinet">by any means</span>, effect becomes afterburn for the remaining duration</span><br />
+					<span class="stat neutral info">New applications of afterburn will not override this effect, but keeps the target ignited after it has worn off</span><br />
+					<span class="stat neutral info">When extinguished <span class="tooltip" title="except from submerging in water or touching a resupply cabinet">by any means</span>, this effect becomes regular afterburn for the <span class="tooltip" title="Any afterburn that would have lasted beyond the Inferno duration is lost">remaining duration</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -215,8 +215,74 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
+		<!-- Temperature -->
+		<tr id="Temperature">
+			<td class="item-card">
+				<img class="item-img" src="../resources/weapons/pyro/Nostromo_Napalmer.png" />
+				<p class="item-stats">
+					<span class="item-name q-stock">Temperature</span><br />
+					<span class="stat subtle">"Flame thrower damage ramp-up"</span><br />
+					<span class="stat neutral">Base damage for flames is determined by range and temperature (concurrent contact with flames)</span><br />
+					<span class="stat neutral">Each player has their own temperature value, which gradually resets to zero over 0.5s</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="stat upside modified">Damage no longer takes particle age into account</span><br />
+					<span class="stat upside modified">Increased flame damage reset time from 0.075s (one miss) to 0.5s (gradually)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Problem</span><br />
+					TODO<br />
+				</p>
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
+		<!-- Airblast Pressure -->
+		<tr id="Airblast_Pressure">
+			<td class="item-card">
+				<img class="item-img" src="../resources/cosmetics/pyro/Fireman's_Essentials.png" />
+				<p class="item-stats">
+					<span class="item-name q-stock">Pressure</span><br />
+					<span class="stat subtle">"Pressurized Airblasts"</span><br />
+					<span class="stat neutral">Airblasts are now tied to a pressure meter and consume 35% of the meter on use</span><br />
+					<span class="stat neutral">Knockback is dependent on pressure before its consumed, ranging from 0% to 100% knockback</span><br />
+					<span class="stat neutral">Repressurization takes 4s to go from empty to full</span><br />
+					<span class="stat neutral">Primary fire usage slows repressurization rate by 100%</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Stats</span><br />
+					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="stat downside added">Airblasts consume 35% pressure</span><br />
+					<span class="stat downside added">Knockback ranges from 0% (empty) to 100% (full)</span><br />
+					<span class="stat downside added">Repressurization rate of <span class="tooltip" title="12.5%/s (8s total) if primary fire is in use">25%/s (4s total)</span></span><br />
+					<span class="stat neutral info">Airblast must be off cooldown to recharge (0.75s)</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Problem</span><br />
+					TODO<br />
+				</p>
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -251,8 +317,8 @@
 					The Spy puts in a lot of effort to infultrate a nest, especially with the presence of a Pyro.
 					Giving the Pyro another means of nullifying Spy is overkill.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Rather than outright removal of this feature, the effects are lessened.
 					With these changes, the Sentry Gun still remains disabled after the sapper is struck.
 					This allows for the Spy or his team to follow up if an Engineer is not present to remove the sapper.
@@ -291,8 +357,8 @@
 					The Spy puts in a lot of effort to infultrate a nest, especially with the presence of a Pyro.
 					Giving the Pyro another means of nullifying Spy is overkill.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Rather than outright removal of this feature, the effects are lessened.
 					With these changes, the Sentry Gun still remains disabled after the sapper is struck.
 					This allows for the Spy or his team to follow up if an Engineer is not present to remove the sapper.
@@ -375,8 +441,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -402,8 +468,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -429,8 +495,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -456,8 +522,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -483,8 +549,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -529,8 +595,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -559,8 +625,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -596,8 +662,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -631,8 +697,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -667,8 +733,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -705,8 +771,8 @@
 					The slowdown is not impactful enough if the item is used to escape, making it feel imilar to the Dead Ringer.
 					Because of this, this item has been used almost exclusively for Sentry tanking.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Making the effect expire prematurely from damage allows the enemy to at least attempt to catch the Scout before he manages to escape.
 					To balance this out, the consumption has been made less restricting.
 				</p>
@@ -734,8 +800,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -768,8 +834,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -799,8 +865,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -832,8 +898,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -864,8 +930,8 @@
 					Using this gun as a finisher is not utilized as much as the utility of the jump height.
 					The 2-4 bonus damage isn't enough to compensate for nearly half the clip.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Adding a firing rate bonus could pair well with the damage bonus, potentially finishing off the target quicker if you land your shots.
 				</p>
 			</td>
@@ -898,8 +964,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -925,8 +991,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -955,8 +1021,8 @@
 					<span class="item-name">Problem</span><br />
 					The vulnerability to explosives imposes a dodge or die mentality, while Scout already has to make use of his mobility to dodge projectiles in first place. This is a similar issue to the Kunai.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Having health packs heal over time gives Scout more control over fights.
 					Instead of needing to worry at all times, the Scout has to decide if its worth picking a fight while he is still healing.
 					Getting hit by anything becomes more punishing without outright killing him.
@@ -984,8 +1050,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1023,8 +1089,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1051,8 +1117,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1086,8 +1152,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1120,8 +1186,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1147,8 +1213,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1175,8 +1241,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1202,8 +1268,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1234,8 +1300,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1261,8 +1327,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1290,8 +1356,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1320,8 +1386,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1349,8 +1415,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1376,8 +1442,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1403,8 +1469,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1430,8 +1496,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1457,8 +1523,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1484,8 +1550,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1511,8 +1577,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1538,8 +1604,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -1558,7 +1624,7 @@
 				<img class="item-img" src="../resources/weapons/pyro/Flame_Thrower.png" />
 				<p class="item-stats">
 					<span class="item-name q-stock">Flame Thrower</span><br />
-					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that extinguishes ignited teammates and pushes back enemies and projectiles</span><br />
+					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that pushes enemies and projectiles and extinguishes allies</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1566,23 +1632,23 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat subtle">Changes apply to all Flame Throwers</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral info">'Airblast function' stat is <span class="tooltip" title="on unlockable flame throwers">no longer hidden</span></span><br />
+					<span class="stat neutral info">'Airblast function' stat is no longer hidden on unlocks</span><br />
 					<span class="stat neutral info">'Afterburn reduces healing' stat is <span class="tooltip" title="since this applies to afterburn in general across other classes">now hidden</span></span><br />
-					<span class="stat neutral info">'Airblast restores health' stat now hidden</span><br />
 					<span class="stat neutral info">Reflected projectile hits now play a <span class="tooltip" title="similar to Double Donks on the Loose Cannon">custom sound</span></span><br />
-					<span class="stat downside modified">Reflected projectiles are no longer mini-crit boosted</span><br />
-					<span class="stat downside added">Airblasts now use a <span class="tooltip" title="All flamethrowers (except the Phlogistinator) now has a pressure meter. Using airblast consumes the entire meter, reducing its knockback power down to 50%. Pressure will build up once airblast is ready to be used and the primary fire is not being used. Pressure builds to full in 4s after a 0.75s delay (4.75s total).">pressure system</span> and reduces the amount of knockback based on pressure built</span><br />
-					<span class="stat neutral info">Pressure takes 4s to build up to full</span><br />
+					<span class="stat upside added">Extinguishing an ally replenishes 50% of the <span class="tooltip" title="both ammo cost and pressure cost">cost</span></span><br />
+					<span class="stat upside modified">Improved the <a class="tooltip-link" href="#Temperature">damage ramp-up (temperature) system</a></span><br />
+					<span class="stat downside modified">Reflected projectiles no longer deal mini-crit damage</span><br />
+					<span class="stat downside removed">Extinguishing an ally no longer heals 20 health</span><br />
+					<span class="stat downside added">Airblasts now use a <a class="tooltip-link" href="#Airblast_Pressure">pressure system</a></span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO<br />
-				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+					<span class="item-name">Reason</span><br />
+					A lot has been changes have been made for the flame thrower, as at lot of its features are not easily understood and questionably balanced.
+					The big change that is not talked about somewhere else on this document is the removal of mini-crit boosted reflects.
+					The Pyro is already rewarded by avoiding the damage and dealing it back, so the mini-crit seems to be overkill.
+					I will note that this might be changed or even reverted, but I wanted to see if others felt the same way.
 				</p>
 			</td>
 		</tr>
@@ -1593,7 +1659,7 @@
 				<img class="item-img" src="../resources/weapons/pyro/Backburner.png" />
 				<p class="item-stats">
 					<span class="item-name">Backburner</span><br />
-					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that extinguishes ignited teammates and pushes back enemies and projectiles</span><br />
+					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that pushes enemies and projectiles and extinguishes allies</span><br />
 					<span class="stat upside">Targets hit from behind are Marked For Death</span><br />
 					<span class="stat downside">+150% airblast cost</span><br />
 					<span class="stat neutral">Airblast inflicts knockback on user</span><br />
@@ -1602,8 +1668,8 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral added">Airblast knocks back the wielder as well</span><br />
+					<span class="stat neutral info">Back hit detection made slightly more lenient</span><br />
+					<span class="stat neutral added">Airblasts released midair apply knockback to the wielder in the opposite direction</span><br />
 					<span class="stat upside added">Applies the Marked For Death effect for 4s against targets hit from behind</span><br />
 					<span class="stat downside removed">Removed critical hits from behind bonus</span><br />
 				</p>
@@ -1611,11 +1677,13 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					While its simplistic design is cherished, changes to the base flame thrower may make this a bit strong, especially if back hit detection is improved.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					The Marked For Death effect seems like a decent replacement for the critical hits as an ambush will not end the moment the enemy turns around.
+					Your allies can even assist or follow up after you.
+					Self-knockback from airblasts was also added to help out with flanking.
 				</p>
 			</td>
 		</tr>
@@ -1626,28 +1694,32 @@
 				<img class="item-img" src="../resources/weapons/pyro/Degreaser.png" />
 				<p class="item-stats">
 					<span class="item-name">Degreaser</span><br />
+					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that pushes enemies and projectiles and extinguishes allies</span><br />
 					<span class="stat upside">This weapon deploys 60% faster</span><br />
 					<span class="stat upside">This weapon holsters 30% faster</span><br />
+					<span class="stat downside">-33% slower temperature damage ramp-up</span><br />
 					<span class="stat downside">-40% max primary ammo on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside removed">Removed afterburn damage penalty</span><br />
 					<span class="stat upside removed">Removed airblast cost penalty</span><br />
 					<span class="stat downside added">Reduced max ammo from 200 to 120</span><br />
+					<span class="stat downside added">Increased time needed to reach max temperature damage ramp-up from 0.9s to 1.2s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Afterburn damage can be overwritten by another weapon, which this weapon already incentivizes.
+					The airblast cost also seems neglible.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Lowering max primary ammo tackles the airblast usage much better than a flat airblast cost, as it provides less ammo from pickups dropped from kills.
+					That change, as well as a slower temperature ramp-up penalty, will disuade long term use and further encourage combos.
 				</p>
 			</td>
 		</tr>
@@ -1659,17 +1731,18 @@
 				<p class="item-stats">
 					<span class="item-name">Dragon's Fury</span><br />
 					<span class="stat neutral">Launches a pressurized, high-speed fireball that briefly ignites every enemy it passes through</span><br />
-					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that extinguishes ignited teammates and pushes back enemies and projectiles</span><br />
+					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that pushes enemies and projectiles and extinguishes allies</span><br />
 					<span class="stat upside">Max repressurization time decreased by 60%</span><br />
 					<span class="stat upside">+50% repressurization rate on hit</span><br />
 					<span class="stat downside">-50% repressurization rate on Alt-Fire</span><br />
 					<span class="stat downside">66% damage penalty against non-burning targets</span><br />
-					<span class="stat downside">Fireballs and Airblasts require full pressure</span><br />
+					<span class="stat downside">Fireballs and airblasts require and consume full pressure</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat neutral nochange">No change</span><br />
 					<span class="stat neutral info">Restructered stat card for clarity</span><br />
 					<span class="stat neutral modified">Improved projectile to be less visually noisy</span><br />
 				</p>
@@ -1677,7 +1750,9 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					TODO
+					The Dragon's Fury is a decent alternative to Pyro's typical kit.
+					There may be some minor tweaks and visual clarity issues that need to be tackled, but the weapon itself is in a pretty good spot.
+					The stat card was restructured to make it easier to understand what it does while also addressing Pyro's base changes.
 				</p>
 			</td>
 		</tr>
@@ -1688,37 +1763,42 @@
 				<img class="item-img" src="../resources/weapons/pyro/Phlogistinator.png" />
 				<p class="item-stats">
 					<span class="item-name">Phlogistinator</span><br />
-					<span class="stat neutral">Alt-Fire: Release a blast of electricty that deals damage and deletes projectiles</span><br />
-					<span class="stat upside">Build 'Mmmph' by dealing fire damage</span><br />
-					<span class="stat upside">Reload on full 'Mmmph' to taunt with invulnerability and gain crits for several seconds</span><br />
-					<span class="stat upside">Attacks pierce damage resistance during Mmmph</span><br />
-					<span class="stat downside">Consumes 5 extra ammo for every projectile deleted</span><br />
-					<span class="stat downside">Critical damage scales with temperature</span><br />
+					<span class="stat neutral">Alt-Fire: Release a blast of electricty that deals damage based on temperature and deletes projectiles</span><br />
+					<span class="stat upside">Build 'Mmmph' by dealing constant fire damage</span><br />
+					<span class="stat upside">+50% max temperature</span><br />
+					<span class="stat downside">-10 ammo per projectile destroyed</span><br />
+					<span class="stat neutral">Temperature is based on meter instead of per target</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
-					<span class="stat upside removed">Removed No Airblast penalty</span><br />
-					<span class="stat upside added">Airblast deals <span class="tooltip" title="contributes towards Mmmph building despite being typeless damage">25 typeless damage</span></span><br />
-					<span class="stat upside added">During Mmmph, attacks ignore fire resistances</span><br />
-					<span class="stat downside added">Airblast no longer pushes back enemies or extinguishes teammates</span><br />
+					<span class="stat q-community bwr">Airblast inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="stat neutral added">Temperature is solely based on Mmmph built and ignores individual target temperature values</span><br />
+					<span class="stat neutral info">Mmmph takes 350 non-afterburn damage to fill</span><br />
+					<span class="stat neutral info">Mmmph only builds from primary damage</span><br />
+					<span class="stat neutral info">Mmmph drains at 20%/s if no enemies are on fire</span><br />
+					<span class="stat upside removed">Removed the 'No Airblast' penalty</span><br />
+					<span class="stat upside added">Airblast deals deals 10-30 typeless damage</span><br />
+					<span class="stat neutral info">Airblast kills electrocute ragdolls</span><br />
+					<span class="stat downside added">Airblast no longer pushes back enemies</span><br />
+					<span class="stat downside added">Airblast no longer extinguishes teammates</span><br />
 					<span class="stat downside added">Airblast deletes projectiles instead of reflecting them</span><br />
-					<span class="stat downside added">Each projectile deleted consumes 5 additional ammo</span><br />
-					<span class="stat downside modified">Increased damage requirement from 300 to 350</span><br />
-					<span class="stat downside added">Critical damage starts at a base of +35% and scales up to +200% with temperature</span><br />
+					<span class="stat downside added">Each projectile deleted consumes 10 additional ammo</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Lack of airblast for free crits is hyperpolarizing, and is further exacerbated by being ubered with a Medic.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Both the upsides and downsides have been heavily reigned in.
+					The critical hits from Mmmph has essentially turned into a bonus damage meter that encourages you to keep pushing in.
+					The airblast was brought back, but neutered in most aspects.
+					However, it does come with the quirk of being able to delete stickybombs.
 				</p>
 			</td>
 		</tr>
@@ -1729,31 +1809,32 @@
 				<img class="item-img" src="../resources/weapons/pyro/Detonator.png" />
 				<p class="item-stats">
 					<span class="item-name">Detonator</span><br />
-					<span class="stat neutral">Alt-Fire: Detonate flare.</span><br />
-					<span class="stat upside">100% mini-crits vs burning players</span><br />
+					<span class="stat neutral">Launches a flare, igniting enemies on impact</span><br />
+					<span class="stat neutral">Alt-Fire: Detonate flare</span><br />
+					<span class="stat upside">Deals mini-crit damage against burning targets</span><br />
 					<span class="stat downside">25% damage penalty</span><br />
-					<span class="stat downside">25% afterburn damage penalty</span><br />
 					<span class="stat downside">+25% damage to self</span><br />
+					<span class="stat downside">-33% afterburn duration from splash hits</span><br />
 					<span class="stat neutral">This weapon will reload when not active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
+					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
 					<span class="stat upside modified">Reduced damage taken to self from 23-44 to 17-32</span><br />
-					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
-					<span class="stat downside added">Reduced afterburn damage from 4 to 3</span><br />
+					<span class="stat downside added">Reduced afterburn duration on splash from 7.5s to 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The ability to always hit your target is quite strong.
+					Being able to apply afterburn to group of enemies makes this even stronger.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					An afterburn duration penalty was added to make easier hits even less rewarding.
 				</p>
 			</td>
 		</tr>
@@ -1764,25 +1845,23 @@
 				<img class="item-img" src="../resources/weapons/pyro/Flare_Gun.png" />
 				<p class="item-stats">
 					<span class="item-name">Flare Gun</span><br />
-					<span class="stat upside">100% critical hit vs burning players</span><br />
+					<span class="stat neutral">Launches a flare, igniting enemies on impact</span><br />
+					<span class="stat upside">Deals critical damage against burning targets</span><br />
 					<span class="stat neutral">This weapon will reload when not active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
-					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
+					<span class="stat neutral nochange">No change</span><br />
+					<span class="stat neutral info"><span class="tooltip" title="for all Flare Guns">Restructered stat card for clarity</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO<br />
-				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+					<span class="item-name">Reason</span><br />
+					The Flare Gun is fitting and well-designed.
+					Long range harassment that requires good aim is a good trade for the shotgun's sustain and reliable damage.<br />
 				</p>
 			</td>
 		</tr>
@@ -1794,21 +1873,19 @@
 				<p class="item-stats">
 					<span class="item-name">Gas Passer</span><br />
 					<span class="stat upside">Gas meter builds with damage done and/or time</span><br />
-					<span class="stat upside">Extinguishing an ally reduces cooldown by -25%</span><br />
 					<span class="stat downside">Does not refill from resupply cabinets</span><br />
 					<span class="stat downside">Gas meter starts empty</span><br />
-					<span class="stat neutral">Creates a horrific visible gas cloud that coats enemies with a flammable material, which then explodes into an inferno if they take damage (even enemy Pyros!)</span><br />
+					<span class="stat neutral">Creates a horrific visible gas cloud that coats enemies with a flammable liquid, which then explodes into an inferno if they take damage (even enemy Pyros!)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added">Extinguishing an ally reduces cooldown by -20%</span><br />
-					<span class="stat upside modified">Reduced recharge time needed from 60s to <span class="tooltip" title="32s if an ally is extinguished">40s</span></span><br />
-					<span class="stat upside modified">Reduced recharge damage needed from 750 to <span class="tooltip" title="400 damage if an ally is extinguished">500</span></span><br />
-					<span class="stat upside added">Explodes on ignite, dealing 20 damage to the target and any <span class="tooltip" title="within ####hu">nearby enemies</span></span><br />
-					<span class="stat upside modified">Changed the gas triggered effect on damage taken from afterburn to <a class="tooltip-link" href="#Inferno">&#128293;Inferno</a></span><br />
-					<span class="stat downside modified">Reduced effect duration from 10s to 7.5s</span><br />
+					<span class="stat upside modified">Reduced recharge time needed from 60s to 40s</span><br />
+					<span class="stat upside modified">Reduced recharge damage needed from 750 to 500</span><br />
+					<span class="stat upside modified">Changed the effect the gas debuff applies when triggered by damage taken from afterburn to <a class="tooltip-link" href="#Inferno">inferno</a></span><br />
+					<span class="stat upside added">Explodes on ignite, dealing 20 damage to each enemy within the gas cloud</span><br />
+					<span class="stat downside removed">No longer extinguishes allies</span><br />
 					<span class="stat downside added">Recharge progress resets on respawn</span><br />
 				</p>
 			</td>
@@ -1818,48 +1895,53 @@
 					The gas meter takes an extraordinary amount of effort to fill and the effect is subpar.
 					It is able to apply afterburn to a group of enemies and deny area, but isn't hugely threatening on its own.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					The meter recharge has been greatly improved to help it be more applicable.
-					Applying the inferno effect and a soft version of the 'explode on ignite' upgrade from MvM will also certainly make it more threatening to large groups of enemies.
+					Applying the inferno effect and a soft version of the 'explode on ignite' upgrade from MvM will also certainly make it more threatening to a large groups of enemies.
 				</p>
 			</td>
 		</tr>
 
 		<!-- Manmelter -->
 		<tr id="Manmelter">
-			<td class="item-card item-icon icon-WIP">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/pyro/Manmelter.png" />
 				<p class="item-stats">
-					<span class="item-name">Mannmelter*</span><br />
-					<span class="stat subtle">Previouly known as: Manmelter</span><br />
-					<span class="stat upside">Alt-Fire: Extinguish teammates to fill a Melter meter</span><br />
-					<span class="stat upside">+25% faster firing speed</span><br />
-					<span class="stat upside">+50% faster projectile speed</span><br />
+					<span class="item-name">Manmelter</span><br />
+					<span class="stat neutral">Launches a flare, igniting enemies on impact</span><br />
+					<span class="stat neutral">Alt-Fire: Creates a vacuous suction that continuously extinguishes burning allies</span><br />
+					<span class="stat upside">Deals critical damage against burning targets</span><br />
+					<span class="stat upside">Builds 'Melt' from overkill afterburn and exintguishing allies, providing +100% bonus damage once full</span><br />
 					<span class="stat upside">Does not require ammo</span><br />
-					<span class="stat downside">-40% afterburn duration</span><br />
+					<span class="stat upside">+50% faster projectile speed</span><br />
+					<span class="stat downside">20% damage penalty</span><br />
+					<span class="stat downside">10% slower firing rate</span><br />
 					<span class="stat neutral">This weapon will reload when not active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">These stats are subject to change</span><br />
-					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
-					<span class="stat upside added">Hitting a burning enemy will extinguish them, dealing the remaining afterburn time as bonus damage and dealing mini-crit damage.</span><br />
-					<span class="stat upside added">Increased firing rate from 2s to 1.5s</span><br />
-					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="4.5s on critical hit">3s</span></span><br />
-					<span class="stat downside removed">Removed Alt-fire extinguishing mechanic</span><br />
+					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">Melt is built from any remaining afterburn damage from <span class="tooltip" title="with this weapon">killed targets</span> or from extinguishing allies</span><br />
+					<span class="stat neutral info">Melt requires a total of <span class="tooltip" title="not 60 damage, as explained above">15 afterburn ticks</span> to fill</span><br />
+					<span class="stat upside added">Full Melt increases damage on the next flare by 100%</span><br />
+					<span class="stat upside added">Burning targets take critical damage</span><br />
+					<span class="stat downside removed">Alt-fire no longer grants critical hits</span><br />
+					<span class="stat downside added">Reduced base damage from 30 to 24</span><br />
+					<span class="stat downside added">Reduced firing rate from 2s to 2.2s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The only way to farm crits being to extinguish allies is extremely one-dimensional.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Now it puts the agency in your hands.
+					Filling up a meter to deal double damage through your own gameplay can now reach a damage value higher than the flare gun.
 				</p>
 			</td>
 		</tr>
@@ -1870,24 +1952,37 @@
 				<img class="item-img" src="../resources/weapons/pyro/Scorch_Shot.png" />
 				<p class="item-stats">
 					<span class="item-name">Scorch Shot</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Launches a flare, igniting enemies on impact</span><br />
+					<span class="stat upside">100% mini-crits vs burning players</span><br />
+					<span class="stat upside">Flares bounces once before exploding on ground</span><br />
+					<span class="stat downside">-25% damage penalty vs players</span><br />
+					<span class="stat downside">-33% afterburn duration from splash hits</span><br />
+					<span class="stat neutral">This weapon will reload when not active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added"><span class="tooltip" title="Applies to mini-crit damage as well">Critical damage</span> increases afterburn duration by 50%</span><br />
-					<span class="stat downside modified">Reduced base afterburn duration from 7.5s to <span class="tooltip" title="7.5s on critical hit">5s</span></span><br />
+					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="stat neutral added">Flare bounces off terrain and players upon impact and then explodes on the second impact</span><br />
+					<span class="stat upside modified">Increased damage against players from 20 to 23</span><br />
+					<span class="stat upside modified">Increased damage against buildings from 20 to 30</span><br />
+					<span class="stat upside removed">Removed self damage force penalty</span><br />
+					<span class="stat downside removed">Removed knockback on hit bonus</span><br />
+					<span class="stat downside added">Reduced afterburn duration on splash from 7.5s to 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The Scorch Shot does so many things and half of said things are annoying.
+					Knockback, double hit, free ground hits, worse flare jumps, and easy sticky removal.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					These changes remove most of the weapon's features, while focusing on the least annoying and most interesting feature: <i>the double hit</i>.
+					The flare now bounces, creating oppurtunies to take advantage of, similarly to grenades.
+					It also becomes dangerous to Sentry Guns, dealing 60 damage per flare instead of 30.
 				</p>
 			</td>
 		</tr>
@@ -1898,28 +1993,44 @@
 				<img class="item-img" src="../resources/weapons/pyro/Thermal_Thruster.png" />
 				<p class="item-stats">
 					<span class="item-name">Thermal Thruster</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Fires a short-duration pressurized blast that launches the wearer. Distance increases with more pressure. Increased knockback vulnerability by 50% while in-flight.</span><br />
+					<span class="stat upside">Knocks back enemies upon landing (based on velocity)</span><br />
+					<span class="stat upside">Deals 3x falling damage to the player you land on</span><br />
+					<span class="stat upside">+50% max primary ammo on wearer</span><br />
+					<span class="stat downside">-25% repressurization rate on wearer</span><br />
+					<span class="stat downside">Consumes all pressure on use</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat upside modified">Added the ability to re-launch while already in-flight</span><br />
+					<span class="stat upside modified">Reduced total cooldown time <span class="tooltip" title="from 15s per charge to 12s per charge">from 30s to 24s</span></span><br />
+					<span class="stat upside modified">Knockback vulnerability only occurs while in-flight</span><br />
+					<span class="stat upside modified">Reduced deploy and retract times from <span class="tooltip" title="0.5s deploy/holster time plus 0.8s locked animation time">1.3s</span> to <span class="tooltip" title="0.375s deploy/holster time (25% faster) plus 0.5s locked animation time">0.875s</span></span>
+					<span class="stat upside added">Increased max primary ammo from <span class="tooltip" title="from 40 to 60 on the Dragon's Fury">200 to 300</span></span><br />
+					<span class="stat downside added">Launching consumes all pressure</span><br />
+					<span class="stat neutral info">Distance is based on pressure consumed, with default distance at full pressure and a <span class="tooltip" title="the Phlogistinator will always lauch at 20% distance">minimum distance of 20%</span></span><br />
+					<span class="stat neutral info">Extinguishing an ally does not refund pressure</span><br />
+					<span class="stat downside added">Reduced repressurization rate from 25%/s to <span class="tooltip" title="10%/s if primary fire is in use">20%/s</span></span><br />
+					<span class="stat neutral info">Re-lauch must be off cooldown to recharge (1.5s)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Utilizing this tool is slow and clunky.
+					While its a great mobility tool, it makes combat significantly harder with the lack of a secondary weapon and taking increased knockback (hidden stat).
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					The attempt with these changes are to make the Thermal Thruster more reliable to use and not impede too much on combat.
+					The ties to pressure makes airblasting worse off, encouraging a more ambush-heavy playstyle.
 				</p>
 			</td>
 		</tr>
 
-		<!-- Fires Axes -->
+		<!-- Fires Axes 
 		<tr id="Fire_Axe">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/pyro/Fire_Axe.png" />
@@ -1940,45 +2051,47 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
 		</tr>
+		-->
 
 		<!-- Axtinguisher -->
 		<tr id="Axtinguisher">
-			<td class="item-card item-icon icon-WIP">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/pyro/Axtinguisher.png" />
 				<p class="item-stats">
 					<span class="item-name">Axtinguisher</span><br />
-					<span class="stat upside">Mini-crits against burning targets</span><br />
-					<span class="stat upside">Extinguishes burning enemies, dealing the remaining afterburn duration as bonus damage</span><br />
+					<span class="stat upside">Deals mini-crit damage against burning targets</span><br />
+					<span class="stat upside">Extinguishes burning enemies, dealing any remaining afterburn as bonus damage</span><br />
 					<span class="stat upside">Killing blows on burning players grant a speed boost</span><br />
-					<span class="stat downside">-30% damage penalty</span><br />
+					<span class="stat downside">-20% damage penalty</span><br />
+					<span class="stat downside">-25% universal afterburn damage on wielder</span><br />
 					<span class="stat downside">This weapon holsters 35% slower</span><br />
-					<span class="stat downside">-25% universal afterburn damage on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral modified">Damage bonus is now just based on remaining duration to the nearest tick value</span><br />
-					<span class="stat neutral info"><a class="tooltip-link" title="click to view a sheets doc regarding damage calculations" href="https://docs.google.com/spreadsheets/d/1H7svNf47LVFqnGIChGxWg6GLaAS-NcBQVX-i1Vxfx18/edit?usp=sharing" target="_blank">Changed damage bonus scaling from 86-167 to 64-169</a></span><br />
-					<span class="stat upside modified">Increased base damage from 44 to 46</span><br />
-					<span class="stat downside added">Reduces afterburn damage on wearer from 4 to <span class="tooltip" title="Detonator afterburn damage from 3 to 2">3</span></span><br />
+					<span class="stat neutral info">Bonus damage from afterburn is not affected by the global afterburn penalty (calculated as 4, not 3)</span><br />
+					<span class="stat neutral info"><a class="tooltip-link" title="click to view a sheets doc regarding damage calculations" href="https://docs.google.com/spreadsheets/d/1H7svNf47LVFqnGIChGxWg6GLaAS-NcBQVX-i1Vxfx18/edit?usp=sharing" target="_blank">Changed damage bonus scaling from 86-167 to 76-178</a></span><br />
+					<span class="stat upside modified">Increased base damage from 44 to 52</span><br />
+					<span class="stat downside added">Reduces afterburn damage from 4 to 3 on wielder</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Its only real downside is extinguishing people you dont kill.
+					A damage and holster penalty hardly means anything for a high-burst damage tool.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Alongside damage tweaks to not have a minimum of 85 damage dealt to burning targets, a universal afterburn damage penalty was added to give it a proper downside.
+					With afterburn being slightly less threatening, utilizing this weapon is encouraged to avoid it.
 				</p>
 			</td>
 		</tr>
@@ -1989,53 +2102,73 @@
 				<img class="item-img" src="../resources/weapons/pyro/Back_Scratcher.png" />
 				<p class="item-stats">
 					<span class="item-name">Back Scratcher</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">On Hit: Bleed for 5 seconds</span><br />
+					<span class="stat upside">+15% damage bonus</span><br />
+					<span class="stat upside">+50% health from pickups on wielder</span><br />
+					<span class="stat downside">-50% ammo from pickups on wearer</span><br />
+					<span class="stat downside">-75% health from healers on wearer</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">-75% health from the Crusader's Crossbow</span><br />
+					<span class="stat upside added">Attacks inflict bleed for 5s</span><br />
+					<span class="stat downside removed">Reduced base damage from 81 to 75</span><br />
+					<span class="stat downside removed">Reduced ammo obtained from pickups from 100%/50%/20% to <span class="tooltip" title="Flamethrowers from 200/100/40 to 50/25/10&#010;*Degreaser from 120/60/20 to 60/30/15&#010;*Dragon's Fury from 40/20/8 to 20/10/4&#010;Shotguns and Flare Guns from 18/9/4 to 9/5/2">50%/25%/10%</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The passives make flanking Pyro better, but a less healing from healers peanlty is not enough to keep the upsides in check, especially when you are not even interacting with Medics and Engineers.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Less ammo from pickups is a more direct downside that impacts the gameplay of Pyro.
+					Bleed on hit was added to make the melee a tad more threatening.
 				</p>
 			</td>
 		</tr>
 
 		<!-- Homewrecker -->
 		<tr id="Homewrecker">
-			<td class="item-card item-icon">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/pyro/Homewrecker.png" />
 				<p class="item-stats">
 					<span class="item-name">Homewrecker</span><br />
-					<span class="stat neutral">TODO</span><br />
-					<span class="stat neutral">This weapon malforms sappers on hit and deploys and holsters slower</span><br />
+					<span class="stat neutral">When weapon is active:</span><br />
+					<span class="stat upside">+100% damage bonus vs buildings</span><br />
+					<span class="stat upside">20% damage resistance on wielder</span><br />
+					<span class="stat upside">-50% reduction in push force taken from damage</span><br />
+					<span class="stat downside">-10% movement speed on wielder</span><br />
+					<span class="stat neutral">This weapon malforms sappers on hit and will deploy and holster slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat upside removed">Removed 'damage vs players' penalty</span><br />
 					<span class="stat upside added">Hammer type weapons now <a class="tooltip-link" href="#Malformed_Sapper">malform sappers</a> on hit</span><br />
-					<span class="stat downside added">Decreased deploy and holster time from 0.5s to 0.875s</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat upside added">Reduced damage taken by 20% while active</span><br />
+					<span class="stat upside added">Reduced knockback taken by 50% while active</span><br />
+					<span class="stat downside removed">No longer destroys sappers</span><br />
+					<span class="stat downside added">Reduced move speed from 300 to 270 while active</span><br />
+					<span class="stat downside added">Reduced deploy and holster time from 0.5s to 0.875s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The homewrecker is stereotypically used for solely for removing sappers.
+					It lacks depth and onykl exists to make Spy's counter even harder of a counter.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Change destroying sapper on hit to a lesser effect.
+					Hits now prevent sappers from dealing damage, but still keep the building its attached to disabled.
+					This allows the Spy's team to follow up or give the Engineer enough time to return to his buildings.
+					The building destruction aspect of the weapon is more leaned into now with resistances to damage and knockback while deployed.
 				</p>
 			</td>
 		</tr>
@@ -2046,23 +2179,36 @@
 				<img class="item-img" src="../resources/weapons/pyro/Hot_Hand.png" />
 				<p class="item-stats">
 					<span class="item-name">Hot Hand</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">This weapon performs two slaps in quick succession</span><br />
+					<span class="stat upside">This wepaon deploys 40% faster</span><br />
+					<span class="stat upside">Deploying this weapon triggers an attack</span><br />
+					<span class="stat upside">On Hit: Gain a speed boost with each slap adding +2s</span><br />
+					<span class="stat downside">-60% damage penalty</span><br />
+					<span class="stat downside">Minicrits whenever it would normally crit</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">Damage penalty adjusted to be more accurate</span><br />
+					<span class="stat upside modified">Increased speed boost duration per hit from 1s to 2s</span><br />
+					<span class="stat upside added">Reduced deploy time from 0.5s to 0.3s</span><br />
+					<span class="stat upside added">Deployment performs one slap instantly with a internal cooldown of 0.5s</span><br />
+					<span class="stat upside added">Speed boost on hit now stacks (up to 8s)</span><br />
+					<span class="stat downside modified">Reduced damage from 56 (28) to 52 (26)</span><br />
+					<span class="stat downside added">Critical hits deal mini-crit damage</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The speed boost is way to short to be meaningful in any way, especially with how the slaps line up.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Increasing the speed boost and allowing it to stack would be very fun.
+					Slap someone a couple of times and run to the next victim.
+					An instant slap mechanic was added to give the weapon some flair over other options and to potentially be a useful combo weapon.
 				</p>
 			</td>
 		</tr>
@@ -2073,26 +2219,40 @@
 				<img class="item-img" src="../resources/weapons/pyro/Neon_Annihilator.png" />
 				<p class="item-stats">
 					<span class="item-name">Neon Annihilator</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">Build 'Revenge' when your targets are extinguished</span><br />
+					<span class="stat upside">Gain a guaranteed critical hit when 'Revenge' is full</span><br />
+					<span class="stat upside">Deals mini-crit damage against wet targets</span><br />
+					<span class="stat downside">-35% damage penalty vs players</span><br />
+					<span class="stat neutral">Critical damage will cause an explosion</span><br />
 					<span class="stat neutral">This weapon malforms sappers on hit and deploys and holsters slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat upside added">Builds Revenge, dealing critical damage when full</span><br />
+					<span class="stat neutral info"><span class="tooltip" title="that the wielder had ignited">Extinguished enemies</span> contribute 33% charge</span><br />
+					<span class="stat neutral info">Only a single revenge crit can be stored</span><br />
+					<span class="stat upside added">Critical damage from this weapon triggers an explosion that deals <span class="tooltip" title="dealing 34 (86 total) damage on mini-crit and 75 damage on crit (231 total)">25 explosive damage</span> within 192hu</span><br />
+					<span class="stat neutral info">The explosion harms the wielder as well</span><br />
 					<span class="stat upside added">Hammer type weapons now <a class="tooltip-link" href="#Malformed_Sapper">malform sappers</a> on hit</span><br />
+					<span class="stat downside modified">Reduced base damage vs players from 52 to 42</span><br />
+					<span class="stat downside modified">Changed 'Critical hits vs wet players' to minicrits</span><br />
+					<span class="stat downside removed">No longer destroys sappers</span><br />
 					<span class="stat downside added">Decreased deploy and holster time from 0.5s to 0.875s</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The critical hits against wet targets is not a horrible gimmick, but it is not practical in the slightest.
+					The sapper removal stat is also uninspiring.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					Keeping the idea, the melee has been improved into a 'punish extinguishes' weapon.
+					Removing the Pyro's afterburn too frequently will result in instant death if not careful.
+					The Pyro should also be careful, as releasing this powerful strike harms them as well!
 				</p>
 			</td>
 		</tr>
@@ -2104,29 +2264,30 @@
 				<p class="item-stats">
 					<span class="item-name">Powerjack</span><br />
 					<span class="stat neutral">When weapon is active:</span><br />
-					<span class="stat upside">+15% move speed on wearer</span><br />
-					<span class="stat upside">+15% damage bonus</span><br />
-					<span class="stat downside">20% damage vulnerability on wearer</span><br />
+					<span class="stat upside">+15% move speed on wielder</span><br />
+					<span class="stat downside">20% damage vulnerability on wielder</span><br />
+					<span class="stat downside">Wielder ignites for 4s upon taking damage</span><br />
 					<span class="stat neutral">This weapon malforms sappers on hit and will deploy and holster slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">These stats are subject to change</span><br />
+					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside added">Hammer type weapons now <a class="tooltip-link" href="#Malformed_Sapper">malform sappers</a> on hit</span><br />
-					<span class="stat upside added">Increased base damage from 65 to 75</span><br />
-					<span class="stat downside added">Decreased deploy and holster time from 0.5s to 0.875s</span><br />
 					<span class="stat downside removed">No longer grants 25 health on kill</span><br />
+					<span class="stat downside added">Taking damage while active applies afterburn for 4s</span><br />
+					<span class="stat downside added">Decreased deploy and holster time from 0.5s to 0.875s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					The speed the powerjack provides has no real cost outside of using it for too long.
+					As a result has been the most used melee option for Pyro, but purely passive.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2138,28 +2299,28 @@
 				<img class="item-img" src="../resources/weapons/pyro/Sharpened_Volcano_Fragment.png" />
 				<p class="item-stats">
 					<span class="item-name">Sharpened Volcano Fragment</span><br />
-					<span class="stat upside">On Hit: Target explodes into an inferno and becomes more susceptible fire</span><br />
-					<span class="stat downside">This weapon deploys 35% slower</span><br />
+					<span class="stat upside">On Hit: Target is engulfed by an inferno and becomes more susceptible to fire for 7.5 seconds</span><br />
+					<span class="stat downside">25% damage vulnerability while active</span><br />
 					<span class="stat downside">-20% damage penalty</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Changed on hit effect from afterburn to <a class="tooltip-link" href="#Inferno">&#128293;Inferno</a></span><br />
-					<span class="stat downside added">Increased deploy time from 0.5s to 0.675s</span><br />
+					<span class="stat upside modified">Changed on hit effect from afterburn to <a class="tooltip-link" href="#Inferno">inferno</a></span><br />
+					<span class="stat downside added">Wielder takes 25% more damage while active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					Giving the class that can easily apply afterburn a melee that just applies afterburn on hit is completely redundant and uninteresting.<br />
+					Giving the class, that can easily apply afterburn, a melee that solely applies afterburn on hit is completely redundant and uninteresting.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					The melee was made into a great opener.
 					By applying inferno, your ranged fire damage becomes much more dangerous.
-					As opposed to the Gas Passer, this is limited by range and individual targeting.
+					Unlike the Gas Passer, this is limited by range and selective targeting but unlimited in availability.
 				</p>
 			</td>
 		</tr>
@@ -2170,23 +2331,33 @@
 				<img class="item-img" src="../resources/weapons/pyro/Third_Degree.png" />
 				<p class="item-stats">
 					<span class="item-name">Third Degree</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">On Hit: All nearby ignited targets are hit</span><br />
+					<span class="stat upside">On Kill: Target triggers a fiery explosion</span><br />
+					<span class="stat downside">Melee damage is affected by range</span><br />
+					<span class="stat downside">-15% firing speed</span><br />
+					<span class="stat downside">-15% damage penalty</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">Psuedo-hit damage is affected by range, beginning fall-off at 512hu, decreasing to 50% damage at 1024hu and dealing no damage past 1024hu from the initial target</span><br />
+					<span class="stat upside modified">Hit targets are no longer connected via Medigun beams and instead are connected via afterburn status</span><br />
+					<span class="stat upside added">Killing an enemy causes a 20 damage explosion that ignites all enemies with 192hu</span><br />
+					<span class="stat downside added">Reduced base damage from 65 to 55</span><br />
+					<span class="stat downside added">Increased firing rate from from 0.8s to 0.92s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					This is another weapon that strictly hard counters a single class, leading it to be one-dimensional.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
-					TODO
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					The psuedo-hit effect has been extended to any burning enemy, potentially catching out anyone who manages to escape your flamethrower range.
+					Targets who are killed by this weapon will also apply the afterburn to other nearby targets.
+					A deadly chain reaction!
 				</p>
 			</td>
 		</tr>
@@ -2216,8 +2387,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2243,8 +2414,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2270,8 +2441,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2303,8 +2474,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2330,8 +2501,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2363,8 +2534,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2387,7 +2558,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">No change</span><br />
+					<span class="stat neutral nochange">No change</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2432,8 +2603,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2468,8 +2639,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2504,8 +2675,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2537,8 +2708,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2572,8 +2743,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2605,8 +2776,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2640,8 +2811,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2675,8 +2846,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2709,8 +2880,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2736,8 +2907,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2763,8 +2934,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2790,8 +2961,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2823,8 +2994,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2864,8 +3035,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2900,8 +3071,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2927,8 +3098,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -2947,7 +3118,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">No changes</span><br />
+					<span class="stat neutral nochange">No change</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2987,8 +3158,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3015,8 +3186,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3042,8 +3213,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3069,8 +3240,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3096,8 +3267,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3123,8 +3294,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3150,8 +3321,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3183,8 +3354,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3217,8 +3388,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3246,8 +3417,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3277,8 +3448,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3312,8 +3483,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3339,8 +3510,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3371,8 +3542,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3401,8 +3572,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3433,8 +3604,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3468,8 +3639,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3477,7 +3648,7 @@
 
 		<!-- Gunslinger -->
 		<tr id="Gunslinger">
-			<td class="item-card item-icon">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/engineer/Gunslinger.png" />
 				<p class="item-stats">
 					<span class="item-name">Gunslinger</span><br />
@@ -3502,8 +3673,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3534,8 +3705,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3565,8 +3736,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3624,8 +3795,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3651,8 +3822,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3678,8 +3849,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3701,6 +3872,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral info">No Headshots stat is now hidden</span><br />
 					<span class="stat downside modified">Decreased max primary ammo from 38 to 15</span><br />
+					<span class="stat downside modified">Now affect by 'health from healers' penalties</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3708,8 +3880,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3735,8 +3907,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3764,8 +3936,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3792,8 +3964,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3832,8 +4004,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3871,8 +4043,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3898,8 +4070,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3925,8 +4097,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3952,8 +4124,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -3979,8 +4151,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4043,8 +4215,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4070,8 +4242,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4110,8 +4282,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4149,8 +4321,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4185,8 +4357,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4212,8 +4384,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4239,8 +4411,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4272,8 +4444,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4281,7 +4453,7 @@
 
 		<!-- Darwin's Danger Shield -->
 		<tr id="Darwin's_Danger_Shield">
-			<td class="item-card item-icon">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/sniper/Darwin's_Danger_Shield.png" />
 				<p class="item-stats">
 					<span class="item-name">Darwin's Danger Shield</span><br />
@@ -4304,8 +4476,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4338,8 +4510,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4365,8 +4537,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4392,8 +4564,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4419,8 +4591,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4449,8 +4621,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4536,8 +4708,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4572,8 +4744,8 @@
 					The upsides and downside of the weapon seem rather tame in practice.
 					The gun isn't necessarily bad, but it is lackluster compared to other options.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					The on kill effect compliments the damage bonus and gives a unique role of killing off weak targets while remaning undetected.
 					A minor nerf and some value changes were implemented to flesh the weapon out.
 				</p>
@@ -4607,8 +4779,8 @@
 					<span class="item-name">Problem</span><br />
 					The fact that hits reward the same amount of cloak no matter the distance, somewhat incentivizes the Spy to attack further away.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					This change encourages the Spy to maintain a proper distance to capitalize on the benefit.
 					Being close has higher value, but it becomes more difficult to escape.
 				</p>
@@ -4617,7 +4789,7 @@
 
 		<!-- Sapper -->
 		<tr id="Sapper">
-			<td class="item-card item-icon">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/spy/Sapper.png" />
 				<p class="item-stats">
 					<span class="item-name q-stock">Sapper</span><br />
@@ -4680,8 +4852,8 @@
 					<span class="item-name">Problem</span><br />
 					TODO<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					TODO
 				</p>
 			</td>
@@ -4748,8 +4920,8 @@
 					A single stab can allow Spy to tank nearly 200 damage, and even more with additional stabs.
 					It becomes even worse when it is paired with the Dead Ringer.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Most of the health gain has been changed into a temporary max health bonus.
 					This allows for Spy to maintain higher health thresholds, without tanking loads of damage from successive kills.
 				</p>
@@ -4796,8 +4968,8 @@
 					The Spy-cicle is too similar to while also being either completely useless becuase of a Pyro or being a complete counter to Pyro.
 					Its unique design leaves something to be desired in terms of stats.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					The knife resistances have been made proactive instead of reactive, requiring you to perform a <span class="tooltip" title="normal or thrown">backstab</span> to recieve the benefits.
 					The damage vulnerability while active forces you to have it out only if you can make use of it, but makes escaping after a pick off effortless.
 					Its ability to be thrown for up to 102 damage crits assists in picking off targets that are just out of reach.
@@ -4834,8 +5006,8 @@
 					The cloak penalties are too overbearing for the ability to disguise once.
 					Disguising on the field leaves you with no option to escape, relying on the disguise to fool people which does not always work.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Changing the cloak drain penalty to a cloak regen penalty will allow you to fully utilize cloak, while still making it a sacrifice to disguise.
 					Disguises have been given a 20% damage resistance from ranged sources, to make it easier to fool enemies who spy check you.
 				</p>
@@ -4904,8 +5076,8 @@
 					The benefit of 'infinite cloak' sounds enticing, but the means of getting it forces you fall into a playstyle where you are idling for long periods.
 					While balanced, some additional stats could be added to make the weapon more interesting and lessen the idling aspect.
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Increasing the 'cloak duration' and quickening the decloak time can help reduce idling by opening up more oppurtunities to position and quickly pick off key targets.
 					The increase in blink time makes it more punishing if you are caught out, encouraging you to position properly and only engage when you can.
 				</p>
@@ -4914,7 +5086,7 @@
 
 		<!-- Dead Ringer -->
 		<tr id="Dead_Ringer">
-			<td class="item-card item-icon">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/spy/Dead_Ringer.png" />
 				<p class="item-stats">
 					<span class="item-name">Dead Ringer</span><br />
@@ -4945,8 +5117,8 @@
 					Many players purely use it for the speed boost and to tank damage to gap close.
 					There seems to be no effort to utilize its intended design of 'feigning death'.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					The watch has been made more rewarding to incentivize players to uses it convincingly, providing significantly longer duration.
 					However, it is more punishing for using it haphazardly, consuming even more cloak and requiring more time to recover.
 				</p>
@@ -4974,8 +5146,8 @@
 					Spy needs to be able to freely gap-close to get stabs.
 					Disguising as classes that are slower than Spy's speed are unoptimal to catch out enemies, resulting in Scout, Medic and Spy being the best disguise options.<br />
 				</p>
-				<p class="stat neutral" style="margin-top: 15px;">
-					<span class="item-name" style="">Solution</span><br />
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
 					Allowing the Spy to freely move at his own speed or his disguise speed will open more oppurtunities to utilize other disguise options.
 				</p>
 			</td>
