@@ -391,14 +391,14 @@
 				<img class="item-img" src="../resources/mvm/battery_canteen_item.png" />
 				<p>
 					<span class="item-name">Crits Canteen</span><br />
-					<span class="stat upside">Become Crit Boosted for 5s</span><br />
+					<span class="stat upside">Grants a crit boost for 5s</span><br />
 					<span class="stat neutral">Triples sentry gun firing rate for 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat downside">Cost increased from $100 to $125</span><br />
+					<span class="stat downside modified">Increased cost from $100 to $125</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -415,16 +415,16 @@
 				<img class="item-img" src="../resources/mvm/battery_canteen_item.png" />
 				<p>
 					<span class="item-name">&#0220bercharge Canteen</span><br />
-					<span class="stat upside">Become Ubercharged for 5s</span><br />
-					<span class="stat upside">Applies a healing effect for 5s</span><br />
-					<span class="stat neutral">Applies a shield to sentry guns that blocks 75% of all incoming damage for 5s</span><br />
+					<span class="stat upside">Grants invulnerability for 5s</span><br />
+					<span class="stat upside">Grants a healing effect for 5s</span><br />
+					<span class="stat neutral">Grants a shield to sentry guns that block 75% of all incoming damage for 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside">Added a <span class="tooltip" title="Similar to the Amputator's healing effect, healing at 24 health per second">healing effect</span>, which can overheal up to 150% health, for the duration</span><br />
-					<span class="stat downside">Reduced Sentry Gun damage resistance from 90% to 75%</span><br />
+					<span class="stat upside added">Effect now heals the user at a rate of 24hp/s</span><br />
+					<span class="stat downside modified">Reduced Sentry Gun shield resistance from 90% to 75%</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -443,14 +443,48 @@
 					<span class="item-name">Ammo Refill Canteen</span><br />
 					<span class="stat upside">Instantly refill all weapon clips and ammo</span><br />
 					<span class="stat upside">Instantly recharge all damage meters</span><br />
-					<span class="stat neutral">All buildings upgrade one level</span><br />
+					<span class="stat neutral">All buildings upgrade to max level</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside">Now instantly recharges all <span class="tooltip" title="This includes damage/rage meters as well as recharge meters. Active meters are reset to full on use.&#010;This does NOT affect Ubercharge meters.">meters</span></span><br />
-					<span class="stat downside">Price increased from 25 to 75</span><br />
+					<span class="stat upside modified">Ammo refill applies to all energy-based weapons</span><br />
+					<span class="stat upside added">Effect now instantly recharges all meters</span><br />
+					<span class="stat neutral info">Affects meters dependent on time or damage, including meters that are in active use</span><br />
+					<span class="stat neutral info">Does not affect &#0220bercharge meters</span><br />
+					<span class="stat upside added">All buildings upgrade to level 3 on use</span><br />
+					<span class="stat downside modified">Increased cost from $25 to $75</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
+		<!-- Recall Canteen -->
+		<tr id="Recall_Canteen">
+			<td class="item-card item-icon icon-CanteenRecall">
+				<img class="item-img" src="../resources/mvm/battery_canteen_item.png" />
+				<p>
+					<span class="item-name">Recall Canteen</span><br />
+					<span class="stat neutral">User drops a reanimator on death</span><br />
+					<span class="stat upside">Instantly revive user at reanimator or spawn</span><br />
+					<span class="stat upside">Grants a speed boost for 5s</span><br />
+					<span class="stat neutral">Pick up a targeted building from long range</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral removed">No longer teleports user to spawn</span><br />
+					<span class="stat neutral added">User drops a reanimator on death</span><br />
+					<span class="stat upside added">Canteen can be consumed while dead to instantly revive the user at their death location</span><br />
+					<span class="stat neutral info">User can click the 'Decline' button to respawn instead</span><br />
+					<span class="stat downside modified">Increased cost from $10 to $50</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -473,39 +507,13 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat downside">Removed</span><br />
+					<span class="stat downside removed">Removed</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Reason</span><br />
-					This effect has been integrated into Ammo Refill by the <a class="tooltip-link tooltip" href="#Building_Upgrades">Canteen Specialist</a> upgrade.
-				</p>
-			</td>
-		</tr>
-
-		<!-- Recall Canteen -->
-		<tr id="Recall_Canteen">
-			<td class="item-card item-icon icon-CanteenRecall">
-				<img class="item-img" src="../resources/mvm/battery_canteen_item.png" />
-				<p>
-					<span class="item-name">Recall Canteen</span><br />
-					<span class="stat upside">Instantly teleport to spawn</span><br />
-					<span class="stat upside">Gain a speed boost for 5s</span><br />
-					<span class="stat upside">While dead, the canteen is automatically used and you instantly respawn</span><br />
-					<span class="stat neutral">...</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat downside">Cost increased to </span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Reason</span><br />
-					TODO
+					This canteen has been removed and its effect has been integrated into the Ammo Refill canteen through the <a class="tooltip-link tooltip" href="#Building_Upgrades">Canteen Specialist</a> upgrade.
 				</p>
 			</td>
 		</tr>
@@ -517,10 +525,10 @@
 			<th colspan="3" style="background-color: #B2B2B2;">Upgrade Station</th>
 		</tr>
 
-		<!-- Power Up Canteen -->
-		<tr id="powerupcanteen">
+		<!-- Upgrades -->
+		<tr id="Upgrade_Stats">
 			<td class="item-card">
-				<img class="item-img" src="../resources/mvm/Credits_Medium.png" />
+				<img class="item-img" src="../resources/mvm/Upgrade_Station_Sign.png" />
 				<p>
 					<span class="item-name">Upgrades</span><br />
 				</p>
@@ -566,6 +574,29 @@
 				</p>
 			</td>
 		</tr>
+
+		<!-- Buybacks -->
+		<tr id="Buybacks">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Reanimator.png" />
+				<p>
+					<span class="item-name">Buybacks</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat neutral">Buybacks now require Recall canteens</span><br />
+					<span class="stat neutral">Example: The Winger's clip size would go from 5->8/10/12/15 to 5->11/17/23</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
 	</table>
 
 	<!-- Scout MvM -->
@@ -581,13 +612,20 @@
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
 					<span class="stat upside">Extra-large cash collection radius</span><br />
-					<span class="stat upside">Health boosts from collected cash</span><br />
+					<span class="stat upside">Health and overheal boosts from collected cash</span><br />
 				</p>
 			</td>
 
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<p class="stat upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
+
+					<!-- Weapon modified notice -->
+					<span class="downside modified">Max overheal from cash reduced <label class="tooltip" title="Click for more info" for="scout_silent_killer">from +500% (750hp) to +200% (375hp)</label></span><br />
+					<input type="checkbox" id="scout_silent_killer" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">With the max health upgrade, this increases to 420/465/510/555/600</span><br />
+					</span>
 
 					<!-- +15 max health -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_PreventiveMedicine.png" /><span>+15 max health</span>
@@ -618,7 +656,7 @@
 
 					<!-- +20% reload speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_CrockBlock.png" /><span>+20% reload speed</span>
-					<span class="credits">[$250]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 1 for all listed weapons">[&#9679;]</span>
+					<span class="credits">[$250]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 1">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" title="Force-A-Nature" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Shortstop.png" title="Shortstop" />
@@ -627,7 +665,7 @@
 
 					<!-- +10% firing speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Scout_ArtfulDodger.png" /><span>+10% firing speed</span>
-					<span class="credits">[$200]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 1 for all listed weapons">[&#9679;]</span>
+					<span class="credits">[$200]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 1">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Force-A-Nature.png" title="Force-A-Nature" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Soda_Popper.png" title="Soda Popper" />
@@ -728,7 +766,7 @@
 
 					<!-- +10% firing speed -->
 					<img class="upgrade-icon" src="../resources/achievements/modified/Spy_YouOnlyShivThrice.png" /><label class="tooltip" title="Click for more info" for="scout_melee_firing_rate">+10% firing speed</label>
-					<span class="credits">[$200]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 4 for all listed weapons">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits">[$200]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 4">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Sandman.png" title="Sandman" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
@@ -740,7 +778,7 @@
 
 					<!-- +100% max misc ammo -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+100% max misc ammo</span>
-					<span class="credits tooltip" title="Cost increased from $100 to $125">[$125]</span> <span class="q-strange tooltip" title="Purchase points have been decreased from 6 to 4 for all listed weapons">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $100 to $125">[$125]</span> <span class="q-strange tooltip" title="Purchase points have been decreased from 6 to 4">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Sandman.png" title="Sandman" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
@@ -792,9 +830,13 @@
 					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/Pyro_Hotshot.png" /><span class="upside">Explosive Specialist</span> upgrade from</span>
 					<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Jumper.png" title="Rocket Jumper" /><br />
 
+					<!-- Rocket Launcher Clip Size Notice -->
+					<span class="neutral modified">Changed the<img class="upgrade-icon" src="../resources/achievements/Scout_GunDown.png" /><span class="upside">+50% clip size</span> upgrade to a<img class="upgrade-icon" src="../resources/achievements/Soldier_CrocketsAreSuchBS.png" /><span class="upside">+2 clip size</span> for</span>
+					<img class="mvm-mini-item" src="../resources/weapons/soldier/Cow_Mangler_5000.png" title="Cow Mangler 5000" /><br />
+
 					<!-- Explosive Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Pyro_Hotshot.png" /><label class="tooltip" title="Click for more info" for="soldier_explosive_specialist">Explosive Specialist</label>
-					<span class="credits tooltip" title="Cost increased from $300 to $500 for all listed weapons">[$500]</span> <span class="q-strange tooltip" title="Purchase points increased from 4 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $300 to $500">[$500]</span> <span class="q-strange tooltip" title="Purchase points increased from 4 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Launcher.png" title="Rocket Launcher" />
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Air_Strike.png" title="Air Strike" />
@@ -829,7 +871,7 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- Kills reload primary ammo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="soldier_on_kill_reload">On Kill: +50% primary clip reloaded</label>
+					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="soldier_on_kill_reload">On Kill: +2 primary clip reloaded</label>
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/multiclass/Shotgun.png" title="Shotgun" />
@@ -839,6 +881,7 @@
 					</span><br />
 					<input type="checkbox" id="soldier_on_kill_reload" style="display: none;" />
 					<span id="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Soldier and Demoman get +2 to match their clip size upgrades</span><br />
 						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
 					</span>
 
@@ -847,7 +890,7 @@
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Buff_Banner.png" title="Buff Banner" />
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Battalion's_Backup.png" title="Battalion's Backup'" />
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Battalion's_Backup.png" title="Battalion's Backup" />
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Concheror.png" title="Concheror" />
 					</span><br />
 					<input type="checkbox" id="soldier_global_banner" style="display: none;" />
@@ -862,9 +905,9 @@
 						<img class="mvm-mini-item" src="../resources/weapons/multiclass/B.A.S.E._Jumper.png" title="B.A.S.E. Jumper" />
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Gunboats.png" title="Gunboats" />
 					</span>
-					<span class="q-strange tooltip" title="Purchase points have been decreased from 3 to 1 for the Manntreads (max 90%)">[&#9679;]</span>
+					<span class="q-strange tooltip" title="Purchase points have been decreased from 3 to 1 for the Mantreads (max 90%)">[&#9679;]</span>
 					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Mantreads.png" title="Manntreads" />
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Mantreads.png" title="Mantreads" />
 					</span>
 				</p>
 			</td>
@@ -927,7 +970,7 @@
 						<span class="neutral info" style="margin-left: 15px;">Afterburn duration applications will fully stack</span><br />
 					</span>
 					<span class="downside" style="margin-left: 15px;">&#x21AA; Removes</span><img class="upgrade-icon" src="../resources/achievements/Pyro_IFry.png" /><span>+50% burn damage (all instances)</span><br />
-					<span class="downside" style="margin-left: 15px;">&#x21AA; Removes</span><img class="upgrade-icon" src="../resources/achievements/modified/Spy_BurnNotice.png" /><span>+50% burn time (all instances)</span><br />
+					<span class="downside" style="margin-left: 15px;">&#x21AA; Removes</span><img class="upgrade-icon" src="../resources/achievements/Pyro_SpontaneousCombustion.png" /><span>+50% burn time (all instances)</span><br />
 
 					<!-- +15 max health -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_PreventiveMedicine.png" /><span>+15 max health</span>
@@ -950,7 +993,7 @@
 
 					<!-- Upgrade removal notice -->
 					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/Pyro_IFry.png" /><span class="upside">+25% Burn Damage</span> upgrade from all primary weapons</span><br />
-					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/modified/Spy_BurnNotice.png" /><span class="upside">+25% Burn Time</span> upgrade from all primary weapons</span><br />
+					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/Pyro_SpontaneousCombustion.png" /><span class="upside">+25% Burn Time</span> upgrade from all primary weapons</span><br />
 
 					<!-- -15% repressurization time -->
 					<img class="upgrade-icon" src="../resources/achievements/Pyro_DeadHeat.png" /><span>-15% repressurization time</span>
@@ -980,7 +1023,7 @@
 
 					<!-- Upgrade removal notice -->
 					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/Pyro_IFry.png" /><span class="upside">+25% Burn Damage</span> upgrade from all secondary weapons</span><br />
-					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/modified/Spy_BurnNotice.png" /><span class="upside">+25% Burn Time</span> upgrade from all secondary weapons</span><br />
+					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/Pyro_SpontaneousCombustion.png" /><span class="upside">+25% Burn Time</span> upgrade from all secondary weapons</span><br />
 
 					<!-- +25% damage -->
 					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><span>+25% damage</span>
@@ -992,7 +1035,7 @@
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Scorch_Shot.png" title="Scorch Shot" />
 					</span><br />
 
-					<!-- Kills reload primary ammo -->
+					<!-- Kills reload primary ammo
 					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="pyro_on_kill_reload">On Kill: +50% primary clip reloaded</label>
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
@@ -1007,7 +1050,7 @@
 					<input type="checkbox" id="pyro_on_kill_reload" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
-					</span>
+					</span> -->
 
 					<!-- +200% Explode on Ignite damage -->
 					<img class="upgrade-icon" src="../resources/achievements/Achievement_Milestone_3.png" /><label class="tooltip" title="Click for more info" for="pyro_explode_on_ignite">+200% Explode on Ignite damage</label>
@@ -1142,7 +1185,7 @@
 
 					<!-- Explosive Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Pyro_Hotshot.png" /><label class="tooltip" title="Click for more info" for="demoman_explosive_specialist">Explosive Specialist</label>
-					<span class="credits tooltip" title="Cost increased from $300 to $500 for all listed weapons">[$500]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $300 to $500">[$500]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Grenade_Launcher.png" title="Grenade Launcher" />
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Iron_Bomber.png" title="Iron Bomber" />
@@ -1152,8 +1195,8 @@
 					<span id="upgrade_info">
 						<span class="neutral info" style="margin-left: 15px;">Rocket Specialist renamed to Explosive Specialist</span><br />
 						<span class="neutral added" style="margin-left: 15px;">+20% bonus damage per point</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">On direct hit: Deal maximum damage and briefly stun target (unchanged)</span><br />
-						<span class="neutral modified" style="margin-left: 15px;">On direct hit: +15% blast radius per point (unchanged)</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">On direct hit: Deal maximum damage and briefly stun target</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">On direct hit: +15% blast radius per point</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">+15% projectile speed per point ( <img class="mvm-mini-item" src="../resources/weapons/demoman/Loch-n-Load.png" title="Loch-n-Load" /> benefits from all points)</span><br />
 					</span>
 					<span class="downside" style="margin-left: 15px;">&#x21AA; Removes</span><img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><span>+20% damage</span><br />
@@ -1161,7 +1204,7 @@
 
 					<!-- +25% damage -->
 					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><label class="tooltip" title="Click for more info" for="demoman_primary_damage">+25% damage</label>
-					<span class="credits tooltip" title="Cost decreased from $500 to $400 for all listed weapons">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost decreased from $500 to $400">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Loose_Cannon.png" title="Loose Cannon" />
 					</span><br />
@@ -1188,18 +1231,16 @@
 					<span class="neutral removed"><span class="downside">Removed</span> the<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><span class="upside">+20% damage</span> upgrade from</span>
 					<img class="mvm-mini-item" src="../resources/weapons/demoman/Sticky_Jumper.png" title="Sticky Jumper" /><br />
 
-					<!-- Kills reload primary ammo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="demoman_on_kill_reload">On Kill: +50% primary clip reloaded</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					<!-- +2 clip size -->
+					<img class="upgrade-icon" src="../resources/achievements/Soldier_CrocketsAreSuchBS.png" /><span>+2 clip size</span>
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Stickybomb_Launcher.png" title="Stickybomb Launcher" />
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Quickiebomb_Launcher.png" title="Quickiebomb_Launcher" />
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish_Resistance" />
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Sticky_Jumper.png" title="Sticky Jumper" />
 					</span><br />
-					<input type="checkbox" id="demoman_on_kill_reload" style="display: none;" />
-					<span id="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
-					</span>
+					<span class="downside" style="margin-left: 15px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/Scout_GunDown.png" /><span>+50% clip size</span><br />
 
 					<!-- +2 max stickybombs out -->
 					<img class="upgrade-icon" src="../resources/achievements/Demoman_StickyThump.png" /><span>+2 max stickybombs out</span>
@@ -1212,6 +1253,20 @@
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish Resistance" />
 					</span><br />
+
+					<!-- Kills reload primary ammo -->
+					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="demoman_on_kill_reload">On Kill: +2 primary clip reloaded</label>
+					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Stickybomb_Launcher.png" title="Stickybomb Launcher" />
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Quickiebomb_Launcher.png" title="Quickiebomb_Launcher" />
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish_Resistance" />
+					</span><br />
+					<input type="checkbox" id="demoman_on_kill_reload" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Soldier and Demoman get +2 to match their clip size upgrades</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
+					</span>
 
 					<!-- +2s Crits On Shield Bash -->
 					<img class="upgrade-icon" src="../resources/achievements/Demoman_EmergencyBrake_lowres.png" /><span>+2s Crits On Shield Bash</span>
@@ -1334,7 +1389,7 @@
 
 					<!-- +15% Firing Speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_CrimeAndPunishment.png" /><label class="tooltip" title="Click for more info" for="heavy_firing_speed">+15% firing speed</label>
-					<span class="credits tooltip" title="Cost increased from $350 to $400 for all listed weapons">[$400]</span> <span class="q-strange tooltip" title="Purchase points reduced from 4 to 3 for all listed weapons">[&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $350 to $400">[$400]</span> <span class="q-strange tooltip" title="Purchase points reduced from 4 to 3">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
@@ -1352,7 +1407,7 @@
 
 					<!-- Armor Penetration -->
 					<img class="upgrade-icon" src="../resources/achievements/General_SentryGunner_lowres.png" /><label class="tooltip" title="Click for more info" for="heavy_armor_penetration">Armor Penetration</label>
-					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
@@ -1368,7 +1423,7 @@
 
 					<!-- Destroy Projectiles -->
 					<img class="upgrade-icon" src="../resources/achievements/Soldier_MutuallyAssuredDestruction.png" /><label class="tooltip" title="Click for more info" for="heavy_destroy_projectiles">Destroy Projectiles</label>
-					<span class="credits tooltip" title="Cost reduced from $400 to $350 for all listed weapons">[$350]</span> <span class="q-strange">[&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost reduced from $400 to $350">[$350]</span> <span class="q-strange">[&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
@@ -1385,7 +1440,7 @@
 
 					<!-- +50% ammo capacity -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+50% ammo capacity</span>
-					<span class="credits tooltip" title="Cost increased from $250 to $300 for all listed weapons">[$300]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $250 to $375">[$375]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
@@ -1396,7 +1451,7 @@
 
 					<!-- +25 health on kill -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
-					<span class="credits tooltip" title="Cost increased from $200 to $250 for all listed weapons">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $300">[$300]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
@@ -1419,7 +1474,7 @@
 				<p class="stat upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
-					<!-- Kills reload primary ammo -->
+					<!-- Kills reload primary ammo 
 					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="heavy_on_kill_reload">On Kill: +50% primary clip reloaded</label>
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
@@ -1430,7 +1485,7 @@
 					<input type="checkbox" id="heavy_on_kill_reload" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
-					</span>
+					</span> -->
 
 					<!-- Lunch Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_DontTouchSandvich.png" /><label class="tooltip" title="Click for more info" for="heavy_lunch_specialist">Lunch Specialist</label>
@@ -1498,7 +1553,7 @@
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
 					<span class="stat upside">Redeployed buildings construct instantly</span><br />
-					<span class="stat upside">No move speed penalty while hauling buildings</span><br />
+					<span class="stat upside">No move speed reduction while hauling buildings</span><br />
 				</p>
 			</td>
 
@@ -1532,7 +1587,7 @@
 
 					<!-- +50% ammo capacity -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+50% ammo capacity</span>
-					<span class="credits tooltip" title="Cost reduced from 250 to 125 for all listed weapons">[$125]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost reduced from 250 to 125">[$125]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/multiclass/Shotgun.png" title="Shotgun" />
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Frontier_Justice.png" title="Frontier Justice" />
@@ -1601,7 +1656,7 @@
 
 					<!-- +1 Disposable Sentry Gun -->
 					<img class="upgrade-icon" src="../resources/achievements/Engineer_UncivilEngineer.png" /><label class="tooltip" title="Click for more info" for="engineer_disposable_sentry_gun">+1 disposable sentry gun</label>
-					<span class="credits tooltip" title="Cost reduced from $500 to $350 for all listed weapons">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					<span class="credits tooltip" title="Cost reduced from $500 to $350">[$350]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Wrench.png" title="Wrench" />
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Eureka_Effect.png" title="Eureka Effect" />
@@ -1620,7 +1675,7 @@
 
 					<!-- +25 health on kill -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
-					<span class="credits tooltip" title="Cost reduced from $200 to $100 for all listed weapons">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost reduced from $200 to $100">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Wrench.png" title="Wrench" />
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Eureka_Effect.png" title="Eureka Effect" />
@@ -1744,7 +1799,7 @@
 
 					<!-- +50% clip size-->
 					<img class="upgrade-icon" src="../resources/achievements/Scout_GunDown.png" /><span>+50% clip size</span>
-					<span class="credits tooltip" title="Cost decreased from $400 to $200 for all primary weapons">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost decreased from $400 to $200">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Syringe_Gun.png" title="Syringe Gun" />
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
@@ -1766,7 +1821,7 @@
 
 					<!-- +50% ammo capacity -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+50% ammo capacity</span>
-					<span class="credits tooltip" title="Cost decreased from $250 to $125 for all primary weapons">[$125]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost decreased from $250 to $125">[$125]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Syringe_Gun.png" title="Syringe Gun" />
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
@@ -1776,7 +1831,7 @@
 
 					<!-- 10% firing speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Scout_ArtfulDodger.png" /><span>+10% firing speed</span>
-					<span class="credits tooltip" title="Cost decreased from $200 to $100 for all primary weapons">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost decreased from $200 to $100">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Syringe_Gun.png" title="Syringe Gun" />
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
@@ -1786,7 +1841,7 @@
 
 					<!-- +25 health on kill -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
-					<span class="credits tooltip" title="Cost decreased from $200 to $100 for all primary weapons">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost decreased from $200 to $100">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Syringe_Gun.png" title="Syringe Gun" />
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
@@ -1796,7 +1851,7 @@
 
 					<!-- Mad Milk Syringes -->
 					(TODO) Mad Milk Syringes
-					<span class="credits tooltip" title="Cost increased from $200 to $250 for all primary weapons">[$250]</span> <span class="q-strange tooltip" title="Purchase points has been increased from 0 to 1 for the Crusader's Crossbow">[&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $250">[$250]</span> <span class="q-strange tooltip" title="Purchase points has been increased from 0 to 1 for the Crusader's Crossbow">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Syringe_Gun.png" title="Syringe Gun" />
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
@@ -1805,7 +1860,7 @@
 
 					<!-- Bleed on hit -->
 					(TODO)<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><span><a href="#Bleed_Vs_Robots" class="tooltip-link">Bleed</a> on hit</span>
-					<span class="credits tooltip" title="Cost increased from $200 to $250 for all listed weapons">[$250]</span> <span class="q-strange">[&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $250">[$250]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
 					</span><br />
@@ -1852,6 +1907,12 @@
 					<input type="checkbox" id="medic_projectile_shield" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral modified" style="margin-left: 15px;">Shield no longer doubles its attack interval with the second point</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Reduced shield duration from 12s to 10s</span><br />
+						<span class="neutral removed" style="margin-left: 15px;">Shield no longer builds from amount of health healed</span><br />
+						<span class="neutral removed" style="margin-left: 15px;">Shield no longer builds from amount of patient damage</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Shield now recharges with time, taking 40s to charge</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Shield build rate doubles when healing patients below 142.5% health</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Shield build rate doubles during setup time</span><br />
 					</span>
 
 					<!-- +2s Uber Duration -->
@@ -1974,7 +2035,7 @@
 
 					<!-- Hitman Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Engineer_FrontierJustice.png" /><label class="tooltip" title="Click for more info" for="sniper_hitman_specialist">Hitman Specialist</label>
-					<span class="credits tooltip" title="Cost increased from $350 to $500 for all listed weapons">[$500]</span> <span class="q-strange tooltip" title="Purchase points increased from 3 to 5 for all listed weapons">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $350 to $500">[$500]</span> <span class="q-strange tooltip" title="Purchase points increased from 3 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Sniper_Rifle.png" title="Sniper Rifle" />
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Bazaar_Bargain.png" title="Bazaar Bargain" />
@@ -2050,7 +2111,7 @@
 
 					<!-- Bleed on hit -->
 					(TODO)<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><span><a href="#Bleed_Vs_Robots" class="tooltip-link">Bleed</a> on hit</span>
-					<span class="credits tooltip" title="Cost increased from $200 to $250 for all listed weapons">[$250]</span> <span class="q-strange tooltip" title="Purchase points have been decreased from 3 to 1 for all listed weapons">[&#9679;]</span>
+					<span class="credits tooltip" title="Cost increased from $200 to $250">[$250]</span> <span class="q-strange tooltip" title="Purchase points have been decreased from 3 to 1">[&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Huntsman.png" title="Huntsman" />
 					</span><br />
@@ -2107,6 +2168,7 @@
 					<input type="checkbox" id="sniper_ammo_recharge" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">+5% ammo every 5s per point (min of 1)</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Razorback only provides ammo while active</span><br />
 					</span>
 				</p>
 			</td>
@@ -2142,10 +2204,9 @@
 				<img class="item-img" src="../resources/class/token_spy.png" />
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
-					<span class="stat upside">Increased cash collection radius while cloaked</span><br />
-					<span class="stat upside">Nearby cash is outlined through walls while cloaked</span><br />
-					<span class="stat upside">Cloak duration boosts from collected cash</span><br />
-					<span class="stat upside">Melee kills auto-collect cash</span><br />
+					<span class="stat upside">No move speed reduction while disguised</span><br />
+					<span class="stat upside">Melee weapon kills auto-collect cash</span><br />
+					<span class="stat downside">Backstabs vs Giant Robots deal 195 damage</span><br />
 				</p>
 			</td>
 
@@ -2185,7 +2246,7 @@
 
 					<!-- Hitman Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Engineer_FrontierJustice.png" /><label class="tooltip" title="Click for more info" for="spy_hitman_specialist">Hitman Specialist</label>
-					<span class="credits">[$350]</span> <span class="q-strange tooltip" title="Purchase points increased from 3 to 5 for all listed weapons">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+					<span class="credits">[$250]</span> <span class="q-strange tooltip" title="Purchase points increased from 3 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/spy/Ambassador.png" title="Ambassador" />
 					</span><br />
@@ -2241,7 +2302,7 @@
 					<!-- Weapon modified notice -->
 					<span class="neutral info">Sapped robots are highlighted for the entire team</span><br />
 					<span class="neutral info">Sapper base slow vs giant robots reduced from 85% to 35%</span><br />
-					<span class="neutral info">Sapper Radar will reveal spies</span><br />
+					<span class="neutral info">Sapper Radar will reveal Spy robots</span><br />
 
 					<!-- Sapper Power -->
 					<img class="upgrade-icon" src="../resources/achievements/modified/Spy_TheManWithTheBrokenGuns.png" /><label class="tooltip" title="Click for more info" for="spy_sapper_power">Sapper Power</label>
@@ -2253,7 +2314,7 @@
 					<input type="checkbox" id="spy_sapper_power" style="display: none;" />
 					<span id="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Sapper Power applies Mark For Death to affected robots</span><br />
-						<span class="neutral added" style="margin-left: 15px;">+15% increased slow stregth per point (50%/65%/80%)</span><br />
+						<span class="neutral added" style="margin-left: 15px;">+15% increased slow strength per point (50%/65%/80%)</span><br />
 						<span class="neutral removed" style="margin-left: 15px;">No longer increases in radius per point</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Duration bonus changed from +0/1.5/3s to +1s per point</span><br />
 					</span>
@@ -2312,8 +2373,23 @@
 						<span class="neutral added" style="margin-left: 15px;">Backstab kills instantly reload your primary weapon and grant 3/4/5/6s of critical hits</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Pierces backstab resistance against giants by +25% per point (unchanged)</span><br />
 					</span>
-					<span class="downside" style="margin-left: 15px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/General_SentryGunner_lowres.png" /><span>Armor Penetration</span><br />
 					<span class="downside" style="margin-left: 15px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/Soldier_WarCrimeSpybunal.png" /><span>+2s crits on kill</span><br />
+
+					<!-- Armor Penetration -->
+					<img class="upgrade-icon" src="../resources/achievements/General_SentryGunner_lowres.png" /><label class="tooltip" title="Click for more info" for="spy_armor_penetration">Armor Penetration</label>
+					<span class="credits tooltip" title="Cost decreased from $400 to $350">[$350]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Knife.png" title="Knife" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Big_Earner.png" title="Big Earner" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Conniver's_Kunai.png" title="Conniver's Kunai" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Spy-cicle.png" title="Spy-cicle" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Your_Eternal_Reward.png" title="Your Eternal Reward" />
+					</span><br />
+					<input type="checkbox" id="spy_armor_penetration" style="display: none;" />
+					<span id="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Increases backstab damage by +100% (unchanged, reworded)</span><br />
+						<span class="neutral modified" style="margin-left: 30px;">Backstab damage per point: 390/585/780/975 (from 375/562.5/750/937.5)</span><br />
+					</span>
 				</p>
 			</td>
 		</tr>
