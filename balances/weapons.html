@@ -766,11 +766,11 @@
 
 		<!-- Bonk! Atomic Punch-->
 		<tr id="Bonk!_Atomic_Punch">
-			<td class="item-card item-icon icon-WIP">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/scout/Bonk!_Atomic_Punch.png" />
 				<p class="item-stats">
 					<span class="item-name">Bonk! Atomic Punch</span><br />
-					<span class="stat neutral">Drink to gain 50% knockback reduction and invulnerability for 8 seconds. Cannot attack during this time. Effect duration expires if 500 damage is absorbed.</span><br />
+					<span class="stat neutral">Drink to gain 50% knockback reduction against sentries and invulnerability for 8 seconds. Cannot attack during this time. Effect duration expires if 500 damage is absorbed.</span><br />
 					<span class="stat upside">-50% buff expiration from incoming sentry damage</span><br />
 					<span class="stat downside">Damage absorbed will slow you when the effect ends</span>
 				</p>
@@ -778,12 +778,12 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">These stats are subject to change</span><br />
 					<span class="stat neutral removed">Effect no longer puts the Scout in <span class="tooltip" title="Scout will remain in firstperson view with a distortion effect around the screen border">thirdperson view</span></span><br />
+					<span class="stat neutral modified">On-hit effects no longer work against the effect</span><br />
 					<span class="stat neutral modified">Changed slow scaling from '25%-50% based on damage taken' to a static 25% at &#62;250 damage taken and 50% if the effect expires prematurely</span><br />
 					<span class="stat upside modified">Consumption <span class="tooltip" title="Now allowing unrestricted movement while drinking">no longer forces the user into a taunt</span></span><br />
 					<span class="stat upside info">Able to switch between weapons during the effect</span><br />
-					<span class="stat upside added">Effect provides 50% knockback status resistance</span><br />
+					<span class="stat upside added">Effect provides 50% reduced knockback vs sentry guns</span><br />
 					<span class="stat downside modified">Increased consumption time from 1.2s to <span class="tooltip" title="Now matching the time in takes to blow a banner on Soldier">2.645s</span></span><br />
 					<span class="stat downside added">Effect ends if 500 damage is taken with half of incoming sentry damage being accounted for</span><br />
 				</p>
@@ -792,13 +792,13 @@
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
 					Enemies typically do not shoot players under the Bonk! effect.
-					The slowdown is not impactful enough if the item is used to escape, making it feel imilar to the Dead Ringer.
+					The slowdown is not impactful enough if the item is used to escape, making it feel similar to the Dead Ringer.
 					Because of this, this item has been used almost exclusively for Sentry tanking.<br />
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
 					Making the effect expire prematurely from damage allows the enemy to at least attempt to catch the Scout before he manages to escape.
-					To balance this out, the consumption has been made less restricting.
+					The consumption has also been made less restricting to make it more seamless.
 				</p>
 			</td>
 		</tr>
