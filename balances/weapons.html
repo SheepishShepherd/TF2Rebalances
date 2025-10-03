@@ -3967,12 +3967,8 @@
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO<br />
-				</p>
-				<p class="stat neutral">
-					<span class="item-name">Solution</span><br />
-					TODO
+					<span class="item-name">Reason</span><br />
+					Since this is the only medi gun with no self preservation capabilities to offer, the self-healing from the taunt was made a little more viable in a pinch.<br />
 				</p>
 			</td>
 		</tr>
@@ -4019,11 +4015,11 @@
 
 		<!-- Vaccinator -->
 		<tr id="Vaccinator">
-			<td class="item-card item-icon icon-WIP">
+			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/medic/Vaccinator.png" />
 				<p class="item-stats">
 					<span class="item-name">Vaccinator</span><br />
-					<span class="stat neutral">&#220;berCharge provides a healing bubble that resists 35% base damage and 50% crit damage of the selected type for 4 seconds. The &#220;berCharge meter is split into 4 segments, each requiring 25% charge.</span><br />
+					<span class="stat neutral">&#220;berCharge provides a healing bubble that resists 40% base damage and 70% crit damage of the selected type for 4 seconds. The &#220;berCharge meter is split into 4 segments, each requiring 25% charge.</span><br />
 					<span class="stat upside">While healing, provides a shared 10% resistance of the selected damage type. Reload to cycle resist types.</span><br />
 					<span class="stat upside">+75% &#220;berCharge rate</span><br />
 					<span class="stat downside">-33% &#220;berCharge rate on Overhealed patients</span><br />
@@ -4033,13 +4029,12 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
 					<span class="stat upside modified">Bubbles remain on user when switching weapons</span><br />
 					<span class="stat upside modified">Increased bubble duration from 2.5s to 4s</span><br />
-					<span class="stat upside added">Bubbles keep <span class="tooltip" title="This healing does NOT contribute towards &#220;berCharge building">healing the patient</span> after being disconnected from the heal beam</span><br />
+					<span class="stat upside added">Patients that are bubbled continue <span class="tooltip" title="This healing does NOT contribute towards &#220;berCharge building">healing</span>, even if the heal beam is disconnected from them</span><br />
 					<span class="stat upside modified">Increased base &#220;berCharge rate from 67% to 75%</span><br />
-					<span class="stat downside info">Bubbles no longer allow <span class="tooltip" title="except for intelligence carrying">objective captures</span></span><br />
+					<span class="stat downside info">Bubbles no longer allow <span class="tooltip" title="*except for intelligence carrying&#010;Bubbles still allow defending objectives">objective captures</span></span><br />
 					<span class="stat downside modified">Reduced bubble damage resistance from 75% to 40%</span><br />
 					<span class="stat downside modified">Reduced bubble crit resistance from <span class="tooltip" title="Critical damage from 300% to 200%&#010;Mini-crits are completely negated">100% to 70%</span></span><br />
 				</p>
@@ -4047,11 +4042,13 @@
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Bubbles simply gave way too much resistance to damage, effectively turning the primary damage type of any given class into chip damage.<br />
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					The resistances granted by bubbles have been reduced significantly.
+					Some additional quality of life changes have also been made, including bubbles continuing to heal patients after the medibeam is disconnected from them.
+					This can help encourage the Medic to spread bubbles to multiple teammates instead of pocketing one individual.
 				</p>
 			</td>
 		</tr>
