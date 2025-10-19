@@ -1028,28 +1028,30 @@
 				<img class="item-img" src="../resources/weapons/scout/Candy_Cane.png" />
 				<p class="item-stats">
 					<span class="item-name">Candy Cane</span><br />
-					<span class="stat upside">Killing an enemy drops a moderate health pack</span><br />
-					<span class="stat downside">Health pickups heal over time on wearer</span><br />
+					<span class="stat upside">+60% health from picks while &#60;50% health</span><br />
+					<span class="stat upside">On Kill: Target drops a small health pack</span><br />
+					<span class="stat downside">On Kill: Target drops a small ammo pack</span><br />
+					<span class="stat downside">-50% max primary ammo</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside removed">Removed explosive damage vulnerability</span><br />
-					<span class="stat upside modified">Increased health restored by a <span class="tooltip" title="Drops a new health kit type rather than a small one">dropped health pack</span> from 20% to 33%</span><br />
-					<span class="stat downside added">Health pickups no longer grant immediate health on wearer, instead granting <span class="tooltip" title="The health regen ends once the health pack value is healed or until max hp is reached. Picking up multiple health packs stacks the regen.">20 health per second</span></span><br />
+					<span class="stat upside added">Increased health restored by health packs while below 50% health from 125/63/25 to 125/95/40</span><br />
+					<span class="stat downside added">Ammo packs dropped by killed enemies changed from medium to small</span><br />
+					<span class="stat downside added">Reduced primary max ammo from 24 to 12</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					The vulnerability to explosives imposes a dodge or die mentality, while Scout already has to make use of his mobility to dodge projectiles in first place. This is a similar issue to the Kunai.<br />
+					TODO<br />
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					Having health packs heal over time gives Scout more control over fights.
-					Instead of needing to worry at all times, the Scout has to decide if its worth picking a fight while he is still healing.
-					Getting hit by anything becomes more punishing without outright killing him.
+					TODO
 				</p>
 			</td>
 		</tr>
@@ -2962,13 +2964,24 @@
 				<img class="item-img" src="../resources/weapons/heavy/Huo-Long_Heater.png" />
 				<p class="item-stats">
 					<span class="item-name">Huo-Long Heater</span><br />
+					<span class="stat upside">Creates a ring of flames while spun up</span><br />
+					<span class="stat upside">On Kill: Target explodes and ignites nearby enemies</span><br />
+					<span class="stat upside">+15% damage bonus vs burning targets</span><br />
+					<span class="stat downside">-15% damage penalty vs non-burning targets</span><br />
+					<span class="stat downside">+3 ammo consumed per second while spun up</span><br />
 					<span class="stat neutral">Damage and accuracy improves briefly after spin up</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="stat upside modified">Damage penalty only applies to non-burning targets</span><br />
+					<span class="stat upside modified">Increased damage done against burning targets from 10.125 (40.5) to 10.35 (41.4)</span><br />
+					<span class="stat upside added">Killing an enemy creates an explosion, dealing <span class="tooltip" title="Damage is equivalent to one bullet and is affected by damage modifiers">damage</span> and igniting other enemies within 256HU</span><br />
+					<span class="stat downside modified">Increased damage done against non-burning targets from 8.1 (32.4) to 7.65 (30.6)</span><br />
+					<span class="stat downside modified">Reduced ammo consumption rate from +4 to +3</span><br />
+					<span class="stat downside info">Fixed damage bonus affecting afterburn damage</span><br />
 				</p>
 			</td>
 			<td class="item-card">
