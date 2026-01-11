@@ -288,44 +288,6 @@
 			</td>
 		</tr>
 
-		<!-- Shield Attack -->
-		<tr id="Shield_Attack">
-			<td class="item-card item-icon icon-NEW">
-				<img class="item-img" src="../resources/weapons/demoman/Shield_Attack.png" />
-				<p class="item-stats">
-					<span class="item-name">Shield Attack</span><br />
-					<span class="stat neutral">
-						With a shield equipped, pressing the Special Attack key will perform a melee attack with the shield, regardless of what weapon is currently active.
-						The shield attack does increased knockback to target.
-					</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Stats</span><br />
-					<span class="stat subtle">Base stats taken from the Shortstop shove</span><br />
-					<span class="stat neutral info">Deals 35 base damage with stock melee range</span><br />
-					<span class="stat neutral info">Attack is crit-boosted by the Charge ability</span><br />
-					<span class="stat neutral info">Minicrits whenever it would normally crit</span><br />
-					<span class="stat neutral info">Attack interval of 1.5s with a delay of 0.1s</span><br />
-					<span class="stat neutral info">Cannot perform weapon actions (firing, reloading, switching, etc.) until 0.8s after attack occurs</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					The Spy puts in a lot of effort to infultrate a nest, especially with the presence of a Pyro.
-					Giving the Pyro another means of nullifying Spy is overkill.
-				</p>
-				<p class="stat neutral">
-					<span class="item-name">Solution</span><br />
-					Rather than outright removal of this feature, the effects are lessened.
-					With these changes, the Sentry Gun still remains disabled after the sapper is struck.
-					This allows for the Spy or his team to follow up if an Engineer is not present to remove the sapper.
-				</p>
-			</td>
-		</tr>
-
 		<!-- Malformed Sapper -->
 		<tr id="Malformed_Sapper">
 			<td class="item-card item-icon icon-NEW">
@@ -2541,14 +2503,43 @@
 			</td>
 		</tr>
 
+		<!-- Demoman Shields -->
+		<tr id="Shields">
+			<td class="item-card">
+				<img class="item-img" src="../resources/elements/Charging.png" />
+				<p class="item-stats">
+					<span class="item-name">Shields</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward with great speed, dealing damage on impact. Charging removes debuffs and grants critical melee damage based on distance.</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat subtle">Changes apply to all Shields</span><br />
+					<span class="stat neutral info">Killing an enemy with a shield bash now triggers <span class="tooltip" title="On Kill bonuses that require a melee kill, not the On Kill bonus provided by your melee. This includes the Tide Turner's 'Melee kills refill 75% of your charge meter' stat">melee-specific on kill bonus effects</span></span><br />
+					<span class="stat upside modified">Shield impact damage no longer requires scaling up to maximum damage with distance</span><br />
+					<span class="stat upside added">Shield impact damage deals <span class="tooltip" title="47 damage, 88 damage with the Splendid Screen">mini-crit damage</span> if distance charged grants a critical melee attack</span><br />
+					<span class="stat downside modified">Reduced base damage from 50 to 35</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Reason</span><br />
+					The shield bash impact damage scaling was hard to pinpoint, as it is influenced by the movement of both you and your target.
+					Reverting the shield bash damage to be a set amount at any distance will make its damage more expected.
+					The base damage was reduced to account for this revert while keeping its vanilla value for long distance charges in the form of a mini-crit boost.
+				</p>
+			</td>
+		</tr>
+
 		<!-- Chargin' Targe -->
 		<tr id="Chargin'_Targe">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/demoman/Chargin'_Targe.png" />
 				<p class="item-stats">
 					<span class="item-name">Chargin' Targe</span><br />
-					<span class="stat neutral">Alt-Fire: Charge forward, gaining debuff immunity and damaging any enemy you impact with. Gain critical melee damage based on distance charged.</span><br />
-					<span class="stat neutral">Special Attack: Perform a melee attack with the shield</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward with great speed, dealing damage on impact. Charging removes debuffs and grants critical melee damage based on distance.</span><br />
+					<span class="stat upside">Immune to debuffs while charging</span><br />
 					<span class="stat upside">+50% fire damage resistance on wearer</span><br />
 					<span class="stat upside">+30% explosive damage resistance on wearer</span><br />
 				</p>
@@ -2556,20 +2547,14 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral added">Shields can now <a class="tooltip-link" href="#Shield_Attack">perform an attack</a> with increased knockback by pressing the Special Attack key</span><br />
-					<span class="stat neutral info">Kills with a shield now contribute towards melee-specific on kill effects</span><br />
-					<span class="stat upside added">Immune to new debuff applications while charging</span><br />
+					<span class="stat upside added"><span class="tooltip" title="Any debuff you can remove from charging cannot be applied to you for the full duration of the charge.">Immune to new debuff applications</span> while charging</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO<br />
-				</p>
-				<p class="stat neutral">
-					<span class="item-name">Solution</span><br />
-					TODO
+					<span class="item-name">Reason</span><br />
+					A small quality of life buff was given to just this shield to pay homage to the old Immune to Afterburn stat it once had.
+					Any debuffs that you can purge with the shield cannot be applied to you while you are charging.
 				</p>
 			</td>
 		</tr>
@@ -2649,32 +2634,31 @@
 				<img class="item-img" src="../resources/weapons/demoman/Splendid_Screen.png" />
 				<p class="item-stats">
 					<span class="item-name">Splendid Screen</span><br />
-					<span class="stat neutral">Alt-Fire: Charge forward, removing debuffs and damaging any enemy you impact with. Gain critical melee damage based on distance charged.</span><br />
-					<span class="stat neutral">Special Attack: Perform a melee attack with the shield</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward with great speed, dealing damage on impact. Charging removes debuffs and grants critical melee damage based on distance.</span><br />
+					<span class="stat upside">Shield bashes refill 20% of your charge meter</span><br />
 					<span class="stat upside">+20% fire damage resistance on wearer</span><br />
 					<span class="stat upside">+20% explosive damage resistance on wearer</span><br />
-					<span class="stat upside">+30% increase in charge impact damage</span><br />
-					<span class="stat upside">+50% increase in charge recharge rate</span><br />
+					<span class="stat upside">+85% increase in charge impact damage</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral added">Shields can now <a class="tooltip-link" href="#Shield_Attack">perform an attack</a> with increased knockback by pressing the Special Attack key</span><br />
-					<span class="stat neutral info">Kills with a shield now contribute towards melee-specific on kill effects</span><br />
-					<span class="stat upside modified">Increased shield attack damage from 35 to 65</span><br />
-					<span class="stat downside modified">Reduced max impact damage from 85 to 65</span><br />
+					<span class="stat upside added">20% of the charge meter is restored immediately after a successful shield bash against an enemy</span><br />
+					<span class="stat downside modified">Reduced base damage from 85 to <span class="tooltip" title="Shield impact damage for all shields now have a starting base damage of 35 (from 50). The bonus damage was increased from +70% to +85%, but this still results in a net-nerf.">65</span></span><br />
+					<span class="stat downside removed">Removed bonus recharge rate for charge meter</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					While not overpowered, its upsides made it significantly better than the other shields. The increased damage and mobility are more valuable than increased resistances, especially when they are passive.
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					The base damage was reduced to stock melee damage and the mobility is no longer passive.
+					Instead, faster shield recharges are rewarded by bashing an enemy target, making usage outside of combat equally as viable as the other shields.
 				</p>
 			</td>
 		</tr>
@@ -2685,32 +2669,29 @@
 				<img class="item-img" src="../resources/weapons/demoman/Tide_Turner.png" />
 				<p class="item-stats">
 					<span class="item-name">Tide Turner</span><br />
-					<span class="stat neutral">Alt-Fire: Charge forward, removing debuffs and damaging any enemy you impact with. Gain mini-crit melee damage based on distance charged.</span><br />
-					<span class="stat neutral">Special Attack: Perform a melee attack with the shield</span><br />
+					<span class="stat neutral">Alt-Fire: Charge forward with great speed, dealing damage on impact. Charging removes debuffs and grants mini-crit melee damage based on distance.</span><br />
 					<span class="stat upside">+15% fire damage resistance on wearer</span><br />
 					<span class="stat upside">+15% explosive damage resistance on wearer</span><br />
 					<span class="stat upside">Full turning control while charging</span><br />
 					<span class="stat upside">Melee kills refill 75% of your charge meter</span><br />
-					<span class="stat downside">Taking 50 damage while shield charging prematurely ends your charge</span><br />
+					<span class="stat downside">0.5 sec decrease in charge duration</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral added">Shields can now <a class="tooltip-link" href="#Shield_Attack">perform an attack</a> with increased knockback by pressing the Special Attack key</span><br />
-					<span class="stat neutral info">Kills with a shield now contribute towards <span class="tooltip" title="including the Tide Turner's 75% charge refill">melee-specific on kill effects</span></span><br />
-					<span class="stat downside modified">Taking 50 damage (<span class="tooltip" title="this can be a buff in certain situations, but a net-negative overall, as most interactions with aware players will incur at least 50 damage">accumulative</span>) while shield charging will end the charge abruptly</span><br />
+					<span class="stat upside removed">No longer loses charge duration from taking damage</span><br />
+					<span class="stat downside added">Reduced total charge duration from 1.75s to 1.25s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO<br />
+					Losing charge duration when taking damage seems to be a fair compromise on paper, though in practice it can be very frustrating to account for.
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					The Tide Turner now just has a lower charge duration by default, as it wasnt used that much for full charges unless you were making use of the full turning control.
 				</p>
 			</td>
 		</tr>
@@ -2823,7 +2804,7 @@
 				<p class="item-stats">
 					<span class="item-name">Scotsman's Skullcutter</span><br />
 					<span class="stat neutral">When weapon is active:</span><br />
-					<span class="stat upside">Shield bashes deal maximum damage</span><br />
+					<span class="stat upside">Shield bashes deal mini-crit damage at any distance</span><br />
 					<span class="stat downside">-15% movement speed on wearer</span><br />
 					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 					<span class="stat neutral">Gives increased damage with every head you take</span><br />
@@ -2833,7 +2814,8 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">These stats are subject to change</span><br />
-					<span class="stat upside added">Collects heads that grant <span class="tooltip" title="0 heads: 65 (88) (195)&#010;1 head: 72 (97) (216)&#010;2 heads: 78 (105) (234)&#010;3 heads: 85 (115) (255)&#010;4 heads: 91 (123) (273)">10% bonus melee damage</span> and <span class="tooltip" title="0 heads: 50&#010;1 head: 55&#010;2 heads: 60&#010;3 heads: 65&#010;4 heads: 70">10% shield bash damage</span> each</span><br />
+					<span class="stat upside added">Shield impact damage deals mini-crit damage if distance charged grants a boosted melee attack</span><br />
+					<span class="stat upside added">Collects heads that grant <span class="tooltip" title="0 heads: 65 (88) (195)&#010;1 head: 72 (97) (216)&#010;2 heads: 78 (105) (234)&#010;3 heads: 85 (115) (255)&#010;4 heads: 91 (123) (273)">10% bonus damage</span> each</span><br />
 					<span class="stat upside added">While weapon is active, shield bashes deal maximum base damage regardless of distance</span><br />
 					<span class="stat upside modified">Movement speed penalty no longer applies to the speed of charging with a shield</span><br />
 					<span class="stat downside removed">Removed damage bonus</span><br />
