@@ -43,7 +43,7 @@
 			<td class="item-card">
 				<img class="item-img" src="../resources/cosmetics/soldier/Public_Speaker_Custom.png" />
 				<p class="item-stats">
-					<span class="item-name">Voice Call Outs</span><br />
+					<span class="item-name item-set-active">Voice Call Outs</span><br />
 					<span class="stat item-set-inactive">New! Sniper Ahead voice command</span><br />
 					<span class="stat item-set-inactive">Certain voice commands will ping a pop-up message</span><br />
 				</p>
@@ -71,13 +71,40 @@
 			</td>
 		</tr>
 
+		<!-- Health On Kill -->
+		<tr id="Health_On_Kill">
+			<td class="item-card">
+				<img class="item-img" src="../resources/other/Syringe.png" />
+				<p class="item-stats">
+					<span class="item-name item-set-active">Health On Kill</span><br />
+					<span class="stat item-set-inactive">Healing overheals up to 20% maximum health</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="stat upside modified">Health restored on kill bonuses can overheal the recipient up to <span class="tooltip" title="Maximum health bonuses and maximum health drain penalties affect this value. This overheal lasts 6s, since the standard 50% overheal lasts 15s.">20% of their current maximum health</span></span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="stat neutral">
+					<span class="item-name">Problem</span><br />
+					TODO
+				</p>
+				<p class="stat neutral">
+					<span class="item-name">Solution</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
 		<!-- Bleed -->
 		<tr id="Bleed">
 			<td class="item-card">
 				<img class="item-img" src="../resources/elements/bleed.png" />
 				<p class="item-stats">
-					<span class="item-name">Status Effect: Bleed</span><br />
-					<span class="stat neutral">-50% health from pickups</span><br />
+					<span class="item-name item-set-active">Status Effect: Bleed</span><br />
+					<span class="stat item-set-inactive">-50% health from pickups</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -107,8 +134,8 @@
 			<td class="item-card">
 				<img class="item-img" src="../resources/class/token_pyro.png" />
 				<p class="item-stats">
-					<span class="item-name">Status Effect: Afterburn</span><br />
-					<span class="stat neutral">-50% health from healers</span><br />
+					<span class="item-name item-set-active">Status Effect: Afterburn</span><br />
+					<span class="stat item-set-inactive">-50% health from healers</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -135,11 +162,11 @@
 			<td class="item-card item-icon icon-NEW">
 				<img class="item-img" src="../resources/elements/Frontline_Jerry_Can.png" />
 				<p class="item-stats">
-					<span class="item-name">Status Effect: Inferno</span><br />
+					<span class="item-name item-set-active">Status Effect: Inferno</span><br />
 					<span class="stat subtle">"Greater Afterburn"</span><br />
-					<span class="stat neutral">Extinguishing reduces its effect to afterburn</span><br />
-					<span class="stat neutral">+33% vulnerability to fire damage</span><br />
-					<span class="stat neutral">-50% health from healers</span><br />
+					<span class="stat item-set-inactive">Extinguishing reduces its effect to afterburn</span><br />
+					<span class="stat item-set-inactive">+33% vulnerability to fire damage</span><br />
+					<span class="stat item-set-inactive">-50% health from healers</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -168,10 +195,10 @@
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/pyro/Nostromo_Napalmer.png" />
 				<p class="item-stats">
-					<span class="item-name q-stock">Temperature</span><br />
+					<span class="item-name item-set-active">Temperature</span><br />
 					<span class="stat subtle">"Flame thrower damage ramp-up"</span><br />
-					<span class="stat neutral">Base damage for flames is determined by range and temperature (concurrent contact with flames)</span><br />
-					<span class="stat neutral">Each player has their own temperature value, which gradually resets to zero over 0.5s</span><br />
+					<span class="stat item-set-inactive">Base damage for flames is determined by range and temperature (concurrent contact with flames)</span><br />
+					<span class="stat item-set-inactive">Each player has their own temperature value, which gradually resets to zero over 0.5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -199,12 +226,12 @@
 			<td class="item-card">
 				<img class="item-img" src="../resources/cosmetics/pyro/Fireman's_Essentials.png" />
 				<p class="item-stats">
-					<span class="item-name q-stock">Pressure</span><br />
+					<span class="item-name item-set-active">Pressure</span><br />
 					<span class="stat subtle">"Pressurized Airblasts"</span><br />
-					<span class="stat neutral">Airblasts are now tied to a pressure meter and consume 35% of the meter on use</span><br />
-					<span class="stat neutral">Knockback is dependent on pressure before its consumed, ranging from 0% to 100% knockback</span><br />
-					<span class="stat neutral">Repressurization takes 4s to go from empty to full</span><br />
-					<span class="stat neutral">Primary fire usage slows repressurization rate by 100%</span><br />
+					<span class="stat item-set-inactive">Airblasts are now tied to a pressure meter and consume 35% of the meter on use</span><br />
+					<span class="stat item-set-inactive">Knockback is dependent on pressure before its consumed, ranging from 0% to 100% knockback</span><br />
+					<span class="stat item-set-inactive">Repressurization takes 4s to go from empty to full</span><br />
+					<span class="stat item-set-inactive">Primary fire usage slows repressurization rate by 100%</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -234,8 +261,8 @@
 			<td class="item-card item-icon icon-NEW">
 				<img class="item-img" src="../resources/weapons/spy/Sapper_Broken.png" />
 				<p class="item-stats">
-					<span class="item-name">Sapper State: Malformed</span><br />
-					<span class="stat neutral">
+					<span class="item-name item-set-active">Sapper State: Malformed</span><br />
+					<span class="stat item-set-inactive">
 						Upon being struck by specific melees, the sapper becomes damaged.
 						While in this state, the sapper continues disabling the building its applied to, but deals no damage and has no additional effects.
 					</span><br />
@@ -411,13 +438,20 @@
 				<img class="item-img" src="../resources/weapons/multiclass/Half-Zatoichi.png" />
 				<p class="item-stats">
 					<span class="item-name">Half-Zatoichi</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">Instantly kills targets wielding this weapon</span><br />
+					<span class="stat upside">50% of target's base health restored on kill</span><br />
+					<span class="stat downside">Honorbound: Once fully drawn, sheathing without killing instantly drains max health by 65</span><br />
+					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info"><a class="tooltip-link" href="#Health_On_Kill">Health on Kill</a> overheal changed from 50% to 20%</span><br />
+					<span class="stat downside modified">Changed healing on kill from 50% of wielder's base health to 50% of victim's base health</span><br />
+					<span class="stat downside modified">Changed sheathing without killing penalty from 50 damage to <span class="tooltip" title="Drains health with each sheathing until wielder reaches 100 max health. Regenerates at 10 health per seconds. Killing an enemy with this weapon will restore drained maximum health through the health on kill.">drain 65 health</span></span><br />
+
 				</p>
 			</td>
 			<td class="item-card">
