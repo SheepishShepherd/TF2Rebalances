@@ -38,34 +38,6 @@
 			<th colspan="3"><img class="class-icon" src="../resources/class/emblem_general.png" />General</th>
 		</tr>
 
-		<!-- Random Crits -->
-		<tr id="Random_Crits">
-			<td class="item-card">
-				<img class="item-img" src="../resources/elements/Critical_Hit.png" />
-				<p class="item-stats">
-					<span class="item-name">Random Crits</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat neutral">Community servers now have the option for enabling 'Random Mini-crits' (tf_weapon_criticals 2)</span><br />
-					<span class="stat upside">Random Critical Hits on melee weapons are replaced with 'Triple Hit Combos' on Casual servers</span><br />
-					<span class="stat downside">Random Critical Hits on ranged weapons are disabled by default on Casual servers</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO
-				</p>
-				<p class="stat neutral">
-					<span class="item-name">Solution</span><br />
-					TODO
-				</p>
-			</td>
-		</tr>
-
 		<!-- Voice Call Outs -->
 		<tr id="Voice_Call_Outs">
 			<td class="item-card">
@@ -85,37 +57,6 @@
 						Aiming at and calling out an enemy Sniper or Sentry Gun will place a pop-up message at
 						<span class="tooltip" title="Only the location at which the moment they were pinged. The pop-up message does not follow the target if they move.">their location</span> for 3s
 					</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO
-				</p>
-				<p class="stat neutral">
-					<span class="item-name">Solution</span><br />
-					TODO
-				</p>
-			</td>
-		</tr>
-
-		<!-- Triple hit Combo -->
-		<tr id="Triple_Hit_Combo">
-			<td class="item-card">
-				<img class="item-img" src="../resources/weapons/heavy/Fists.png" />
-				<p class="item-stats">
-					<span class="item-name">Triple Hit Combo</span><br />
-					<span class="stat item-set-inactive">Melee attacks deal more damage from successive hits!</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
-					<span class="stat upside">Melee attacks deal more damage from <span class="tooltip" title="The window for a Crit Combo to persist is 0.65s after the melee is able to be swung again">successive hits!</span></span><br />
-					<span class="stat upside">The 2nd hit deals a guaranteed mini-crit</span><br />
-					<span class="stat upside">The 3rd hit deals a guaranteed critical hit</span><br />
-					<span class="stat downside">Scout melees requires 4 hits to get the critical hit</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3220,14 +3161,19 @@
 				<img class="item-img" src="../resources/weapons/heavy/Fists.png" />
 				<p class="item-stats">
 					<span class="item-name q-stock">Fists</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat subtle">Changes apply to all Fists</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="stat upside added">Alternating fists will allow you to swing <span class="tooltip" title="0.7s attack interval, swinging the same fist still takes 0.8s">12%</span> faster</span><br />
+					<span class="stat upside added">Alternating <span class="tooltip" title="within 1s intervals">successive hits</span> between left and right punches will deal critical damage on the 3rd attack</span><br />
+					<span class="stat neutral info">All-class weapons will not have the Triple Hit Combo and instead act as a regular stock melee</span><br />
+
 				</p>
 			</td>
 			<td class="item-card">
@@ -3248,13 +3194,24 @@
 				<img class="item-img" src="../resources/weapons/heavy/Eviction_Notice.png" />
 				<p class="item-stats">
 					<span class="item-name">Eviction Notice</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat upside">This weapon deploys 30% faster</span><br />
+					<span class="stat upside">+30% faster firing speed</span><br />
+					<span class="stat upside">+15% faster move speed while active</span><br />
+					<span class="stat downside">-20% damage penalty vs targets &#60;50% health</span><br />
+					<span class="stat downside">-60% damage penalty vs targets &#62;50% health</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat upside modified">Increased <span class="tooltip" title="While this technically applies to players >50% health, this does increase damage against buildings from 26 to 52 as well">base damage</span> from 26 to 52</span><br />
+					<span class="stat upside modified">Damage penalty only applies to targets &#60;50% health</span><br />
+					<span class="stat upside added">Reduced deploy time from 0.5s to 0.35s</span><br />
+					<span class="stat downside removed">Removed the Speed Bonus On Hit stat</span><br />
+					<span class="stat downside modified">Reduced firing rate from 0.48s to 0.56s (<span class="tooltip" title="when alternating left and right hook punches">0.49s</span>)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3275,13 +3232,22 @@
 				<img class="item-img" src="../resources/weapons/heavy/Fists_of_Steel.png" />
 				<p class="item-stats">
 					<span class="item-name">Fists of Steel</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat upside">-40% damage from ranged sources while active</span><br />
+					<span class="stat downside">+100% damage from melee sources while active</span><br />
+					<span class="stat downside">This weapon holsters 100% slower</span><br />
+					<span class="stat downside">-40% maximum overheal on wearer</span><br />
+					<span class="stat downside">-75% less healing from Medic sources while active</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">The maximum overheal penalty now applies while the weapon is inactive as well</span><br />
+					<span class="stat upside removed">Removed the health from healers penalty</span><br />
+					<span class="stat downside added">Reduces heal rate from medi guns and healing provided by the Crusader's Crossbow by 75% while active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3302,13 +3268,18 @@
 				<img class="item-img" src="../resources/weapons/heavy/Gloves_of_Running_Urgently.png" />
 				<p class="item-stats">
 					<span class="item-name">Gloves of Running Urgently</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat upside">+30% faster move speed while active</span><br />
+					<span class="stat downside">This weapon holsters 50% slower</span><br />
+					<span class="stat downside">Maximum health drains down to 100 while active</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal mini-crit damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat downside added">The 3rd hit in a Triple Hit Combo deals mini-crit damage instead of critical damage</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3329,13 +3300,22 @@
 				<img class="item-img" src="../resources/weapons/heavy/Holiday_Punch.png" />
 				<p class="item-stats">
 					<span class="item-name">Holiday Punch</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat upside">On Hit: Forces targets wielding this item to laugh</span><br />
+					<span class="stat upside">Critical hits force the target to laugh</span><br />
+					<span class="stat upside">10% faster firing speed</span><br />
+					<span class="stat downside">This weapon deals no damage</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral modified">Critical hits against airborne targets will force them to laugh upon landing</span><br />
+					<span class="stat upside added">Increased firing rate from 0.8s to 0.72s (<span class="tooltip" title="when alternating left and right hook punches">0.63s</span>)</span><br />
+					<span class="stat downside removed">No longer deals critical damage from behind</span><br />
+					<span class="stat downside added">Reduced <span class="tooltip" title="Taunt kill damage unaffected">base damage</span> from 65 to 0</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3356,13 +3336,20 @@
 				<img class="item-img" src="../resources/weapons/heavy/Killing_Gloves_of_Boxing.png" />
 				<p class="item-stats">
 					<span class="item-name">Killing Gloves of Boxing</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat upside">On Kill: Deal critical damage for 5 seconds</span><br />
+					<span class="stat upside">+15% bonus damage</span><br />
+					<span class="stat downside">25% slower firing speed</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal mini-crit damage on the 2nd punch and critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat upside added">Deals mini-crit damage on the 2nd successive punch</span><br />
+					<span class="stat upside added">Increased base damage from 65 to 75</span><br />
+					<span class="stat downside modified">Reduced firing rate from 0.96s to 1s (<span class="tooltip" title="when alternating left and right hook punches">0.875s</span>)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3383,19 +3370,20 @@
 				<img class="item-img" src="../resources/weapons/heavy/Warrior's_Spirit.png" />
 				<p class="item-stats">
 					<span class="item-name">Warrior's Spirit</span><br />
+					<span class="stat neutral">Alt-fire: Throw a right hook punch</span><br />
+					<span class="stat upside">+30% bonus damage</span><br />
 					<span class="stat upside">+75 health restored on kill</span><br />
-					<span class="stat upside">+10% faster firing speed</span><br />
-					<span class="stat downside">-50% healing from health pickups</span><br />
+					<span class="stat downside">-33% healing from health pickups</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat upside added">Improved firing rate from 0.8s to 0.7s</span><br />
 					<span class="stat upside modified">Increased health restored on kill from 50 to 75</span><br />
-					<span class="stat downside removed">Removed damage bonus</span><br />
-					<span class="stat downside added">Reduced healing from pickups to 150/75/30</span><br />
+					<span class="stat upside removed">Removed damage vulnerability penalty</span><br />
+					<span class="stat downside added">Reduced healing from pickups to 200/100/40</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3704,17 +3692,15 @@
 					<span class="stat upside">+25 max health on wearer</span><br />
 					<span class="stat upside">Building construction speed increased by 150%</span><br />
 					<span class="stat upside">No speed penalty when hauling buildings</span><br />
-					<span class="stat upside">Third successful punch in a row always crits</span><br />
 					<span class="stat downside">Replaces the Sentry with a Mini-Sentry</span><br />
+					<span class="stat neutral">Triple Hit Combo! Successive punches will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside added">Increased movement speed while hauling buildings from 90% (270hu/s) to 100% (300hu/s)</span><br />
 					<span class="stat upside modified">Extended build speed bonus to all buildings</span><br />
-					<span class="stat downside removed">Removed the ability to triple hit combo</span><br />
 				</p>
 			</td>
 			<td class="item-card">
