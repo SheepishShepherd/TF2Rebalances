@@ -978,7 +978,7 @@
 				<p class="item-stats">
 					<span class="item-name">Candy Cane</span><br />
 					<span class="stat upside">+60% health from pick ups while &#60;50% health</span><br />
-					<span class="stat upside">On Kill: Target drops a small health pack</span><br />
+					<span class="stat upside">On Kill: Target drops a small health kit</span><br />
 					<span class="stat downside">On Kill: Target drops a small ammo pack</span><br />
 					<span class="stat downside">-50% max primary ammo</span><br />
 				</p>
@@ -988,7 +988,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside removed">Removed explosive damage vulnerability</span><br />
-					<span class="stat upside added">Increased health restored by health packs while below 50% health from 125/63/25 to 125/95/40</span><br />
+					<span class="stat upside added">Increased health restored by health kits while below 50% health from 125/63/25 to 125/95/40</span><br />
 					<span class="stat downside added">Ammo packs dropped by killed enemies changed from medium to small</span><br />
 					<span class="stat downside added">Reduced primary max ammo from 24 to 12</span><br />
 				</p>
@@ -1045,7 +1045,7 @@
 				<p class="item-stats">
 					<span class="item-name">Sandman</span><br />
 					<span class="stat neutral">Alt-Fire: Launches a baseball that dazes the target</span><br />
-					<span class="stat downside">-40% health from packs on wearer</span><br />
+					<span class="stat downside">-40% health from pickups on wearer</span><br />
 					<span class="stat neutral">Killing a dazed enemy rewards both the killer and wielder a speed boost for 4 seconds</span><br />
 				</p>
 			</td>
@@ -3056,27 +3056,23 @@
 				<img class="item-img" src="../resources/weapons/heavy/Buffalo_Steak_Sandvich.png" />
 				<p class="item-stats">
 					<span class="item-name">Buffalo Steak Sandvich</span><br />
-					<span class="stat neutral">Eat to regain up to 150 health and gain increased move speed and mini-crits on attacks. Lasts 16 seconds. Effect duration extends on melee kill and expires if melee is holstered.</span><br />
-					<span class="stat upside">Food builds with kills and/or time</span><br />
-					<span class="stat downside">Does not refill from resupply cabinets</span><br />
-					<span class="stat downside">Food meter starts empty</span><br />
-					<span class="stat downside">33% more recharge time</span><br />
-					<span class="stat neutral">Alt-fire: Share a steak with a friend<br />(Medium Health Kit)</span><br />
+					<span class="stat neutral">Eat to regain up to 120 health and gain a speed boost and mini-crits on attacks for 12 seconds</span><br />
+					<span class="stat neutral">Alt-fire: Share with a friend! (Medium Health Kit)</span><br />
+					<span class="stat upside">On Melee Kill: Refresh effect duration</span><br />
+					<span class="stat downside">Honorbound: The consumer cannot swap to a primary weapon until killing with a melee weapon</span><br />
+					<span class="stat neutral">Deploying a primary weapon ends the effect</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat upside modified">Reduced healing penalty from -100% to -50%</span><br />
+					<span class="stat neutral modified">Changed the <span class="tooltip" title="While this increases move speed from 299hu to 322hu, it will prevent speed boosts given by allies to stack on top as well (such as the Disciplinary Action).">move speed bonus to a speed boost</span></span><br />
+					<span class="stat upside modified">Increased consumption healing from 0 to <span class="tooltip" title="30 health per second, over 4 seconds">120</span></span><br />
 					<span class="stat upside removed">Removed damage vulnerability penalty</span><br />
-					<span class="stat upside modified">No longer <span class="tooltip" title="Holstering your melee will end the effect duration prematurely">restricts user to melee</span></span><br />
-					<span class="stat upside added">Effect duration extends by 2s for every melee kill</span><br />
-					<span class="stat upside added">Remaining recharge time reduced by 8s on kill</span><br />
-					<span class="stat downside added">No longer refilled by resupply cabinets</span><br />
-					<span class="stat downside added">No longer refilled from health pickups (hidden)</span><br />
-					<span class="stat downside added">Recharge progress resets on respawn</span><br />
-					<span class="stat downside added">Increased recharge time from 30s to 40s</span><br />
+					<span class="stat upside added">Effect duration resets to 12s on melee kill</span><br />
+					<span class="stat upside added">While the effect is active, primary weapons can be deployed only after a melee kill is earned</span><br />
+					<span class="stat downside added">Reduced effect duration from 16s to 12s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3091,27 +3087,27 @@
 			</td>
 		</tr>
 
-		<!-- Dalokohs Bar -->
-		<tr id="Dalokohs_Bar">
+		<!-- Dalokahs Bar -->
+		<tr id="Dalokahs_Bar">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/heavy/Dalokohs_Bar.png" />
 				<p class="item-stats">
 					<span class="item-name">Dalokohs Bar</span><br />
-					<span class="stat neutral">Eat to gain up to +50 max health and +10 health regenerated per second. Lasts 30 seconds.</span><br />
-					<span class="stat upside">+50% faster consumption rate</span><br />
+					<span class="stat neutral">Eat to gain up to +50 max health and +10 health regenerated per second for 30 seconds</span><br />
+					<span class="stat neutral">Alt-fire: Share with a friend! (Small Health Kit)</span><br />
+					<span class="stat upside">Consumption time decreased by 50%</span><br />
 					<span class="stat upside">50% less recharge time</span><br />
-					<span class="stat neutral">Alt-fire: Share chocolate with a friend<br />(Small Health Kit)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral info">'Recharge rate bonus' stat is no longer hidden</span><br />
-					<span class="stat neutral info">While under the effects and above 300 health, overheal particles will appear</span><br />
+					<span class="stat neutral info">Recharge rate bonus is no longer hidden</span><br />
+					<span class="stat neutral info">Overheal particles appear if current health is above base max health, not temporary max health</span><br />
 					<span class="stat neutral modified">Max health bonus now <span class="tooltip" title="10 health per second, similarly to the Gloves of Running Urgently">builds and decays over 5s</span></span><br />
-					<span class="stat upside added">Reduced consumption duration from 4.3s to 2.3s</span><br />
-					<span class="stat upside added">Effect also <span class="tooltip" title="varies depending on how recently damaged">regenerates up to 10 health per second</span></span><br />
-					<span class="stat downside removed">Increased healing penalty from -66% to -100%</span><br />
+					<span class="stat upside added">Reduced consumption time from 4.3s to 2.3s</span><br />
+					<span class="stat upside added">Effect also <span class="tooltip" title="varies depending on how recently damaged, starting at 5hps (50%) upon taking damage building up +1hps every 2s undamaged.">regenerates up to 10 health per second</span></span><br />
+					<span class="stat downside removed">Reduced consumption healing from <span class="tooltip" title="25 health per second, over 4 seconds">100</span> to 0</span><br />
 					<span class="stat downside modified">Increased recharge time from 10s to 15s</span><br />
 				</p>
 			</td>
@@ -3161,7 +3157,7 @@
 				<p class="item-stats">
 					<span class="item-name">Sandvich</span><br />
 					<span class="stat neutral">Eat to regain up to 300 health</span><br />
-					<span class="stat neutral">Alt-fire: Share a Sandvich with a friend<br />(Medium Health Kit)</span><br />
+					<span class="stat neutral">Alt-fire: Share with a friend! (Medium Health Kit)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3185,21 +3181,21 @@
 				<p class="item-stats">
 					<span class="item-name">Second Banana</span><br />
 					<span class="stat neutral">Eat to regain up to 120 health</span><br />
+					<span class="stat neutral">Alt-fire: Share with a friend! (Small Health Kit)</span><br />
 					<span class="stat upside">+100% max misc ammo capacity</span><br />
-					<span class="stat upside">+50% faster consumption rate</span><br />
+					<span class="stat upside">Consumption time decreased by 50%</span><br />
 					<span class="stat upside">33% less recharge time</span><br />
-					<span class="stat neutral">Alt-fire: Share a banana with a friend<br />(Small Health Kit)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="stat neutral info">'Healing effect penalty' stat is now <span class="tooltip" title="Penalty can be seen via 'Eat to regain health' stat now containing its healing value">hidden</span></span><br />
-					<span class="stat upside added">Reduced consumption duration from 4.3s to 2.3s</span><br />
+					<span class="stat neutral info">Healing effect penalty is now <span class="tooltip" title="Penalty can be seen via 'Eat to regain health' stat now containing its healing value">hidden</span></span><br />
+					<span class="stat upside added">Reduced consumption time from 4.3s to 2.3s</span><br />
 					<span class="stat upside added">Increased max lunchbox item count from 1 to 2</span><br />
 					<span class="stat downside modified">Increased <span class="tooltip" title="per banana">recharge time</span> from 10s to 20s</span><br />
-					<span class="stat downside modified">Increased healing penalty from -33% to -60%</span><br />
+					<span class="stat downside modified">Reduced consumption healing from <span class="tooltip" title="50 health per second, over 4 seconds">200</span> to <span class="tooltip" title="60 health per second, over 2 seconds">120</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -4180,7 +4176,7 @@
 					<span class="item-name">Vita-Saw</span><br />
 					<span class="stat upside">Collect the organs of people you hit</span><br />
 					<span class="stat upside">On Hit: Inflict bleed for 5 seconds</span><br />
-					<span class="stat downside">On Death: Wielder drops a small health pack</span><br />
+					<span class="stat downside">On Death: Wielder drops a small health kit</span><br />
 					<span class="stat downside">-15 max health on wearer</span><br />
 					<span class="stat neutral">Attack an ally to transplant 1 organ, restoring 50 health and adding +25 max health to patient for 30 seconds</span><br />
 				</p>
@@ -4190,7 +4186,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside added">Attacks inflict bleed on enemies for 5s</span><br />
-					<span class="stat upside added">Organs can be transplanted to allies when hit, granting them 50 health and <span class="tooltip" title="Similarly to the Dalokahs Bar, this effect will not increase maximum overheal. Overheal is calculated with base max health and does not account for temporary bonuses.">+25 max health</span> for 30s</span><br />
+					<span class="stat upside added">Organs can be transplanted to allies when hit, granting them 50 health and <span class="tooltip" title="Similarly to the Dalokohs Bar, this effect will not increase maximum overheal. Overheal is calculated with base max health and does not account for temporary bonuses.">+25 max health</span> for 30s</span><br />
 					<span class="stat downside modified">Decreased max health from 140 to 135</span><br />
 					<span class="stat downside added">Wielder drops a small health kit when killed</span><br />
 					<span class="stat downside removed">Organs no longer retain &#220;berCharge on death</span><br />
