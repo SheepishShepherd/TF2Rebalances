@@ -3467,13 +3467,16 @@
 				<img class="item-img" src="../resources/class/token_engineer.png" />
 				<p class="item-stats">
 					<span class="item-name q-stock">Engineer Class</span><br />
+					<span class="stat subtle">"Cooperative Engineering"</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat downside added">Decreased upgrade rate for buildings not owned by you from 25 to 20 per swing</span><br />
-					<span class="stat downside added">Construction hit speed boost decreased by 50% for buildings not owned by you</span><br />
+					<span class="stat downside added">Building construction can only be boosted by one wrench, prioritizing the fastest boost</span><br />
+					<span class="stat downside added">Reduced construction wrench boost speed by 50% for ally buildings owned by a different Engineer</span><br />
+					<span class="stat downside added">Reduced upgrade rate for ally buildings owned by a different Engineer from 25 to 20 per swing</span><br />
+					<span class="stat downside added">Increased repair costs for ally buildings owned by a different Engineer using a 2-to-1 health-to-metal ratio</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3499,10 +3502,10 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">All buildings begin construction with 25 health</span><br />
-					<span class="stat neutral info">The Combat Mini-sentry Gun remains at 50 health</span><br />
-					<span class="stat upside modified">Reduced base construction time for dispensers and teleporters from 21s to 12.5s</span><br />
-					<span class="stat downside modified">Reduced redeployment construction bonus for dispensers and teleporters from +300% to +100%</span><br />
+					<span class="stat upside modified">All buildings begin construction with <span class="tooltip" title="similarly to the Gunslinger's Combat Mini-sentry">50 health</span></span><br />
+					<span class="stat upside modified">Reduced dispenser construction time from 21s to 12.5s</span><br />
+					<span class="stat upside modified">Reduced teleporter construction time from 21s to 15s</span><br />
+					<span class="stat downside modified">Reduced dispenser and teleporter redeployment bonus from <span class="tooltip" title="This is slower than vanilla even with the faster construction times.&#10;Dispensers redploy time (unboosted) from 5.25s to 6.25s&#10;Teleporters redploy time (unboosted) from 5.25s to 7.5s">+300% to +100%</span> (matching Sentry Guns)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
