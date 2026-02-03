@@ -2595,7 +2595,7 @@
 				<p class="item-stats">
 					<span class="item-name">Scottish Resistance</span><br />
 					<span class="stat neutral">Alt-Fire: Detonate stickybombs near the crosshair</span><br />
-					<span class="stat upside">+50% max secondary ammo on wearer</span><br />
+					<span class="stat upside">+50% max secondary ammo on wielder</span><br />
 					<span class="stat upside">Max charge time decreased by 25%</span><br />
 					<span class="stat upside">Charging increases stickybomb fired up to +2</span><br />
 					<span class="stat upside">+4 max active stickybombs</span><br />
@@ -2636,7 +2636,7 @@
 				<p class="item-stats">
 					<span class="item-name">Splendid Screen</span><br />
 					<span class="stat neutral">Alt-Fire: Charge forward with great speed, dealing damage on impact. Charging removes debuffs and grants critical melee damage based on distance.</span><br />
-					<span class="stat upside">Shield bashes refill 20% of your charge meter</span><br />
+					<span class="stat upside">Shield bashes refill 20% of the charge meter</span><br />
 					<span class="stat upside">+20% fire damage resistance on wearer</span><br />
 					<span class="stat upside">+20% explosive damage resistance on wearer</span><br />
 					<span class="stat upside">+85% increase in charge impact damage</span><br />
@@ -2675,7 +2675,7 @@
 					<span class="stat upside">+15% explosive damage resistance on wearer</span><br />
 					<span class="stat upside">Full turning control while charging</span><br />
 					<span class="stat upside">Melee kills refill 75% of your charge meter</span><br />
-					<span class="stat downside">0.5 sec decrease in charge duration</span><br />
+					<span class="stat downside">0.5 second decrease in charge duration</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2704,8 +2704,8 @@
 				<p class="item-stats">
 					<span class="item-name">Claidheamh M&#242;r</span><br />
 					<span class="stat neutral">When weapon is active:</span><br />
-					<span class="stat upside">0.5 sec increase in charge duration</span><br />
-					<span class="stat downside">15% damage vulnerability on wearer</span><br />
+					<span class="stat upside">0.5 second increase in charge duration</span><br />
+					<span class="stat downside">-15 max health on wielder</span><br />
 					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 					<span class="stat neutral">Gives increased speed with every head you take</span><br />
 				</p>
@@ -2714,8 +2714,10 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">These stats are subject to change</span><br />
+					<span class="stat upside removed">Removed damage vulnerability penalty</span><br />
 					<span class="stat upside added">Collects heads that grant +8% movement speed each</span><br />
-					<span class="stat downside added">No longer refills charge on kill</span><br />
+					<span class="stat downside removed">No longer refills charge on kill</span><br />
+					<span class="stat downside added">Reduced max health from <span class="tooltip" title="from 200 to 185 with a boot primary">175 to 160</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2771,10 +2773,10 @@
 				<img class="item-img" src="../resources/weapons/demoman/Persian_Persuader.png" />
 				<p class="item-stats">
 					<span class="item-name">Persian Persuader</span><br />
-					<span class="stat upside">Melee hits refill 20% of your charge meter</span><br />
-					<span class="stat upside">Ammo boxes collected also refill your charge meter</span><br />
-					<span class="stat downside">-50% max primary ammo on wearer</span><br />
-					<span class="stat downside">-50% max secondary ammo on wearer</span><br />
+					<span class="stat upside">Melee hits refill 20% of the charge meter</span><br />
+					<span class="stat upside">Ammo boxes collected also refill the charge meter</span><br />
+					<span class="stat downside">-50% max primary ammo on wielder</span><br />
+					<span class="stat downside">-50% max secondary ammo on wielder</span><br />
 					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 				</p>
 			</td>
@@ -2782,6 +2784,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">These stats are subject to change</span><br />
+					<span class="stat neutral info">Shield bashes are now considered melee hits</span><br />
 					<span class="stat upside modified">Increased max primary ammo from 3 to 8</span><br />
 					<span class="stat upside modified">Increased max secondary ammo from 5 to 12</span><br />
 				</p>
@@ -2806,7 +2809,7 @@
 					<span class="item-name">Scotsman's Skullcutter</span><br />
 					<span class="stat neutral">When weapon is active:</span><br />
 					<span class="stat upside">Shield bashes deal mini-crit damage at any distance</span><br />
-					<span class="stat downside">-15% movement speed on wearer</span><br />
+					<span class="stat downside">-15% movement speed on wielder</span><br />
 					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 					<span class="stat neutral">Gives increased damage with every head you take</span><br />
 				</p>
@@ -2815,10 +2818,10 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">These stats are subject to change</span><br />
+					<span class="stat neutral info">Changed the movement speed penalty to not apply to the speed given by shield charging</span><br />
 					<span class="stat upside added">Shield impact damage deals mini-crit damage if distance charged grants a boosted melee attack</span><br />
 					<span class="stat upside added">Collects heads that grant <span class="tooltip" title="0 heads: 65 (88) (195)&#010;1 head: 72 (97) (216)&#010;2 heads: 78 (105) (234)&#010;3 heads: 85 (115) (255)&#010;4 heads: 91 (123) (273)">10% bonus damage</span> each</span><br />
 					<span class="stat upside added">While weapon is active, shield bashes deal maximum base damage regardless of distance</span><br />
-					<span class="stat upside modified">Movement speed penalty no longer applies to the speed of charging with a shield</span><br />
 					<span class="stat downside removed">Removed damage bonus</span><br />
 				</p>
 			</td>
@@ -2841,7 +2844,7 @@
 				<p class="item-stats">
 					<span class="item-name">Ullapool Caber</span><br />
 					<span class="stat upside">The first hit will cause an explosion</span><br />
-					<span class="stat downside">+25% self damage on wearer</span><br />
+					<span class="stat downside">+25% self damage on wielder</span><br />
 					<span class="stat downside">-35% damage penalty</span><br />
 				</p>
 			</td>
@@ -2855,7 +2858,7 @@
 					<span class="stat upside removed">Removed firing rate penalty</span><br />
 					<span class="stat upside removed">Removed deploy speed penalty</span><br />
 					<span class="stat downside modified">Reduced base damage from 55 to 42</span><br />
-					<span class="stat downside added">Increased all <span class="tooltip" title="Increases damage taken from the Ullapool caber from 52-56 to 65-70&#010;This also includes explosion damage from Grenade Launchers or Stickybomb Launchers">self-inflicted damage</span> by 25% on wearer</span><br />
+					<span class="stat downside added">Increased all <span class="tooltip" title="Increases damage taken from the Ullapool caber from 52-56 to 65-70&#010;This also includes explosion damage from Grenade Launchers or Stickybomb Launchers">self-inflicted damage</span> by 25% on wielder</span><br />
 				</p>
 			</td>
 			<td class="item-card">
