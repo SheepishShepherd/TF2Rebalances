@@ -1186,7 +1186,7 @@
 				<img class="item-img" src="../resources/weapons/soldier/Beggar's_Bazooka.png" />
 				<p class="item-stats">
 					<span class="item-name">Beggar's Bazooka</span><br />
-					<span class="stat neutral">Clip starts empty. Load up to 3 rockets and fire the entire clip in rapid succession. Overloading the chamber will cause a misfire.</span><br />
+					<span class="stat neutral">Clip starts empty. Load up to 3 rockets by holding down the fire key and release to fire the entire clip. Overloading the chamber will cause a misfire.</span><br />
 					<span class="stat upside">+70% faster firing rate</span><br />
 					<span class="stat downside">+3 degrees random projectile deviation</span><br />
 					<span class="stat downside">-20% explosion radius</span><br />
@@ -1227,7 +1227,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside modified">Health healed on hit has a minimum of 10</span><br />
+					<span class="stat upside modified">Damage that kills will always restore 20 health</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1275,9 +1275,9 @@
 				<img class="item-img" src="../resources/weapons/soldier/Direct_Hit.png" />
 				<p class="item-stats">
 					<span class="item-name">Direct Hit</span><br />
-					<span class="stat upside">+25% damage bonus</span><br />
 					<span class="stat upside">+80% projectile speed</span><br />
-					<span class="stat upside">Mini-crits targets launched airborne by explosions, grapple hooks or rocket packs</span><br />
+					<span class="stat upside">+25% damage bonus</span><br />
+					<span class="stat upside">Deals mini-crit damage against targets launched airborne by explosive or pressurized blasts</span><br />
 					<span class="stat downside">-70% explosion radius</span><br />
 					<span class="stat downside">+25% damage to self</span><br />
 				</p>
@@ -1285,7 +1285,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral info">Fixed reflected rockets not carrying over splash bonus/penalty properties</span><br />
+					<span class="stat neutral info">Fixed splash bonus/penalty properties not being retained when reflected by pressurized air blasts</span><br />
 					<span class="stat downside added">Rockets fired from this weapon deal <span class="tooltip" title="from 27-89 (27-46)** to 34-111 (34-58)**&#010;This will not impact movement from rocket jumps&#010;&#010;**from rocket jumps">25% more damage</span> to the user</span><br />
 				</p>
 			</td>
@@ -1339,15 +1339,17 @@
 				<img class="item-img" src="../resources/weapons/soldier/Battalion's_Backup.png" />
 				<p class="item-stats">
 					<span class="item-name">Battalion's Backup</span><br />
+					<span class="stat neutral">Build 'Rage' by dealing damage. On full Rage, play a bugle call to give a defensive buff to nearby allies</span><br />
 					<span class="stat upside">+20 max health on wearer</span><br />
-					<span class="stat neutral">Provides a defensive buff that protects nearby team members from crits, incoming sentry damage by 50% and 35% from all other sources</span><br />
-					<span class="stat neutral">Rage increases through damage done</span><br />
+					<span class="stat neutral">Rage provides critical damage immunity and 35% damage resistance</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat neutral info">Fixed being able to delay the banner activation by holding down the fire key</span><br />
 					<span class="stat upside modified">Reduced damage requirement from 600 to 540</span><br />
+					<span class="stat downside modified">Reduced sentry damage resistance from 50% to 35%</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1368,14 +1370,15 @@
 				<img class="item-img" src="../resources/weapons/soldier/Buff_Banner.png" />
 				<p class="item-stats">
 					<span class="item-name">Buff Banner</span><br />
+					<span class="stat neutral">Build 'Rage' by dealing damage. On full Rage, play a bugle call to give an offensive buff to nearby allies</span><br />
 					<span class="stat upside">+25% health from health pickups on wearer</span><br />
-					<span class="stat neutral">Provides an offensive buff that causes nearby team members to do mini-crits</span><br />
-					<span class="stat neutral">Rage increases through damage done</span><br />
+					<span class="stat neutral">Rage causes attackers to deal mini-crit damage</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat neutral info">Fixed being able to delay the banner activation by holding down the fire key</span><br />
 					<span class="stat upside modified">Reduced damage requirement from 600 to 540</span><br />
 					<span class="stat upside added">Increased healing from pickups to 200/125/50</span><br />
 				</p>
@@ -1398,14 +1401,15 @@
 				<img class="item-img" src="../resources/weapons/soldier/Concheror.png" />
 				<p class="item-stats">
 					<span class="item-name">Concheror</span><br />
+					<span class="stat neutral">Build 'Rage' by dealing damage. On full Rage, play a bugle call to give a supportive buff to nearby allies</span><br />
 					<span class="stat upside">+4 health regenerated per second on wearer</span><br />
-					<span class="stat neutral">Provides a supportive buff that boosts nearby team members with increased movement speed and healing from damage dealt</span><br />
-					<span class="stat neutral">Rage increases through damage done</span><br />
+					<span class="stat neutral">Rage grants a speed boost and restores health to attackers for 35% of damage dealt</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat neutral info">Fixed being able to delay the banner activation by holding down the fire key</span><br />
 					<span class="stat downside modified">Increased damage requirement from 480 to 540</span><br />
 				</p>
 			</td>
@@ -2449,7 +2453,7 @@
 				<img class="item-img" src="../resources/weapons/demoman/Loose_Cannon.png" />
 				<p class="item-stats">
 					<span class="item-name">Loose Cannon</span><br />
-					<span class="stat neutral">Launches cannonballs that deal increased knockback on impact. Cannonball fuses can be primed to explode early by holding down the fire key</span><br />
+					<span class="stat neutral">Launches cannonballs that deal increased knockback on impact. Cannonball fuses can be primed to explode early by holding down the fire key.</span><br />
 					<span class="stat upside">-55% shorter fuse time on cannonballs</span><br />
 					<span class="stat upside">-25% damage to self</span><br />
 					<span class="stat downside">Cannonballs do not explode on impact</span><br />
