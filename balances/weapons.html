@@ -450,7 +450,7 @@
 				<img class="item-img" src="../resources/weapons/multiclass/Half-Zatoichi.png" />
 				<p class="item-stats">
 					<span class="item-name">Half-Zatoichi</span><br />
-					<span class="stat upside">Instantly kills targets wielding this weapon</span><br />
+					<span class="stat upside">Instantly kills enemies wielding this weapon</span><br />
 					<span class="stat upside">50% of target's base health restored on kill</span><br />
 					<span class="stat downside">Honorbound: Once fully drawn, sheathing without killing instantly drains max health by 65</span><br />
 					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
@@ -461,8 +461,8 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat neutral info"><a class="tooltip-link" href="#Health_On_Kill">Health on Kill</a> overheal changed from 50% to 20%</span><br />
-					<span class="stat downside modified">Changed healing on kill from 50% of wielder's base health to 50% of victim's base health</span><br />
-					<span class="stat downside modified">Changed sheathing without killing penalty from 50 damage to <span class="tooltip" title="Drains health until wielder reaches 100 max health. Regenerates at 10 health per seconds. Killing an enemy with this weapon will restore drained maximum health through the health on kill.">drain 65 health</span></span><br />
+					<span class="stat downside modified">Changed health restored on kill from 50% of wielder's base health to 50% of victim's base health</span><br />
+					<span class="stat downside modified">Changed sheathing weapon without killing penalty from 50 damage taken to <span class="tooltip" title="Drains health instantly, leaving wielder with at least 100 max health. Max health regenerates at 10 health per second (same rate as the Gloves of Running Urgently). Killing an enemy with this weapon will restore drained maximum health through the health on kill.">65 health drained</span></span><br />
 
 				</p>
 			</td>
@@ -3098,7 +3098,7 @@
 					<span class="stat upside modified">Increased consumption healing from 0 to <span class="tooltip" title="30 health per second, over 4 seconds">120</span></span><br />
 					<span class="stat upside removed">Removed damage vulnerability penalty</span><br />
 					<span class="stat upside added">Effect duration resets to 12s on melee kill</span><br />
-					<span class="stat upside added">While the effect is active, primary weapons can be deployed only after a melee kill is earned</span><br />
+					<span class="stat upside modified">Changed locked-to-melee restriction to allow <span class="tooltip" title="Deploying a primary weapon will end the effect">primary weapon deployment</span> once a melee kill is earned</span><br />
 					<span class="stat downside added">Reduced effect duration from 16s to 12s</span><br />
 				</p>
 			</td>
