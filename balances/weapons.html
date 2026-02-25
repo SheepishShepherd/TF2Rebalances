@@ -2385,46 +2385,25 @@
 	<table id="Demoman">
 		<tr><th colspan="3"><img class="class-icon" src="../resources/class/emblem_demoman.png" />Demoman</th></tr>
 
-		<!-- Ali Baba's Wee Booties -->
-		<tr id="Ali_Baba's_Wee_Booties">
-			<td class="item-card">
-				<img class="item-img" src="../resources/weapons/demoman/Ali_Baba's_Wee_Booties.png" />
-				<p class="item-stats">
-					<span class="item-name">Ali Baba's Wee Booties</span><br />
-					<span class="stat neutral">TODO</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="stat neutral">
-					<span class="item-name">Problem</span><br />
-					TODO
-				</p>
-				<p class="stat neutral">
-					<span class="item-name">Solution</span><br />
-					TODO
-				</p>
-			</td>
-		</tr>
-
 		<!-- Bootlegger -->
 		<tr id="Bootlegger">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/demoman/Bootlegger.png" />
 				<p class="item-stats">
-					<span class="item-name">Bootlegger</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="item-name">Boots</span><br />
+					<span class="stat subtle">Bootlegger and Ali Baba's Wee Booties</span><br />
+					<span class="stat upside">+15 max health on wearer</span><br />
+					<span class="stat upside">+10% faster move speed on wearer (shield required)</span><br />
+					<span class="stat upside">+200% increase in turning control while charging</span><br />
+					<span class="stat upside">Melee kills refill 25% of the shield charge meter</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat neutral info">Melee kills now include <a href="#Shields" class="tooltip-link">shield kills</a></span><br />
+					<span class="stat downside modified">Reduced max health on wearer from 200 to 190</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2539,7 +2518,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat subtle">Changes apply to all Shields</span><br />
-					<span class="stat neutral info">Killing an enemy with a shield bash now triggers <span class="tooltip" title="On Kill bonuses that require a melee kill, not the On Kill bonus provided by your melee. This includes the Tide Turner's 'Melee kills refill 75% of your charge meter' stat">melee-specific on kill bonus effects</span></span><br />
+					<span class="stat neutral info">Shields can trigger effects that are <span class="tooltip" title="Does not include the On Kill effect for the equipped melee&#10;Current weapons affected are: Bootlegger, Ali Baba's Wee Booties, Tide Turner and Persian Persuader">melee-specific</span></span><br />
 					<span class="stat upside modified">Shield impact damage no longer requires scaling up to maximum damage with distance</span><br />
 					<span class="stat upside added">Shield impact damage deals <span class="tooltip" title="47 damage, 88 damage with the Splendid Screen">mini-crit damage</span> if distance charged grants a critical melee attack</span><br />
 					<span class="stat downside modified">Reduced base damage from 50 to 35</span><br />
@@ -2659,7 +2638,7 @@
 				<p class="item-stats">
 					<span class="item-name">Splendid Screen</span><br />
 					<span class="stat neutral">Alt-Fire: Charge forward with great speed, dealing damage on impact. Charging removes debuffs and grants critical melee damage based on distance.</span><br />
-					<span class="stat upside">Shield bashes refill 20% of the charge meter</span><br />
+					<span class="stat upside">Shield bashes refill 20% of the shield charge meter</span><br />
 					<span class="stat upside">+20% fire damage resistance on wearer</span><br />
 					<span class="stat upside">+20% explosive damage resistance on wearer</span><br />
 					<span class="stat upside">+85% increase in charge impact damage</span><br />
@@ -2697,13 +2676,14 @@
 					<span class="stat upside">+15% fire damage resistance on wearer</span><br />
 					<span class="stat upside">+15% explosive damage resistance on wearer</span><br />
 					<span class="stat upside">Full turning control while charging</span><br />
-					<span class="stat upside">Melee kills refill 75% of your charge meter</span><br />
+					<span class="stat upside">Melee kills refill 75% of the shield charge meter</span><br />
 					<span class="stat downside">0.5 second decrease in charge duration</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
+					<span class="stat neutral info">Melee kills now include <a href="#Shields" class="tooltip-link">shield kills</a></span><br />
 					<span class="stat upside removed">No longer loses charge duration from taking damage</span><br />
 					<span class="stat downside added">Reduced total charge duration from 1.75s to 1.25s</span><br />
 				</p>
@@ -2796,8 +2776,8 @@
 				<img class="item-img" src="../resources/weapons/demoman/Persian_Persuader.png" />
 				<p class="item-stats">
 					<span class="item-name">Persian Persuader</span><br />
-					<span class="stat upside">Melee hits refill 20% of the charge meter</span><br />
-					<span class="stat upside">Ammo boxes collected also refill the charge meter</span><br />
+					<span class="stat upside">Melee hits refill 20% of the shield charge meter</span><br />
+					<span class="stat upside">Ammo pickups will refill the shield charge meter</span><br />
 					<span class="stat downside">-50% max primary ammo on wielder</span><br />
 					<span class="stat downside">-50% max secondary ammo on wielder</span><br />
 					<span class="stat neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
@@ -2807,7 +2787,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">These stats are subject to change</span><br />
-					<span class="stat neutral info">Shield bashes are now considered melee hits</span><br />
+					<span class="stat neutral info">Melee hits now include <a href="#Shields" class="tooltip-link">shield bashes</a></span><br />
 					<span class="stat upside modified">Increased max primary ammo from 3 to 8</span><br />
 					<span class="stat upside modified">Increased max secondary ammo from 5 to 12</span><br />
 				</p>
