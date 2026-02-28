@@ -5121,7 +5121,7 @@
 					<span class="stat upside">Silent Killer: Victims do not scream when backstabbed</span><br />
 					<span class="stat upside">+20% ranged damage resistance while disguised</span><br />
 					<span class="stat downside">The disguise kit requires and consumes a full cloak meter to use</span><br />
-					<span class="stat downside">-33% cloak regen rate</span><br />
+					<span class="stat downside">-33% slower cloak regen rate</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -5185,7 +5185,7 @@
 					<span class="stat neutral">Cloak drain rate based on movement speed</span><br />
 					<span class="stat upside">+100% faster cloak regen rate</span><br />
 					<span class="stat downside">0.5 second increase in cloak blink time</span><br />
-					<span class="stat downside">No cloak meter from ammo boxes when invisible</span><br />
+					<span class="stat downside">No cloak meter from ammo boxes when cloaked</span><br />
 					<span class="stat downside">-35% cloak meter from ammo boxes</span><br />
 				</p>
 			</td>
@@ -5221,23 +5221,26 @@
 				<p class="item-stats">
 					<span class="item-name">Dead Ringer</span><br />
 					<span class="stat neutral">Cloak Type: Feign Death</span><br />
-					<span class="stat neutral">Leave a fake corpse on taking damage and temporarily gain speed and damage resistance.</span><br />
-					<span class="stat upside">+25% cloak regen rate</span><br />
-					<span class="stat downside">-20% cloak meter upon decloaking</span><br />
-					<span class="stat downside">-50% cloak meter when Feign Death is activated while above 50% health</span><br />
+					<span class="stat neutral">Alt-fire: Cloak activates upon taking damage, instantly becoming invisible to enemies, leaving a fake corpse and gaining a speed boost for up to 3 seconds.</span><br />
+					<span class="stat upside">+50% faster cloak regen rate</span><br />
+					<span class="stat upside">Cloak allows the wearer to cheat death</span><br />
+					<span class="stat downside">-10% cloak meter upon taking damage while cloaked</span><br />
+					<span class="stat downside">-25% cloak meter when decloaking</span><br />
+					<span class="stat downside">No cloak meter from ammo boxes when uncloaked</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
-					<span class="stat upside modified">
-						Feign Death activation only consumes 50% cloak meter if activated at
-						<span class="tooltip" title="Damage taken to activate Feign Death (after resistances) is considered in this calculation.">above 50% HP</span>
-					</span><br />
-					<span class="stat downside modified">Reduced cloak regen rate from 50% to 25%</span><br />
-					<span class="stat downside added">Up to 20% cloak is consumed upon decloaking</span><br />
+					<span class="stat q-community tf2c">Inspired by the <a class="tooltip-link" href="https://wiki.tf2classic.com/wiki/L%27escampette">L'escampette</a> from <a class="tooltip-link" href="https://tf2classified.com/" target="_blank" title="">TF2 Classified</a></span><br />
+					<span class="stat upside modified">Changed ability to pick up ammo boxes for cloak meter from never to only while cloaked</span><br />
+					<span class="stat upside added">Reduced cloak lost on activation from <span class="tooltip" title="7s maximum cloak time">50%</span> to <span class="tooltip" title="9s maximum cloak time">10%</span></span><br />
+					<span class="stat upside added">Cloak will block all lethal damage</span><br />
+					<span class="stat downside modified">Decloaking ends the speed boost effect</span><br />
 					<span class="stat downside removed">Removed cloak duration bonus</span><br />
+					<span class="stat downside removed">Removed bonus cloak damage resistance</span><br />
+					<span class="stat downside added">Taking damage while cloaked drains 10% cloak</span><br />
+					<span class="stat downside added">Decloaking consumes <span class="tooltip" title="Cloak regenerates in 7-20s">25% cloak meter</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -5249,8 +5252,7 @@
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					The watch has been made more rewarding to incentivize players to uses it convincingly, providing significantly longer duration.
-					However, it is more punishing for using it haphazardly, consuming even more cloak and requiring more time to recover.
+					TODO
 				</p>
 			</td>
 		</tr>
