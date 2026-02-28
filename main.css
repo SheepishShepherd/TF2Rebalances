@@ -253,13 +253,13 @@ label {
 
 /* Bad Weapon Rebailitation overrides */
 .bwr {
-	background: url('resources/icons/BWR-2.png') no-repeat;
+	background: url('resources/icons/Credit_BWR.png') no-repeat;
 	background-size: 16px;
 	padding-left: 20px;
 }
 
 .tf2c {
-	background: url('resources/icons/TF2C.png') no-repeat;
+	background: url('resources/icons/Credit_TF2C.png') no-repeat;
 	background-size: 16px;
 	padding-left: 20px;
 }
