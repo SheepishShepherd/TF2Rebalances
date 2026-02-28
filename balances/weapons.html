@@ -976,7 +976,7 @@
 				<img class="item-img" src="../resources/weapons/scout/Candy_Cane.png" />
 				<p class="item-stats">
 					<span class="item-name">Candy Cane</span><br />
-					<span class="stat upside">+60% health from pickups while &#60;50% health</span><br />
+					<span class="stat upside">+60% health from pickups while at low health</span><br />
 					<span class="stat upside">On Kill: Target drops a small health kit</span><br />
 					<span class="stat downside">On Kill: Target drops a small ammo pack</span><br />
 					<span class="stat downside">-50% max primary ammo</span><br />
@@ -987,7 +987,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="stat upside removed">Removed explosive damage vulnerability</span><br />
-					<span class="stat upside added">Increased health restored by health kits while below 50% health from 125/63/25 to 125/95/40</span><br />
+					<span class="stat upside added">Increased health restored by health kits while &#60;50% health from 125/63/25 to 125/95/40</span><br />
 					<span class="stat downside added">Ammo packs dropped by killed enemies changed from medium to small</span><br />
 					<span class="stat downside added">Reduced primary max ammo from 24 to 12</span><br />
 				</p>
@@ -2921,7 +2921,7 @@
 				<p class="item-stats">
 					<span class="item-name">Brass Beast</span><br />
 					<span class="stat upside">+20% damage bonus</span><br />
-					<span class="stat upside">25% damage resistance while spun up and &#60;50% health</span><br />
+					<span class="stat upside">25% damage resistance while at low health and spun up</span><br />
 					<span class="stat upside">Immune to movement-impairing effects while spun up</span><br />
 					<span class="stat downside">50% slower spin up time</span><br />
 					<span class="stat downside">-60% slower move speed while deployed</span><br />
@@ -3260,8 +3260,8 @@
 					<span class="stat upside">This weapon deploys 30% faster</span><br />
 					<span class="stat upside">+30% faster firing rate</span><br />
 					<span class="stat upside">+15% faster move speed while active</span><br />
-					<span class="stat downside">-20% damage penalty vs targets &#60;50% health</span><br />
-					<span class="stat downside">-60% damage penalty vs targets &#62;50% health</span><br />
+					<span class="stat downside">-20% damage penalty against high health targets</span><br />
+					<span class="stat downside">-60% damage penalty against low health targets</span><br />
 					<span class="stat neutral">Triple Hit Combo! Successive punches with alternating attacks will deal critical damage on the 3rd punch</span><br />
 				</p>
 			</td>
@@ -4648,7 +4648,7 @@
 				<img class="item-img" src="../resources/weapons/sniper/Razorback.png" />
 				<p class="item-stats">
 					<span class="item-name">Razorback</span><br />
-					<span class="stat neutral">While &#62;40% health, lethal damage is blocked by the shield causing it to break. Upon breaking, the wearer cheats death and gains a speed boost for 3 seconds.</span><br />
+					<span class="stat neutral">While at high health, the shield blocks all incoming lethal damage and breaks. Upon breaking, the wearer cheats death and gains a speed boost for 3 seconds.</span><br />
 					<span class="stat downside">-100% maximum overheal on wearer</span><br />
 					<span class="stat downside">Does not block headshots</span><br />
 				</p>
@@ -4662,7 +4662,7 @@
 					<span class="stat upside added">Removes <span class="tooltip" title="bleed and afterburn (inferno reduced to afterburn)">damaging debuffs</span> when the shield breaks</span><br />
 					<span class="stat upside added">Grants a 3s speed boost when the shield breaks</span><br />
 					<span class="stat downside modified">Changed shield blocking all damage to blocking lethal damage, leaving the wearer with 1 health</span><br />
-					<span class="stat downside added">Shield only blocks attacks while above 50 health</span><br />
+					<span class="stat downside added">Shield only blocks attacks while at &#62;50% health</span><br />
 					<span class="stat item-set-active info">Updated Shocked debuff (Knife Lock-up):</span><br />
 					<span class="stat item-set-inactive">
 						Enemies that break the shield with a melee weapon will be unable to swing, holster or use
@@ -4716,15 +4716,16 @@
 				<img class="item-img" src="../resources/weapons/sniper/Shahanshah.png" />
 				<p class="item-stats">
 					<span class="item-name">Shahanshah</span><br />
-					<span class="stat upside">+15% faster move speed while &#60;50% health</span><br />
-					<span class="stat upside">+25% damage bonus while &#60;50% health</span><br />
-					<span class="stat downside">-25% damage penalty while &#62;50% health</span><br />
+					<span class="stat neutral">While weapon is active:</span><br />
+					<span class="stat upside">+15% faster move speed while at low health</span><br />
+					<span class="stat upside">+25% damage bonus while at low health</span><br />
+					<span class="stat downside">-25% damage penalty while at high health</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat upside added">Increased movement speed from 300hu to 345hu while weapon is active and wielder is below half health</span><br />
+					<span class="stat upside added">Increased movement speed from 300hu to 345hu while weapon is active and wielder has &#60;50% health</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -4864,19 +4865,19 @@
 				<img class="item-img" src="../resources/weapons/spy/Enforcer.png" />
 				<p class="item-stats">
 					<span class="item-name">Enforcer</span><br />
-					<span class="stat upside">+25% damage bonus while disguised</span><br />
+					<span class="stat upside">+25% damage bonus against low health targets</span><br />
 					<span class="stat upside">Attacks pierce damage resistance effects and bonuses</span><br />
-					<span class="stat upside">On Kill: Current disguise is retained</span><br />
+					<span class="stat upside">Silent Killer: No undisguising on kill</span><br />
 					<span class="stat downside">25% slower firing rate</span><br />
-					<span class="stat downside">50% longer disguise activation time</span><br />
+					<span class="stat downside">+1 second disguise activation time</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat upside modified">Attack piercing applies to sapper armor</span><br />
-					<span class="stat upside modified">Increased damage while disguised from 48 to 50</span><br />
-					<span class="stat upside added">Killing an enemy while disguised will not remove your current disguise. The shot fired can still be heard.</span><br />
+					<span class="stat upside added">Increased damage dealt against enemies with &#60;50% health from 40 to 50</span><br />
+					<span class="stat upside added">Attacks that <span class="tooltip" title="does not apply to building kills">kill</span> while disguised will not remove your current disguise and makes a quieter distinct sound.</span><br />
 					<span class="stat downside modified">Increased attack interval from 0.6s to 0.625s</span><br />
 					<span class="stat downside added">Increased <span class="tooltip" title="Changing active disguise unaffected">disguise activation time</span> from 2s to 3s</span><br />
 				</p>
@@ -4901,7 +4902,7 @@
 				<img class="item-img" src="../resources/weapons/spy/L'Etranger.png" />
 				<p class="item-stats">
 					<span class="item-name">L'Etranger</span><br />
-					<span class="stat upside">+40% cloak duration</span><br />
+					<span class="stat upside">+40% longer cloak time on wielder</span><br />
 					<span class="stat upside">On Hit: Gain up to +24% cloak per attack</span><br />
 					<span class="stat downside">-25% damage penalty</span><br />
 				</p>
