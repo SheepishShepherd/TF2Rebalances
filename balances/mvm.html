@@ -9,6 +9,17 @@
 	<link rel="icon" type="image/x-icon" href="../resources/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../main.css" />
 	<link rel="stylesheet" type="text/css" href="balance.css" />
+
+	<script>
+		window.onload = function () {
+			const elements = document.querySelectorAll('.mvm-mini-item');
+			elements.forEach(element => {
+				element.addEventListener('click', function () {
+					window.location = "weapons.html#" + element.title.replaceAll(" ", "_");
+				});
+			});
+		}
+	</script>
 </head>
 <body>
 	<div class="nav-panel">
