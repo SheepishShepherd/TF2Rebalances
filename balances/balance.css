@@ -119,11 +119,11 @@ th {
 .icon-CanteenUber { background-image: url('../resources/mvm/canteen_uber.png'); }
 .icon-CanteenRecall { background-image: url('../resources/mvm/canteen_recall.png'); }
 
-#upgrade_info {
+.upgrade_info {
 	display: none;
 }
 
-:checked + #upgrade_info {
+:checked + .upgrade_info {
 	display: initial;
 }
 
