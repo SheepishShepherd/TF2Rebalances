@@ -1679,7 +1679,7 @@
 				<p class="item-stats">
 					<span class="item-name">Backburner</span><br />
 					<span class="stat neutral">Alt-Fire: Release a pressurized blast of air that pushes enemies, reflects projectiles and extinguishes allies</span><br />
-					<span class="stat upside">Targets hit from behind are Marked For Death</span><br />
+					<span class="stat upside">Targets hit from behind are Marked-For-Death</span><br />
 					<span class="stat downside">+150% airblast cost</span><br />
 					<span class="stat neutral">Airblast inflicts knockback on user</span><br />
 				</p>
@@ -1689,7 +1689,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="stat neutral info">Back hit detection made slightly more lenient</span><br />
 					<span class="stat neutral added">Airblasts released midair apply knockback to the wielder in the opposite direction</span><br />
-					<span class="stat upside added">Applies the Marked For Death effect for 4s against targets hit from behind</span><br />
+					<span class="stat upside added">Applies the Marked-For-Death effect for 4s against targets hit from behind</span><br />
 					<span class="stat downside removed">Removed critical hits from behind bonus</span><br />
 				</p>
 			</td>
@@ -3579,7 +3579,7 @@
 					<span class="stat downside">-33% smaller clip size</span><br />
 					<span class="stat downside">-33% max ammo capacity</span><br />
 					<span class="stat downside">Does not refill from resupply cabinets</span><br />
-					<span class="stat downside">Self mark for death when hauling buildings</span><br />
+					<span class="stat downside">Wielder is Marked-For-Death when hauling buildings</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -3983,7 +3983,7 @@
 				<p class="item-stats">
 					<span class="item-name">Overdose</span><br />
 					<span class="stat neutral">Fires rapid-fire syringes that speed up out-of-combat healing recovery time when hitting allies</span><br />
-					<span class="stat upside">While active, movement speed increases based on &#220;berCharge percentage to a maximum of +20%</span><br />
+					<span class="stat upside">Movement speed increases as &#220;berCharge is built</span><br />
 					<span class="stat downside">-25% damage penalty</span><br />
 					<span class="stat neutral">This weapon reloads while not active</span><br />
 				</p>
@@ -4176,24 +4176,33 @@
 				<img class="item-img" src="../resources/weapons/medic/Solemn_Vow.png" />
 				<p class="item-stats">
 					<span class="item-name">Solemn Vow</span><br />
-					<span class="stat neutral">TODO</span><br />
+					<span class="stat upside">Allows wielder to see enemy health</span><br />
+					<span class="stat upside">+15% damage resistance while active</span><br />
+					<span class="stat downside">Wielder is Marked-For-Death upon dealing damage</span><br />
+					<span class="stat neutral">'Do no harm.'</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="stat q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="stat upside removed">Removed firing rate penalty</span><br />
+					<span class="stat upside added">Reduced damage taken by 15% while active</span><br />
+					<span class="stat downside added">Attacking an enemy player with this weapon will apply Marked-For-Death to the wielder for 5s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					While being able to see enemy health can be good, its not always applicable.
+					With a downside as equally proportionate, this weapon feels like stock sometimes.
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					Damage resistance is touchy on medic, but as an item you have to keep out and not use or heal could have potential.
+					Use it when close combat is minimal and you need to safely traverse without nearby teammates.
 				</p>
+				<span class="stat item-set-inactive score-3">Confidence Score: Confident</span><br />
 			</td>
 		</tr>
 
