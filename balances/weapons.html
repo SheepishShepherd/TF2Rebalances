@@ -4211,32 +4211,37 @@
 				<img class="item-img" src="../resources/weapons/medic/Vita-Saw.png" />
 				<p class="item-stats">
 					<span class="item-name">Vita-Saw</span><br />
-					<span class="stat upside">Collect the organs of enemies you hit</span><br />
 					<span class="stat upside">On Hit: Inflict bleed for 5 seconds</span><br />
+					<span class="stat upside">Collect the organs of enemies you hit</span><br />
 					<span class="stat upside">On Hit Teammate: Transplant an organ to an ally, providing 100 health and +25 max health for 30 seconds</span><br />
-					<span class="stat downside">-15 max health on wearer</span><br />
+					<span class="stat downside">-33% health from pickups on wielder</span><br />
 					<span class="stat neutral">Organs are dropped on death</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="stat neutral added">Ammo pickups dropped by the wielder on death will <span class="tooltip" title="similarly to when the Sandvich is dropped on death&#010;Scouts will only heal for 50 health from this ammo pickup">restore 50 health instead of providing ammo</span></span><br />
+					<span class="stat neutral info">No longer gains extra organs from killing an enemy with a <span class="tooltip" title="still works when killing another Medic with the Vita-Saw equipped">head-taking weapon</span> and vice versa</span><br />
+					<span class="stat neutral added">Ammo pickups dropped by the wielder on death will <span class="tooltip" title="similarly to when the Sandvich is dropped on death&#010;Scouts will heal for 75 health from this ammo pickup">restore 50 health instead of providing ammo</span></span><br />
+					<span class="stat upside removed">No longer reduces max health</span><br />
 					<span class="stat upside added">Attacks inflict bleed on enemies for 5s</span><br />
 					<span class="stat upside added">Organs can be transplanted to allies when hit, granting them <span class="tooltip" title="can overheal up to 150%">100 health</span> and <span class="tooltip" title="Similarly to the Dalokohs Bar, this effect will not increase maximum overheal. Overheal is calculated with base max health and does not account for temporary bonuses.">+25 max health</span> for 30s</span><br />
-					<span class="stat downside modified">Decreased max health from 140 to 135</span><br />
 					<span class="stat downside removed">Organs no longer retain &#220;berCharge on death</span><br />
+					<span class="stat downside added">Reduced healing from pickups to 100/50/20</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="stat neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					The &#220;berCharge insurance concept is heavily flawed.
+					The single bonus this weapon offers is only realized upon respawning, which puts you at a disadvantage until intentionally putting yourself in danger.
 				</p>
 				<p class="stat neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					Attempting to keep the organ mechanic while reworking the entire concept, a Medic is now rewarded for being able to get a hit without dying.
+					Offering another burst healing tool with a powerful effect could be worth the risk of putting yourself in danger.
 				</p>
+				<p class="stat item-set-inactive score-2">Confidence Score: Optimistic</p>
 			</td>
 		</tr>
 
