@@ -13,6 +13,7 @@ table {
 	max-width: 94%;
 	margin: 15px auto;
 	text-align: center;
+	font-size: 0.9375rem; /* 15px */
 }
 
 th {
@@ -30,7 +31,7 @@ th {
 	background-color: #F3A957;
 	padding: 2px;
 	border-radius: 4px;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-family: TF2Secondary;
 }
 
@@ -55,31 +56,54 @@ th {
 	border-radius: 5px;
 }
 
-.score-1, .score-2, .score-3, .score-4 {
+.score-0, .score-1, .score-2, .score-3, .score-4 {
 	padding-right: 20px;
 	display: inline-block;
-	font-size: 16px;
-	line-height: 16px;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+.score-0 {
+	background: url('../resources/icons/Ping_Undetermined.png') no-repeat;
+	background-size: 1rem;
+	background-position: right center;
+	content: "Confidence Score: Undetermined";
+}
+.score-0::before {
+	content: "Confidence Score: Undetermined";
 }
 .score-1 {
 	background: url('../resources/icons/Ping_Very_High.png') no-repeat;
-	background-size: 16px;
+	background-size: 1rem;
 	background-position: right center;
+	content: "Confidence Score: Unsure";
+}
+.score-1::before {
+	content: "Confidence Score: Unsure";
 }
 .score-2 {
 	background: url('../resources/icons/Ping_High.png') no-repeat;
-	background-size: 16px;
+	background-size: 1rem;
 	background-position: right center;
+	content: "Confidence Score: Optimistic";
+}
+.score-2::before {
+	content: "Confidence Score: Optimistic";
 }
 .score-3 {
 	background: url('../resources/icons/Ping_Medium.png') no-repeat;
-	background-size: 16px;
+	background-size: 1rem;
 	background-position: right center;
+}
+.score-3::before {
+	content: "Confidence Score: Confident";
 }
 .score-4 {
 	background: url('../resources/icons/Ping_Low.png') no-repeat;
-	background-size: 16px;
+	background-size: 1rem;
 	background-position: right center;
+}
+.score-4::before {
+	content: "Confidence Score: Adamant";
 }
 
 #halloween-backdrop {
@@ -140,11 +164,11 @@ th {
 }
 
 /* Canteen Icons */
-.icon-CanteenUpgrade { background-image: url('../resources/mvm/canteen_upgrade.png'); }
-.icon-CanteenRefill { background-image: url('../resources/mvm/canteen_refill.png'); }
-.icon-CanteenKritz { background-image: url('../resources/mvm/canteen_kritz.png'); }
-.icon-CanteenUber { background-image: url('../resources/mvm/canteen_uber.png'); }
-.icon-CanteenRecall { background-image: url('../resources/mvm/canteen_recall.png'); }
+.icon-CanteenUpgrade { background-image: url('../resources/mvm/Canteen_Upgrade.png'); }
+.icon-CanteenRefill { background-image: url('../resources/mvm/Canteen_Refill.png'); }
+.icon-CanteenKritz { background-image: url('../resources/mvm/Canteen_Kritz.png'); }
+.icon-CanteenUber { background-image: url('../resources/mvm/Canteen_Uber.png'); }
+.icon-CanteenRecall { background-image: url('../resources/mvm/Canteen_Recall.png'); }
 
 .upgrade_info {
 	display: none;
