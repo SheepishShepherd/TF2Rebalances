@@ -555,7 +555,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral info">Boost max movement speed is still <span class="tooltip" title="Speed Boost buff (+26.3%) and a +5% movement speed bonus on wearer combined">520hu</span></span><br />
+					<span class="neutral info">Boost max movement speed is still <span class="tooltip" title="Speed Boost buff (+26.3%) and a +5% movement speed bonus on wearer combined">520hu/s</span></span><br />
 					<span class="neutral modified">Changed boost from being always active to requiring a full boost meter to activate and <span>lasting 5s</span></span><br />
 					<span class="upside modified">Increased damage required to fully drain boost from <span class="tooltip" title="Each point of damage reducing meter by 4%">25 (affecting speed)</span> to <span class="tooltip" title="Each point of damage reducing meter by 1%&#10;If the duration is ended by taking damage, Scout will start panting (similar to Bonk! Atomic Punch)">100 (affecting duration)</span></span><br />
 					<span class="upside removed">Boost is no longer reduced by air jumps</span><br />
@@ -1271,13 +1271,23 @@
 				<img class="item-img" src="../resources/weapons/soldier/Cow_Mangler_5000.png" />
 				<p class="item-stats">
 					<span class="item-name">Cow Manlger 5000</span><br />
-					<span class="neutral">TODO</span><br />
+					<span class="neutral">Alt-fire: Charge up an attack that penetrates enemies, deals mini-crit damage and disables buildings for 4 seconds. Consumes the entire clip on use.</span><br />
+					<span class="upside">Does not require ammo</span><br />
+					<span class="upside">+40% faster projectile speed</span><br />
+					<span class="downside">-25% smaller clip size</span><br />
+					<span class="downside">Minicrits whenever it would normally crit</span><br />
+					<span class="downside">This weapon deals half damage to buildings</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="upside modified">Increased movement speed while charging the next attack from <span class="tooltip" title="27% movement speed">80hu/s</span> (67% slow) to <span class="tooltip" title="40% movement speed">120hu/s</span> (50% slow)</span><br />
+					<span class="upside added">Charge attack now penetrates enemies</span><br />
+					<span class="upside added">Increased projectile speed from 1100hu/s to 1540hu/s</span><br />
+					<span class="downside added">Reduced clip size from 4 to 3</span><br />
+					<span class="downside removed">Charge attack no longer sets enemies on fire</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2216,7 +2226,7 @@
 					<span class="upside added">Reduced damage taken by 20% while active</span><br />
 					<span class="upside added">Reduced knockback taken by 50% while active</span><br />
 					<span class="downside removed">No longer destroys sappers</span><br />
-					<span class="downside added">Reduced move speed from 300 to 270 while active</span><br />
+					<span class="downside added">Reduced movement speed while weapon is active from 300hu/s to <span class="tooltip" title="90% movement speed">270h/s</span></span><br />
 					<span class="downside added">Reduced deploy and holster time from 0.5s to 0.875s</span><br />
 				</p>
 			</td>
@@ -3072,7 +3082,7 @@
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="upside modified">Damage resistance no longer has a health threshold</span><br />
 					<span class="upside removed">Removed damage penalty</span><br />
-					<span class="upside added">Increased movement speed while spun up from 110HU/s to <span class="tooltip" title="Revving reduces base move speed by -40% (from -52%)">138HU/s</span></span><br />
+					<span class="upside added">Increased movement speed while weapon is spun up from <span class="tooltip" title="37% movement speed">110hu/s</span> (52% slow) to <span class="tooltip" title="46% movement speed">138hu/s</span> (40% slow)</span><br />
 					<span class="upside added">Increased max ammo from 200 to 300</span><br />
 					<span class="downside modified">Damage resistance reduced from 20% to 10%</span><br />
 					<span class="downside removed">No longer slows on hit</span><br />
@@ -3145,7 +3155,7 @@
 					<span class="neutral modified">Changed the <span class="tooltip" title="While this increases move speed from 299hu to 322hu, it will prevent speed boosts given by allies to stack on top as well (such as the Disciplinary Action).">move speed bonus to a speed boost</span></span><br />
 					<span class="upside modified">Increased consumption healing from 0 to <span class="tooltip" title="30 health per second, over 4 seconds">120</span></span><br />
 					<span class="upside modified">Changed locked-to-melee restriction to allow <span class="tooltip" title="Deploying a primary weapon will end the effect">primary weapon deployment</span> once a melee kill is earned</span><br />
-					<span class="upside removed">No longer locks max movement speed to 310hu</span><br />
+					<span class="upside removed">No longer locks max movement speed to 310hu/s</span><br />
 					<span class="upside removed">Removed damage vulnerability penalty</span><br />
 					<span class="upside added">Effect duration resets to 12s on melee kill</span><br />
 					<span class="downside modified">Reduced effect duration from 16s to 12s</span><br />
@@ -3859,7 +3869,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="upside added">Increased movement speed while hauling buildings from 90% (270hu/s) to 100% (300hu/s)</span><br />
+					<span class="upside added">Increased movement speed while hauling buildings from <span class="tooltip" title="90% movement speed">270hu/s</span> (10% slow) to <span class="tooltip" title="100% movement speed">300hu/s</span> (no slow)</span><br />
 					<span class="upside modified">Extended build speed bonus to all buildings</span><br />
 				</p>
 			</td>
@@ -3988,7 +3998,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
-					<span class="upside modified">Increased projectile speed from 1000 to 1250</span><br />
+					<span class="upside modified">Increased projectile speed from 1000hu/s to 1250hu/s</span><br />
 					<span class="upside added">Passively reloads <span class="tooltip" title="Reloads in 1.5s (base reload time of 1.305s with a 15% reload penalty)&#010;Similarly to the Crusader's Crossbow, this weapon will not start firing until the full reload time has passed.">over time</span> when fully holstered</span><br />
 					<span class="upside added">Hitting an ally sets their <span class="tooltip" title="The moment crit heals starts to build up, scaling up to x3 healing within 5s">recovery heal timer to 10s</span></span><br />
 					<span class="downside modified">Reduced max ammo from 150 to 120</span><br />
@@ -4453,8 +4463,8 @@
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="upside modified">Headshots while not fully charged will mini-crit</span><br />
-					<span class="upside added">Movement speed while charging and unscoped scales from <span class="tooltip" title="40%">120hu/s</span> (0% charge) to <span class="tooltip" title="27% (normal scoped speed)">80hu/s</span> (90% charge)</span><br />
-					<span class="downside modified">Movement speed while scoped is now always <span class="tooltip" title="27% (normal scoped speed)">80hu/s</span> reguardless of charge level</span><br />
+					<span class="upside added">Movement speed while charging and unscoped scales from <span class="tooltip" title="40% movement speed">120hu/s</span> (0% charge) to <span class="tooltip" title="27% movement speed (normal scoped speed)">80hu/s</span> (90% charge)</span><br />
+					<span class="downside modified">Movement speed while scoped in is now always 80hu/s reguardless of charge level</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -4858,7 +4868,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="upside added">Increased movement speed from 300hu to 345hu while weapon is active and wielder has &#60;50% health</span><br />
+					<span class="upside added">Increased movement speed while weapon is active and wielder has &#60;50% health from 300hu/s to <span class="tooltip" title="115% movement speed">345hu/s</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
