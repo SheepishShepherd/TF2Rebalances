@@ -421,15 +421,14 @@
 					<span class="item-name">Reserve Shooter</span><br />
 					<span class="upside">This weapon deploys 20% faster</span><br />
 					<span class="upside">+15% more accurate</span><br />
-					<span class="upside">Deals mini-crit damage against targets launched airborne by explosive or pressurized blasts</span><br />
 					<span class="downside">-50% smaller clip size</span><br />
+					<span class="neutral">This weapon reloads while not active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="upside modified">Mini-crits enemies launched by <a class="tooltip-link" href="#Airblast_Pressure" title="including self-inflicted air blast jumps with the Backburner">pressurized air blasts</a></span><br />
+					<span class="upside added">Passively reloads <span class="tooltip" title="3s (reloading each ammo every 1s)">over time</span> when fully holstered</span><br />
 					<span class="upside added">Increased accuracy spread by 15%</span><br />
 					<span class="downside modified">Reduced clip size from 4 to 3</span><br />
 				</p>
@@ -437,13 +436,15 @@
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					My biggest issue with this weapon is that it doesn't work as advertised when equipped by Pyro.
+					Unfortunately, the easy solution of allowing the mini-crits work against airblasted enemies simply won't do.
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					As much as I would like to make the Reserve Shooter a Soldier exclusive and giving Pyro a new exclusive shotgun, that's outside the scope of this document.
+					The stats are now more tame and applicable to both classes.
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-1"></p>
 			</td>
 		</tr>
 
@@ -869,7 +870,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="upside modified">Increased clip size from 9 to 15</span>
+					<span class="upside modified">Increased clip size from 9 to 15</span><br />
 					<span class="upside added">Kills with this weapon restore 25 health</span><br />
 					<span class="downside removed">No longer heals wielder on hit</span><br />
 					<span class="downside modified">Increased attack interval from <span class="tooltip" title="The base value is 0.1275 seconds, but in practice it's rounded up to the next multiple of 0.015 seconds (a game tick). This is effectively a 10% faster firing rate bonus.">0.135s</span> to 0.18s</span><br />
@@ -1172,9 +1173,10 @@
 				<img class="item-img" src="../resources/weapons/soldier/Air_Strike.png" />
 				<p class="item-stats">
 					<span class="item-name">Air Strike</span><br />
-					<span class="upside">-20% blast damage from rocket jumps</span><br />
-					<span class="upside">+65% faster firing rate while explosive jumping</span><br />
-					<span class="upside">On Kill: Clip size increases by 1, up to +4</span><br />
+					<span class="neutral">On kill, gain 2 reserve rockets, up to 4. Reload while clip is full to overload chamber with reserve rockets.</span><br />
+					<span class="upside">-15% blast damage from rocket jumps</span><br />
+					<span class="upside">+65% faster firing rate while rocket jumping</span><br />
+					<span class="upside">+20% faster projectile speed while rocket jumping</span><br />
 					<span class="downside">-15% damage penalty</span><br />
 					<span class="downside">-20% explosion radius</span><br />
 				</p>
@@ -1182,22 +1184,25 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="upside modified">Reduced blast jump damage taken from 15% to 20%</span><br />
 					<span class="upside removed">Rocket jumping no longer reduces blast radius</span><br />
+					<span class="upside added">Increased projectile speed while rocket jumping from 1100hu/s to 1320hu/s</span><br />
+					<span class="downside modified">Changed on kill bonus from a permanent clip size increase to single-use clip overload mechanic</span><br />
 					<span class="downside modified">Reduced base blast radius from -10% to -20%</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					The hard snowball this weapon can achieve can be overbearing.
+					Its conditional stats also make it a little hard to read how rockets preform.
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					The permanent clip size increase was change to a temporary one.
+					To gain a higher clip size, you now have to commit to expending your resource and keep getting kills to keep it high.
+					A faster rocket travel time was given in compensation and helps land hits better in the air.
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-2"></p>
 			</td>
 		</tr>
 
@@ -1275,16 +1280,16 @@
 					<span class="upside">Does not require ammo</span><br />
 					<span class="upside">+40% faster projectile speed</span><br />
 					<span class="downside">-25% smaller clip size</span><br />
+					<span class="downside">-33% damage penalty against buildings</span><br />
 					<span class="downside">Minicrits whenever it would normally crit</span><br />
-					<span class="downside">This weapon deals half damage to buildings</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
 					<span class="upside modified">Increased movement speed while charging the next attack from <span class="tooltip" title="27% movement speed">80hu/s</span> (67% slow) to <span class="tooltip" title="40% movement speed">120hu/s</span> (50% slow)</span><br />
-					<span class="upside added">Charge attack now penetrates enemies</span><br />
+					<span class="upside modified">Increased damage vs buildings from 18 to 60</span><br />
+					<span class="upside added">Charge attack now penetrates <span class="tooltip" title="also penetrates allies, but not buildings from either team">enemies</span></span><br />
 					<span class="upside added">Increased projectile speed from 1100hu/s to 1540hu/s</span><br />
 					<span class="downside added">Reduced clip size from 4 to 3</span><br />
 					<span class="downside removed">Charge attack no longer sets enemies on fire</span><br />
@@ -1293,13 +1298,15 @@
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					The alt-fire attack has a lot of commitment, but can easily be interupted by factors such as enemies and allies getting in the way or the projectile being reflected.
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					All of the buffs will hopefully make the weapon more versatile.
+					The inclusion of penetrating enemies (and allies) and projectile speed will make hitting your intended target easier.
+					A clip size penalty allows you to fire charge shots more often in exchange for less damage output in regular combat scenarios.
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-3"></p>
 			</td>
 		</tr>
 
@@ -1342,30 +1349,30 @@
 				<img class="item-img" src="../resources/weapons/soldier/Liberty_Launcher.png" />
 				<p class="item-stats">
 					<span class="item-name">Liberty Launcher</span><br />
-					<span class="upside">+25% larger clip size</span><br />
-					<span class="upside">+40% faster projectile speed</span><br />
 					<span class="upside">-25% blast damage from rocket jumps</span><br />
+					<span class="upside">+25% larger clip size</span><br />
+					<span class="upside">+10% faster firing rate</span><br />
 					<span class="downside">-25% damage penalty</span><br />
-					<span class="neutral">This weapon reloads while not active</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
-					<span class="upside added">Passively reloads <span class="tooltip" title="4.6s (loading each rocket every 0.92s), starting once the weapon is fully holstered">over time</span> when fully holstered</span><br />
+					<span class="upside added">Reduced attack interval from 0.8s to 0.72s</span><br />
+					<span class="downside removed">Rockets no longer travel 40% faster</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					The faster rockets and lower damage makes it a crutch and changes how chaining rocket jumps is done.
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					Since the Cow Mangler is adopting the faster projectile speed, a new upside will be considered.
+					Faster firing speed can better justify the massive damage penalty while also giving more potential to rocket jumps.
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-3"></p>
 			</td>
 		</tr>
 
