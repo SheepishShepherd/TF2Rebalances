@@ -358,30 +358,32 @@
 				<p class="item-stats">
 					<span class="item-name">B.A.S.E. Jumper</span><br />
 					<span class="neutral">Jump while airborne to deploy a parachute thats slows your descent for up to 5 seconds</span><br />
+					<span class="upside">150% increased air control while blast jumping</span><br />
 					<span class="upside">+50% max primary ammo on wearer</span><br />
-					<span class="upside">+50% max secondary ammo on wearer</span><br />
+					<span class="upside">+25% max secondary ammo on wearer</span><br />
 
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="upside modified">Increases air control when blast jumping by <span class="tooltip" title="This is the same air control increase when the parachute is deployed. The increased air control simply applies while the parachute is not deployed as well.">150%</span></span><br />
 					<span class="upside added">Increases max primary ammo <span class="tooltip" title="for Soldier">from 20 to 30</span></span><br />
-					<span class="upside added">Increases max secondary ammo <span class="tooltip" title="for Demoman">from 24 to 36</span></span><br />
+					<span class="upside added">Increases max secondary ammo <span class="tooltip" title="for Demoman (from 32 to 40 for the Scottish Resistance)">from 24 to 30</span></span><br />
 					<span class="downside added">Parachute can only be deployed for 5s per jump</span><br />
 				</p>
 			</td>
 			<td class="item-card stat">
 				<p class="neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					Long term parachute usage should not be encouraged and may be hard for players to reasonably handle.
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					Limiting the max parachute time to 5 seconds should be more than enough time to take advantage of.
+					Some max ammo increases and the air control increase were introduced to compensate this change.
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-3"></p>
 			</td>
 		</tr>
 
@@ -2669,22 +2671,22 @@
 				<p class="item-stats">
 					<span class="item-name">Scottish Resistance</span><br />
 					<span class="neutral">Alt-Fire: Detonate stickybombs near the crosshair</span><br />
-					<span class="upside">+50% max secondary ammo on wielder</span><br />
-					<span class="upside">Max charge time decreased by 25%</span><br />
+					<span class="upside">+33% max ammo capacity</span><br />
+					<span class="upside">Max charge time decreased by 50%</span><br />
 					<span class="upside">Charging increases stickybomb fired up to +2</span><br />
 					<span class="upside">+4 max active stickybombs</span><br />
-					<span class="downside">Stickybombs will only arm while not moving</span><br />
-					<span class="downside">Stickybombs that move must rearm</span><br />
+					<span class="downside">Stickybombs only arm when sticking to a surface</span><br />
+					<span class="downside">Stickybombs that unstick must rearm</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">These stats are subject to change</span><br />
 					<span class="neutral info">No longer detonates stickybombs at your feet</span><br />
 					<span class="upside removed">Removed stickybomb arm time penalty</span><br />
-					<span class="upside added">Reduced max charge time from 4s to 3s</span><br />
-					<span class="upside added">Increases the amount of stickybombs fired at once by 1 every second charged, <span class="tooltip" title="The charge meter will be split into 2 segments to better visualize count">up to 3</span>. Any additional stickybombs fired have +2 degrees of deviation.</span><br />
+					<span class="upside added">Reduced max charge time from 4s to 2s</span><br />
+					<span class="upside added">Charging the launcher also increases the amount of stickybombs fired by +1 every second, <span class="tooltip" title="The charge meter will be split into 2 segments to better visualize count. The first sticky launched travels normally, while additional stickies have a slight projectile deviation.">up to a total of 3</span></span><br />
+					<span class="downside modified">Reduced max ammo capacity from 36 to 32</span><br />
 					<span class="downside modified">Reduced max stickybombs out from 14 to 12</span><br />
 					<span class="downside removed">Removed ability to destroy enemy stickybombs</span><br />
 					<span class="downside removed">Removed firing rate bonus</span><br />
@@ -2694,13 +2696,16 @@
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Problem</span><br />
-					TODO
+					While the Scottish Resistance is not terrible to use, it struggles with situations that the demoman is supposed to be equipped for, such as building destruction.
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					TODO
+					A rework was attempted to keep the fundamentals of the weapon, but approaching it differently.
+					The biggest change being the firing speed bonus being replaced by a charge mechanic that can fire multiple stickybombs at once.
+					Setting up traps and destroying buildings can now be done more fluidly and in a unique way.
+
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-2"></p>
 			</td>
 		</tr>
 
