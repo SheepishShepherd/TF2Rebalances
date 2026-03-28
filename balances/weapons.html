@@ -2143,21 +2143,21 @@
 				<img class="item-img" src="../resources/weapons/pyro/Axtinguisher.png" />
 				<p class="item-stats">
 					<span class="item-name">Axtinguisher</span><br />
-					<span class="upside">Deals mini-crit damage against burning targets</span><br />
-					<span class="upside">Extinguishes burning enemies, dealing any remaining afterburn as bonus damage</span><br />
-					<span class="upside">Killing blows on burning players grant a speed boost</span><br />
-					<span class="downside">-20% damage penalty</span><br />
-					<span class="downside">-25% universal afterburn damage on wielder</span><br />
+					<span class="upside">Extinguishes burning enemies on hit and deals the remaining afterburn as bonus damage</span><br />
+					<span class="upside">Deals mini-crit damage against burning enemies</span><br />
+					<span class="upside">Gain a speed boost for 4 seconds upon killing a burning enemy with this weapon</span><br />
+					<span class="downside">-25% damage penalty</span><br />
+					<span class="downside">-50% afterburn damage on wielder</span><br />
 					<span class="downside">This weapon holsters 35% slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral info">Bonus damage from afterburn is not affected by the global afterburn penalty (calculated as 4, not 3)</span><br />
-					<span class="neutral info"><a class="tooltip-link" title="click to view a sheets doc regarding damage calculations" href="https://docs.google.com/spreadsheets/d/1H7svNf47LVFqnGIChGxWg6GLaAS-NcBQVX-i1Vxfx18/edit?usp=sharing" target="_blank">Changed damage bonus scaling from 86-167 to 76-178</a></span><br />
-					<span class="upside modified">Increased base damage from 44 to 52</span><br />
-					<span class="downside added">Reduces afterburn damage from 4 to 3 on wielder</span><br />
+					<span class="neutral modified">Changed <a class="tooltip-link" title="click to view a spreadsheet of the new bonus damage calculations" href="Pyro_Axtinguisher_Damage.pdf" target="_blank">bonus damage scaling</a> from 86-167 to 72-174</span><br />
+					<span class="upside modified">Increased base damage from 44 to 49</span><br />
+					<span class="downside added">Reduced <span class="tooltip" title="affects all weapons">afterburn damage on wielder</span> from 4 to 2</span><br />
+					<span class="neutral info">Axtinguisher bonus damage calculation ignores the afterburn penalty (calculated as 4, not 2)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2169,9 +2169,9 @@
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
 					Alongside damage tweaks to not have a minimum of 85 damage dealt to burning targets, a universal afterburn damage penalty was added to give it a proper downside.
-					With afterburn being slightly less threatening, utilizing this weapon is encouraged to avoid it.
+					With less threatening afterburn, utilizing this weapon is encouraged to circumvent the damage loss.
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-4"></p>
 			</td>
 		</tr>
 
