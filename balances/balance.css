@@ -131,9 +131,10 @@ th {
 	background-color: #3C362F; /* #1B1B1B or #0F0E0C */
 	border-radius: 3px;
 	position: relative;
-	top: 5px;
+	bottom: 2px;
 	cursor: pointer;
 	user-select: none;
+	vertical-align: middle;
 }
 .mvm-mini-item:hover {
 	background-color: #C9BBA1;

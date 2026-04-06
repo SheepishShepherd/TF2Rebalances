@@ -31,7 +31,7 @@ p {
 	background-color: #24201B;
 	text-align: center;
 	line-height: 1.6;
-	padding: 7px 0;
+	padding: 1em 0 0.5em 0;
 }
 
 .item-name {
