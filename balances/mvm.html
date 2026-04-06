@@ -322,6 +322,61 @@
 			</td>
 		</tr>
 	</table>
+	
+	<!-- Robots -->
+	<table id="Robots">
+		<tr>
+			<th colspan="3" style="background-color: #B2B2B2;">Robots</th>
+		</tr>
+
+		<!-- Bleed -->
+		<tr id="Bleed">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/Botkiller_Wrench_Blood.png" />
+				<p>
+					<span class="item-name">Bleed vs Robots</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="upside modified">Bleed duration no longer has a maximum of 10s</span><br />
+					<span class="upside added">Bleed damage inflicted by projectiles will <span class="tooltip" title="for instance, if the existing bleed damage is currently at 4 per tick, applying a new stack of bleed increases the damage per tick to 8">fully stack</span> with each application</span><br />
+					<span class="upside added">Arrows from <img class="mvm-mini-item" src="../resources/weapons/sniper/Huntsman.png" title="Huntsman" /> and <img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" /> apply bleed to robots</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="neutral">
+					<span class="item-name">Reason</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+
+		<!-- Tanks -->
+		<tr id="Tanks">
+			<td class="item-card">
+				<img class="item-img" src="../resources/mvm/MvM_Tank_Final.png" />
+				<p>
+					<span class="item-name">Tanks</span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p>
+					<span class="item-name">Changes</span><br />
+					<span class="neutral info">Tanks are now considered buildings</span><br />
+					<span class="neutral info">Tanks always take <span class="tooltip" title="damage is affected by damage bonus/penatly vs building modifiers and is unaffected by ramp-up and fall-off">base damage</span> and are still susceptible to critical damage modifiers</span><br />
+					<span class="upside modified">Heavy deals <span class="tooltip" title="from 75% less damage">40% less minigun damage to tanks</span></span><br />
+				</p>
+			</td>
+			<td class="item-card">
+				<p class="neutral">
+					<span class="item-name">Reason</span><br />
+					TODO
+				</p>
+			</td>
+		</tr>
+	</table>
 
 	<!-- Canteens -->
 	<table id="Canteens">
@@ -347,9 +402,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral">Canteens cannot be activated until wave start</span><br />
-					<span class="neutral">Current held charges tooltip changed to be yellow and moved to top of the stats list</span><br />
-					<span class="downside">Sentry Guns only benefit from canteens when the <a class="tooltip-link tooltip" href="#Building_Upgrades">Canteen Specialist</a> upgrade is purchased</span><br />
+					<span class="neutral info">Canteens cannot be activated until wave start</span><br />
+					<span class="neutral info">Currently holds charges tooltip changed to be yellow and moved to top of the stats list</span><br />
+					<span class="downside added">Sentry Guns only benefit from canteens when the <a class="tooltip-link tooltip" href="#Building_Upgrades">Canteen Specialist</a> upgrade is purchased</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -420,7 +475,7 @@
 					<span class="item-name">Ammo Refill Canteen</span><br />
 					<span class="upside">Instantly refill all weapon clips and ammo</span><br />
 					<span class="upside">Instantly recharge all damage meters</span><br />
-					<span class="neutral">All buildings upgrade to max level</span><br />
+					<span class="neutral">All buildings upgrade by 1 level</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -430,7 +485,7 @@
 					<span class="upside added">Effect now instantly recharges all meters</span><br />
 					<span class="neutral info">Affects meters dependent on time or damage, including meters that are in active use</span><br />
 					<span class="neutral info">Does not affect &#0220bercharge meters</span><br />
-					<span class="upside added">All buildings upgrade to level 3 on use</span><br />
+					<span class="upside added">All level 1 buildings upgrade to level 2 and all level 2 buildings upgrade to level 3 on use</span><br />
 					<span class="downside modified">Increased cost from $25 to $75</span><br />
 				</p>
 			</td>
@@ -448,8 +503,7 @@
 				<img class="item-img" src="../resources/mvm/battery_canteen_item.png" />
 				<p>
 					<span class="item-name">Recall Canteen</span><br />
-					<span class="neutral">User drops a reanimator on death</span><br />
-					<span class="upside">Instantly revive user at reanimator or spawn</span><br />
+					<span class="upside">Instantly revive or teleport user to spawn</span><br />
 					<span class="upside">Grants a speed boost for 5s</span><br />
 					<span class="neutral">Pick up a targeted building from long range</span><br />
 				</p>
@@ -459,9 +513,8 @@
 					<span class="item-name">Changes</span><br />
 					<span class="neutral removed">No longer teleports user to spawn</span><br />
 					<span class="neutral added">User drops a reanimator on death</span><br />
-					<span class="upside added">Canteen can be consumed while dead to instantly revive the user at their death location</span><br />
-					<span class="neutral info">User can click the 'Decline' button to respawn instead</span><br />
-					<span class="downside modified">Increased cost from $10 to $50</span><br />
+					<span class="upside added">Canteen can be used while dead to revive at spawn</span><br />
+					<span class="neutral info">Hauling Sentry Guns into spawn no longer causes the Sentry Gun to self-destruct</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -513,8 +566,10 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral">Upgrade values will stack additively with existing upsides/downsides</span><br />
-					<span class="neutral">Example: The Winger's clip size would go from 5->8/10/12/15 to 5->11/17/23</span><br />
+					<span class="neutral modified">Weapon upgrades will stack additively with existing weapon modifiers instead of stacking multiplicatively</span><br />
+					<span class="item-set-active info">Example: Winger +50% clip size upgrade</span><br />
+					<span class="item-set-inactive">From -60% (5 base) -> -34%/-16%/0%/+15% (8/10/12/15)</span><br />
+					<span class="item-set-inactive">To -60% (5 base) -> -10%/+40%/+90%/+140% (11/17/23/29)</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -538,9 +593,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral">The refund pool amount will appear in the bottom right corner of the upgrade station HUD</span><br />
-					<span class="upside">After wave completion, 25% of credits collected and all bonus credits earned are added to the refund pool</span><br />
-					<span class="downside">Refunding any upgrade reduces the pool by its cost</span><br />
+					<span class="downside modified">Replaced the 'Refund Upgrades' button with a refund credit pool system for the upgrade station HUD</span><br />
+					<span class="neutral info">After wave completion, 25% of credits collected and all bonus credits earned are added to the refund pool</span><br />
+					<span class="neutral info">Refunding any upgrade reduces the pool by its cost</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -563,8 +618,8 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral">Buybacks now require Recall canteens</span><br />
-					<span class="neutral">Example: The Winger's clip size would go from 5->8/10/12/15 to 5->11/17/23</span><br />
+					<span class="downside removed">Removed ability to buyback with credits</span><br />
+					<span class="neutral added">Buybacks now require purchased Recall canteens which can be used while dead to instantly revive youself</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -630,7 +685,6 @@
 					<span class="upgrade_info">
 						<span class="neutral info" style="margin-left: 15px;">Robots can still aggro onto Scout from attacking while within FOV</span><br />
 					</span>  -->
-
 					<!-- +20% reload speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_CrockBlock.png" /><span>+20% reload speed</span>
 					<span class="credits">[$250]</span> <span class="q-strange tooltip" title="Purchase points have been increased from 0 to 1">[&#9679;]</span>
@@ -698,23 +752,23 @@
 						<span class="neutral modified" style="margin-left: 15px;">No longer reduces the damage requirement to fill</span><br />
 					</span>
 
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="scout_secondary_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Flying_Guillotine.png" title="Flying Guillotine" />
-					</span><br />
-					<input type="checkbox" id="scout_secondary_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
-					</span>
-
 					<!-- +100% max misc ammo -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+100% max misc ammo</span>
 					<span class="credits">[$125]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Flying_Guillotine.png" title="Flying Guillotine" />
 					</span><br />
+
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="scout_secondary_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Flying_Guillotine.png" title="Flying Guillotine" />
+					</span><br />
+					<input type="checkbox" id="scout_secondary_bleed" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
+					</span>
 				</p>
 			</td>
 		</tr>
@@ -729,25 +783,6 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
-
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="scout_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Bat.png" title="Bat" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Atomizer.png" title="Atomizer" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Boston_Basher.png" title="Boston Basher" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Candy_Cane.png" title="Candy Cane" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Fan_O'War.png" title="Fan O'War" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Sandman.png" title="Sandman" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Sun-on-a-Stick.png" title="Sun-on-a-Stick" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
-					</span><br />
-					<input type="checkbox" id="scout_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
 
 					<!-- Ball Marks Target -->
 					<img class="upgrade-icon" src="../resources/achievements/Scout_Beanball.png" /><label class="tooltip" title="Click for more info" for="scout_ball_stuns_target">Ball Stuns Target</label>
@@ -783,18 +818,6 @@
 						<span class="neutral info" style="margin-left: 15px;">Ball launch rate is also affected by this upgrade</span><br />
 					</span>
 
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="scout_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Boston_Basher.png" title="Boston Basher" />
-						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
-					</span><br />
-					<input type="checkbox" id="scout_melee_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
-					</span>
-
 					<!-- +100% max misc ammo -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+100% max misc ammo</span>
 					<span class="credits tooltip" title="Cost increased from $100 to $125">[$125]</span> <span class="q-strange tooltip" title="Purchase points have been decreased from 6 to 4">[&#9679;&#9679;&#9679;&#9679;]</span>
@@ -802,6 +825,18 @@
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Sandman.png" title="Sandman" />
 						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
 					</span><br />
+
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="scout_melee_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Boston_Basher.png" title="Boston Basher" />
+						<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
+					</span><br />
+					<input type="checkbox" id="scout_melee_bleed" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
+					</span>
 				</p>
 			</td>
 		</tr>
@@ -966,34 +1001,6 @@
 					<span class="upgrade_info">
 						<span class="neutral modified" style="margin-left: 15px;">Access to this upgrade no longer requires an equipped shield</span><br />
 					</span>
-
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="soldier_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Shovel.png" title="Shovel" />
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Disciplinary_Action.png" title="Disciplinary Action" />
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Equalizer.png" title="Equalizer" />
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Escape_Plan.png" title="Wrap Assassin" />
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Market_Gardener.png" title="Market Gardener" />
-						<img class="mvm-mini-item" src="../resources/weapons/multiclass/Pain_Train.png" title="Pain Train" />
-					</span><br />
-					<input type="checkbox" id="soldier_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
-
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="soldier_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/multiclass/Pain_Train.png" title="Pain Train" />
-					</span><br />
-					<input type="checkbox" id="soldier_melee_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
-					</span>
 				</p>
 			</td>
 		</tr>
@@ -1110,7 +1117,6 @@
 					<span class="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
 					</span> -->
-
 					<!-- +200% Explode on Ignite damage -->
 					<img class="upgrade-icon" src="../resources/achievements/Achievement_Milestone_3.png" /><label class="tooltip" title="Click for more info" for="pyro_explode_on_ignite">+200% Explode on Ignite damage</label>
 					<span class="credits tooltip" title="Reduced cost from $400 to $350">[$350]</span> <span class="q-strange">[&#9679;]</span>
@@ -1188,34 +1194,7 @@
 					</span><br />
 					<input type="checkbox" id="pyro_hammer_damage" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Hammers benefit from a damage upgrade, similarly to swords</span><br />
-					</span>
-
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="pyro_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/pyro/Fire_Axe.png" title="Fire Axe" />
-						<img class="mvm-mini-item" src="../resources/weapons/pyro/Back_Scratcher.png" title="Back Scratcher" />
-						<img class="mvm-mini-item" src="../resources/weapons/pyro/Sharpened_Volcano_Fragment.png" title="Sharpened Volcano Fragment" />
-						<img class="mvm-mini-item" src="../resources/weapons/pyro/Third_Degree.png" title="Third Degree" />
-						<img class="mvm-mini-item" src="../resources/weapons/pyro/Hot_Hand.png" title="Hot Hand" />
-					</span><br />
-					<input type="checkbox" id="pyro_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
-
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="pyro_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/pyro/Back_Scratcher.png" title="Back Scratcher" />
-					</span><br />
-					<input type="checkbox" id="pyro_melee_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Hammer-type weapons benefit from a damage upgrade, similarly to swords</span><br />
 					</span>
 
 					<!-- +25 health on kill -->
@@ -1224,6 +1203,17 @@
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/pyro/Powerjack.png" title="Powerjack" />
 					</span><br />
+
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="pyro_melee_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/pyro/Back_Scratcher.png" title="Back Scratcher" />
+					</span><br />
+					<input type="checkbox" id="pyro_melee_bleed" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
+					</span>
 				</p>
 			</td>
 		</tr>
@@ -1337,6 +1327,19 @@
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish Resistance" />
 					</span><br />
 
+					<!-- Crit sitckes on full charge -->
+					<img class="upgrade-icon" src="../resources/achievements/modified/Demoman_CritStickies.png" /><label class="tooltip" title="Click for more info" for="demoman_on_kill_reload">Critical damage on full charge</label>
+					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Stickybomb_Launcher.png" title="Stickybomb Launcher" />
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Quickiebomb_Launcher.png" title="Quickiebomb_Launcher" />
+						<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish_Resistance" />
+					</span><br />
+					<input type="checkbox" id="demoman_on_kill_reload" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Charging up the launcher to max will crit boost stickybombs fired</span><br />
+					</span>
+
 					<!-- Kills reload primary ammo -->
 					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="demoman_on_kill_reload">On Kill: +2 primary clip reloaded</label>
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
@@ -1399,30 +1402,6 @@
 					<span class="upgrade_info">
 						<span class="neutral modified" style="margin-left: 15px;">Access to this upgrade no longer requires an equipped shield</span><br />
 					</span>
-
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="demoman_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/demoman/Bottle.png" title="Bottle" />
-						<img class="mvm-mini-item" src="../resources/weapons/multiclass/Pain_Train.png" title="Pain Train" />
-					</span><br />
-					<input type="checkbox" id="demoman_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
-
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="demoman_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/multiclass/Pain_Train.png" title="Pain Train" />
-					</span><br />
-					<input type="checkbox" id="demoman_melee_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
-					</span>
 				</p>
 			</td>
 		</tr>
@@ -1440,8 +1419,9 @@
 				<img class="item-img" src="../resources/class/token_heavy.png" />
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
-					<span class="downside">-66% primary damage penalty vs Tanks</span><br />
-					<span class="downside">-40% primary damage penalty vs Giant Robots</span><br />
+					<span class="upside">Triple Hit Combo does not require alternating fists to gain critical damage</span><br />
+					<span class="downside">-60% primary damage penalty vs Tanks</span><br />
+					<span class="downside">-60% primary damage penalty vs Giant Robots</span><br />
 				</p>
 			</td>
 
@@ -1469,8 +1449,8 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- Innate modified notice -->
-					<span class="neutral warning-blue">Reduced Minigun damage penalty vs Tanks from -75% to -66%</span><br />
-					<span class="neutral warning-red">Reduced Minigun damage vs Giant Robots by -40%</span><br />
+					<span class="neutral warning-blue">Reduced Minigun damage penalty vs Tanks from -75% to -60%</span><br />
+					<span class="neutral warning-red">Reduced Minigun damage vs Giant Robots by -60%</span><br />
 
 					<!-- Metal Shredder -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_PermanentRevolution.png" /><label class="tooltip" title="Click for more info" for="heavy_metal_shredder">Metal Shredder</label>
@@ -1485,14 +1465,13 @@
 					<input type="checkbox" id="heavy_metal_shredder" style="display: none;" />
 					<span class="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Grants a RAGE meter that can be activated with the Reload Key when full</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Building RAGE to full requires 2400/1800/1200 damage</span><br />
-						<span class="neutral info" style="margin-left: 30px;">or 6000/4500/3000 damage against Tanks</span><br />
-						<span class="neutral info" style="margin-left: 15px;">RAGE effect has a duration of 5s</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Building RAGE to full requires 15/12/9 robot kills (Giants count as 3 kills)</span><br />
 						<span class="neutral added" style="margin-left: 15px;">RAGE causes bullets to penetrate robots up to medium range (base damage)</span><br />
-						<span class="neutral added" style="margin-left: 15px;">RAGE fires +2 additional bullets per shot (50% damage increase)</span><br />
-						<span class="neutral added" style="margin-left: 15px;">RAGE decreases accuracy by 35%/25%/15% (updates crosshair size)</span><br />
+						<span class="neutral added" style="margin-left: 15px;">RAGE fires +0/1/2 additional bullets per shot (0/25/50% damage increase)</span><br />
+						<span class="neutral added" style="margin-left: 15px;">RAGE resets minigun accuracy and does not increase for the duration, even if still spun up</span><br />
+						<span class="neutral info" style="margin-left: 15px;">RAGE effect has a duration of 5s</span><br />
 					</span>
-					<span class="downside" style="margin-left: 30px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/Sniper_PartingShot.png" />Projectile Penetration <span class="neutral">and</span><img class="upgrade-icon" src="../resources/achievements/Scout_FirstBlood.png" />Knockback Rage<br />
+					<span class="downside" style="margin-left: 30px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/Scout_FirstBlood.png" />Knockback Rage <span class="neutral">and</span><img class="upgrade-icon" src="../resources/achievements/Sniper_PartingShot.png" />Projectile Penetration<br />
 
 					<!-- +15% Firing Speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_CrimeAndPunishment.png" /><label class="tooltip" title="Click for more info" for="heavy_firing_speed">+15% firing speed</label>
@@ -1524,8 +1503,9 @@
 					</span><br />
 					<input type="checkbox" id="heavy_armor_penetration" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral modified" style="margin-left: 15px;">Reduces the damage penalty vs Giant Robots by 25% per point (10% damage)</span><br />
-						<span class="neutral info" style="margin-left: 30px;">Minigun damage per point: -30%/-20%/-10%/0%</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Reduces the damage penalty vs Giant Robots by 25% per point (15% damage)</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Minigun damage per point: -45%/-30%/-15%/0%</span><br />
+						<span class="neutral info" style="margin-left: 30px;">Does not affect damage against tanks</span><br />
 					</span>
 
 					<!-- Destroy Projectiles -->
@@ -1581,7 +1561,7 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
-					<!-- Kills reload primary ammo 
+					<!-- Kills reload primary ammo
 					<img class="upgrade-icon" src="../resources/achievements/Soldier_ForWhomTheShellTrolls.png" /><label class="tooltip" title="Click for more info" for="heavy_on_kill_reload">On Kill: +50% primary clip reloaded</label>
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
 					<span style="user-select: none;">
@@ -1593,7 +1573,6 @@
 					<span class="upgrade_info">
 						<span class="neutral added" style="margin-left: 15px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
 					</span> -->
-
 					<!-- Lunch Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_DontTouchSandvich.png" /><label class="tooltip" title="Click for more info" for="heavy_lunch_specialist">Lunch Specialist</label>
 					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
@@ -1636,15 +1615,21 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="heavy_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
+					<!-- +25% damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><label class="tooltip" title="Click for more info" for="heavy_fists_damage">+25% damage</label>
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/heavy/Fists.png" title="Fists" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Eviction_Notice.png" title="Eviction Notice" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Fists_of_Steel.png" title="Fists of Steel" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Gloves_of_Running_Urgently.png" title="Gloves of Running Urgently" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Holiday_Punch.png" title="Holiday Punch" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Killing_Gloves_of_Boxing.png" title="Killing Gloves of Boxing" />
+						<img class="mvm-mini-item" src="../resources/weapons/heavy/Warrior's_Spirit.png" title="Warrior's Spirit" />
 					</span><br />
-					<input type="checkbox" id="heavy_triple_hit_combo" style="display: none;" />
+					<input type="checkbox" id="heavy_fists_damage" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">All-class melees, which do not have the Fist-style triple hit combo, will have this upgrade</span><br />
+						<span class="neutral added" style="margin-left: 15px;">Fist-type weapons benefit from a damage upgrade, similarly to swords</span><br />
 					</span>
 
 					<!-- +25 health on kill -->
@@ -1670,7 +1655,7 @@
 				<img class="item-img" src="../resources/class/token_engineer.png" />
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
-					<span class="upside">Redeployed buildings construct instantly</span><br />
+					<span class="upside">Redeployed buildings construct rapidly</span><br />
 					<span class="upside">No move speed reduction while hauling buildings</span><br />
 				</p>
 			</td>
@@ -1789,6 +1774,17 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- +25% damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><label class="tooltip" title="Click for more info" for="engineer_fists_damage">+25% damage</label>
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Gunslinger.png" title="Gunslinger" />
+					</span><br />
+					<input type="checkbox" id="engineer_fists_damage" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral added" style="margin-left: 15px;">Fist-type weapons benefit from a damage upgrade, similarly to swords</span><br />
+					</span>
+
 					<!-- +1 Disposable Sentry Gun -->
 					<img class="upgrade-icon" src="../resources/achievements/Engineer_UncivilEngineer.png" /><label class="tooltip" title="Click for more info" for="engineer_disposable_sentry_gun">+1 disposable sentry gun</label>
 					<span class="credits tooltip" title="Cost reduced from $500 to $350">[$350]</span> <span class="q-strange">[&#9679;]</span>
@@ -1808,32 +1804,6 @@
 						<span class="neutral modified" style="margin-left: 15px;">Disposable Sentry Guns now have the same stats as the Combat Mini-sentry</span><br />
 					</span>
 
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="engineer_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/engineer/Wrench.png" title="Wrench" />
-						<img class="mvm-mini-item" src="../resources/weapons/engineer/Eureka_Effect.png" title="Eureka Effect" />
-						<img class="mvm-mini-item" src="../resources/weapons/engineer/Jag.png" title="Jag" />
-						<img class="mvm-mini-item" src="../resources/weapons/engineer/Southern_Hospitality.png" title="Southern Hospitality" />
-					</span><br />
-					<input type="checkbox" id="engineer_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
-
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="engineer_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/engineer/Southern_Hospitality.png" title="Southern Hospitality" />
-					</span><br />
-					<input type="checkbox" id="engineer_melee_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
-					</span>
-
 					<!-- +25 health on kill -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
 					<span class="credits tooltip" title="Cost reduced from $200 to $100">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
@@ -1844,6 +1814,17 @@
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Jag.png" title="Jag" />
 						<img class="mvm-mini-item" src="../resources/weapons/engineer/Southern_Hospitality.png" title="Southern Hospitality" />
 					</span><br />
+
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="engineer_melee_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/engineer/Southern_Hospitality.png" title="Southern Hospitality" />
+					</span><br />
+					<input type="checkbox" id="engineer_melee_bleed" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
+					</span>
 				</p>
 			</td>
 		</tr>
@@ -1979,17 +1960,6 @@
 					</span>
 					<span class="downside" style="margin-left: 15px;">&#x21AA; Replaces</span><img class="upgrade-icon" src="../resources/achievements/Heavy_CrockBlock.png" />+20% reload speed <span class="neutral">and</span><img class="upgrade-icon" src="../resources/achievements/Scout_ArtfulDodger.png" />+10% firing speed<br />
 
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="medic_primary_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
-					</span><br />
-					<input type="checkbox" id="medic_primary_bleed" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 15s</span><br />
-					</span>
-
 					<!-- +50% ammo capacity -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_Kollectivization.png" /><span>+50% ammo capacity</span>
 					<span class="credits tooltip" title="Cost decreased from $250 to $125">[$125]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
@@ -2009,6 +1979,17 @@
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Overdose.png" title="Overdose" />
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
 					</span><br />
+
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="medic_primary_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
+					</span><br />
+					<input type="checkbox" id="medic_primary_bleed" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
+					</span>
 
 					<!-- +25 health on kill -->
 					<img class="upgrade-icon" src="../resources/achievements/Medic_HypocriticalOath.png" /><span>+25 health on kill</span>
@@ -2105,19 +2086,22 @@
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
 					</span><br />
 
-					<!-- +25% max overheal
-	<img class="upgrade-icon" src="../resources/achievements/Scout_DoctoringTheBall.png" /><label class="tooltip" title="Click for more info" for="medic_max_overheal">+25% max overheal</label>
-	<span class="credits">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-	<span style="user-select: none;">
-		<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
-		<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
-		<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
-		<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
-	</span><br />
-	<input type="checkbox" id="medic_max_overheal" style="display: none;" />
-	<span class="upgrade_info">
-		<span class="neutral modified" style="margin-left: 15px;">&#220;berCharge build rate is halved if the patient is at >142.5% health at all levels</span><br />
-	</span> -->
+					<!-- +25% max overheal -->
+					<img class="upgrade-icon" src="../resources/achievements/Scout_DoctoringTheBall.png" /><label class="tooltip" title="Click for more info" for="medic_max_overheal">+25% max overheal</label>
+					<span class="credits">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Medi_Gun.png" title="Medi_Gun" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Kritzkrieg.png" title="Kritzkrieg" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Quick-Fix.png" title="Quick-Fix" />
+						<img class="mvm-mini-item" src="../resources/weapons/medic/Vaccinator.png" title="Vaccinator" />
+					</span><br />
+					<input type="checkbox" id="medic_max_overheal" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral modified" style="margin-left: 15px;">No longer increases the health threshold for the &#220;berCharge build rate penalty (>142.5% health)</span><br />
+						<span class="neutral removed" style="margin-left: 15px;">No longer increases overheal duration by +50%</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Changed overheal duration scaling from 34/60/94/135s to <span class="tooltip" title="this may be a bug, as these values equate to a +50% increase with each point">22.5/30/37.5/45s</span> (15s at base)</span><br />
+					</span>
+
 					<!-- +25% heal rate -->
 					<img class="upgrade-icon" src="../resources/achievements/Heavy_RedistributionOfHealth.png" /><label class="tooltip" title="Click for more info" for="medic_heal_rate">+25% heal rate</label>
 					<span class="credits">[$250]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
@@ -2148,31 +2132,15 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="medic_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Bonesaw.png" title="Bonesaw" />
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Amputator.png" title="Amputator" />
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Solemn_Vow.png" title="Solemn Vow" />
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Ubersaw.png" title="&#220;bersaw" />
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Vita-Saw.png" title="Vita-Saw" />
-					</span><br />
-					<input type="checkbox" id="medic_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
-
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="medic_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="medic_melee_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/medic/Vita-Saw.png" title="Vita-Saw" />
 					</span><br />
 					<input type="checkbox" id="medic_melee_bleed" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
 					</span>
 				</p>
 			</td>
@@ -2297,15 +2265,15 @@
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Huntsman.png" title="Huntsman" />
 					</span><br />
 
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="sniper_primary_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="sniper_primary_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Huntsman.png" title="Huntsman" />
 					</span><br />
 					<input type="checkbox" id="sniper_primary_bleed" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 15s</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
 					</span>
 				</p>
 			</td>
@@ -2377,29 +2345,15 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
-					<!-- Triple Hit Combo -->
-					<img class="upgrade-icon" src="../resources/achievements/Soldier_Aint_Got_Time_To_Bleed.png" /><label class="tooltip" title="Click for more info" for="sniper_triple_hit_combo">Triple Hit Combo</label>
-					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/sniper/Kukri.png" title="Kukri" />
-						<img class="mvm-mini-item" src="../resources/weapons/sniper/Shahanshah.png" title="Shahanshah" />
-						<img class="mvm-mini-item" src="../resources/weapons/sniper/Tribalman's_Shiv.png" title="Tribalman's_Shiv" />
-					</span><br />
-					<input type="checkbox" id="sniper_triple_hit_combo" style="display: none;" />
-					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">Landing 3 successive hits makes the 3rd hit deal critical damage</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Weapons with critical hit effects or weapon type modifiers are excluded</span><br />
-					</span>
-
-					<!-- +5s bleed on target -->
-					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="sniper_melee_bleed">+5s bleed on target</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+					<!-- +2 bleed damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Sniper_ShootTheBreeze.png" /><label class="tooltip" title="Click for more info" for="sniper_melee_bleed">+2 bleed damage</label>
+					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Tribalman's_Shiv.png" title="Tribalman's Shiv" />
 					</span><br />
 					<input type="checkbox" id="sniper_melee_bleed" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral info" style="margin-left: 15px;">Increases bleed duration by 5s per point, up to 20s</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Increases bleed damage to 6/8/10</span><br />
 					</span>
 				</p>
 			</td>
@@ -2420,6 +2374,7 @@
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
 					<span class="upside">No move speed reduction while disguised</span><br />
 					<span class="upside">Melee weapon kills auto-collect cash</span><br />
+					<span class="upside">Large cash collection radius while cloaked</span><br />
 					<span class="downside">Backstabs vs Giant Robots deal 195 damage</span><br />
 				</p>
 			</td>
@@ -2429,14 +2384,14 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- +15% cloak resistance -->
-					<img class="upgrade-icon" src="../resources/achievements/Heavy_SpyalecticalMaterialism.png" /><label class="tooltip" title="Click for more info" for="spy_cloak_resistance">+15% cloak resistance</label>
-					<span class="credits">[$200]</span> <span class="q-strange">[&#9679;&#9679;]</span><img class="mvm-mini-item mvm-mini-class" style="" src="../resources/class/emblem_spy.png" title="Spy Only" /><br />
+					<img class="upgrade-icon" src="../resources/achievements/Heavy_SpyalecticalMaterialism.png" /><label class="tooltip" title="Click for more info" for="spy_cloak_resistance">Stealth Specialist</label>
+					<span class="credits">[$350]</span> <span class="q-strange">[&#9679;]</span><img class="mvm-mini-item mvm-mini-class" style="" src="../resources/class/emblem_spy.png" title="Spy Only" /><br />
 					<input type="checkbox" id="spy_cloak_resistance" style="display: none;" />
 					<span class="upgrade_info">
-						<span class="neutral added" style="margin-left: 15px;">+15% damage resistance while cloaked per point (35%/50%/65%)</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Up to 90% damage resistance with the <img class="mvm-mini-item" src="../resources/weapons/spy/Dead_Ringer.png" title="Dead Ringer" /> (only affected by first point)</span><br />
-						<span class="neutral added" style="margin-left: 15px;">-15% debuff duration while cloaked per point (65%/80%/95%)</span><br />
-						<span class="neutral added" style="margin-left: 15px;">-0.5s flicker time per point (down to 0s, for losing robot aggro)</span><br />
+						<span class="neutral added" style="margin-left: 15px;">+20% damage resistance while cloaked (40% total)</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Activation damage resistance goes up to 80% for the <img class="mvm-mini-item" src="../resources/weapons/spy/Dead_Ringer.png" title="Dead Ringer" /></span><br />
+						<span class="neutral added" style="margin-left: 15px;">-25% debuff duration while cloaked per point (-75% total)</span><br />
+						<span class="neutral added" style="margin-left: 15px;">No flickering while cloaked (loses robot aggro)</span><br />
 					</span>
 
 					<!-- +15 max health -->
@@ -2458,6 +2413,16 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- +25% damage -->
+					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><span>+25% damage</span>
+					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+					<span style="user-select: none;">
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Revolver.png" title="Revolver" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Diamondback.png" title="Diamondback" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/Enforcer.png" title="Enforcer" />
+						<img class="mvm-mini-item" src="../resources/weapons/spy/L'Etranger.png" title="L'Etranger" />
+					</span><br />
+
 					<!-- Hitman Specialist -->
 					<img class="upgrade-icon" src="../resources/achievements/Engineer_FrontierJustice.png" /><label class="tooltip" title="Click for more info" for="spy_hitman_specialist">Hitman Specialist</label>
 					<span class="credits">[$250]</span> <span class="q-strange tooltip" title="Purchase points increased from 3 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
@@ -2473,16 +2438,6 @@
 						<span class="neutral modified" style="margin-left: 15px;">Slow duration changed from 2/3/4s to 2-5s (scaling with distance)</span><br />
 					</span>
 
-					<!-- +25% damage -->
-					<img class="upgrade-icon" src="../resources/achievements/Demoman_LaddyMacdeth.png" /><span>+25% damage</span>
-					<span class="credits">[$400]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-					<span style="user-select: none;">
-						<img class="mvm-mini-item" src="../resources/weapons/spy/Revolver.png" title="Revolver" />
-						<img class="mvm-mini-item" src="../resources/weapons/spy/Diamondback.png" title="Diamondback" />
-						<img class="mvm-mini-item" src="../resources/weapons/spy/Enforcer.png" title="Enforcer" />
-						<img class="mvm-mini-item" src="../resources/weapons/spy/L'Etranger.png" title="L'Etranger" />
-					</span><br />
-
 					<!-- +10% firing speed -->
 					<img class="upgrade-icon" src="../resources/achievements/Scout_ArtfulDodger.png" /><label class="tooltip" title="Click for more info" for="spy_firing_speed">+10% firing speed</label>
 					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
@@ -2496,7 +2451,7 @@
 					<input type="checkbox" id="spy_firing_speed" style="display: none;" />
 					<span class="upgrade_info">
 						<span class="neutral info" style="margin-left: 15px;">Now improves accuracy recovery for all revolvers</span><br />
-						<span class="neutral info" style="margin-left: 15px;">Now improves headshot cooldown for the <img class="mvm-mini-item" src="../resources/weapons/spy/Ambassador.png" title="Ambassador" /></span><br />
+						<span class="neutral info" style="margin-left: 15px;">Now reduces headshot cooldown for the <img class="mvm-mini-item" src="../resources/weapons/spy/Ambassador.png" title="Ambassador" /></span><br />
 					</span>
 				</p>
 			</td>
@@ -2514,9 +2469,24 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- Weapon modified notice -->
-					<span class="neutral warning-blue">Sapped robots are highlighted for the entire team</span><br />
-					<span class="neutral warning-blue">Sapper Radar will reveal Spy robots</span><br />
-					<span class="neutral warning-red">Sapper base slow vs giant robots reduced from 85% to 35%</span><br />
+					<span class="neutral warning-blue"><label class="tooltip" title="Click for more info" for="spy_sapper_rework">Reworked how Sappers function against robots</label></span><br />
+					<input type="checkbox" id="spy_sapper_rework" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Sappers are no longer consumed on use (always available)</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Sappers duration reduced from 4s to 2s</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Sappers deal damage to robots</span>
+						<span class="neutral" style="user-select: none;">
+							(50 damage with <img class="mvm-mini-item" src="../resources/weapons/spy/Sapper.png" title="Sapper" />
+							/ 20 damage with <img class="mvm-mini-item" src="../resources/weapons/spy/Red-Tape_Recorder.png" title="Red-Tape Recorder" />)
+						</span><br />
+						<span class="neutral modified" style="margin-left: 15px;">Sapper base slow vs giant robots reduced from 85% to 35%</span><br />
+					</span>
+					<span class="neutral warning-blue"><label class="tooltip" title="Click for more info" for="spy_radar_rework">Reworked how Sapper Radar functions against robots</label></span><br />
+					<input type="checkbox" id="spy_radar_rework" style="display: none;" />
+					<span class="upgrade_info">
+						<span class="neutral info" style="margin-left: 15px;">Radar now applies the sapper to nearby robots</span><br />
+						<span class="neutral info" style="margin-left: 15px;">Reduced radius of Radar effect from 512hu to 175hu</span><br />
+					</span>
 
 					<!-- Sapper Power -->
 					<img class="upgrade-icon" src="../resources/achievements/modified/Spy_TheManWithTheBrokenGuns.png" /><label class="tooltip" title="Click for more info" for="spy_sapper_power">Sapper Power</label>
@@ -2533,14 +2503,14 @@
 						<span class="neutral modified" style="margin-left: 15px;">Duration bonus changed from +0/1.5/3s to +1s per point</span><br />
 					</span>
 
-					<!-- Sapper Radius -->
-					<img class="upgrade-icon" src="../resources/achievements/Engineer_GetAlong.png" /><label class="tooltip" title="Click for more info" for="spy_sapper_radius">Sapper Radius</label>
+					<!-- Radar Radius -->
+					<img class="upgrade-icon" src="../resources/achievements/Engineer_GetAlong.png" /><label class="tooltip" title="Click for more info" for="spy_radar_radius">Radar Radius</label>
 					<span class="credits">[$100]</span> <span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 					<span style="user-select: none;">
 						<img class="mvm-mini-item" src="../resources/weapons/spy/Sapper.png" title="Sapper" />
 						<img class="mvm-mini-item" src="../resources/weapons/spy/Red-Tape_Recorder.png" title="Red-Tape Recorder" />
 					</span><br />
-					<input type="checkbox" id="spy_sapper_radius" style="display: none;" />
+					<input type="checkbox" id="spy_radar_radius" style="display: none;" />
 					<span class="upgrade_info">
 						<span class="neutral info" style="margin-left: 15px;">Sapper radius is now its own upgrade</span><br />
 						<span class="neutral modified" style="margin-left: 15px;">Radius per point changed from 200/225/250 to 175/225/275</span><br />

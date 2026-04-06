@@ -110,10 +110,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral modified">All weapons that inflict bleed have a duration of 5s and reapplications of bleed resets the duration to 5s</span><br />
+					<span class="upside modified">Applying bleed to an already bleeding target will increase the current bleed duration by <span class="tooltip" title="every weapon that inflicts bleed lasts 5s">5s</span>, up to 10s</span><br />
 					<span class="upside added">Reduces healing from pickups by 50%</span><br />
-					<span class="upside modified">Bleed damage now stacks from the same source</span><br />
-					<span class="downside modified">Bleed stack damage decreased from +4 to +2</span><br />
+					<span class="downside removed">Reduced bleed stack damage from +4 to +0</span><br />
 					<span class="downside added">Bleed dissipates 150% faster by healbeam sources</span><br />
 				</p>
 			</td>
@@ -160,7 +159,7 @@
 		<!-- Inferno -->
 		<tr id="Inferno">
 			<td class="item-card item-icon icon-NEW">
-				<img class="item-img" src="../resources/elements/Frontline_Jerry_Can.png" />
+				<img class="item-img" src="../resources/taunts/pyro/Gas_Blast_Matchbox.png" />
 				<p class="item-stats">
 					<span class="item-name item-set-active">Status Effect: Inferno</span><br />
 					<span class="subtle">"Greater Afterburn"</span><br />
@@ -193,7 +192,7 @@
 		<!-- Temperature -->
 		<tr id="Temperature">
 			<td class="item-card">
-				<img class="item-img" src="../resources/weapons/pyro/Nostromo_Napalmer.png" />
+				<img class="item-img" src="../resources/taunts/pyro/Spent_Well_Spirits_Lighter.png" />
 				<p class="item-stats">
 					<span class="item-name item-set-active">Temperature</span><br />
 					<span class="subtle">"Flame thrower damage ramp-up"</span><br />
@@ -228,7 +227,7 @@
 				<p class="item-stats">
 					<span class="item-name item-set-active">Pressure</span><br />
 					<span class="subtle">"Pressurized Airblasts"</span><br />
-					<span class="item-set-inactive">Airblasts are now tied to a pressure meter and consume 35% of the meter on use</span><br />
+					<span class="item-set-inactive">Airblasts are now tied to a pressure meter and will consume all pressure stored on use</span><br />
 					<span class="item-set-inactive">Knockback is dependent on pressure before its consumed, ranging from 0% to 100% knockback</span><br />
 					<span class="item-set-inactive">Repressurization takes 4s to go from empty to full</span><br />
 					<span class="item-set-inactive">Primary fire usage slows repressurization rate by 100%</span><br />
@@ -238,7 +237,6 @@
 				<p>
 					<span class="item-name">Stats</span><br />
 					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
-					<span class="downside added">Airblasts consume 35% pressure</span><br />
 					<span class="downside added">Knockback ranges from 0% (empty) to 100% (full)</span><br />
 					<span class="downside added">Repressurization rate of <span class="tooltip" title="12.5%/s (8s total) if primary fire is in use">25%/s (4s total)</span></span><br />
 					<span class="neutral info">Airblast must be off cooldown to recharge (0.75s)</span><br />
@@ -2679,8 +2677,7 @@
 				<p class="item-stats">
 					<span class="item-name">Scottish Resistance</span><br />
 					<span class="neutral">Alt-Fire: Detonate stickybombs near the crosshair</span><br />
-					<span class="upside">+33% max ammo capacity</span><br />
-					<span class="upside">Max charge time decreased by 50%</span><br />
+					<span class="upside">+35% max ammo capacity</span><br />
 					<span class="upside">Charging increases stickybomb fired up to +2</span><br />
 					<span class="upside">+4 max active stickybombs</span><br />
 					<span class="downside">Stickybombs only arm when sticking to a surface</span><br />
@@ -2692,8 +2689,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="neutral info">No longer detonates stickybombs at your feet</span><br />
 					<span class="upside removed">Removed stickybomb arm time penalty</span><br />
-					<span class="upside added">Reduced max charge time from 4s to 2s</span><br />
-					<span class="upside added">Charging the launcher also increases the amount of stickybombs fired by +1 every second, <span class="tooltip" title="The charge meter will be split into 2 segments to better visualize count. The first sticky launched travels normally, while additional stickies have a slight projectile deviation.">up to a total of 3</span></span><br />
+					<span class="upside added">Charging the launcher also increases the amount of stickybombs fired by +1 every 2 seconds, <span class="tooltip" title="The charge meter will be split into 2 segments to better visualize count. The first sticky launched travels normally, while additional stickies have a slight projectile deviation.">up to a total of 3</span></span><br />
 					<span class="downside modified">Reduced max ammo capacity from 36 to 32</span><br />
 					<span class="downside modified">Reduced max stickybombs out from 14 to 12</span><br />
 					<span class="downside removed">Removed ability to destroy enemy stickybombs</span><br />
@@ -5411,6 +5407,8 @@
 					<span class="upside modified">Changed ability to pick up ammo boxes for cloak meter from never to only while cloaked</span><br />
 					<span class="upside added">Reduced cloak lost on activation from <span class="tooltip" title="7s maximum cloak time">50%</span> to <span class="tooltip" title="9s maximum cloak time">10%</span></span><br />
 					<span class="upside added">Cloak will block all lethal damage</span><br />
+					<span class="downside modified">Reduced activation damage resistance from 75% to 60%</span><br />
+					<span class="downside modified">Changed damage resistance while cloaked from fading between 65% and 20% to a flat 20%</span><br />
 					<span class="downside modified">Decloaking ends the speed boost effect</span><br />
 					<span class="downside removed">Removed cloak duration bonus</span><br />
 					<span class="downside removed">Removed bonus cloak damage resistance</span><br />
