@@ -1,17 +1,23 @@
+body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
 h1 {
 	font-family: TF2Build;
-	font-size: 72px;
+	font-size: 4.5rem;
 	text-align: center;
 	color: #F4722B;
 	text-shadow: 3px 3px #141414;
-	margin: initial auto;
+	flex-basis: 100%;
 }
 
 table {
 	table-layout: fixed;
-	width: 1200px;
-	max-width: 94%;
-	margin: 15px auto;
+	width: 75rem; /* 1200px */
+	margin: 1rem 0;
 	text-align: center;
 	font-size: 0.9375rem; /* 15px */
 }
@@ -24,9 +30,18 @@ th {
 	border-radius: 10px;
 }
 
-#quick-access {
-	width: auto;
-	max-width: 98%;
+.nav-bookmarks {
+	flex-basis: 100%;
+	text-align: center;
+	max-width: 75rem; /* 1200px */
+	width: fit-content;
+	margin-bottom: 1rem;
+}
+
+#class-selection {
+	display: grid;
+	gap: 2px;
+	grid-template-columns: repeat(9, 1fr); /* Default 1x9 */
 	margin: 0px auto;
 	background-color: #F3A957;
 	padding: 2px;
@@ -35,10 +50,16 @@ th {
 	font-family: TF2Secondary;
 }
 
+@media (max-width: 77rem) {
+	#class-selection {
+		grid-template-columns: repeat(3, 1fr); /* Switch to 3x3 */
+	}
+}
+
 .class-portrait {
 	width: 120px;
 	max-width: 100%;
-	display: block;
+	display: inline;
 }
 .class-portrait:hover {
 	filter: brightness(110%) contrast(70%);
