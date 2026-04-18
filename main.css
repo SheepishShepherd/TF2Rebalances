@@ -194,7 +194,7 @@ label {
 .nav-btn {
 	height: 50px;
 	background-color: #F5E5C1;
-	box-shadow: #9A9280 -0.75mm -0.75mm inset;
+	box-shadow: #9A9280 -3px -3px inset;
 	color: #141414;
 	font-family: TF2Build;
 	font-size: 28px;
@@ -208,21 +208,22 @@ label {
 }
 .nav-btn:hover {
 	background-color: #F4722B;
-	box-shadow: #B46032 0.8mm 0.8mm inset;
+	box-shadow: #B46032 3px 3px inset;
 }
 .img-nav-btn {
 	float: left;
-	width: 10mm;
-	height: 10mm;
-	margin: 1mm;
+	width: 2vw;
+	height: 2vw;
+	margin: 0.2vw;
 	margin-bottom: 0;
 	padding: 0;
 	background: none no-repeat #F5E5C1;
-	background-position: calc(50% - 0.25mm) calc(50% - 0.25mm);
-	background-size: 6mm;
+	background-size: 20px;
+	background-position: calc(50% - 0.05vw) calc(50% - 0.05vw);
+	background-size: 1.2vw 1.2vw;
 }
 .img-nav-btn:hover  {
-	background-position: calc(50% + 0.25mm) calc(50% + 0.25mm);
+	background-position: calc(50% + 0.1vw) calc(50% + 0.1vw);
 }
 
 /* Navigation Button Types */
@@ -246,7 +247,7 @@ label {
 }
 .nav-top {
 	background-image: url('resources/icons/Nav_Top.png');
-	margin-bottom: 2mm;
+	margin-bottom: 0.2vw;
 }
 
 /* Bad Weapon Rebailitation overrides */
