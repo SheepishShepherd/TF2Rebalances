@@ -44,16 +44,10 @@ th {
 	grid-template-columns: repeat(9, 1fr); /* Default 1x9 */
 	margin: 0px auto;
 	background-color: #F3A957;
-	padding: 2px;
 	border-radius: 4px;
 	font-size: 1.5rem;
 	font-family: TF2Secondary;
-}
-
-@media (max-width: 77rem) {
-	#class-selection {
-		grid-template-columns: repeat(3, 1fr); /* Switch to 3x3 */
-	}
+	border: 2px solid #F3A957;
 }
 
 .class-portrait {

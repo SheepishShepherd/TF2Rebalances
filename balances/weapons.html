@@ -9,6 +9,83 @@
 	<link rel="icon" type="image/x-icon" href="../resources/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../main.css" />
 	<link rel="stylesheet" type="text/css" href="balance.css" />
+
+	<style>
+		/* For when viewing on mobile */
+		@media (max-width: 77rem) {
+			#class-selection {
+				width: 80%;
+				margin: 0 10%;
+				grid-template-columns: repeat(3, 1fr); /* Switch to 3x3 */
+				gap: 5px;
+				border-width: 5px;
+				border-radius: 10px;
+			}
+
+			.class-portrait {
+				width: 100%;
+			}
+
+			table {
+				width: 100%;
+				margin: 1rem 0.1rem;
+			}
+
+			th {
+				width: 100%;
+			}
+
+			tr {
+				display: flex;
+				flex-wrap: wrap;
+			}
+
+			.item-card {
+				width: calc(50% - 0.5rem);
+				margin: 0.25rem;
+				align-content: center;
+			}
+
+				.item-card img {
+					width: 50%;
+					height: auto;
+				}
+
+			.item-name {
+				font-size: 1.8rem;
+			}
+
+			.item-card p {
+				font-size: 1.5rem;
+			}
+
+			.item-card span:not(.tooltip) {
+				background-size: 1.5rem;
+				padding-left: 1.8rem;
+				background-position-y: 0rem;
+			}
+
+			/* Force the last cell to occupy full width, forcing it down */
+			td:nth-child(3) {
+				display: block;
+				width: 100%;
+				/* Optional: helps ensure width calculation is accurate */
+				box-sizing: border-box;
+				clear: both;
+			}
+
+				td:nth-child(3) p {
+					width: 60%;
+					margin: 0 auto;
+				}
+
+			.score-0, .score-1, .score-2, .score-3, .score-4 {
+				padding-right: 1.8rem;
+				background-size: 1.5rem;
+				width: auto !important;
+			}
+		}
+	</style>
 </head>
 <body>
 	<div class="nav-panel">
@@ -5258,7 +5335,7 @@
 		<tr id="Your_Eternal_Reward">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/spy/Your_Eternal_Reward.png" />
-				<p>
+				<p class="item-stats">
 					<span class="item-name">Your Eternal Reward</span><br />
 					<span class="upside">On Backstab: Rapidly disguise as your victim</span><br />
 					<span class="upside">Silent Killer: Victims do not scream when backstabbed</span><br />

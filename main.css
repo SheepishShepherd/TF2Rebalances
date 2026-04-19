@@ -37,7 +37,7 @@ p {
 .item-name {
 	font-family: TF2Build;
 	color: #FFD700;
-	font-size: 1.125em; /* 18px */ 
+	font-size: 18px;
 	text-shadow: 2px 1px 1px #24201B;
 }
 
