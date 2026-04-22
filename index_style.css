@@ -11,7 +11,6 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	min-height: 90vh;
 }
 
 .title-banner {
@@ -20,23 +19,24 @@
 }
 
 .menu {
-	width: fit-content;
+	width: 400px;
 	height: fit-content;
 	border-radius: 4px;
 	background-color: #37322C;
-	margin: 0 auto 50px auto;
+	margin: 0 auto;
 	padding: 5px 10px;
 }
 
-.balance-link {
-	width: 400px;
-	padding: 0px 5px;
+.menu a {
+	display: block;
+	width: auto;
+	padding: 0;
 }
 
 h1 {
 	font-family: TF2Build;
 	color: #E6E6E6;
-	font-size: 24px;
+	font-size: 1.6em;
 	text-shadow: 3px 3px #141414;
 	text-align: left;
 	margin-left: 10px;
@@ -45,7 +45,7 @@ h1 {
 
 h2 {
 	font-family: TF2Build;
-	font-size: 72px;
+	font-size: 4.8em;
 	text-align: center;
 	color: #F4722B;
 	text-shadow: 3px 3px #141414;
@@ -54,8 +54,59 @@ h2 {
 
 h3 {
 	font-family: TF2Build;
-	font-size: 20px;
+	font-size: 1.8em;
 	color: #F3A957;
 	text-shadow: 3px 3px #141414;
 	margin: 8px 0px;
+}
+
+.github-panel {
+	background-color: #37322C;
+	width: fit-content;
+	height: fit-content;
+	margin: 0 auto;
+	padding: 5px 10px 15px 10px;
+	border-radius: 0 0 20px 20px;
+}
+
+.nav-github {
+	font-size: 1.4em;
+	background-image: none !important;
+}
+
+.nav-github span {
+	background: url('resources/icons/Nav_GitHub.png') no-repeat;
+	background-size: 1em;
+	padding-left: 1.2em;
+}
+
+@media (max-width: 1200px) {
+	#sheepishshepherd {
+		width: 175px;
+		position: relative;
+		top: 15px;
+		margin-right: 7px;
+	}
+
+	.menu {
+		width: 80%;
+		height: fit-content;
+		border-radius: 8px;
+		padding: 10px 20px 30px 20px;
+	}
+
+	.menu a {
+		box-shadow: #9A9280 -8px -8px inset;
+		font-size: 2.5em;
+		line-height: 1.6;
+		border-radius: 16px;
+		margin: 15px 0;
+	}
+	.menu a:hover {
+		box-shadow: #B46032 8px 8px inset;
+	}
+
+	h1, .nav-github {
+		font-size: 1.8em;
+	}
 }

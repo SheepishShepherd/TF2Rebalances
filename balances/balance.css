@@ -19,13 +19,13 @@ table {
 	width: 75rem; /* 1200px */
 	margin: 1rem 0;
 	text-align: center;
-	font-size: 0.9375rem; /* 15px */
+	font-size: 1em; /* 15px */
 }
 
 th {
 	background-color: #F3A957;
 	font-family: TF2;
-	font-size: 36px;
+	font-size: 2.4em;
 	padding: 5px 0px;
 	border-radius: 10px;
 }
@@ -45,8 +45,6 @@ th {
 	margin: 0px auto;
 	background-color: #F3A957;
 	border-radius: 4px;
-	font-size: 1.5rem;
-	font-family: TF2Secondary;
 	border: 2px solid #F3A957;
 }
 
@@ -74,8 +72,8 @@ th {
 .score-0, .score-1, .score-2, .score-3, .score-4 {
 	padding-right: 20px;
 	display: inline-block;
-	font-size: 1rem;
-	line-height: 1rem;
+	font-size: 1em;
+	line-height: 1.6;
 }
 .score-0 {
 	background: url('../resources/icons/Ping_Undetermined.png') no-repeat;
@@ -206,4 +204,53 @@ th {
 }
 .mini-cosmetic:hover {
 	background-color: #C9BBA1;
+}
+
+/* For when viewing on mobile */
+@media (max-width: 1200px) {
+	#class-selection {
+		width: 80%;
+		margin: 0 10%;
+		grid-template-columns: repeat(3, 1fr); /* Switch to 3x3 */
+		gap: 5px;
+		border-width: 5px;
+		border-radius: 10px;
+	}
+
+	.class-portrait {
+		width: 100%;
+	}
+
+	table {
+		width: 100%;
+		margin: 1rem 0.1rem;
+	}
+
+	th {
+		width: 100%;
+	}
+
+	tr {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	/* Force the last cell to occupy full width, forcing it down */
+	td:nth-child(3) {
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+		clear: both;
+	}
+
+		td:nth-child(3) p {
+			width: 60%;
+			margin: 0 auto;
+		}
+
+	.score-0, .score-1, .score-2, .score-3, .score-4 {
+		padding-right: 1.8rem;
+		background-size: 1.5rem;
+		width: auto !important;
+	}
 }

@@ -10,6 +10,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: TF2Secondary;
+	font-size: 15px;
 }
 
 img {
@@ -37,7 +38,7 @@ p {
 .item-name {
 	font-family: TF2Build;
 	color: #FFD700;
-	font-size: 18px;
+	font-size: 1.2em;
 	text-shadow: 2px 1px 1px #24201B;
 }
 
@@ -64,7 +65,7 @@ p {
 /* Stat colors */
 .stat {
 	font-family: TF2Secondary;
-	font-size: 15px;
+	font-size: 1em;
 }
 .upside { color: #99CCFF; }
 .downside { color: #FF4040; }
@@ -192,13 +193,14 @@ label {
 }
 
 .nav-btn {
-	height: 50px;
+	width: fit-content;
+	height: fit-content;
 	background-color: #F5E5C1;
 	box-shadow: #9A9280 -3px -3px inset;
 	color: #141414;
 	font-family: TF2Build;
-	font-size: 28px;
-	line-height: 50px;
+	font-size: 2em;
+	line-height: 1.6;
 	border-radius: 10px;
 	padding: 10px;
 	margin: 10px 0px;
@@ -266,4 +268,31 @@ label {
 	background: url('resources/icons/Credit_Frontline.png') no-repeat;
 	background-size: 16px;
 	padding-left: 20px;
+}
+
+@media (max-width: 1200px) {
+	body {
+		font-size: 24px; /* Increase the base font size for readability (font-sizes use em to scale proportionally) */
+	}
+
+	.nav-btn {
+		font-size: 2.5rem;
+	}
+
+	.item-card {
+		width: calc(50% - 0.5rem);
+		margin: 0.25rem;
+		align-content: center;
+	}
+
+	.item-img {
+		width: 50%;
+		height: auto;
+	}
+
+	.nochange, .modified, .added, .removed, .info, .proposal, .wip, .warning-blue, .warning-red, .warning-yellow, .bwr, .tf2c, .frontline {
+		padding-left: 1.8rem;
+		background-size: 1.5rem;
+		background-position-y: 0rem;
+	}
 }
