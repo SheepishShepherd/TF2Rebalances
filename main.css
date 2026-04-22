@@ -185,11 +185,11 @@ label {
 	position: fixed;
 	padding: 0.05vw;
 	background-color: #222222;
-	top: 5px;
+	bottom: 5px;
 	left: 5px;
 	border-radius: 10px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 
 .nav-btn {
@@ -216,39 +216,25 @@ label {
 	float: left;
 	width: 2rem;
 	height: 2rem;
-	margin: 4px;
-	margin-bottom: 0px;
 	padding: 0;
+	margin: 5px;
 	background: none no-repeat #F5E5C1;
 	background-size: 20px;
-	background-position: calc(50% - 1px) calc(50% - 1px);
+	background-position: center center;
+	box-shadow: #9A9280 -2px -2px inset;
 }
 .img-nav-btn:hover  {
-	background-position: calc(50% + 1px) calc(50% + 1px);
+	box-shadow: #B46032 2px 2px inset;
 }
 
 /* Navigation Button Types */
 .nav-menu {
 	background-image: url('resources/icons/Nav_Menu.png');
-}
-.nav-menu-still {
-	background-image: url('resources/icons/Nav_Menu.png');
-	background-color: #F3A957;
-	background-position: center center;
-	box-shadow: none;
-	cursor: default;
-}
-.nav-menu-still:hover {
-	background-color: #F3A957;
-	box-shadow: none;
-	background-position: center center;
-}
-.nav-github {
-	background-image: url('resources/icons/Nav_GitHub.png');
+	margin-right: 0px;
 }
 .nav-top {
 	background-image: url('resources/icons/Nav_Top.png');
-	margin-bottom: 4px;
+	width: 4.5rem;
 }
 
 /* Bad Weapon Rebailitation overrides */
@@ -273,6 +259,10 @@ label {
 @media (max-width: 1200px) {
 	body {
 		font-size: 24px; /* Increase the base font size for readability (font-sizes use em to scale proportionally) */
+	}
+
+	.nav-panel {
+		display: none;
 	}
 
 	.nav-btn {
