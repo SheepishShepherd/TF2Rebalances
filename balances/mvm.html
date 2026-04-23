@@ -9,17 +9,7 @@
 	<link rel="icon" type="image/x-icon" href="../resources/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../main.css" />
 	<link rel="stylesheet" type="text/css" href="balance.css" />
-
-	<script>
-		window.onload = function () {
-			const elements = document.querySelectorAll('.mvm-mini-item');
-			elements.forEach(element => {
-				element.addEventListener('click', function () {
-					window.location = "weapons.html#" + element.title.replaceAll(" ", "_");
-				});
-			});
-		}
-	</script>
+	<script src="../nav_setup.js" defer></script>
 
 	<style>
 		/* For when viewing on mobile */
@@ -30,6 +20,7 @@
 				box-sizing: border-box;
 				clear: both;
 			}
+
 			.mvm-upgrades-table .item-img {
 				display: none;
 			}
@@ -37,29 +28,25 @@
 	</style>
 </head>
 <body>
-	<div class="nav-panel">
-		<div class="img-nav-btn nav-btn nav-menu" onclick="location.href='../index.html'" title="Main menu"></div>
-		<a href="https://github.com/SheepishShepherd/TF2Rebalances"><div class="img-nav-btn nav-btn nav-github" title="Github source"></div></a>
-		<div class="img-nav-btn nav-btn nav-top" onclick="location.href=''" title="Back to top"></div>
-	</div>
-	<h1><img src="../resources/mvm/banner.png" /></h1>
+	<div id="back-to-top-panel"><!-- Filled by nav_setup.js --></div>
 
-	<dive class="nav-bookmarks" style="background-color: transparent;" cellspacing="2" cellpadding="5">
-		<a class="nav-btn" href="#Rewards">Rewards</a>
-		<a class="nav-btn" href="#Canteens">Canteens</a>
-		<a class="nav-btn" href="#Upgrade_Station">Upgrades</a>
+	<h1><img src="../resources/mvm/banner.png" /></h1>
+	<dive id="nav-bookmarks" class="nav-panel mvm-nav" cellspacing="2" cellpadding="5">
+		<a class="nav-item nav-btn" id="nav-Rewards">Rewards</a>
+		<a class="nav-item nav-btn" id="nav-Canteens">Canteens</a>
+		<a class="nav-item nav-btn" id="nav-Upgrade_Station">Upgrades</a>
 	</dive>
 
-	<div id="class-selection" style="background-color: #B2B2B2; border-color: #B2B2B2;" cellspacing="2" cellpadding="0">
-		<a href="#Scout_Upgrades"><img class="class-portrait" src="../resources/class/robot_scout.jpg" /></a>
-		<a href="#Soldier_Upgrades"><img class="class-portrait" src="../resources/class/robot_soldier.jpg" /></a>
-		<a href="#Pyro_Upgrades"><img class="class-portrait" src="../resources/class/robot_pyro.jpg" /></a>
-		<a href="#Demoman_Upgrades"><img class="class-portrait" src="../resources/class/robot_demoman.jpg" /></a>
-		<a href="#Heavy_Upgrades"><img class="class-portrait" src="../resources/class/robot_heavy.jpg" /></a>
-		<a href="#Engineer_Upgrades"><img class="class-portrait" src="../resources/class/robot_engineer.jpg" /></a>
-		<a href="#Medic_Upgrades"><img class="class-portrait" src="../resources/class/robot_medic.jpg" /></a>
-		<a href="#Sniper_Upgrades"><img class="class-portrait" src="../resources/class/robot_sniper.jpg" /></a>
-		<a href="#Spy_Upgrades"><img class="class-portrait" src="../resources/class/robot_spy.jpg" /></a>
+	<div id="class-selection" class="nav-panel mvm-nav" style="background-color: #B2B2B2; border-color: #B2B2B2;" cellspacing="2" cellpadding="0">
+		<a class="nav-item" id="nav-Scout_Upgrades"><img class="class-portrait" src="../resources/class/robot_scout.jpg" /></a>
+		<a class="nav-item" id="nav-Soldier_Upgrades"><img class="class-portrait" src="../resources/class/robot_soldier.jpg" /></a>
+		<a class="nav-item" id="nav-Pyro_Upgrades"><img class="class-portrait" src="../resources/class/robot_pyro.jpg" /></a>
+		<a class="nav-item" id="nav-Demoman_Upgrades"><img class="class-portrait" src="../resources/class/robot_demoman.jpg" /></a>
+		<a class="nav-item" id="nav-Heavy_Upgrades"><img class="class-portrait" src="../resources/class/robot_heavy.jpg" /></a>
+		<a class="nav-item" id="nav-Engineer_Upgrades"><img class="class-portrait" src="../resources/class/robot_engineer.jpg" /></a>
+		<a class="nav-item" id="nav-Medic_Upgrades"><img class="class-portrait" src="../resources/class/robot_medic.jpg" /></a>
+		<a class="nav-item" id="nav-Sniper_Upgrades"><img class="class-portrait" src="../resources/class/robot_sniper.jpg" /></a>
+		<a class="nav-item" id="nav-Spy_Upgrades"><img class="class-portrait" src="../resources/class/robot_spy.jpg" /></a>
 	</div>
 
 	<!-- MvM Rewards -->
@@ -333,7 +320,7 @@
 			</td>
 		</tr>
 	</table>
-	
+
 	<!-- Robots -->
 	<table id="Robots">
 		<tr>

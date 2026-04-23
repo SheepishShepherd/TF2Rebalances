@@ -5,6 +5,10 @@
 
 /* These stylizations are used by multiple pages */
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #3E3E3E;
 	padding: 0;
@@ -181,15 +185,13 @@ label {
 }
 .tooltip-link:hover { color: #FFD700; }
 
-.nav-panel {
+#back-to-top-panel {
 	position: fixed;
 	padding: 0.05vw;
 	background-color: #222222;
-	bottom: 5px;
+	bottom: 0;
 	left: 5px;
-	border-radius: 10px;
-	display: flex;
-	flex-direction: row;
+	border-radius: 10px 10px 0 0;
 }
 
 .nav-btn {
@@ -211,6 +213,12 @@ label {
 .nav-btn:hover {
 	background-color: #F4722B;
 	box-shadow: #B46032 3px 3px inset;
+}
+.nav-btn.disabled {
+	background-color: #776b5f;
+	box-shadow: none;
+	cursor: not-allowed;
+	color: #2d2425;
 }
 .img-nav-btn {
 	float: left;
@@ -261,7 +269,7 @@ label {
 		font-size: 24px; /* Increase the base font size for readability (font-sizes use em to scale proportionally) */
 	}
 
-	.nav-panel {
+	#back-to-top-panel {
 		display: none;
 	}
 

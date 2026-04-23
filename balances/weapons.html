@@ -9,26 +9,23 @@
 	<link rel="icon" type="image/x-icon" href="../resources/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="../main.css" />
 	<link rel="stylesheet" type="text/css" href="balance.css" />
+	<script src="../nav_setup.js" defer></script>
 </head>
 <body>
-	<div class="nav-panel">
-		<div class="img-nav-btn nav-btn nav-menu" onclick="location.href='../index.html'" title="Main menu"></div>
-		<div class="img-nav-btn nav-btn nav-top" onclick="location.href=''" title="Back to top"></div>
-	</div>
+	<div id="back-to-top-panel"><!-- Filled by nav_setup.js --></div>
 
 	<h1>Weapons & Classes</h1>
-	<div id="class-selection" cellspacing="2" cellpadding="0">
-		<a href="#Scout"><img class="class-portrait" src="../resources/class/portrait_scout.jpg" /></a>
-		<a href="#Soldier"><img class="class-portrait" src="../resources/class/portrait_soldier.jpg" /></a>
-		<a href="#Pyro"><img class="class-portrait" src="../resources/class/portrait_pyro.jpg" /></a>
-		<a href="#Demoman"><img class="class-portrait" src="../resources/class/portrait_demoman.jpg" /></a>
-		<a href="#Heavy"><img class="class-portrait" src="../resources/class/portrait_heavy.jpg" /></a>
-		<a href="#Engineer"><img class="class-portrait" src="../resources/class/portrait_engineer.jpg" /></a>
-		<a href="#Medic"><img class="class-portrait" src="../resources/class/portrait_medic.jpg" /></a>
-		<a href="#Sniper"><img class="class-portrait" src="../resources/class/portrait_sniper.jpg" /></a>
-		<a href="#Spy"><img class="class-portrait" src="../resources/class/portrait_spy.jpg" /></a>
+	<div id="class-selection" class="nav-panel" cellspacing="2" cellpadding="0">
+		<a class="nav-item" id="nav-Scout"><img class="class-portrait" src="../resources/class/portrait_scout.jpg" /></a>
+		<a class="nav-item" id="nav-Soldier"><img class="class-portrait" src="../resources/class/portrait_soldier.jpg" /></a>
+		<a class="nav-item" id="nav-Pyro"><img class="class-portrait" src="../resources/class/portrait_pyro.jpg" /></a>
+		<a class="nav-item" id="nav-Demoman"><img class="class-portrait" src="../resources/class/portrait_demoman.jpg" /></a>
+		<a class="nav-item" id="nav-Heavy"><img class="class-portrait" src="../resources/class/portrait_heavy.jpg" /></a>
+		<a class="nav-item" id="nav-Engineer"><img class="class-portrait" src="../resources/class/portrait_engineer.jpg" /></a>
+		<a class="nav-item" id="nav-Medic"><img class="class-portrait" src="../resources/class/portrait_medic.jpg" /></a>
+		<a class="nav-item" id="nav-Sniper"><img class="class-portrait" src="../resources/class/portrait_sniper.jpg" /></a>
+		<a class="nav-item" id="nav-Spy"><img class="class-portrait" src="../resources/class/portrait_spy.jpg" /></a>
 	</div>
-
 
 	<!-- General -->
 	<table id="General">

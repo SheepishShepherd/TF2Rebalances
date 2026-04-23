@@ -8,7 +8,122 @@
 
 	<link rel="icon" type="image/x-icon" href="resources/icons/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="main.css" />
-	<link rel="stylesheet" type="text/css" href="index_style.css" />
+
+	<style>
+		#sheepishshepherd {
+			width: 75px;
+			border-radius: 100%;
+			position: relative;
+			top: 15px;
+			margin-right: 7px;
+		}
+
+		#wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+
+		.title-banner {
+			width: fit-content;
+			margin: 50px auto;
+		}
+
+		.menu {
+			width: 400px;
+			height: fit-content;
+			border-radius: 4px;
+			background-color: #37322C;
+			margin: 0 auto;
+			padding: 5px 10px;
+		}
+
+			.menu a {
+				display: block;
+				width: auto;
+				padding: 0;
+			}
+
+		h1 {
+			font-family: TF2Build;
+			color: #E6E6E6;
+			font-size: 1.6em;
+			text-shadow: 3px 3px #141414;
+			text-align: left;
+			margin-left: 10px;
+			margin-bottom: 0px;
+		}
+
+		h2 {
+			font-family: TF2Build;
+			font-size: 4.8em;
+			text-align: center;
+			color: #F4722B;
+			text-shadow: 3px 3px #141414;
+			margin: 8px 0px;
+		}
+
+		h3 {
+			font-family: TF2Build;
+			font-size: 1.8em;
+			color: #F3A957;
+			text-shadow: 3px 3px #141414;
+			margin: 8px 0px;
+		}
+
+		.github-panel {
+			background-color: #37322C;
+			width: fit-content;
+			height: fit-content;
+			margin: 0 auto;
+			padding: 5px 10px 15px 10px;
+			border-radius: 0 0 20px 20px;
+		}
+
+		.nav-github {
+			font-size: 1.4em;
+			background-image: none !important;
+		}
+
+			.nav-github span {
+				background: url('resources/icons/Nav_GitHub.png') no-repeat;
+				background-size: 1em;
+				padding-left: 1.2em;
+			}
+
+		@media (max-width: 1200px) {
+			#sheepishshepherd {
+				width: 175px;
+				position: relative;
+				top: 15px;
+				margin-right: 7px;
+			}
+
+			.menu {
+				width: 80%;
+				height: fit-content;
+				border-radius: 8px;
+				padding: 10px 20px 30px 20px;
+			}
+
+				.menu a {
+					box-shadow: #9A9280 -8px -8px inset;
+					font-size: 2.5em;
+					line-height: 1.6;
+					border-radius: 16px;
+					margin: 15px 0;
+				}
+
+					.menu a:hover {
+						box-shadow: #B46032 8px 8px inset;
+					}
+
+			h1, .nav-github {
+				font-size: 1.8em;
+			}
+		}
+	</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -21,11 +136,11 @@
 			<div class="menu">
 				<h1>Base Game</h1>
 				<a href="balances/weapons.html" class="nav-btn">Weapons & Classes</a>
-				<a class="nav-btn">Core Game Modes</a>
+				<a class="nav-btn disabled">Core Game Modes</a>
 				<h1>Alternative Game Modes</h1>
 				<a href="balances/mvm.html" class="nav-btn">Mann Vs Machine</a>
 				<a href="balances/halloween.html" class="nav-btn">Halloween</a>
-				<a href="balances/vsh.html" class="nav-btn">Vs Saxton Hale</a>
+				<a class="nav-btn disabled">Vs Saxton Hale</a>
 				<!--
 				<h1>Playing God</h1>
 				<a href="balances/economy.html"><div class="nav-btn">Economy</div></a>
