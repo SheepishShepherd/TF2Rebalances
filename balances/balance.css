@@ -141,12 +141,11 @@ th div {
 .icon-Fireball { background-image: url('../resources/halloween/spells/Fireball.png'); }
 
 .mvm-mini-item {
-	width: 26px;
-	height: 20px;
+	width: 29px;
+	height: 22px;
 	background-color: #3C362F; /* #1B1B1B or #0F0E0C */
 	border-radius: 3px;
 	position: relative;
-	bottom: 2px;
 	cursor: pointer;
 	user-select: none;
 	vertical-align: middle;
@@ -155,32 +154,25 @@ th div {
 	background-color: #C9BBA1;
 }
 
-.mvm-mini-class {
-	background-color: transparent !important;
-	width: 20px !important;
-	cursor: help;
-	margin-left: 1px;
-}
-.mvm-mini-allclass {
-	background-color: transparent !important;
-	width: 20px !important;
-	cursor: help;
-	margin-left: 5px;
-}
-
 .upgrade-icon {
 	width: 24px;
 	vertical-align: middle;
 	position: relative;
-	bottom: 1px;
 	border: 1px solid #ECE3CB;
 	border-radius: 4px;
-	margin: 0 5px 2px 5px;
+	margin-bottom: 2px;
 	user-select: none;
 }
 
+.upgrade-container {
+	justify-content: center;
+	align-items: center;
+}
+
 /* Canteen Icons */
-.icon-CanteenUpgrade { background-image: url('../resources/mvm/Canteen_Upgrade.png'); }
+.icon-CanteenUpgrade {
+	background-image: url('../resources/mvm/Canteen_Upgrade.png');
+}
 .icon-CanteenRefill { background-image: url('../resources/mvm/Canteen_Refill.png'); }
 .icon-CanteenKritz { background-image: url('../resources/mvm/Canteen_Kritz.png'); }
 .icon-CanteenUber { background-image: url('../resources/mvm/Canteen_Uber.png'); }
