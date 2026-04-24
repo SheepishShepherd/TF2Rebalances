@@ -220,6 +220,9 @@ label {
 	cursor: not-allowed;
 	color: #2d2425;
 }
+.nav-btn.disabled:hover {
+	box-shadow: none;
+}
 .img-nav-btn {
 	float: left;
 	width: 2rem;
@@ -231,7 +234,7 @@ label {
 	background-position: center center;
 	box-shadow: #9A9280 -2px -2px inset;
 }
-.img-nav-btn:hover  {
+.img-nav-btn:not(.disabled):hover  {
 	box-shadow: #B46032 2px 2px inset;
 }
 
