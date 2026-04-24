@@ -26,8 +26,15 @@ th {
 	background-color: #F3A957;
 	font-family: TF2;
 	font-size: 2.4em;
-	padding: 5px 0px;
+	padding: 0.1em 0;
 	border-radius: 10px;
+	width: 100%;
+}
+th div {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 #nav-bookmarks {
@@ -60,7 +67,7 @@ th {
 }
 
 .class-icon {
-	height: 30px;
+	height: 1em;
 	margin-right: 10px;
 }
 
@@ -219,10 +226,6 @@ th {
 	table {
 		width: 100%;
 		margin: 1rem 0.1rem;
-	}
-
-	th {
-		width: 100%;
 	}
 
 	tr {
