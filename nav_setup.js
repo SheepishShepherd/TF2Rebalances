@@ -26,16 +26,8 @@ nav_buttons.forEach(button => {
 			soundPath = "class_menu_" + bookmark;
 		}
 	}
-	else if (button.parentElement.id == "nav-bookmarks") {
-		if (button.parentElement.classList.contains("mvm-nav")) {
-			soundPath = "mvm_warning";
-		}
-		else if (button.parentElement.classList.contains("halloween-nav")) {
-			soundPath = "clock_tick";
-		}
-		else {
-			soundPath = "slide_up";
-		}
+	else {
+		soundPath = "hint";
 	}
 
 	button.addEventListener('click', () => {
