@@ -2939,23 +2939,25 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- Weapon modified notice -->
-					<span class="neutral warning-blue"><label class="tooltip" title="Click for more info" for="spy_sapper_rework">Reworked how Sappers function against robots</label></span><br />
+					<span class="neutral warning-blue">
+						<label class="tooltip" title="Click for more info" for="spy_sapper_rework">Reworked how Sappers function against robots</label>
+					</span><br />
 					<input type="checkbox" id="spy_sapper_rework" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Sappers are no longer consumed on use (always available)</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Sappers duration reduced from 4s to 2s</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Sappers deal damage to robots</span>
-						<span class="neutral" style="user-select: none;">
-							(50 damage with <img class="mvm-mini-item" src="../resources/weapons/spy/Sapper.png" title="Sapper" />
-							/ 20 damage with <img class="mvm-mini-item" src="../resources/weapons/spy/Red-Tape_Recorder.png" title="Red-Tape Recorder" />)
-						</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Nearby robots will detect spies that place sappers on other robots</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Sappers are no longer consumed on use and are always available</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Sappers duration reduced from 4s to 1.5s</span><br />
 						<span class="neutral modified" style="margin-left: 10px;">Sapper base slow vs giant robots reduced from 85% to 35%</span><br />
 					</span>
-					<span class="neutral warning-blue"><label class="tooltip" title="Click for more info" for="spy_radar_rework">Reworked how Sapper Radar functions against robots</label></span><br />
+
+					<span class="neutral warning-blue">
+						<label class="tooltip" title="Click for more info" for="spy_radar_rework">Reworked how Sapper Radar functions against robots</label>
+					</span><br />
 					<input type="checkbox" id="spy_radar_rework" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Radar now applies the sapper to nearby robots</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Reduced radius of Radar effect from 512hu to 175hu</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Robots cannot detect spies that use Radar</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Robots outlined by Radar will be sapped after a 1.5s delay</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Reduced radius of Radar from 512hu to 256hu</span><br />
 					</span>
 
 					<!-- Sapper Power -->
@@ -2971,27 +2973,27 @@
 					</span><br />
 					<input type="checkbox" id="spy_sapper_power" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral added" style="margin-left: 10px;">Sapper Power applies Mark For Death to affected robots</span><br />
-						<span class="neutral added" style="margin-left: 10px;">+15% increased slow strength per point (50%/65%/80%)</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Duration bonus changed from +0/1.5/3s to +1.5s per point</span><br />
+						<span class="neutral info" style="margin-left: 20px;">Note: Total duration from 4.0/5.5/7.0s to 3.0/4.5/6.0s</span><br />
 						<span class="neutral removed" style="margin-left: 10px;">No longer increases in radius per point</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Duration bonus changed from +0/1.5/3s to +1s per point</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Sapper Power applies Mark For Death to affected robots</span><br />
+						<span class="neutral added" style="margin-left: 10px;">+15% increased slow strength vs giants per point (50%/65%/80%)</span><br />
 					</span>
 
-					<!-- Radar Radius -->
+					<!-- +15% recharge rate -->
 					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/c/c2/Get_along.jpg" />
-						<label class="tooltip" title="Click for more info" for="spy_radar_radius">Radar Radius</label>
-						<span class="credits">[$100]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
+						<label class="tooltip" title="Click for more info" for="spy_radar_cooldown">+15% recharge rate</label>
+						<span class="credits">[$250]</span>
+						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/spy/Sapper.png" title="Sapper" />
 							<img class="mvm-mini-item" src="../resources/weapons/spy/Red-Tape_Recorder.png" title="Red-Tape Recorder" />
 						</span>
 					</span><br />
-					<input type="checkbox" id="spy_radar_radius" style="display: none;" />
+					<input type="checkbox" id="spy_radar_cooldown" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Sapper radius is now its own upgrade</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Radius per point changed from 200/225/250 to 175/225/275</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Recharge time reduced to 25.5/21.0/16.5/12.0s</span><br />
 					</span>
 				</p>
 			</td>
