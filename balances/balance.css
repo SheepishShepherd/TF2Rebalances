@@ -140,52 +140,6 @@ th div {
 .icon-Minify { background-image: url('../resources/halloween/spells/Minify.png'); }
 .icon-Fireball { background-image: url('../resources/halloween/spells/Fireball.png'); }
 
-.mvm-mini-item {
-	width: 29px;
-	height: 22px;
-	background-color: #3C362F; /* #1B1B1B or #0F0E0C */
-	border-radius: 3px;
-	position: relative;
-	cursor: pointer;
-	user-select: none;
-	vertical-align: middle;
-}
-.mvm-mini-item:hover {
-	background-color: #C9BBA1;
-}
-
-.upgrade-icon {
-	width: 24px;
-	vertical-align: middle;
-	position: relative;
-	border: 1px solid #ECE3CB;
-	border-radius: 4px;
-	margin-bottom: 2px;
-	user-select: none;
-}
-
-.upgrade-container {
-	justify-content: center;
-	align-items: center;
-}
-
-/* Canteen Icons */
-.icon-CanteenUpgrade {
-	background-image: url('../resources/mvm/Canteen_Upgrade.png');
-}
-.icon-CanteenRefill { background-image: url('../resources/mvm/Canteen_Refill.png'); }
-.icon-CanteenKritz { background-image: url('../resources/mvm/Canteen_Kritz.png'); }
-.icon-CanteenUber { background-image: url('../resources/mvm/Canteen_Uber.png'); }
-.icon-CanteenRecall { background-image: url('../resources/mvm/Canteen_Recall.png'); }
-
-.upgrade_info {
-	display: none;
-}
-
-:checked + .upgrade_info {
-	display: initial;
-}
-
 .mini-cosmetic {
 	width: 75px;
 	height: 56px;

@@ -16,6 +16,50 @@
 			background-color: #B2B2B2;
 		}
 
+		.mvm-mini-item {
+			width: 29px;
+			height: 22px;
+			background-color: #3C362F; /* #1B1B1B or #0F0E0C */
+			border-radius: 3px;
+			position: relative;
+			cursor: pointer;
+			user-select: none;
+			vertical-align: middle;
+		}
+			.mvm-mini-item:hover {
+				background-color: #C9BBA1;
+			}
+
+		.upgrade-icon {
+			width: 24px;
+			vertical-align: middle;
+			position: relative;
+			border: 1px solid #ECE3CB;
+			border-radius: 4px;
+			margin-bottom: 2px;
+			user-select: none;
+		}
+
+		.upgrade-container {
+			justify-content: center;
+			align-items: center;
+		}
+
+		/* Canteen Icons */
+		.icon-CanteenUpgrade { background-image: url('../resources/mvm/Canteen_Upgrade.png'); }
+		.icon-CanteenRefill { background-image: url('../resources/mvm/Canteen_Refill.png'); }
+		.icon-CanteenKritz { background-image: url('../resources/mvm/Canteen_Kritz.png'); }
+		.icon-CanteenUber { background-image: url('../resources/mvm/Canteen_Uber.png'); }
+		.icon-CanteenRecall { background-image: url('../resources/mvm/Canteen_Recall.png');}
+
+		.upgrade_info {
+			display: none;
+		}
+
+		:checked + .upgrade_info {
+			display: initial;
+		}
+
 		/* For when viewing on mobile */
 		@media (max-width: 1200px) {
 			.mvm-upgrades-table td {
@@ -32,6 +76,7 @@
 			.upgrade-icon {
 				width: 1.5em;
 				margin-bottom: 0.2em;
+				border-width: 2px;
 			}
 
 			.mvm-mini-item {
@@ -1220,10 +1265,23 @@
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/de/I_fry.png" />
 						<span class="upside">+25% Burn Damage</span> upgrade from all secondary weapons
 					</span><br />
+
 					<span class="upgrade-container neutral warning-red">
 						<span class="downside">Removed</span> the
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/5/54/Spontaneous_combustion.png" />
 						<span class="upside">+25% Burn Time</span> upgrade from all secondary weapons
+					</span><br />
+
+					<span class="upgrade-container neutral warning-red">
+						<span class="downside">Removed</span> the
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
+						<span class="upside">+10% firing speed</span> upgrade from
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" title="Flare Gun" />
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" title="Detonator" />
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" title="Mannmelter" />
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Scorch_Shot.png" title="Scorch Shot" />
+						</span>
 					</span><br />
 
 					<!-- +25% damage -->
@@ -1258,31 +1316,6 @@
 							<img class="upgrade-icon" src="../resources/achievements/modified/Pyro_PlanB.png" />
 							<span class="upside">Arson Specialist</span>upgrade: <span class="q-strange">[&#9679;]</span> 90 damage <span class="q-strange">[&#9679;&#9679;]</span> 120 damage
 						</span><br />
-					</span>
-
-					<!-- +25% firing delay -->
-					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
-						<label class="tooltip" title="Click for more info" for="pyro_firing_rate">+25% firing rate</label>
-						<span class="credits">[$200]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" title="Flare Gun" />
-							<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" title="Detonator" />
-							<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" title="Mannmelter" />
-							<img class="mvm-mini-item" src="../resources/weapons/pyro/Scorch_Shot.png" title="Scorch Shot" />
-						</span>
-					</span><br />
-					<input type="checkbox" id="pyro_firing_rate" style="display: none;" />
-					<span class="upgrade-container upgrade_info">
-						<span class="neutral added" style="margin-left: 10px;">Reload and firing speed have been consolidated into one upgrade</span><br />
-					</span>
-					<span class="upgrade-container">
-						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d2/Crock_Block.png" />
-						+20% reload speed <span class="neutral">and</span>
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
-						+10% firing speed<br />
 					</span>
 
 					<!-- +15% recharge rate -->
@@ -1561,9 +1594,9 @@
 					<!-- +2s Crits On Shield Bash -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/2/20/Tf_emergency_brake.png" />
-						<span>+2s Crits On Shield Bash</span>
+						<span>+5s Crits On Shield Bash</span>
 						<span class="credits">[$350]</span>
-						<span class="q-strange">[&#9679;&#9679;]</span>
+						<span class="q-strange">[&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Chargin'_Targe.png" title="Chargin' Targe" />
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Splendid_Screen.png" title="Splendid Screen" />
@@ -1641,7 +1674,7 @@
 				<img class="item-img" src="../resources/class/token_heavy.png" />
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
-					<span class="upside">Triple Hit Combo does not require alternating fists to gain critical damage</span><br />
+					<span class="upside">Triple Hit Combo does not require alternating attacks</span><br />
 					<span class="downside">-60% primary damage penalty vs Tanks</span><br />
 					<span class="downside">-60% primary damage penalty vs Giant Robots</span><br />
 				</p>
@@ -1776,36 +1809,6 @@
 						<span class="neutral modified" style="margin-left: 10px;">Cooldown for projectile deletion changed from 0.3/0.1s to 0.3/0.15s</span><br />
 						<span class="neutral added" style="margin-left: 10px;">The fire ring from the <img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" /> can also destroy projectiles</span><br />
 					</span>
-
-					<!-- +50% ammo capacity -->
-					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/79/Kollectivization.png" />
-						<span>+50% ammo capacity</span>
-						<span class="credits tooltip" title="Cost increased from $250 to $375">[$375]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Natascha.png" title="Natascha" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Tomislav.png" title="Tomislav" />
-						</span>
-					</span><br />
-
-					<!-- +25 health on kill -->
-					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/6/68/Tf_medic_kill_healed_spy.png" />
-						<span>+25 health on kill</span>
-						<span class="credits tooltip" title="Cost increased from $200 to $300">[$300]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Minigun.png" title="Minigun" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Brass_Beast.png" title="Brass Beast" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Huo-Long_Heater.png" title="Huo-Long Heater" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Natascha.png" title="Natascha" />
-							<img class="mvm-mini-item" src="../resources/weapons/heavy/Tomislav.png" title="Tomislav" />
-						</span>
-					</span><br />
 				</p>
 			</td>
 		</tr>
@@ -2276,7 +2279,18 @@
 						<span class="downside">Removed</span> the
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/07/Tf_scout_destroy_sentry_with_pistol.png" />
 						<span class="upside">+2 clip size</span> upgrade from
-						<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
+						</span>
+					</span><br />
+
+					<span class="upgrade-container neutral warning-red">
+						<span class="downside">Removed</span> the
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
+						<span class="upside">+10% firing speed</span> upgrade from
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
+						</span>
 					</span><br />
 
 					<!-- +50% clip size-->
@@ -2290,28 +2304,6 @@
 							<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
 							<img class="mvm-mini-item" src="../resources/weapons/medic/Overdose.png" title="Overdose" />
 						</span>
-					</span><br />
-
-					<!-- +25% firing delay -->
-					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
-						<label class="tooltip" title="Click for more info" for="medic_firing_rate">+25% firing rate</label>
-						<span class="credits">[$200]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
-						</span>
-					</span><br />
-					<input type="checkbox" id="medic_firing_rate" style="display: none;" />
-					<span class="upgrade-container upgrade_info">
-						<span class="neutral added" style="margin-left: 10px;">Reload and firing speed have been consolidated into one upgrade</span><br />
-					</span>
-					<span class="upgrade-container">
-						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d2/Crock_Block.png" />
-						+20% reload speed <span class="neutral">and</span>
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
-						+10% firing speed
 					</span><br />
 
 					<!-- +50% ammo capacity -->
@@ -2582,6 +2574,13 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- Weapon modified notice -->
+					<span class="upgrade-container neutral warning-red">
+						<span class="downside">Removed</span> the
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/8/85/Tf_sniper_parting_shot.png" />
+						<span class="upside">Projectile Penetration</span> upgrade from
+						<img class="mvm-mini-item" src="../resources/weapons/sniper/Machina.png" title="Machina" />
+					</span><br />
+
 					<span class="upgrade-container neutral warning-blue">
 						Silent Killer: Non-giant robots take twice as long to aggro from attacks
 						<img class="mvm-mini-item" src="../resources/weapons/sniper/Hitman's_Heatmaker.png" title="Hitman's Heatmaker" />
@@ -2675,7 +2674,7 @@
 					</span><br />
 					<input type="checkbox" id="sniper_firing_speed" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral modified" style="margin-left: 10px;">Attack interval bonuses reduced from 20% to 10% with this change</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Attack interval bonus per point reduced from 20% (60% total) to 10% (40% total)</span><br />
 					</span>
 
 					<!-- +25% faster charge -->
