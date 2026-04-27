@@ -43,6 +43,6 @@ nav_buttons.forEach(button => {
 const elements = document.querySelectorAll('.mvm-mini-item');
 elements.forEach(element => {
 	element.addEventListener('click', function () {
-		window.location = "weapons.html#" + element.title.replaceAll(" ", "_");
+		window.open("weapons.html#" + element.title.replaceAll(" ", "_"), "_blank");
 	});
 });
