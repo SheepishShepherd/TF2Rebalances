@@ -54,6 +54,7 @@
 
 		.upgrade_info {
 			display: none;
+			color: #EBE2CA;
 		}
 
 		:checked + .upgrade_info {
@@ -1184,8 +1185,9 @@
 							<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/5/54/Spontaneous_combustion.png" />
 							<span class="upside">+50% burn time</span> for all weapons
 						</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">+50% afterburn damage on wearer per point</span><br />
 						<span class="neutral modified" style="margin-left: 10px;">+50% afterburn time on wearer per point</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increases afterburn damage from 4 to 6/8</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increases inferno damage from 5 to 8/10</span><br />
 						<span class="neutral added" style="margin-left: 10px;">+50% afterburn maximum duration (+5s per point, up to 20s)</span><br />
 						<span class="neutral info" style="margin-left: 10px;">Afterburn duration applications will fully stack</span><br />
 					</span>
@@ -1298,25 +1300,25 @@
 						</span>
 					</span><br />
 
-					<!-- +200% Explode on Ignite damage -->
+					<!-- Stun on Eruption -->
 					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/c/c4/Achievement_milestone_3.png" />
-						<label class="tooltip" title="Click for more info" for="pyro_explode_on_ignite">+200% Explode on Ignite damage</label>
-						<span class="credits tooltip" title="Reduced cost from $400 to $350">[$350]</span>
+						<img class="upgrade-icon" src="../resources/achievements/modified/Medic_InfernalMedicine.png" />
+						<label class="tooltip" title="Click for more info" for="pyro_explode_on_ignite">Stun on Eruption</label>
+						<span class="credits">[$250]</span>
 						<span class="q-strange">[&#9679;]</span>
 						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/pyro/Gas_Passer.png" />
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Gas_Passer.png" title="Gas Passer" />
 						</span>
 					</span><br />
 					<input type="checkbox" id="pyro_explode_on_ignite" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral added" style="margin-left: 10px;">Explode on Ignite damage reduced from 350 to 60</span><br />
-						<span class="neutral info" style="margin-left: 10px;">
-							Affected by the
-							<img class="upgrade-icon" src="../resources/achievements/modified/Pyro_PlanB.png" />
-							<span class="upside">Arson Specialist</span>upgrade: <span class="q-strange">[&#9679;]</span> 90 damage <span class="q-strange">[&#9679;&#9679;]</span> 120 damage
-						</span><br />
+						<span class="added" style="margin-left: 10px;">Robots covered in gas will be stunned for 4s upon taking damage</span><br />
 					</span>
+					<span class="upgrade-container">
+						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/c/c4/Achievement_milestone_3.png" />
+						<span>Explode on Ignite</span>
+					</span><br />
 
 					<!-- +15% recharge rate -->
 					<span class="upgrade-container">
