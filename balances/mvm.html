@@ -703,7 +703,9 @@
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
 					<!-- Innate modified notice -->
-					<span class="upgrade-container neutral warning-yellow">
+					<span class="neutral warning-red">No longer has a reduced respawn timer</span><br />
+					<span class="neutral warning-red">Reduced cash collection radius from 203hu to 192hu</span><br />
+					<span class="upgrade-container neutral warning-red">
 						Reduced max overheal gained from cash
 						<label class="tooltip" title="Click for more info" for="scout_cash_overheal">from +500% (750hp) to +200% (375hp)</label>
 					</span><br />
@@ -983,13 +985,9 @@
 					<span class="upgrade-container neutral warning-red">
 						<span class="downside">Removed</span> the
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/1/1f/Tf_demoman_kill_x_with_directpipe.png" />
-						<span class="upside">+25% damage</span> upgrade from
-						<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Jumper.png" title="Rocket Jumper" />
-					</span><br />
-					<span class="upgrade-container neutral warning-red">
-						<span class="downside">Removed</span> the
+						<span class="upside">+25% damage</span> and
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/71/Tf_soldier_wings_of_glory.png" />
-						<span class="upside">Rocket Specialist</span> upgrade from
+						<span class="upside">Rocket Specialist</span> upgrades from
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Jumper.png" title="Rocket Jumper" />
 					</span><br />
 
@@ -1003,12 +1001,20 @@
 						<img class="mvm-mini-item" src="../resources/weapons/soldier/Cow_Mangler_5000.png" title="Cow Mangler 5000" />
 					</span><br />
 
+					<span class="upgrade-container neutral warning-yellow">
+						Fixed the
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/70/Hotshot.png" />
+						<span class="upside">Explosive Specialist</span>
+						upgrade to correctly provide increased rocket speed for
+						<img class="mvm-mini-item" src="../resources/weapons/soldier/Cow_Mangler_5000.png" title="Cow Mangler 5000" />
+					</span><br />
+
 					<!-- Explosive Specialist -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/70/Hotshot.png" />
 						<label class="tooltip" title="Click for more info" for="soldier_explosive_specialist">Explosive Specialist</label>
-						<span class="credits tooltip" title="Cost increased from $300 to $500">[$500]</span>
-						<span class="q-strange tooltip" title="Purchase points increased from 4 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="credits">[$500]</span>
+						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/soldier/Rocket_Launcher.png" title="Rocket Launcher" />
 							<img class="mvm-mini-item" src="../resources/weapons/soldier/Air_Strike.png" title="Air Strike" />
@@ -1021,18 +1027,17 @@
 					</span><br />
 					<input type="checkbox" id="soldier_explosive_specialist" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Rocket Specialist renamed to Explosive Specialist</span><br />
-						<span class="neutral added" style="margin-left: 10px;">+20% bonus damage per point ( <img class="mvm-mini-item" src="../resources/weapons/soldier/Direct_Hit.png" title="Direct Hit" /> benefits from all points)</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">On direct hit: Damage is unaffected by fall-off and briefly stuns the target (unchanged)</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">On direct hit: +15% blast radius per point (unchanged)</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">+15% projectile speed per point (fixed <img class="mvm-mini-item" src="../resources/weapons/soldier/Cow_Mangler_5000.png" title="Cow Mangler 5000" /> not benefitting)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">+20% bonus damage per point</span><br />
+						<span class="neutral added" style="margin-left: 10px;">On direct hit: Damage is unaffected by fall-off and briefly stuns the target</span><br />
+						<span class="neutral added" style="margin-left: 10px;">On direct hit: +15% blast radius per point</span><br />
+						<span class="neutral added" style="margin-left: 10px;">+15% projectile speed per point</span><br />
 					</span>
 					<span class="upgrade-container">
 						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/71/Tf_soldier_wings_of_glory.png" />
-						Rocket Specialist <span class="neutral">and</span>
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/1/1f/Tf_demoman_kill_x_with_directpipe.png" />
-						+25% damage
+						+25% damage <span class="neutral">and</span>
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/71/Tf_soldier_wings_of_glory.png" />
+						Rocket Specialist
 					</span><br />
 				</p>
 			</td>
@@ -1223,12 +1228,9 @@
 					<span class="upgrade-container neutral warning-red">
 						<span class="downside">Removed</span> the
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/de/I_fry.png" />
-						<span class="upside">+25% Burn Damage</span> upgrade from all primary weapons
-					</span><br />
-					<span class="upgrade-container neutral warning-red">
-						<span class="downside">Removed</span> the
+						<span class="upside">+25% Burn Damage</span> and
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/5/54/Spontaneous_combustion.png" />
-						<span class="upside">+25% Burn Time</span> upgrade from all primary weapons
+						<span class="upside">+25% Burn Time</span> upgrades from all weapons
 					</span><br />
 
 					<!-- -15% repressurization time -->
@@ -1247,6 +1249,11 @@
 							<img class="mvm-mini-item" src="../resources/weapons/pyro/Dragon's_Fury.png" title="Dragon's Fury" />
 						</span><br />
 					</span>
+					<span class="upgrade-container">
+						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/b/bf/Tf_soldier_where_eagles_dare.png" />
+						<span>+25% Airblast Force</span>
+					</span><br />
 				</p>
 			</td>
 		</tr>
@@ -1265,13 +1272,9 @@
 					<span class="upgrade-container neutral warning-red">
 						<span class="downside">Removed</span> the
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/de/I_fry.png" />
-						<span class="upside">+25% Burn Damage</span> upgrade from all secondary weapons
-					</span><br />
-
-					<span class="upgrade-container neutral warning-red">
-						<span class="downside">Removed</span> the
+						<span class="upside">+25% Burn Damage</span> and
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/5/54/Spontaneous_combustion.png" />
-						<span class="upside">+25% Burn Time</span> upgrade from all secondary weapons
+						<span class="upside">+25% Burn Time</span> upgrades from all weapons
 					</span><br />
 
 					<span class="upgrade-container neutral warning-red">
@@ -1295,10 +1298,25 @@
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/pyro/Flare_Gun.png" title="Flare Gun" />
 							<img class="mvm-mini-item" src="../resources/weapons/pyro/Detonator.png" title="Detonator" />
-							<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" title="Mannmelter" />
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" title="Manmelter" />
 							<img class="mvm-mini-item" src="../resources/weapons/pyro/Scorch_Shot.png" title="Scorch Shot" />
 						</span>
 					</span><br />
+
+					<!-- +20% reload speed -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d2/Crock_Block.png" />
+						<label class="tooltip" title="Click for more info" for="pyro_reload">+20% reload speed</label>
+						<span class="credits">[$250]</span>
+						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Manmelter.png" title="Manmelter" />
+						</span>
+					</span><br />
+					<input type="checkbox" id="pyro_reload" style="display: none;" />
+					<span class="upgrade-container upgrade_info">
+						<span class="neutral info" style="margin-left: 10px;">The Manmelter now has a reload animation</span><br />
+					</span>
 
 					<!-- Stun on Eruption -->
 					<span class="upgrade-container">
@@ -1423,7 +1441,6 @@
 				<img class="item-img" src="../resources/class/token_demoman.png" />
 				<p>
 					<span class="item-name q-stock">Class Upgrades & Innates</span><br />
-					<span class="upside">Stickybombs will not be destroyed upon death</span>
 				</p>
 			</td>
 
@@ -1462,7 +1479,7 @@
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/70/Hotshot.png" />
 						<label class="tooltip" title="Click for more info" for="demoman_explosive_specialist">Explosive Specialist</label>
-						<span class="credits tooltip" title="Cost increased from $300 to $500">[$500]</span>
+						<span class="credits">[$500]</span>
 						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Grenade_Launcher.png" title="Grenade Launcher" />
@@ -1472,11 +1489,10 @@
 					</span><br />
 					<input type="checkbox" id="demoman_explosive_specialist" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Rocket Specialist renamed to Explosive Specialist</span><br />
 						<span class="neutral added" style="margin-left: 10px;">+20% bonus damage per point</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">On direct hit: Damage is unaffected by fall-off and briefly stuns the target</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">On direct hit: +15% blast radius per point</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">+15% projectile speed per point ( <img class="mvm-mini-item" src="../resources/weapons/demoman/Loch-n-Load.png" title="Loch-n-Load" /> benefits from all points)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">On direct hit: Damage is unaffected by fall-off and briefly stuns the target</span><br />
+						<span class="neutral added" style="margin-left: 10px;">On direct hit: +15% blast radius per point</span><br />
+						<span class="neutral added" style="margin-left: 10px;">+15% projectile speed per point</span><br />
 					</span>
 					<span class="upgrade-container">
 						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
@@ -1734,18 +1750,19 @@
 					<input type="checkbox" id="heavy_metal_shredder" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
 						<span class="neutral added" style="margin-left: 10px;">Grants a RAGE meter that can be activated with the Reload Key when full</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Building RAGE to full requires 15/12/9 robot kills (Giants count as 3 kills)</span><br />
-						<span class="neutral added" style="margin-left: 10px;">RAGE causes bullets to penetrate robots up to medium range (base damage)</span><br />
-						<span class="neutral added" style="margin-left: 10px;">RAGE fires +0/1/2 additional bullets per shot (0/25/50% damage increase)</span><br />
-						<span class="neutral added" style="margin-left: 10px;">RAGE resets minigun accuracy and does not increase for the duration, even if still spun up</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Building RAGE to full requires 18/15/12 robot kills (Giants count as 3 kills)</span><br />
 						<span class="neutral info" style="margin-left: 10px;">RAGE effect has a duration of 5s</span><br />
+						<span class="neutral added" style="margin-left: 10px;">RAGE provides bullet penetration</span><br />
+						<span class="neutral added" style="margin-left: 10px;">RAGE fires +0/1/2 additional bullets per shot (0/25/50% damage increase)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">RAGE resets minigun accuracy and does not ramp-up for the duration</span><br />
+						<span class="neutral info" style="margin-left: 20px;">Note: Does not reset damage ramp-up</span><br />
 					</span>
 					<span class="upgrade-container">
-						<span class="downside" style="margin-left: 30px;">&#x21AA;&#xFE0E; Replaces</span>
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d8/Tf_scout_first_blood.png" />
-						Knockback Rage <span class="neutral">and</span>
+						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/8/85/Tf_sniper_parting_shot.png" />
-						Projectile Penetration
+						Projectile Penetration <span class="neutral">and</span>
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d8/Tf_scout_first_blood.png" />
+						Knockback Rage
 					</span><br />
 
 					<!-- +15% Firing Speed -->
@@ -1982,6 +1999,17 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- Projectile Penetration -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/8/85/Tf_sniper_parting_shot.png" />
+						<span>Projectile Penetration</span>
+						<span class="credits">[$200]</span>
+						<span class="q-strange">[&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/engineer/Pomson_6000.png" title="Pomson 6000" />
+						</span>
+					</span><br />
+
 					<!-- +50% ammo capacity -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/79/Kollectivization.png" />
@@ -2004,17 +2032,6 @@
 							</span>
 						</span><br />
 					</span>
-
-					<!-- Projectile Penetration -->
-					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/8/85/Tf_sniper_parting_shot.png" />
-						<span>Projectile Penetration</span>
-						<span class="credits">[$200]</span>
-						<span class="q-strange">[&#9679;]</span>
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/engineer/Pomson_6000.png" title="Pomson 6000" />
-						</span>
-					</span><br />
 
 					<!-- +25% projectile speed -->
 					<span class="upgrade-container">
@@ -2173,31 +2190,11 @@
 						<span class="upside">+1 Disposable Sentry Gun</span> upgrade to Melee Upgrades
 					</span><br />
 
-					<!-- Canteen Specialist -->
-					<span class="upgrade-container">
-						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/b/b7/Undelete_Achievement_Icon.jpg" />
-						<label class="tooltip" title="" for="engineer_canteen_specialist">Canteen Specialist</label>
-						<span class="credits tooltip" title="Cost increased from $200 to $350">[$350]</span>
-						<span class="q-strange tooltip" title="Purchase points decreased from 3 to 2">[&#9679;&#9679;]</span>
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/mvm/canteen_item.png" title="Canteen" />
-						</span>
-					</span><br />
-					<input type="checkbox" id="engineer_canteen_specialist" style="display: none;" />
-					<span class="upgrade-container upgrade_info">
-						<span class="neutral removed" style="margin-left: 10px;">Engineer now requires this upgrade to share canteen bonuses with his Sentry Gun</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Canteen costs now update in real time, but lock the ability to refund this upgrade</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Refunding this upgrade only becomes available when the canteen is empty</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Canteen cost reduction changed from 10/20/30 to 25/50</span><br />
-						<span class="neutral added" style="margin-left: 10px;">Each point increases maximum canteens held by +1 (up to 5 canteens)</span><br />
-						<span class="neutral removed" style="margin-left: 10px;">Removed the canteen duration bonus</span><br />
-					</span>
-
 					<!-- +15% Sentry Firing Speed -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/76/Crime_and_Punishment.png" />
 						<label class="tooltip" title="Click for more info" for="engineer_sentry_firing_speed">+15% sentry firing speed</label>
-						<span class="credits tooltip" title="Cost increased from $350 to $400 for this upgrade">[$400]</span>
+						<span class="credits tooltip" title="Cost increased from $350 to $400">[$400]</span>
 						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/engineer/Toolbox.png" title="Sentry Guns" />
@@ -2224,6 +2221,26 @@
 					<input type="checkbox" id="engineer_2way_teleporters" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
 						<span class="neutral added" style="margin-left: 10px;">Teammates using the teleporter are provided with a 3s speed boost</span><br />
+					</span>
+
+					<!-- Canteen Specialist -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/b/b7/Undelete_Achievement_Icon.jpg" />
+						<label class="tooltip" title="" for="engineer_canteen_specialist">Canteen Specialist</label>
+						<span class="credits tooltip" title="Cost increased from $200 to $350">[$350]</span>
+						<span class="q-strange tooltip" title="Purchase points decreased from 3 to 2">[&#9679;&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/mvm/canteen_item.png" title="Canteen" />
+						</span>
+					</span><br />
+					<input type="checkbox" id="engineer_canteen_specialist" style="display: none;" />
+					<span class="upgrade-container upgrade_info">
+						<span class="neutral removed" style="margin-left: 10px;">Engineer now requires this upgrade to share canteen bonuses with his Sentry Gun</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Canteen costs now update in real time, but lock the ability to refund this upgrade</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Refunding this upgrade only becomes available when the canteen is empty</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Canteen cost reduction changed from 10/20/30 to 25/50</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Each point increases maximum canteens held by +1 (up to 5 canteens)</span><br />
+						<span class="neutral removed" style="margin-left: 10px;">Removed the canteen duration bonus</span><br />
 					</span>
 				</p>
 			</td>
@@ -2280,16 +2297,9 @@
 					<span class="upgrade-container neutral warning-red">
 						<span class="downside">Removed</span> the
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/07/Tf_scout_destroy_sentry_with_pistol.png" />
-						<span class="upside">+2 clip size</span> upgrade from
-						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
-						</span>
-					</span><br />
-
-					<span class="upgrade-container neutral warning-red">
-						<span class="downside">Removed</span> the
+						<span class="upside">+2 clip size</span> and
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
-						<span class="upside">+10% firing speed</span> upgrade from
+						<span class="upside">+10% firing speed</span> upgrades from
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
 						</span>
@@ -2322,6 +2332,17 @@
 						</span>
 					</span><br />
 
+					<!-- 20% reload speed -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d2/Crock_Block.png" />
+						<span>+20% reload speed</span>
+						<span class="credits tooltip" title="Cost decreased from $250 to $125">[$125]</span>
+						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
+						</span>
+					</span><br />
+
 					<!-- 10% firing speed -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0b/Tf_scout_dodge_damage.png" />
@@ -2332,7 +2353,6 @@
 							<img class="mvm-mini-item" src="../resources/weapons/medic/Syringe_Gun.png" title="Syringe Gun" />
 							<img class="mvm-mini-item" src="../resources/weapons/medic/Blutsauger.png" title="Blutsauger" />
 							<img class="mvm-mini-item" src="../resources/weapons/medic/Overdose.png" title="Overdose" />
-							<img class="mvm-mini-item" src="../resources/weapons/medic/Crusader's_Crossbow.png" title="Crusader's Crossbow" />
 						</span>
 					</span><br />
 
@@ -2592,8 +2612,8 @@
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/3/39/Frontier_justice.jpg" />
 						<label class="tooltip" title="Click for more info" for="sniper_hitman_specialist">Hitman Specialist</label>
-						<span class="credits tooltip" title="Cost increased from $350 to $500">[$500]</span>
-						<span class="q-strange tooltip" title="Purchase points increased from 3 to 5">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="credits">[$500]</span>
+						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/sniper/Sniper_Rifle.png" title="Sniper Rifle" />
 							<img class="mvm-mini-item" src="../resources/weapons/sniper/Bazaar_Bargain.png" title="Bazaar Bargain" />
@@ -2605,13 +2625,12 @@
 					</span><br />
 					<input type="checkbox" id="sniper_hitman_specialist" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Renamed Explosive Headshot to Hitman Specialist</span><br />
-						<span class="neutral added" style="margin-left: 10px;">No unscoping required until reload (with no charge delay between shots)</span><br />
 						<span class="neutral added" style="margin-left: 10px;">+20% bonus damage per point</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Explosive Headshot damage changed from 150/170/190 to base damage x 2</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Slow strength changed from 50%/65%/80% to 35% at all levels</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Slow duration changed from 2/3/4s to 2-5s (scaling with charge level)</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Explosion damage applies Jarate to robots for 2s with the <img class="mvm-mini-item" src="../resources/weapons/sniper/Sydney_Sleeper.png" title="Sydney Sleeper" /></span><br />
+						<span class="neutral added" style="margin-left: 10px;">No unscoping required until reload (with no charge delay between shots)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Headshots cause the shot to ricochet to 1/2/3/4/5 additional robot(s)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Ricochets will deal the base damage of the shot plus mini-crit damage</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Headshots slow the target by 35% for 3s</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Ricochet damage applies Jarate to robots for 3s with the <img class="mvm-mini-item" src="../resources/weapons/sniper/Sydney_Sleeper.png" title="Sydney Sleeper" /></span><br />
 					</span>
 					<span class="upgrade-container">
 						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
@@ -2830,6 +2849,10 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- Innate modified notice -->
+					<span class="neutral warning-blue">Spy always walks at base movement speed while disguised</span><br />
+					<span class="neutral warning-blue">Increased cash collection radius to 128hu while cloaked</span><br />
+
 					<!-- +15% cloak resistance -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/f/ff/Spyalectical_Materialism.png" />
@@ -2898,11 +2921,10 @@
 					</span><br />
 					<input type="checkbox" id="spy_hitman_specialist" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Renamed Explosive Headshots to Hitman Specialist</span><br />
 						<span class="neutral added" style="margin-left: 10px;">+20% bonus damage per point</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Explosive Headshot damage changed from 150/170/190 to base damage x 2</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Slow strength changed from 50%/65%/80% to 65%</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Slow duration changed from 2/3/4s to 2-5s (scaling with distance)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Headshots cause the shot to ricochet to 1/2/3/4/5 additional robot(s)</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Ricochets will deal the base damage of the shot plus mini-crit damage</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Headshots slow the target by 35% for 3s</span><br />
 					</span>
 
 					<!-- +10% firing speed -->
@@ -3011,6 +3033,10 @@
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
 
+					<!-- Innate modified notice -->
+					<span class="neutral warning-blue">Cash dropped by robots killed with a melee weapon is auto-collected</span><br />
+					<span class="neutral warning-blue">Increased backstab damage vs Giant robots from 188 to 195</span><br />
+
 					<!-- Weapon modified notice -->
 					<span class="upgrade-container neutral warning-blue">
 						<label class="tooltip" title="Click for more info" for="spy_silent_killer">Weapons with Silent Killer attributes will reduce robot aggro</label>
@@ -3066,8 +3092,7 @@
 					</span><br />
 					<input type="checkbox" id="spy_armor_penetration" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Increases backstab damage by +100% (unchanged, reworded)</span><br />
-						<span class="neutral modified" style="margin-left: 30px;">Backstab damage per point: 390/585/780/975 (from 375/562.5/750/937.5)</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Backstab damage per point from 375/562.5/750/937.5 to 390/585/780/975</span><br />
 					</span>
 				</p>
 			</td>
