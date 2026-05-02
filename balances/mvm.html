@@ -458,6 +458,7 @@
 					<span class="item-name">Changes</span><br />
 					<span class="neutral info">Canteens cannot be activated until wave start</span><br />
 					<span class="neutral info">Currently holds charges tooltip changed to be yellow and moved to top of the stats list</span><br />
+					<span class="upside info">Canteens can be refunded for full price</span><br />
 					<span class="downside added">Sentry Guns only benefit from canteens when the <a class="tooltip-link tooltip" href="#Building_Upgrades">Canteen Specialist</a> upgrade is purchased</span><br />
 				</p>
 			</td>
@@ -557,24 +558,30 @@
 				<img class="item-img" src="../resources/mvm/battery_canteen_item.png" />
 				<p>
 					<span class="item-name">Recall Canteen</span><br />
-					<span class="upside">Instantly revive or teleport user to spawn</span><br />
-					<span class="upside">Grants a speed boost for 5s</span><br />
-					<span class="neutral">Pick up a targeted building from long range</span><br />
+					<span class="upside">Instantly revive user and grant a 5s speed boost</span><br />
+					<span class="neutral">-100% building construction costs for 5s</span><br />
+					<span class="downside">Can only be activated while dead</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral removed">No longer teleports user to spawn</span><br />
-					<span class="neutral added">User drops a reanimator on death</span><br />
 					<span class="upside added">Canteen can be used while dead to revive at spawn</span><br />
-					<span class="neutral info">Hauling Sentry Guns into spawn no longer causes the Sentry Gun to self-destruct</span><br />
+					<span class="downside removed">No longer teleports user to spawn while alive</span><br />
+					<span class="downside added">
+						Canteen can only be
+						<span class="tooltip" title="Canteen can be refunded for full price with no penalty. Once consumed, one purchase point is locked from being purchased again.">purchased</span>
+						3 times per mission
+					</span><br />
+					<span class="downside modified">Increased cost from $10 to $25</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Reason</span><br />
-					TODO
+					The Recall Canteen only really shines for returning to spawn for upgrades or preventing the bomb from being deployed if a Super Scout gets by.
+					A rework was implemented to replace the existing buyback mechanic.
+					Now offering a cheap option for newer players to work with while also limiting the amount of buybacks that can be used per mission.
 				</p>
 			</td>
 		</tr>
@@ -618,16 +625,19 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral modified">Weapon upgrades will stack additively with existing weapon modifiers instead of stacking multiplicatively</span><br />
-					<span class="item-set-active info">Example: Winger +50% clip size upgrade</span><br />
-					<span class="item-set-inactive">From -60% (5 base) -> -34%/-16%/0%/+15% (8/10/12/15)</span><br />
-					<span class="item-set-inactive">To -60% (5 base) -> -10%/+40%/+90%/+140% (11/17/23/29)</span><br />
+					<span class="neutral modified">Removed most upgrade point limitations</span><br />
+					<span class="neutral modified">Weapon upgrades of the same attribute as an existing downside consolidate into a single stat</span><br />
+					<span class="item-set-active info">Example: Winger with one +50% clip size upgrade</span><br />
+					<span class="item-set-inactive">Updates the weapon stat card from listing -60% smaller clip size AND +50% larger clip size to -40% smaller clip size</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Reason</span><br />
-					TODO
+					These upgrade limitations have been alleviated to encourage more experimenting.
+					Upgrades that increase in value, such as damage or health on kill are no longer limited by points.
+					However, upgrades that reduce action time, such as firing speed or reload speed, will have a capped value.
+					The only acception to this is the &#220;berCharge rate upgrade, which would certainly result in significant balancing issues if not limited.
 				</p>
 			</td>
 		</tr>
@@ -672,12 +682,15 @@
 					<span class="item-name">Changes</span><br />
 					<span class="downside removed">Removed ability to buyback with credits</span><br />
 					<span class="neutral added">Buybacks now require purchased Recall canteens which can be used while dead to instantly revive youself</span><br />
+					<span class="neutral info">Recall canteens can only be used 3 times per mission</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p class="neutral">
 					<span class="item-name">Reason</span><br />
-					TODO
+					Buybacks are mostly inconsequential, as the credits they consume fluctuate based on time saved.
+					However, being unlimited and always available leaves no real punishment for bad play.
+					Reworking buybacks into limited canteens will punish players for dying if they do not buy them and offers a benefit to buying them while preemptively dipping into their credits.
 				</p>
 			</td>
 		</tr>
@@ -2177,6 +2190,8 @@
 			<td class="item-card" style="text-align: left; padding-left: 65px;" colspan="2">
 				<p class="upside">
 					<span class="item-name" style="margin-left: -10px;">Changes</span><br />
+
+					<span class="upgrade-container neutral warning-blue">Hauling Sentry Guns into spawn no longer causes the Sentry Gun to self-destruct</span><br />
 
 					<!-- Upgrade location notices -->
 					<span class="upgrade-container neutral warning-yellow">
