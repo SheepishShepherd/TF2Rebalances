@@ -637,7 +637,7 @@
 					These upgrade limitations have been alleviated to encourage more experimenting.
 					Upgrades that increase in value, such as damage or health on kill are no longer limited by points.
 					However, upgrades that reduce action time, such as firing speed or reload speed, will have a capped value.
-					The only acception to this is the &#220;berCharge rate upgrade, which would certainly result in significant balancing issues if not limited.
+					The only exception to this is the &#220;berCharge rate upgrade, which would certainly result in significant balancing issues if not limited.
 				</p>
 			</td>
 		</tr>
@@ -830,18 +830,30 @@
 						</span>
 					</span>
 
-					<!-- +15% recharge rate -->
+					<!-- -20% recharge time -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
-						<label class="tooltip" title="Click for more info" for="scout_recharge_rate">+15% recharge rate</label>
+						<label class="tooltip" title="Click for more info" for="scout_recharge_rate">-20% recharge time</label>
 						<span class="credits">[$250]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/scout/Bonk!_Atomic_Punch.png" title="Bonk! Atomic Punch" />
+							<img class="mvm-mini-item" src="../resources/weapons/scout/Crit-a-Cola.png" title="Crit-a-Cola" />
+							<img class="mvm-mini-item" src="../resources/weapons/scout/Flying_Guillotine.png" title="Flying Guillotine" />
 							<img class="mvm-mini-item" src="../resources/weapons/scout/Mad_Milk.png" title="Mad Milk" />
 						</span><br />
 						<input type="checkbox" id="scout_recharge_rate" style="display: none;" />
 						<span class="upgrade-container upgrade_info">
-							<span class="neutral modified" style="margin-left: 10px;">No longer reduces the damage requirement to fill</span><br />
+							<span class="neutral warning-blue" style="margin-left: 10px;">
+								Renamed the
+								<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+								<span class="upside">+15% Recharge Rate</span> upgrade
+							</span><br />
+							<span class="neutral info" style="margin-left: 10px;">
+								Does not reduce the 750 damage requirement to fill for
+								<img class="mvm-mini-item" src="../resources/weapons/scout/Mad_Milk.png" title="Mad Milk" />
+							</span><br />
+							<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
 						</span>
 					</span>
 
@@ -893,15 +905,25 @@
 						<span>Ball Marks Target</span>
 					</span><br />
 
-					<!-- +15% recharge rate -->
+					<!-- -20% recharge time -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
-						<span>+15% recharge rate</span>
+						<label class="tooltip" title="Click for more info" for="scout_melee_recharge_rate">-20% recharge time</label>
 						<span class="credits">[$250]</span>
-						<span class="q-strange tooltip" title="Purchase points increased from 2 to 4 for the Wrap Assassin">[&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3 (increased from 2 to 3 for the Wrap Assassin)">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/scout/Sandman.png" title="Sandman" />
 							<img class="mvm-mini-item" src="../resources/weapons/scout/Wrap_Assassin.png" title="Wrap Assassin" />
+						</span>
+					</span><br />
+					<input type="checkbox" id="scout_melee_recharge_rate" style="display: none;" />
+					<span class="upgrade-container upgrade_info">
+						<span class="neutral warning-blue" style="margin-left: 10px;">
+							Renamed the
+							<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+							<span class="upside">+15% Recharge Rate</span> upgrade
 						</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
 					</span>
 
 					<!-- +10% firing speed -->
@@ -1110,6 +1132,7 @@
 						<span class="credits tooltip" title="Reduced cost from $250 to $200">[$200]</span>
 						<span class="q-strange tooltip" title="Increased purchase points from 2 to 3">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/multiclass/B.A.S.E._Jumper.png" title="B.A.S.E. Jumper" />
 							<img class="mvm-mini-item" src="../resources/weapons/soldier/Buff_Banner.png" title="Buff Banner" />
 							<img class="mvm-mini-item" src="../resources/weapons/soldier/Battalion's_Backup.png" title="Battalion's Backup" />
 							<img class="mvm-mini-item" src="../resources/weapons/soldier/Concheror.png" title="Concheror" />
@@ -1118,6 +1141,10 @@
 					<input type="checkbox" id="soldier_banner_duration" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
 						<span class="neutral modified" style="margin-left: 10px;">Changed duration increase from 12.5s/15s to 12s/14s/16s</span><br />
+						<span class="neutral added" style="margin-left: 10px;">
+							Increases parachute duration to 7/9/11s for
+							<img class="mvm-mini-item" src="../resources/weapons/multiclass/B.A.S.E._Jumper.png" title="B.A.S.E. Jumper" />
+						</span><br />
 					</span>
 
 					<!-- -30% push force taken -->
@@ -1127,7 +1154,6 @@
 						<span class="credits">[$100]</span>
 						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
-							<img class="mvm-mini-item" src="../resources/weapons/multiclass/B.A.S.E._Jumper.png" title="B.A.S.E. Jumper" />
 							<img class="mvm-mini-item" src="../resources/weapons/soldier/Gunboats.png" title="Gunboats" />
 						</span>
 						<span class="q-strange tooltip" title="Purchase points have been decreased from 3 to 1 for the Mantreads (max 90%)">[&#9679;]</span>
@@ -1351,19 +1377,29 @@
 						<span>Explode on Ignite</span>
 					</span><br />
 
-					<!-- +15% recharge rate -->
+					<!-- -20% recharge time -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
-						<label class="tooltip" title="Click for more info" for="pyro_recharge_rate">+15% recharge rate</label>
+						<label class="tooltip" title="Click for more info" for="pyro_recharge_rate">-20% recharge time</label>
 						<span class="credits">[$250]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/pyro/Gas_Passer.png" title="Gas Passer" />
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Thermal_Thruster.png" title="Thermal Thruster" />
 						</span>
 					</span><br />
 					<input type="checkbox" id="pyro_recharge_rate" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral modified" style="margin-left: 10px;">No longer reduces the damage requirement to fill</span><br />
+						<span class="neutral warning-blue" style="margin-left: 10px;">
+							Renamed the
+							<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+							<span class="upside">+15% Recharge Rate</span> upgrade
+						</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">
+							No longer reduces the 750 damage requirement to fill for
+							<img class="mvm-mini-item" src="../resources/weapons/pyro/Gas_Passer.png" title="Gas Passer" />
+						</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
 					</span>
 				</p>
 			</td>
@@ -1529,6 +1565,18 @@
 					<span class="upgrade-container upgrade_info">
 						<span class="neutral modified" style="margin-left: 10px;">Bonus damage increased from 20% to 25%</span><br />
 					</span>
+
+					<!-- -30% push force taken -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d7/Tf_soldier_death_from_below.png" />
+						<span>-30% push force taken</span>
+						<span class="credits">[$100]</span>
+						<span class="q-strange">[&#9679;&#9679;&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/demoman/Ali_Baba's_Wee_Booties.png" title="Ali Baba's Wee Booties" />
+							<img class="mvm-mini-item" src="../resources/weapons/demoman/Bootlegger.png" title="Bootlegger" />
+						</span>
+					</span><br />
 				</p>
 			</td>
 		</tr>
@@ -1552,6 +1600,13 @@
 						<img class="mvm-mini-item" src="../resources/weapons/demoman/Sticky_Jumper.png" title="Sticky Jumper" />
 					</span><br />
 
+					<!-- Upgrade location notices -->
+					<span class="upgrade-container neutral warning-yellow">
+						Relocated the
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/d/d7/Tf_soldier_death_from_below.png" />
+						<span class="upside">-30% push force taken</span> upgrade to Primary Upgrades (boot items only)
+					</span><br />
+
 					<!-- +2 clip size -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/c/c5/Tf_soldier_crockets_are_such_bs.png" />
@@ -1561,7 +1616,7 @@
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Stickybomb_Launcher.png" title="Stickybomb Launcher" />
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Quickiebomb_Launcher.png" title="Quickiebomb_Launcher" />
-							<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish_Resistance" />
+							<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish Resistance" />
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Sticky_Jumper.png" title="Sticky Jumper" />
 						</span>
 					</span><br />
@@ -1649,6 +1704,34 @@
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/demoman/Scottish_Resistance.png" title="Scottish Resistance" />
 						</span>
+					</span><br />
+
+					<!-- -20% recharge time -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
+						<label class="tooltip" title="Click for more info" for="demoman_charge_recharge">-20% recharge time</label>
+						<span class="credits">[$250]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3">[&#9679;&#9679;&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/demoman/Chargin'_Targe.png" title="Chargin' Targe" />
+							<img class="mvm-mini-item" src="../resources/weapons/demoman/Splendid_Screen.png" title="Splendid Screen" />
+							<img class="mvm-mini-item" src="../resources/weapons/demoman/Tide_Turner.png" title="Tide Turner" />
+						</span>
+					</span><br />
+					<input type="checkbox" id="demoman_charge_recharge" style="display: none;" />
+					<span class="upgrade-container upgrade_info">
+						<span class="neutral warning-blue" style="margin-left: 10px;">
+							Renamed the
+							<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+							<span class="upside">+15% Recharge Rate</span> upgrade
+						</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Changed charge recharge times from 6/4/3/2.5s to 9.6/7.2/4.8s</span><br />
+					</span>
+					<span class="upgrade-container">
+						<span class="downside" style="margin-left: 10px;">&#x21AA;&#xFE0E; Replaces</span>
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/6/67/Tf_demoman_charge_kill.png" />
+						+100% Charge Recharge
 					</span><br />
 				</p>
 			</td>
@@ -1876,6 +1959,29 @@
 						<span class="neutral info" style="margin-left: 10px;"><img class="mvm-mini-item" src="../resources/weapons/heavy/Buffalo_Steak_Sandvich.png" title="Buffalo Steak Sandvich" /> Heals up to 300 health and effect duration lasts 32s</span><br />
 						<span class="neutral info" style="margin-left: 10px;"><img class="mvm-mini-item" src="../resources/weapons/heavy/Dalokohs_Bar.png" title="Dalokohs Bar" /> Effect duration lasts 60s (no healing benefits)</span><br />
 						<span class="neutral info" style="margin-left: 10px;"><img class="mvm-mini-item" src="../resources/weapons/heavy/Second_Banana.png" title="Second Banana" /> Heals up to 240 health</span><br />
+					</span>
+
+					<!-- -20% recharge time -->
+					<span class="upgrade-container">
+						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
+						<label class="tooltip" title="Click for more info" for="heavy_recharge_rate">-20% recharge time</label>
+						<span class="credits">[$250]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3">[&#9679;&#9679;&#9679;]</span>
+						<span style="user-select: none;">
+							<img class="mvm-mini-item" src="../resources/weapons/heavy/Sandvich.png" title="Sandvich" />
+							<img class="mvm-mini-item" src="../resources/weapons/heavy/Buffalo_Steak_Sandvich.png" title="Buffalo Steak Sandvich" />
+							<img class="mvm-mini-item" src="../resources/weapons/heavy/Dalokohs_Bar.png" title="Dalokohs Bar" />
+							<img class="mvm-mini-item" src="../resources/weapons/heavy/Second_Banana.png" title="Second Banana" />
+						</span><br />
+						<input type="checkbox" id="heavy_recharge_rate" style="display: none;" />
+						<span class="upgrade-container upgrade_info">
+							<span class="neutral warning-blue" style="margin-left: 10px;">
+								Renamed the
+								<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+								<span class="upside">+15% Recharge Rate</span> upgrade
+							</span><br />
+							<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
+						</span>
 					</span>
 
 					<!-- +100% max misc ammo -->
@@ -2777,19 +2883,29 @@
 						<span class="neutral added" style="margin-left: 10px;">Earning a kill with this upgrade passively reloads ammo for your primary weapon</span><br />
 					</span>
 
-					<!-- +15% recharge rate -->
+					<!-- -20% recharge time -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
-						<label class="tooltip" title="Click for more info" for="sniper_recharge_rate">+15% recharge rate</label>
+						<label class="tooltip" title="Click for more info" for="sniper_recharge_rate">-20% recharge time</label>
 						<span class="credits">[$250]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/sniper/Jarate.png" title="Jarate" />
+							<img class="mvm-mini-item" src="../resources/weapons/sniper/Razorback.png" title="Razorback" />
 						</span>
 					</span><br />
 					<input type="checkbox" id="sniper_recharge_rate" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral info" style="margin-left: 10px;">Affects the time saved from Nature's Call (-20% cooldown on headshot)</span><br />
+						<span class="neutral warning-blue" style="margin-left: 10px;">
+							Renamed the
+							<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+							<span class="upside">+15% Recharge Rate</span> upgrade
+						</span><br />
+						<span class="neutral info" style="margin-left: 10px;">
+							Does not reduce the 5 headshot requirement to fill for
+							<img class="mvm-mini-item" src="../resources/weapons/sniper/Jarate.png" title="Jarate" />
+						</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
 					</span>
 
 					<!-- +5% ammo recharge -->
@@ -3018,12 +3134,12 @@
 						<span class="neutral added" style="margin-left: 10px;">+15% increased slow strength vs giants per point (50%/65%/80%)</span><br />
 					</span>
 
-					<!-- +15% recharge rate -->
+					<!-- -20% recharge time -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/0/0f/Dead_heat.png" />
-						<label class="tooltip" title="Click for more info" for="spy_radar_cooldown">+15% recharge rate</label>
+						<label class="tooltip" title="Click for more info" for="spy_radar_cooldown">-20% recharge time</label>
 						<span class="credits">[$250]</span>
-						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
+						<span class="q-strange tooltip" title="Reduced purchase points from 4 to 3">[&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
 							<img class="mvm-mini-item" src="../resources/weapons/spy/Sapper.png" title="Sapper" />
 							<img class="mvm-mini-item" src="../resources/weapons/spy/Red-Tape_Recorder.png" title="Red-Tape Recorder" />
@@ -3031,7 +3147,13 @@
 					</span><br />
 					<input type="checkbox" id="spy_radar_cooldown" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral added" style="margin-left: 10px;">Recharge time reduced to 25.5/21.0/16.5/12.0s</span><br />
+						<span class="neutral warning-blue" style="margin-left: 10px;">
+							Renamed the
+							<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/7/7a/Tf_win_well_minimumtime.png" />
+							<span class="upside">+15% Recharge Rate</span> upgrade
+						</span><br />
+						<span class="neutral info" style="margin-left: 10px;">Reduces Radar recharge time from 30s to 24/18/12s</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Increased cooldown reduction per point from -15% to -20%</span><br />
 					</span>
 				</p>
 			</td>
