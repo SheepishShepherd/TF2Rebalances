@@ -44,7 +44,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="neutral added">Added a call out option 'Sniper Ahead!' with X+3 (options below shifted down, replacing X+9 'Pass To Me!')</span><br />
 					<span class="upside added">
 						Aiming at and calling out an enemy Sniper or Sentry Gun will place a pop-up message at
@@ -196,7 +198,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside modified">Damage no longer takes particle age into account</span><br />
 					<span class="upside modified">Increased flame damage reset time from 0.075s (one miss) to 0.5s (gradually)</span><br />
 				</p>
@@ -213,8 +217,8 @@
 			</td>
 		</tr>
 
-		<!-- Airblast Pressure -->
-		<tr id="Airblast_Pressure">
+		<!-- Pressurized Airblasts -->
+		<tr id="Pressurized_Airblasts">
 			<td class="item-card">
 				<img class="item-img" src="../resources/cosmetics/pyro/Fireman's_Essentials.png" />
 				<p class="item-stats">
@@ -229,7 +233,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Stats</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="downside added">Knockback ranges from 0% (empty) to 100% (full)</span><br />
 					<span class="downside added">Repressurization rate of <span class="tooltip" title="12.5%/s (8s total) if primary fire is in use">25%/s (4s total)</span></span><br />
 					<span class="neutral info">Airblast must be off cooldown to recharge (0.75s)</span><br />
@@ -264,9 +270,9 @@
 					<span class="item-name">Changes</span><br />
 					<span class="neutral info">
 						Sappers become malformed when struck by the
-						<a href="#Homewrecker" class="tooltip-link">Homewrecker</a>,
-						<a href="#Neon_Annihilator" class="tooltip-link">Neon Annihilator</a> or
-						<a href="#Powerjack" class="tooltip-link">Powerjack</a>.
+						<span class="tooltip-link" onclick="JumpTo('Homewrecker')">Homewrecker</span>,
+						<span class="tooltip-link" onclick="JumpTo('Neon_Annihilator')">Neon Annihilator</span> or
+						<span class="tooltip-link" onclick="JumpTo('Powerjack')">Powerjack</span>.
 					</span><br />
 					<span class="upside info">Buildings with an attached malformed sapper do not benefit from sapper armor</span><br />
 					<span class="downside info">Malformed sappers only disable buildings. They deal no damage and have no additional sapper effects.</span><br />
@@ -420,7 +426,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="neutral info"><a class="tooltip-link" href="#Health_On_Kill">Health on Kill</a> overheal changed from 50% to 20%</span><br />
+					<span class="neutral info"><span class="tooltip-link" onclick="JumpTo('Health_On_Kill')">Health on Kill</span> overheal changed from 50% to 20%</span><br />
 					<span class="downside modified">Changed health restored on kill from 50% of wielder's base health to 50% of victim's base health</span><br />
 					<span class="downside modified">Changed sheathing weapon without killing penalty from 50 damage taken to <span class="tooltip" title="Drains health instantly, leaving wielder with at least 100 max health. Max health regenerates at 10 health per second (same rate as the Gloves of Running Urgently). Killing an enemy with this weapon will restore drained maximum health through the health on kill.">65 health drained</span></span><br />
 
@@ -790,7 +796,11 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community tf2c">Inspired by the <a class="tooltip-link" href="https://wiki.tf2classic.com/wiki/Brick">Brick</a> from <a class="tooltip-link" href="https://tf2classified.com/" target="_blank" title="">TF2 Classified</a></span><br />
+					<span class="q-community tf2c">
+						Inspired by the
+						<a class="tooltip-link" href="https://wiki.tf2classic.com/wiki/Brick" target="_blank" onclick="JumpTo(null, 'mm_queue')">Brick</a> from
+						<a class="tooltip-link" href="https://tf2classified.com/" target="_blank" onclick="JumpTo(null, 'mm_queue')">TF2 Classified</a>
+					</span><br />
 					<span class="neutral info">Projectile <span class="tooltip" title="by rotating in more than one direction and possibly with a white trail effect">modified</span> to be more visible</span><br />
 					<span class="neutral modified">Changed damage type from Untyped to Melee</span><br />
 					<span class="upside added">Increased damage from 50 to 65</span><br />
@@ -961,7 +971,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside removed">Removed explosive damage vulnerability</span><br />
 					<span class="upside added">Increased health restored by health kits while &#60;50% health from 125/63/25 to 125/95/40</span><br />
 					<span class="downside added">Changed the size of ammo packs dropped by enemies killed from medium to small</span><br />
@@ -1570,7 +1582,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="neutral info">Melee range bonus is no longer hidden</span><br />
 					<span class="upside modified">Speed boost duration stacks up to <span class="tooltip" title="Duration for allies remains as 2s, requiring 3 hits to reach the maximum duration. Duration for user reduced from 3.6s to 3s, requiring 2 hits to reach maximum duration.">4s</span></span><br />
 					<span class="downside modified">Reduced melee range from +70% to +50%</span><br />
@@ -1701,10 +1715,10 @@
 					<span class="neutral info">'Afterburn reduces healing' stat is <span class="tooltip" title="since this applies to afterburn in general across other classes">now hidden</span></span><br />
 					<span class="neutral info">Reflected projectile hits now play a <span class="tooltip" title="similar to Double Donks on the Loose Cannon">custom sound</span></span><br />
 					<span class="upside added">Extinguishing an ally replenishes 50% of the <span class="tooltip" title="both ammo cost and pressure cost">cost</span></span><br />
-					<span class="upside modified">Improved the <a class="tooltip-link" href="#Temperature">damage ramp-up (temperature) system</a></span><br />
+					<span class="upside modified">Improved the <span class="tooltip-link" onclick="JumpTo('Temperature')">damage ramp-up (temperature) system</span></span><br />
 					<span class="downside modified">Reflected projectiles will now deal mini-crit damage only when pressure is full</span><br />
 					<span class="downside removed">Extinguishing an ally no longer heals 20 health</span><br />
-					<span class="downside added">Airblasts now use a <a class="tooltip-link" href="#Airblast_Pressure">pressure system</a></span><br />
+					<span class="downside added">Airblasts now use a <span class="tooltip-link" onclick="JumpTo('Pressurized_Airblasts')">pressure system</span></span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1841,7 +1855,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="q-community bwr">Airblast inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="neutral added">Temperature is solely based on Mmmph built and ignores individual target temperature values</span><br />
 					<span class="neutral info">Mmmph takes 350 non-afterburn damage to fill</span><br />
 					<span class="neutral info">Mmmph only builds from primary damage</span><br />
@@ -1889,7 +1905,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside modified">Reduced damage taken to self from 23-44 to 17-32</span><br />
 					<span class="downside added">Reduced afterburn duration on splash from 7.5s to 5s</span><br />
 				</p>
@@ -1951,7 +1969,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="upside modified">Reduced recharge time needed from 60s to <span class="tooltip" title="Damage requirement is still 750 damage">40s</span></span><br />
-					<span class="upside modified">Changed the effect the gas debuff applies when triggered by damage taken from afterburn to <a class="tooltip-link" href="#Inferno">inferno</a></span><br />
+					<span class="upside modified">Changed the effect the gas debuff applies when triggered by damage taken from afterburn to <span class="tooltip-link" onclick="JumpTo('Inferno')">inferno</span></span><br />
 					<span class="upside added">Gas ignition trigger deals <span class="tooltip" title="Does not explode on ignite. Only deals damage to the person attacked.">25 fire damage</span></span><br />
 					<span class="downside removed">No longer extinguishes allies</span><br />
 					<span class="downside added">Recharge progress resets on respawn</span><br />
@@ -2033,7 +2051,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="neutral added">Flare bounces off terrain and players upon impact and then explodes on the second impact</span><br />
 					<span class="upside modified">Increased damage against players from 20 to 23</span><br />
 					<span class="upside modified">Increased damage against buildings from 20 to 30</span><br />
@@ -2123,7 +2143,12 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral modified">Changed <a class="tooltip-link" title="click to view a spreadsheet of the new bonus damage calculations" href="Pyro_Axtinguisher_Damage.pdf" target="_blank">bonus damage scaling</a> from 86-167 to 72-174</span><br />
+					<span class="neutral modified">
+						Changed
+						<a class="tooltip-link" title="click to view a spreadsheet of the new bonus damage calculations" href="Pyro_Axtinguisher_Damage.pdf" target="_blank" onclick="JumpTo(null, 'mm_queue')">
+							bonus damage scaling
+						</a>
+						from 86-167 to 72-174</span><br />
 					<span class="upside modified">Increased base damage from 44 to 49</span><br />
 					<span class="downside added">Reduced <span class="tooltip" title="affects all weapons">afterburn damage on wielder</span> from 4 to 2</span><br />
 					<span class="neutral info">Axtinguisher bonus damage calculation ignores the afterburn penalty (calculated as 4, not 2)</span><br />
@@ -2198,7 +2223,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="upside removed">Removed 'damage vs players' penalty</span><br />
-					<span class="upside added">Hammer type weapons now <a class="tooltip-link" href="#Malformed_Sapper">malform sappers</a> on hit</span><br />
+					<span class="upside added">Hammer type weapons now <span class="tooltip-link" onclick="JumpTo('Malformed_Sapper')">malform sappers</span> on hit</span><br />
 					<span class="upside added">Reduced damage taken by 20% while active</span><br />
 					<span class="upside added">Reduced knockback taken by 50% while active</span><br />
 					<span class="downside removed">No longer destroys sappers</span><br />
@@ -2286,7 +2311,7 @@
 					<span class="neutral info">Only a single revenge crit can be stored</span><br />
 					<span class="upside added">Critical damage from this weapon triggers an explosion that deals <span class="tooltip" title="dealing 34 (86 total) damage on mini-crit and 75 damage on crit (231 total)">25 explosive damage</span> within 192hu</span><br />
 					<span class="neutral info">The explosion harms the wielder as well</span><br />
-					<span class="upside added">Hammer type weapons now <a class="tooltip-link" href="#Malformed_Sapper">malform sappers</a> on hit</span><br />
+					<span class="upside added">Hammer type weapons now <span class="tooltip-link" onclick="JumpTo('Malformed_Sapper')">malform sappers</span> on hit</span><br />
 					<span class="downside modified">Reduced base damage vs players from 52 to 42</span><br />
 					<span class="downside modified">Changed 'Critical hits vs wet players' to minicrits</span><br />
 					<span class="downside removed">No longer destroys sappers</span><br />
@@ -2326,7 +2351,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="upside added">Hammer type weapons now <a class="tooltip-link" href="#Malformed_Sapper">malform sappers</a> on hit</span><br />
+					<span class="upside added">Hammer type weapons now <span class="tooltip-link" onclick="JumpTo('Malformed_Sapper')">malform sappers</span> on hit</span><br />
 					<span class="downside removed">No longer grants 25 health on kill</span><br />
 					<span class="downside added">Taking damage while active applies afterburn for 4s</span><br />
 					<span class="downside added">Decreased deploy and holster time from 0.5s to 0.875s</span><br />
@@ -2360,7 +2385,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="upside modified">Changed on hit effect from afterburn to <a class="tooltip-link" href="#Inferno">inferno</a></span><br />
+					<span class="upside modified">Changed on hit effect from afterburn to <span class="tooltip-link" onclick="JumpTo('Inferno')">inferno</span></span><br />
 					<span class="downside modified">Reduced debuff duration from 7.5s to 7s</span><br />
 					<span class="downside added">Wielder takes 25% more damage while active</span><br />
 				</p>
@@ -2440,7 +2465,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="neutral info">Melee kills now include <a href="#Shields" class="tooltip-link">shield kills</a></span><br />
+					<span class="neutral info">Melee kills now include <span class="tooltip-link" onclick="JumpTo('Shields')">shield kills</span></span><br />
 					<span class="downside modified">Reduced max health on wearer from 200 to 190</span><br />
 				</p>
 			</td>
@@ -2502,7 +2527,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="neutral info">Projectile speed stat is now <span class="tooltip" title="due to it having the same projectile speed as stock, despite the increase">hidden</span></span><br />
-					<span class="neutral info">Fixed being able to '<a href="https://youtu.be/t3pOoM0Cxmg?t=396" target="_blank" class="tooltip-link" title="click to open a video of Sirky's demonstration of the stun effect">stun</a>' players with the knockback</span><br />
+					<span class="neutral info">Fixed being able to '<a class="tooltip-link" href="https://youtu.be/t3pOoM0Cxmg?t=396" target="_blank" onclick="JumpTo(null, 'mm_queue')" title="click to open a video of Sirky's demonstration of the stun effect">stun</a>' players with the knockback</span><br />
 					<span class="upside added">Cannonballs fired from this weapon deal <span class="tooltip" title="from 38-73 (64-73)** to 29-55 (48-55)**&#010;This will not impact movement from blast jumps&#010;&#010;**from blast jumps">25% less damage</span> to the user</span><br />
 				</p>
 			</td>
@@ -2728,7 +2753,7 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="neutral info">Melee kills now include <a href="#Shields" class="tooltip-link">shield kills</a></span><br />
+					<span class="neutral info">Melee kills now include <a class="tooltip-link" onclick="JumpTo('Shields')">shield kills</a></span><br />
 					<span class="upside removed">No longer loses charge duration from taking damage</span><br />
 					<span class="downside added">Reduced total charge duration from 1.75s to 1.25s</span><br />
 				</p>
@@ -2835,7 +2860,7 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">These stats are subject to change</span><br />
-					<span class="neutral info">Melee hits now include <a href="#Shields" class="tooltip-link">shield bashes</a></span><br />
+					<span class="neutral info">Melee hits now include <a class="tooltip-link" onclick="JumpTo('Shields')">shield bashes</a></span><br />
 					<span class="upside modified">Increases max primary ammo from 3 to 8</span><br />
 					<span class="upside modified">Increases max secondary ammo from 5 to 12</span><br />
 				</p>
@@ -3016,7 +3041,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside modified">Damage penalty only applies to non-burning targets</span><br />
 					<span class="upside modified">Increased damage done against burning targets from 10.125 (40.5) to 10.35 (41.4)</span><br />
 					<span class="upside added">Killing an enemy creates an explosion, dealing <span class="tooltip" title="Damage is equivalent to one bullet and is affected by damage modifiers">damage</span> and igniting other enemies within 256HU</span><br />
@@ -3093,7 +3120,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside added">No longer requires 1s of spin up time to reach maximum damage and accuracy ramp-up</span><br />
 					<span class="downside modified">Increased attack interval from 0.125s to 0.135s</span><br />
 				</p>
@@ -3296,7 +3325,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="subtle">Changes apply to all Fists</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside added">Alternating fists will allow you to swing <span class="tooltip" title="0.7s attack interval, swinging the same fist still takes 0.8s">12%</span> faster</span><br />
 					<span class="upside added">Alternating <span class="tooltip" title="within 1s intervals">successive hits</span> between left and right punches will deal critical damage on the 3rd attack</span><br />
 					<span class="neutral info">All-class weapons will not have the Triple Hit Combo and instead act as a regular stock melee</span><br />
@@ -3969,7 +4000,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside modified">Increased projectile speed from 1000hu/s to 1250hu/s</span><br />
 					<span class="upside added">Passively reloads <span class="tooltip" title="Reloads in 1.5s (base reload time of 1.305s with a 15% reload penalty)&#010;Similarly to the Crusader's Crossbow, this weapon will not start firing until the full reload time has passed.">over time</span> when fully holstered</span><br />
 					<span class="upside added">Hitting an ally sets their <span class="tooltip" title="The moment crit heals starts to build up, scaling up to x3 healing within 5s">recovery heal timer to 10s</span></span><br />
@@ -4179,7 +4212,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside modified">Bubbles remain on user when switching weapons</span><br />
 					<span class="upside modified">Increased bubble duration from 2.5s to 4s</span><br />
 					<span class="upside added">Bubbled patients continue <span class="tooltip" title="This healing does not overheal or contribute towards &#220;berCharge building">healing</span> even if the heal beam is disconnected</span><br />
@@ -4512,7 +4547,7 @@
 					<span class="downside modified">Reduced afterburn duration applied by ignited arrows from 7.5s to 5s</span><br />
 					<span class="item-set-active info">Revamped Headshot Registration:</span><br />
 					<span class="item-set-inactive">
-						The '<a href="https://youtu.be/jvOaUF1Sl5c?t=86" target="_blank" class="tooltip-link" title="click to open a video of shounic's visualization of the extension check">extension check</a>'
+						The '<a class="tooltip-link" href="https://youtu.be/jvOaUF1Sl5c?t=86" target="_blank" onclick="JumpTo(null, 'mm_queue')" title="click to open a video of shounic's visualization of the extension check">extension check</a>'
 						has been changed to make a line from the point of contact, following the trajectory of the arrow.
 						If the closest point from the line to the head hitbox is within 4HU apart, a headshot registers.
 					</span><br />
@@ -4546,7 +4581,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="neutral info">Tracer rounds stat is now hidden</span><br />
 					<span class="upside modified">Penetration shot now works at any charge level</span><br />
 					<span class="upside modified">Penetration shot now works against buildings</span><br />
@@ -4694,7 +4731,9 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside added">Increases max health from 125 to 140 on wearer</span><br />
 					<span class="upside added">Reduces debuff durations by 50% on wearer</span><br />
 					<span class="downside removed">Removed fire resistance bonus</span><br />
@@ -4764,7 +4803,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside modified">Shield blocks any type of lethal damage (except headshots) instead of just backstabs</span><br />
 					<span class="upside added">Removes <span class="tooltip" title="bleed and afterburn (inferno reduced to afterburn)">damaging debuffs</span> when the shield breaks</span><br />
 					<span class="upside added">Grants a 3s speed boost when the shield breaks</span><br />
@@ -5060,7 +5101,9 @@
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="subtle">Changes apply to all Sappers</span><br />
-					<span class="q-community bwr">Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" title="">Bad Weapon Rehabilitation</a></span><br />
+					<span class="q-community bwr">
+						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					</span><br />
 					<span class="upside added">Radar ability outlines all enemies and buildings within 512hu for 5s and has a 30s cooldown</span><br />
 					<span class="neutral info">Does not apply highlight on cloaked spies</span><br />
 					<span class="downside info">Activating Spy Radar highlights yourself and emits a distinct sound from your current position</span><br />
@@ -5355,7 +5398,11 @@
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community tf2c">Inspired by the <a class="tooltip-link" href="https://wiki.tf2classic.com/wiki/L%27escampette">L'escampette</a> from <a class="tooltip-link" href="https://tf2classified.com/" target="_blank" title="">TF2 Classified</a></span><br />
+					<span class="q-community tf2c">
+						Inspired by the
+						<a class="tooltip-link" href="https://wiki.tf2classic.com/wiki/L%27escampette" target="_blank" onclick="JumpTo(null, 'mm_queue')">L'escampette</a> from
+						<a class="tooltip-link" href="https://tf2classified.com/" target="_blank" onclick="JumpTo(null, 'mm_queue')">TF2 Classified</a>
+					</span><br />
 					<span class="upside modified">Changed ability to pick up ammo boxes for cloak meter from never to only while cloaked</span><br />
 					<span class="upside added">Reduced cloak lost on activation from <span class="tooltip" title="7s maximum cloak time">50%</span> to <span class="tooltip" title="9s maximum cloak time">10%</span></span><br />
 					<span class="upside added">Cloak will block all lethal damage</span><br />

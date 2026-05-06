@@ -13,6 +13,17 @@ topButton.addEventListener("click", function () {
 });
 topPanel.appendChild(topButton);
 
+// Function for same page navigation on elements not associated with the main nav
+function JumpTo(bookmark, sound = "hint") {
+	if (bookmark != "" && bookmark != null) {
+		location.replace('#' + bookmark);
+	}
+	var audio = new Audio('../resources/sounds/' + sound + '.wav');
+	audio.currentTime = 0;
+	audio.volume = 0.2;
+	audio.play();
+}
+
 // sets up bookmark redirects and audio cues for all navigational buttons
 const nav_buttons = document.querySelectorAll('.nav-panel .nav-item'); // selects all elements with a 'nav-item' class and a 'nav-panel' class for its parent element
 nav_buttons.forEach(button => {
@@ -31,11 +42,7 @@ nav_buttons.forEach(button => {
 	}
 
 	button.addEventListener('click', () => {
-		location.replace('#' + bookmark)
-		var audio = new Audio('../resources/sounds/' + soundPath + '.wav');
-		audio.currentTime = 0;
-		audio.volume = 0.2;
-		audio.play();
+		JumpTo(bookmark, soundPath);
 	});
 });
 
