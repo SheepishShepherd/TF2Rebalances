@@ -2541,9 +2541,9 @@
 						<span class="neutral info" style="margin-left: 10px;">Patients now see which and how many canteens you are holding via the Healer HUD</span><br />
 						<span class="neutral info" style="margin-left: 10px;">Canteen costs now update in real time, but lock the ability to refund this upgrade</span><br />
 						<span class="neutral info" style="margin-left: 10px;">Refunding this upgrade only becomes available when the canteen is empty</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Canteen cost reduction changed from 10/20/30 to 25/50</span><br />
-						<span class="neutral added" style="margin-left: 10px;">Each point increases maximum canteens held by +1 (up to 5 canteens)</span><br />
 						<span class="neutral removed" style="margin-left: 10px;">Removed the canteen duration bonus</span><br />
+						<span class="neutral added" style="margin-left: 10px;">Each point increases maximum canteens held by +1 (up to 5 canteens)</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Canteen cost reduction changed from 10/20/30 to 25/50</span><br />
 					</span>
 
 					<!-- Projectile Shield -->
@@ -2561,13 +2561,22 @@
 					</span><br />
 					<input type="checkbox" id="medic_projectile_shield" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral modified" style="margin-left: 10px;">Shield no longer doubles its attack interval with the second point</span><br />
-						<span class="neutral modified" style="margin-left: 10px;">Reduced shield duration from 12s to 10s</span><br />
-						<span class="neutral removed" style="margin-left: 10px;">Shield no longer builds from amount of health healed</span><br />
-						<span class="neutral removed" style="margin-left: 10px;">Shield no longer builds from amount of patient damage</span><br />
-						<span class="neutral added" style="margin-left: 10px;">Shield now recharges with time, taking 40s to charge</span><br />
-						<span class="neutral added" style="margin-left: 10px;">Shield build rate doubles when healing patients below 142.5% health</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Shield build rate doubles during setup time</span><br />
+						<span class="neutral removed" style="margin-left: 10px;">Shield no longer builds from healing 400 health</span><br />
+						<span class="neutral added" style="margin-left: 10px;">
+							Shield now builds while your beam is attached to a patient
+							(<span class="tooltip" title="10s during setup">30s to build</span>)
+						</span><br />
+						<span class="neutral added" style="margin-left: 10px;">
+							Shield build rate doubles when healing patients
+							<span class="tooltip" title="142.5% + 25% per Max Overheal upgrade">below maximum overheal</span></span><br />
+						<span class="neutral info" style="margin-left: 30px;">Note: Includes healing reanimators to revive patients</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Changed shield duration per point from 12s at all levels to 8/12s</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Changed shield damage from 1/2 to 1 at all levels</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">Changed shield slow from 30/50% to 35% at all levels</span><br />
+						<span class="neutral modified" style="margin-left: 10px;">
+							Reduced maximum damage counted per instance to charge
+							<span class="tooltip" title="Up to 100 damage is considered per instance of damage. Changes minimum of attacks from 16 to 40.">from 250 to 100</span>
+						</span><br />
 					</span>
 
 					<!-- +2s Uber Duration -->
@@ -2604,10 +2613,10 @@
 						</span>
 					</span><br />
 
-					<!-- +25% max overheal -->
+					<!-- +50% max overheal -->
 					<span class="upgrade-container">
 						<img class="upgrade-icon" src="https://wiki.teamfortress.com/w/images/9/97/Tf_scout_assist_medic.png" />
-						<label class="tooltip" title="Click for more info" for="medic_max_overheal">+25% max overheal</label>
+						<label class="tooltip" title="Click for more info" for="medic_max_overheal">+50% max overheal</label>
 						<span class="credits">[$250]</span>
 						<span class="q-strange">[&#9679;&#9679;&#9679;&#9679;]</span>
 						<span style="user-select: none;">
@@ -2619,9 +2628,9 @@
 					</span><br />
 					<input type="checkbox" id="medic_max_overheal" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral modified" style="margin-left: 10px;">No longer increases the health threshold for the &#220;berCharge build rate penalty (>142.5% health)</span><br />
-						<span class="neutral removed" style="margin-left: 10px;">No longer increases overheal duration by +50%</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Changed overheal duration scaling from 34/60/94/135s to <span class="tooltip" title="this may be a bug, as these values equate to a +50% increase with each point">22.5/30/37.5/45s</span> (15s at base)</span><br />
+						<span class="info" style="margin-left: 10px;">Note: Upgrade is reworded and overheal values per point remains unchanged</span><br />
+						<span class="info" style="margin-left: 10px;">Fixed overheal duration scaling from 34/60/94/135s to the intended 22.5/30/37.5/45s</span><br />
+						<span class="modified" style="margin-left: 10px;">No longer increases the health threshold for the &#220;berCharge build rate penalty (>142.5% health)</span><br />
 					</span>
 
 					<!-- +25% heal rate -->
@@ -2639,9 +2648,9 @@
 					</span><br />
 					<input type="checkbox" id="medic_heal_rate" style="display: none;" />
 					<span class="upgrade-container upgrade_info">
-						<span class="neutral removed" style="margin-left: 10px;">No longer provides +25% faster revive rate</span><br />
-						<span class="neutral removed" style="margin-left: 10px;">No longer increases self-regen rate</span><br />
-						<span class="neutral info" style="margin-left: 10px;">Quick-Fix still has increased self healing during its &#220;bercharge</span><br />
+						<span class="removed" style="margin-left: 10px;">No longer provides +25% faster revive rate</span><br />
+						<span class="removed" style="margin-left: 10px;">No longer increases self-regen rate</span><br />
+						<span class="info" style="margin-left: 10px;">Quick-Fix still has increased self healing during its &#220;bercharge</span><br />
 					</span>
 				</p>
 			</td>
