@@ -66,33 +66,6 @@
 			</td>
 		</tr>
 
-		<!-- Health On Kill -->
-		<tr id="Health_On_Kill">
-			<td class="item-card">
-				<img class="item-img" src="../resources/other/Syringe.png" />
-				<p class="item-stats">
-					<span class="item-name item-set-active">Health On Kill</span><br />
-					<span class="item-set-inactive">Healing overheals up to 20% maximum health</span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p>
-					<span class="item-name">Changes</span><br />
-					<span class="upside modified">Health restored on kill bonuses can overheal the recipient up to <span class="tooltip" title="Maximum health bonuses and maximum health drain penalties affect this value. This overheal lasts 6s, since the standard 50% overheal lasts 15s.">20% of their current maximum health</span></span><br />
-				</p>
-			</td>
-			<td class="item-card">
-				<p class="neutral">
-					<span class="item-name">Problem</span><br />
-					TODO
-				</p>
-				<p class="neutral">
-					<span class="item-name">Solution</span><br />
-					TODO
-				</p>
-			</td>
-		</tr>
-
 		<!-- Bleed -->
 		<tr id="Bleed">
 			<td class="item-card">
@@ -417,18 +390,22 @@
 				<p class="item-stats">
 					<span class="item-name">Half-Zatoichi</span><br />
 					<span class="upside">Instantly kills enemies wielding this weapon</span><br />
-					<span class="upside">50% of target's base health restored on kill</span><br />
+					<span class="upside">+100 health restored on kill</span><br />
+					<span class="downside">-50% maximum overheal on wielder</span><br />
 					<span class="downside">Honorbound: Once fully drawn, sheathing without killing instantly drains max health by 65</span><br />
-					<span class="neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
+					<span class="neutral">This weapon has a longer melee range and will holster slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="neutral info"><span class="tooltip-link" onclick="JumpTo('Health_On_Kill')">Health on Kill</span> overheal changed from 50% to 20%</span><br />
-					<span class="downside modified">Changed health restored on kill from 50% of wielder's base health to 50% of victim's base health</span><br />
-					<span class="downside modified">Changed sheathing weapon without killing penalty from 50 damage taken to <span class="tooltip" title="Drains health instantly, leaving wielder with at least 100 max health. Max health regenerates at 10 health per second (same rate as the Gloves of Running Urgently). Killing an enemy with this weapon will restore drained maximum health through the health on kill.">65 health drained</span></span><br />
+					<span class="neutral modified">Changed health restored on kill from 50% to 100</span><br />
+					<span class="neutral info">Health restored on kill no longer overheals</span><br />
+					<span class="upside removed">Removed the deploy penalty</span><br />
+					<span class="downside added">Reduces max overheal on Demoman <span class="tooltip" title="from 220 to 196 for the Quick-Fix">from 260 to 220</span></span><br />
+					<span class="downside added">Reduces max overheal on Soldier <span class="tooltip" title="from 250 to 225 for the Quick-Fix">from 300 to 250</span></span><br />
+					<span class="downside modified">Changed sheathing weapon without killing penalty from 50 damage taken to <span class="tooltip" title="Drains health instantly, leaving wielder with at least 100 max health. Max health regenerates at 10 health per second (same rate as the Gloves of Running Urgently). Killing an enemy with this weapon will restore drained maximum health if there is any remaining healing when brought to full health.">65 health drained</span></span><br />
 
 				</p>
 			</td>
