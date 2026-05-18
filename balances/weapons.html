@@ -1821,31 +1821,28 @@
 				<img class="item-img" src="../resources/weapons/pyro/Phlogistinator.png" />
 				<p class="item-stats">
 					<span class="item-name">Phlogistinator</span><br />
-					<span class="neutral">Alt-Fire: Release a blast of electricty that deals damage based on temperature and deletes projectiles</span><br />
-					<span class="upside">Build 'Mmmph' by dealing constant fire damage</span><br />
-					<span class="upside">+50% max temperature</span><br />
-					<span class="downside">-10 ammo per projectile destroyed</span><br />
-					<span class="neutral">Temperature is based on meter instead of per target</span><br />
+					<span class="neutral">Build 'Mmmph' by dealing damage. On full Mmmph, press reload to apply inferno and max temperature with flame attacks for 8 seconds</span><br />
+					<span class="neutral">Alt-Fire: Release an electrified blast of energy that deals damage and deletes projectiles</span><br />
+					<span class="downside">+25% vaporize cost</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
-					<span class="q-community bwr">
-						Inspired by <a class="tooltip-link" href="https://www.badweaponrehab.tf/" target="_blank" onclick="JumpTo(null, 'mm_queue')">Bad Weapon Rehabilitation</a>
+					<span class="neutral info">Mmmph ability has a new flame particle effect</span><br />
+					<span class="upside removed">Mmmph <span class="tooltip" title="Mmmph is now activated by pressing the reload key which emits a distinct sound. User stops firing for a brief moment before starting again, similarly to using airblast.">no longer requires taunting</span></span><br />
+					<span class="upside modified">Changed the No Airblast penalty to an alternative version of the pressurized airblast ability</span><br />
+					<span class="downside added">Increased 'vaporize' cost from 20 to 25</span><br />
+					<span class="downside modified">Increased damage requirement from 300 to 450</span><br />
+					<span class="downside modified">Reduced Mmmph duration from 10s to 8s</span><br />
+					<span class="downside modified">Changed Mmmph bonus from deal critical damage to apply <span class="tooltip-link" onclick="JumpTo('Inferno')">inferno</span> and max <span class="tooltip-link" onclick="JumpTo('Temperature')">temperature</span> on attacks</span><br />
+					<span class="item-set-active info">Replaced Pressurized Airblasts with Vaporize:</span><br />
+					<span class="item-set-inactive">
+						'Vaporize' will substitute the pressurized airblast ability.
+						Pressure is not utilized or consumed when used.
+						Deals <span class="tooltip" title="damage contributes towards Mmmph but does not get boosted from inferno">30 typeless damage</span> to enemies and electrocutes ragdolls.
+						However, it no longer pushes enemies or extinguishes allies and projectiles will be deleted instead of reflected.
 					</span><br />
-					<span class="neutral added">Temperature is solely based on Mmmph built and ignores individual target temperature values</span><br />
-					<span class="neutral info">Mmmph takes 350 non-afterburn damage to fill</span><br />
-					<span class="neutral info">Mmmph only builds from primary damage</span><br />
-					<span class="neutral info">Mmmph drains at 20%/s if no enemies are on fire</span><br />
-					<span class="upside removed">Removed the 'No Airblast' penalty</span><br />
-					<span class="upside added">Airblast deals deals 10-30 typeless damage</span><br />
-					<span class="neutral info">Airblast kills electrocute ragdolls</span><br />
-					<span class="downside added">Airblast no longer pushes back enemies</span><br />
-					<span class="downside added">Airblast no longer extinguishes allies</span><br />
-					<span class="downside added">Airblast deletes projectiles instead of reflecting them</span><br />
-					<span class="downside added">Each projectile deleted consumes 10 additional ammo</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -1855,12 +1852,13 @@
 				</p>
 				<p class="neutral">
 					<span class="item-name">Solution</span><br />
-					Both the upsides and downsides have been heavily reigned in.
-					The critical hits from Mmmph has essentially turned into a bonus damage meter that encourages you to keep pushing in.
-					The airblast was brought back, but neutered in most aspects.
+					The upsides and downsides have both been heavily reigned in.
+					Critical hits from Mmmph are now a notable damage bonus that stacks maximum temperature damage with the fire damage vulnerability from inferno.
+					The airblast was also brought back, but neutered in most aspects.
 					However, it does come with the quirk of being able to delete stickybombs.
+					A Pyro using Mmmph while &#220;berCharged should be less devastating, but will be terrifyingly strong with a KritzCharge!
 				</p>
-				<p class="item-set-inactive score-0"></p>
+				<p class="item-set-inactive score-2"></p>
 			</td>
 		</tr>
 
@@ -2127,7 +2125,7 @@
 						</a>
 						from 86-167 to 72-174</span><br />
 					<span class="upside modified">Increased base damage from 44 to 49</span><br />
-					<span class="downside added">Reduced <span class="tooltip" title="affects all weapons">afterburn damage on wielder</span> from 4 to 2</span><br />
+					<span class="downside added">Reduced <span class="tooltip" title="affects all weapons">afterburn damage on wielder</span> <span class="tooltip" title="from 5 to 3 if target is affected by inferno">from 4 to 2</span></span><br />
 					<span class="neutral info">Axtinguisher bonus damage calculation ignores the afterburn penalty (calculated as 4, not 2)</span><br />
 				</p>
 			</td>
