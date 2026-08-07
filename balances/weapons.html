@@ -1517,7 +1517,7 @@
 					A reduced bullet spread can reward good aim and punish bad aim even more. The clip size reduction will make its sustainability issue even more apparent.<br />
 					<span class="neutral info">
 						<span class="tooltip"
-								title="I would consider this change outside of the intended scope for this document, but it is my opinion that Soldier and Pyro should each have their own exclusive shotgun unlocks with unique identities tied to their class. Heavy and Engineer already have their own exclusive shotguns and the only shotgun unlcok that is given to all of them is the Panic Attack. Unless I can figure out a good way to have stats reflect both Soldier and Pyro and also be balaced without being just a weapon modifier based shotgun, this will likely stay as is.">
+								title="I would consider this change outside of the intended scope for this document, but it is my opinion that Soldier and Pyro should each have their own exclusive shotgun unlocks with unique identities tied to their class. Heavy and Engineer already have their own exclusive shotguns and the only shotgun unlock that is given to all of them is the Panic Attack. Unless I can figure out a good way to have stats reflect both Soldier and Pyro and also be balaced without being just a weapon modifier based shotgun, this will likely stay as is.">
 							Author's Note: Removed from the Pyro's arsenal
 						</span>
 					</span>
@@ -2763,21 +2763,27 @@
 				<img class="item-img" src="../resources/weapons/demoman/Claidheamh_Mor.png" />
 				<p class="item-stats">
 					<span class="item-name">Claidheamh M&#242;r</span><br />
-					<span class="neutral">When weapon is active:</span><br />
+					<span class="neutral">Gives increased speed with every head you take</span><br />
 					<span class="upside">0.5 second increase in charge duration</span><br />
 					<span class="downside">-15 max health on wielder</span><br />
 					<span class="neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
-					<span class="neutral">Gives increased speed with every head you take</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">These stats are subject to change</span><br />
 					<span class="upside removed">Removed damage vulnerability penalty</span><br />
-					<span class="upside added">Collects heads that grant +8% movement speed each</span><br />
+					<span class="upside modified">Shield charge duration bonus no longer requires the weapon to be active</span><br />
 					<span class="downside removed">No longer refills charge on kill</span><br />
-					<span class="downside added">Reduced max health from <span class="tooltip" title="from 200 to 185 with a boot primary">175 to 160</span></span><br />
+					<span class="downside added">Reduced max health from 175 to 160</span><br />
+					<span class="item-set-active added">This is a head-collecting weapon</span><br />
+					<span class="item-set-inactive">
+						<span>Each head grants +8% movement speed</span><br />
+						<span>1 head: 302hu/s (332hu/s with boots)</span><br />
+						<span>2 heads: 324hu/s (357hu/s with boots)</span><br />
+						<span>3 heads: 347hu/s (381hu/s with boots)</span><br />
+						<span>4 heads: 369hu/s (406hu/s with boots)</span>
+					</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2799,21 +2805,19 @@
 				<img class="item-img" src="../resources/weapons/demoman/Eyelander.png" />
 				<p class="item-stats">
 					<span class="item-name">Eyelander</span><br />
-					<span class="neutral">When weapon is active:</span><br />
+					<span class="neutral">Gives increased max health with every head you take</span><br />
 					<span class="upside">+20% damage resistance while shield charging</span><br />
 					<span class="downside">20% slower firing rate</span><br />
 					<span class="neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
-					<span class="neutral">Gives increased max health with every head you take</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">These stats are subject to change</span><br />
-					<span class="upside added">While active, charging with a shield grants +20% resistance to all incoming damage</span><br />
 					<span class="upside removed">Removed max health penalty</span><br />
-					<span class="downside added">Increased attack interval from 0.8s to 0.96s</span><br />
+					<span class="upside added">While active, charging with a shield grants +20% resistance to all incoming damage</span><br />
 					<span class="downside modified">Collected heads no longer grant bonus movement speed or bonus bash damage</span><br />
+					<span class="downside added">Increased attack interval from 0.8s to 0.96s</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2838,7 +2842,7 @@
 					<span class="upside">Melee hits refill 20% of the shield charge meter</span><br />
 					<span class="upside">Ammo pickups will refill the shield charge meter</span><br />
 					<span class="downside">-50% max primary ammo on wielder</span><br />
-					<span class="downside">-50% max secondary ammo on wielder</span><br />
+					<span class="downside">-66% max secondary ammo on wielder</span><br />
 					<span class="neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 				</p>
 			</td>
@@ -2847,8 +2851,9 @@
 					<span class="item-name">Changes</span><br />
 					<span class="q-community wip">These stats are subject to change</span><br />
 					<span class="neutral info">Melee hits now include <a class="tooltip-link" onclick="JumpTo('Shields')">shield bashes</a></span><br />
+					<span class="neutral info">Ammo packs collected while charging now always extend your remaining charge duration</span><br />
 					<span class="upside modified">Increases max primary ammo from 3 to 8</span><br />
-					<span class="upside modified">Increases max secondary ammo from 5 to 12</span><br />
+					<span class="upside modified">Increases max secondary ammo from 5 to 8</span><br />
 				</p>
 			</td>
 			<td class="item-card">
@@ -2870,22 +2875,28 @@
 				<img class="item-img" src="../resources/weapons/demoman/Scotsman's_Skullcutter.png" />
 				<p class="item-stats">
 					<span class="item-name">Scotsman's Skullcutter</span><br />
-					<span class="neutral">When weapon is active:</span><br />
-					<span class="upside">Shield bashes deal mini-crit damage at any distance</span><br />
-					<span class="downside">-15% movement speed on wielder</span><br />
-					<span class="neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 					<span class="neutral">Gives increased damage with every head you take</span><br />
+					<span class="upside">Shield bashes apply Marked-For-Death for 5 seconds</span><br />
+					<span class="downside">-10% movement speed on wielder</span><br />
+					<span class="neutral">This weapon has increased melee range and will deploy and holster slower</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">These stats are subject to change</span><br />
 					<span class="neutral info">Changed the movement speed penalty to not apply to the speed given by shield charging</span><br />
-					<span class="upside added">Shield impact damage deals mini-crit damage if distance charged grants a boosted melee attack</span><br />
-					<span class="upside added">Collects heads that grant <span class="tooltip" title="0 heads: 65 (88) (195)&#010;1 head: 72 (97) (216)&#010;2 heads: 78 (105) (234)&#010;3 heads: 85 (115) (255)&#010;4 heads: 91 (123) (273)">10% bonus damage</span> each</span><br />
-					<span class="upside added">While weapon is active, shield bashes deal maximum base damage regardless of distance</span><br />
+					<span class="upside added">Increased move speed <span class="tooltip" title="from 79% to 84% (93% with boots)">from 238hu/s to 252hu/s</span></span><br />
+					<span class="upside added">Shield impact damage applies the Marked-For-Death effect to enemies for 5s</span><br />
 					<span class="downside removed">Removed damage bonus</span><br />
+					<span class="downside modified">Move speed penalty is always active</span><br />
+					<span class="item-set-active added">This is a head-collecting weapon</span><br />
+					<span class="item-set-inactive">
+						<span>Each head grants +10% melee damage bonus</span><br />
+						<span>1 head: 72 base / 97 mini-crit / 216 crit</span><br />
+						<span>2 heads: 78 base / 105 mini-crit / 234 crit</span><br />
+						<span>3 heads: 85 base / 115 mini-crit / 255 crit</span><br />
+						<span>4 heads: 91 base / 123 mini-crit / 273 crit</span>
+					</span><br />
 				</p>
 			</td>
 			<td class="item-card">
