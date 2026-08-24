@@ -4238,21 +4238,24 @@
 			</td>
 		</tr>
 
-		<!-- Amputartor -->
+		<!-- Amputator -->
 		<tr id="Amputator">
 			<td class="item-card">
 				<img class="item-img" src="../resources/weapons/medic/Amputator.png" />
 				<p class="item-stats">
 					<span class="item-name">Amputator</span><br />
-					<span class="neutral">Taunt to apply a healing effect to all nearby allies</span><br />
-					<span class="upside">+20% health from pickups on wearer</span><br />
-					<span class="downside">Taunt to apply a healing effect to all nearby allies</span><br />
+					<span class="neutral">When weapon is active:</span><br />
+					<span class="upside">Taunting applies a healing effect to all nearby allies</span><br />
+					<span class="downside">-50% less healing from Medic sources</span><br />
 				</p>
 			</td>
 			<td class="item-card">
 				<p>
 					<span class="item-name">Changes</span><br />
-					<span class="q-community wip">This weapon is still a Work-In-Progress</span><br />
+					<span class="upside info">Healing effect is now also applied to the <span class="tooltip" title="at 12hps healing">wielder</span></span><br />
+					<span class="upside removed">Removed damage penalty</span><br />
+					<span class="downside removed">Removed health regeration bonus</span><br />
+					<span class="downside added">Wielder recieves 50% less healing from <span class="tooltip" title="including self">Medics</span></span><br />
 					<span class="item-set-active info">Reworked Medicating Melody taunt:</span><br />
 					<span class="item-set-inactive">
 						The taunt now loops and can be <span class="tooltip" title="Taunt cannot be cancelled until 1.5s after the wind up animation">cancelled</span>.
@@ -4317,8 +4320,9 @@
 					<span class="item-name">Vita-Saw</span><br />
 					<span class="upside">On Hit: Inflict bleed for 5 seconds</span><br />
 					<span class="upside">Collect the organs of enemies you hit</span><br />
-					<span class="upside">On Hit Teammate: Transplant an organ to an ally, providing 100 health and +25 max health for 30 seconds</span><br />
-					<span class="downside">-33% health from pickups on wielder</span><br />
+					<span class="upside">On Hit Teammate: Transplant an organ to an ally, providing 100 health and +25 max health for 15 seconds</span><br />
+					<span class="downside">-33% damage penalty</span><br />
+					<span class="downside">-15 max health on wielder</span><br />
 					<span class="neutral">Organs are dropped on death</span><br />
 				</p>
 			</td>
@@ -4327,11 +4331,11 @@
 					<span class="item-name">Changes</span><br />
 					<span class="neutral info">No longer gains extra organs from killing an enemy with a <span class="tooltip" title="still works when killing another Medic with the Vita-Saw equipped">head-taking weapon</span> and vice versa</span><br />
 					<span class="neutral added">Ammo pickups dropped by the wielder on death will <span class="tooltip" title="similarly to when the Sandvich is dropped on death&#010;Scouts will heal for 75 health from this ammo pickup">restore 50 health instead of providing ammo</span></span><br />
-					<span class="upside removed">No longer reduces max health</span><br />
 					<span class="upside added">Attacks inflict bleed on enemies for 5s</span><br />
-					<span class="upside added">Organs can be transplanted to allies when hit, granting them <span class="tooltip" title="can overheal up to 150%">100 health</span> and <span class="tooltip" title="Similarly to the Dalokohs Bar, this effect will not increase maximum overheal. Overheal is calculated with base max health and does not account for temporary bonuses.">+25 max health</span> for 30s</span><br />
+					<span class="upside added">Organs provide struck allies with <span class="tooltip" title="can overheal up to 150%">100 health</span> (40hp/s over 2.5s) and <span class="tooltip" title="Similarly to the Dalokohs Bar, this effect will not increase maximum overheal. Overheal is calculated with base max health and does not account for temporary bonuses.">+25 max health</span> (over 2.5s) for 15s</span><br />
 					<span class="downside removed">Organs no longer retain &#220;berCharge on death</span><br />
-					<span class="downside added">Reduced healing from pickups to 100/50/20</span><br />
+					<span class="downside modified">Reduced max health on wielder from 140 to 135</span><br />
+					<span class="downside added">Reduced base damage from 65 to 44</span><br />
 				</p>
 			</td>
 			<td class="item-card">
