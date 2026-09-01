@@ -215,15 +215,15 @@ label {
 	box-shadow: #B46032 3px 3px inset;
 }
 .nav-btn.disabled {
-	background-color: #776b5f;
+	background-color: #2b2724;
 	box-shadow: none;
 	cursor: not-allowed;
-	color: #2d2425;
+	color: #7c745f;
 }
 .nav-btn.disabled:hover {
 	box-shadow: none;
 }
-.img-nav-btn {
+.scroll-btn {
 	float: left;
 	width: 2rem;
 	height: 2rem;
@@ -234,7 +234,7 @@ label {
 	background-position: center center;
 	box-shadow: #9A9280 -2px -2px inset;
 }
-.img-nav-btn:not(.disabled):hover  {
+.scroll-btn:hover  {
 	box-shadow: #B46032 2px 2px inset;
 }
 

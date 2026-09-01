@@ -72,25 +72,48 @@
 			margin: 8px 0px;
 		}
 
-		.github-panel {
+		.icon-btn-panel {
 			background-color: #37322C;
 			width: fit-content;
-			height: fit-content;
-			margin: 0 auto;
-			padding: 5px 10px 15px 10px;
-			border-radius: 0 0 20px 20px;
+			margin: 8px auto;
+			padding: 10px;
+			border-radius: 4px;
 		}
 
-		.nav-github {
-			font-size: 1.4em;
-			background-image: none !important;
+		.icon-btn {
+			min-width: 28px;
+			height: 28px;
+			padding: 10px;
+			margin: 0;
+			background: none no-repeat #F5E5C1;
+			background-size: 20px;
+			background-position: center center;
+			color: #ebe4ca;
+			background-color: #776b5f;
+			border-radius: 7px;
+			font-family: TF2Build;
+			font-size: 22px;
+			display: inline-flex;
+			justify-content: center; /* Centers horizontally */
+			align-items: center;
 		}
 
-			.nav-github span {
-				background: url('resources/icons/Nav_GitHub.png') no-repeat;
-				background-size: 1em;
-				padding-left: 1.2em;
+			.icon-btn:not(.disabled):hover {
+				background-color: #934739;
+				color: white;
 			}
+
+		.github-icon {
+			height: 28px;
+			vertical-align: middle;
+			margin: 0;
+			filter: brightness(0) saturate(100%) invert(92%) sepia(16%) saturate(290%) hue-rotate(3deg) brightness(102%) contrast(84%);
+			/* https://angel-rs.github.io/css-color-filter-generator/ */
+		}
+
+		.icon-btn:hover .github-icon {
+			filter: invert(100%);
+		}
 
 		@media (max-width: 1200px) {
 			#sheepishshepherd {
@@ -124,6 +147,14 @@
 			}
 		}
 	</style>
+	<script>
+		function ExternalLink() {
+			var audio = new Audio('resources/sounds/mm_queue.wav');
+			audio.currentTime = 0;
+			audio.volume = 0.2;
+			audio.play();
+		}
+	</script>
 </head>
 <body>
 	<div id="wrapper">
@@ -133,22 +164,25 @@
 				<h2>Theoretical Balance Patch</h2>
 				<h3 style="text-align: right; margin-right: 40px;"><i>Nothing</i> in Team Fortress 2 is safe from being balanced!</h3>
 			</div>
-			<div class="menu">
-				<h1>Base Game</h1>
-				<a href="balances/weapons.html" class="nav-btn">Weapons & Classes</a>
-				<a class="nav-btn disabled">Core Game Modes</a>
-				<h1>Alternative Game Modes</h1>
-				<a href="balances/mvm.html" class="nav-btn">Mann Vs Machine</a>
-				<a href="balances/halloween.html" class="nav-btn">Halloween</a>
-				<a class="nav-btn disabled">Vs Saxton Hale</a>
-				<!--
-				<h1>Playing God</h1>
-				<a href="balances/economy.html"><div class="nav-btn">Economy</div></a>
-				<a href="balances/cosmetics.html"><div class="nav-btn">Cosmetics</div></a>
-				-->
-			</div>
-			<div class="github-panel">
-				<a href="https://github.com/SheepishShepherd/TF2Rebalances" class="nav-btn nav-github"><span>View on GitHub</span></a>
+			<div style="width: fit-content; margin: auto;">
+				<div class="menu">
+					<h1>Base Game</h1>
+					<a href="balances/weapons.html" class="nav-btn">Weapons & Classes</a>
+					<a class="nav-btn disabled">Core Game Modes</a>
+					<h1>Alternative Game Modes</h1>
+					<a href="balances/mvm.html" class="nav-btn">Mann Vs Machine</a>
+					<a href="balances/halloween.html" class="nav-btn">Halloween</a>
+					<a class="nav-btn disabled">Vs Saxton Hale</a>
+					<!--
+					<h1>Playing God</h1>
+					<a href="balances/economy.html"><div class="nav-btn">Economy</div></a>
+					<a href="balances/cosmetics.html"><div class="nav-btn">Cosmetics</div></a>
+					-->
+				</div>
+				<div class="icon-btn-panel">
+					<a class="icon-btn nav-btn disabled"><img src="resources/icons/Nav_Menu.png" class="github-icon" style="margin-right: 5px;" />About</a>
+					<a class="icon-btn" href="https://github.com/SheepishShepherd/TF2Rebalances" target="_blank" onclick="ExternalLink()" title="View source code on GitHub!"><img src="resources/icons/Nav_GitHub.png" class="github-icon" /></a>
+				</div>
 			</div>
 		</div>
 	</div>

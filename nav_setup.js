@@ -1,7 +1,7 @@
 // Adds the back to top button
 const topPanel = document.getElementById("back-to-top-panel");
 var topButton = document.createElement("div");
-topButton.classList.add("img-nav-btn", "nav-btn", "nav-top");
+topButton.classList.add("scroll-btn", "nav-btn", "nav-top");
 topButton.title = "Back to top";
 topButton.addEventListener("click", function () {
 	history.replaceState(null, document.title, window.location.pathname + window.location.search);

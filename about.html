@@ -1,0 +1,86 @@
+﻿<head>
+	<title>Theoretical Balance Patch</title>
+
+	<meta content="Theoretical Balance Patch" property="og:title" />
+	<meta content="Nothing in Team Fortress 2 is safe from being balanced!" property="og:description" />
+	<meta content="https://sheepishshepherd.github.io/TF2Rebalances/resources/weapons/engineer/Toolbox.png" property="og:image" />
+	<meta content="#F4722B" data-react-helmet="true" name="theme-color" />
+
+	<link rel="icon" type="image/x-icon" href="resources/icons/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<style>
+		.chalkboard {
+			width: 50rem; /* 1200px */
+			height: 50rem; /* 1200px */
+			background-color: #37322C;
+			margin: auto;
+			background-image: url("resources/elements/blackboard.png");
+			background-size: contain;
+			font-family: TF2 Professor;
+			color: #b4b4b4;
+			font-size: 2.5em;
+		}
+
+		#wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+
+		h1 {
+			font-size: 2em;
+			font-weight: normal;
+			margin: 0;
+			color: white;
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		.center-list-item {
+			display: flex; /* Activates flexbox layout */
+			align-items: center; /* Aligns items vertically in the center */
+			gap: 10px; /* Adds space between the image and text */
+		}
+
+		li::marker {
+			content: "- ";
+		}
+		li img {
+			max-height: 32px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<div class="chalkboard">
+			<div style="margin: 25px;">
+				<h1>About</h1>
+				<p>
+					With some passion and <span class="tooltip" title="HyperText Markup Language">html</span> experience, this web page and balance document has been brought to reality.
+					This balance project is solely for fun and a way to keep my ideas listed for mutuals and any other interested players.
+					Currently, there are no future plans to implement these concepts into a mod or server.
+				</p>
+				<p>
+					With that said, here are some things you might want to know before diving in:
+					<ul>
+						<li>
+							The Weapons & Classes page changes will have a confidence score which are measured based on how I feel their implemnetation would work out.
+							These scores are as followed:
+							<ul>
+								<li class="center-list-item"><img src="resources/icons/Ping_Undetermined.png" /><span>Undetermined - Not yet scored</span></li>
+								<li class="center-list-item"><img src="resources/icons/Ping_Low.png" />Adamant - Changes should be implemented posthaste</li>
+								<li class="center-list-item"><img src="resources/icons/Ping_Medium.png" />Confident - Changes would work well in my opinion</li>
+								<li class="center-list-item"><img src="resources/icons/Ping_High.png" />Optimistic - Changes may be outlandish but could have potential</li>
+								<li class="center-list-item"><img src="resources/icons/Ping_Very_High.png" />Unsure - Changes may need to be scrapped entirely</li>
+							</ul>
+						</li>
+					</ul>
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
