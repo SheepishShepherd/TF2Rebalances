@@ -1,0 +1,28 @@
+@font-face { font-family: "Bombardier"; src: url('../fonts/Bombardier-Regular.ttf') format('truetype'); }
+
+html {
+	background-image: url('https://riskofrain2.wiki.gg/images/Site-background.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	font-family: Bombardier;
+	font-size: 1em;
+	text-shadow: 1.2px 1.2px 0 #090d11;
+	color: white;
+}
+
+.q-desc { color: #959494; }
+.q-stack { color: #909090; font-size: 90%; }
+.q-utility { color: #95CDE5; }
+.q-health { color: #9CE562; }
+.q-damage { color: #E5C962; }
+.q-downside { color: #FF7F7F; }
+
+.q-common { color: #FFFFFF; }
+.q-uncommon { color: #77FF17; }
+.q-legendary { color: #E7543A; }
+.q-boss { color: #FFEB04; }
+.q-lunar { color: #307FFF; }
+.q-void { color: #ED7FCD; }
+.q-equipment { color: #FF8000; }

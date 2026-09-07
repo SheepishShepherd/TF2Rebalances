@@ -148,8 +148,11 @@
 		}
 	</style>
 	<script>
-		function ExternalLink() {
+		function ExternalLink(ror2 = false) {
 			var audio = new Audio('resources/sounds/mm_queue.wav');
+			if (ror2) {
+				audio = new Audio('resources/sounds/UI_teleport_off_map_01.ogg');
+			}
 			audio.currentTime = 0;
 			audio.volume = 0.2;
 			audio.play();
@@ -181,6 +184,7 @@
 				</div>
 				<div class="icon-btn-panel">
 					<a class="icon-btn nav-btn disabled"><img src="resources/icons/Nav_Menu.png" class="github-icon" style="margin-right: 5px;" />About</a>
+					<a class="icon-btn" href="ror2/riskofrain2.html" target="_blank" onclick="ExternalLink(true)"><img src="resources/icons/Nav_RiskOfRain2.png" class="github-icon" /></a>
 					<a class="icon-btn" href="https://github.com/SheepishShepherd/TF2Rebalances" target="_blank" onclick="ExternalLink()" title="View source code on GitHub!"><img src="resources/icons/Nav_GitHub.png" class="github-icon" /></a>
 				</div>
 			</div>

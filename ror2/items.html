@@ -1,0 +1,2082 @@
+﻿<head>
+	<title>Risk of Rebalance 2</title>
+
+	<link rel="icon" type="image/x-icon" href="https://riskofrain2.wiki.gg/images/Status_TrashToTreasureYellow.png">
+	<link rel="stylesheet" type="text/css" href="ror2.css" />
+
+	<style>
+		.item-log {
+			background-color: #2e2c34;
+			text-align: left;
+			font-size: 1em;
+			font-family: Bombardier;
+			line-height: 1.05;
+			padding: 0.8em;
+			/* max-width: 510px; */
+			border-image: url('https://riskofrain2.wiki.gg/images/Border_Highlighted_Corners_Translucent.png') 16 / 16px / 1px;
+			white-space: normal;
+			display: inline-flex;
+			width: calc(100% - 1.6em);
+		}
+
+			.item-log > span {
+				display: inline-block;
+			}
+
+		.info-log {
+			color: #CCD3E0;
+			background-color: rgba(64, 81, 94, 0.87);
+			border: 2px solid #4F6372;
+			padding: 1em;
+			vertical-align: top;
+			position: relative;
+		}
+
+		.info-log h5:first-of-type {
+			margin-top: 0;
+		}
+
+		.info-log h5 {
+			color: #8595A4;
+			line-height: 130%;
+			letter-spacing: 5px;
+			font-size: 1.2em;
+			margin: 0;
+			margin-top: 12px;
+		}
+
+		.unchanged-items-container {
+			text-align: center;
+		}
+
+		.unchanged-items {
+			width: fit-content;
+			padding: 0.8em;
+			background-color: rgba(0,25,30,0.95);
+			border-image: url('https://riskofrain2.wiki.gg/images/Border_Highlighted_Corners_Translucent.png') 16 / 16px / 1px;
+		}
+
+		.item-name {
+			font-size: 150%;
+		}
+
+		.item-panel {
+			background-color: rgba(0,25,30,0.95);
+		}
+
+		.tooltip-icon {
+			position: relative;
+			display: inline-flex;
+			margin: auto 1em auto 0;
+		}
+
+			.tooltip-icon img {
+				user-select: none;
+			}
+
+		.unchanged-items .tooltip-icon {
+			position: relative;
+			display: inline-flex;
+			margin-right: 3px;
+		}
+
+		.item-img {
+			width: 86px;
+			height: 86px;
+			position: absolute;
+			left: 5px;
+			top: 5px;
+		}
+
+		.unchanged-items .item-img {
+			width: 28px;
+			height: 28px;
+			position: absolute;
+			left: 2px;
+			top: 2px;
+		}
+
+		.item-img-panel {
+			top: 15px;
+			left: 15px;
+		}
+
+		.makeshift-hr {
+			display: block;
+			border: solid 0.5px rgba(73,73,73,0.58);
+			margin: 4px 0;
+		}
+
+		table {
+			table-layout: fixed;
+			width: 75rem; /* 1200px */
+			margin: 1rem auto;
+		}
+
+		th {
+			font-size: 3em;
+		}
+
+		td > .item-log:first-child {
+			margin-bottom: 4px;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<tr><th colspan="2">Common Items</th></tr>
+		<tr>
+			<td colspan="2">
+				<div style="display: flex; align-content: center; justify-content: center;">
+					<div class="unchanged-items">
+						<div style="text-align: left; margin-bottom: 4px;">Unchanged Items:</div>
+						<div style="display: flex; text-align: center;">
+							<span class="tooltip-icon" title="Armor-Piercing_Rounds">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Armor-Piercing_Rounds.png/32px-Armor-Piercing_Rounds.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Backup Magazine">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Backup_Magazine.png/32px-Backup_Magazine.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Bolstering Lantern">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Bolstering_Lantern.png/32px-Bolstering_Lantern.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Bundle of Fireworks">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Bundle_of_Fireworks.png/32px-Bundle_of_Fireworks.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Cautious Slug">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Cautious_Slug.png/32px-Cautious_Slug.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Chronic Expansion">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Chronic_Expansion.png/32px-Chronic_Expansion.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Crowbar">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Crowbar.png/32px-Crowbar.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Delicate Watch">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Delicate_Watch.png/32px-Delicate_Watch.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Elusive Antlers">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Elusive_Antlers.png/32px-Elusive_Antlers.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Energy Drink">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Energy_Drink.png/32px-Energy_Drink.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Focus Crystal">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Focus_Crystal.png/32px-Focus_Crystal.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Gasoline">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Gasoline.png/32px-Gasoline.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Hiker's Boots">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Hiker's_Boots.png/32px-Hiker's_Boots.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Medkit">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Medkit.png/32px-Medkit.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Mocha">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Mocha.png/32px-Mocha.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Monster Tooth">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Monster_Tooth.png/32px-Monster_Tooth.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Oddly-shaped Opal">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Oddly-shaped_Opal.png/32px-Oddly-shaped_Opal.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Paul's Goat Hoof">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Paul's_Goat_Hoof.png/32px-Paul's_Goat_Hoof.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Personal Shield Generator">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Personal_Shield_Generator.png/32px-Personal_Shield_Generator.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Power Elixir">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Power_Elixir.png/32px-Power_Elixir.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Repulsion Armor Plate">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Repulsion_Armor_Plate.png/32px-Repulsion_Armor_Plate.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Rusted Key">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Rusted_Key.png/32px-Rusted_Key.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Soldier's Syringe">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Soldier's_Syringe.png/32px-Soldier's_Syringe.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Sticky Bomb">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Sticky_Bomb.png/32px-Sticky_Bomb.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Tougher Times">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Tougher_Times.png/32px-Tougher_Times.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Tri-Tip Dagger">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Tri-Tip_Dagger.png/32px-Tri-Tip_Dagger.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Warped Echo">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/32px-BgCommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Warped_Echo.png/32px-Warped_Echo.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="Bison_Steak">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Bison_Steak.png/96px-Bison_Steak.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Bison Steak</span><br />
+						<span class="q-desc">Gain 25 max health.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Increases <span class="q-health">maximum health</span> by <span class="q-health">25</span> <span class="q-stack">(+25 per stack)</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Bison_Steak.png/96px-Bison_Steak.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Bison Steak</span><br />
+						<span class="q-desc">Boosts health and regeneration.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Increases <span class="q-health">maximum health</span> by <span class="q-health">40</span> <span class="q-stack">(+25 per stack)</span> and <span class="q-health">base health regeneration</span> by <span class="q-health">+0.8 hp/s</span> <span class="q-stack">(+0.4 hp/s per stack)</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				<span class="q-health" style="letter-spacing: 5px;">BUFFED</span><br />
+				> Increased health bonus on the first stack by 15.<br />
+				> Now provides base health regeneration.<br />
+				<h5>Notes:</h5>
+				An increase of base health regeneration (inspired by the <span class="q-boss">Titanic Knurl</span>) was added to give it a bit more purpose.
+				The base health regen can be a good unconditional source of healing to help survivors feel even bulkier.
+			</td>
+		</tr>
+		<tr id="Bustling_Fungus">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Bustling_Fungus.png/96px-Bustling_Fungus.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Bustling Fungus</span><br />
+						<span class="q-desc">Heal all nearby allies after standing still for 1 second.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							After standing still for <span class="q-health">1</span> second, create a zone that <span class="q-health">heals</span> for <span class="q-health">4.5%</span> <span class="q-stack">(+2.25% per stack)</span> of your health every second to all allies within <span class="q-health">3m</span> <span class="q-stack">(+1.5m per stack)</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Bustling_Fungus.png/96px-Bustling_Fungus.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Bustling Fungus</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Eclipse_Lite">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Eclipse_Lite.png/96px-Eclipse_Lite.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Eclipse Lite</span><br />
+						<span class="q-desc">Gain a small temporary barrier when a skill comes off cooldown.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							When a skill comes off cooldown, gain a <span class="q-damage">temporary barrier</span> for <span class="q-health">1%</span> <span class="q-stack">(+0.25% per stack)</span> of your maximum health per second of the skill's base cooldown.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Eclipse_Lite.png/96px-Eclipse_Lite.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Eclipse Lite</span><br />
+						<span class="q-desc">Gain a small temporary barrier when a skill comes off cooldown.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Gain a <span class="q-health">temporary barrier</span> when any skill comes off cooldown for <span class="q-health">1.5%</span> <span class="q-stack">(+0.5% per stack)</span> of your <span class="q-health">maximum health</span> for each second of the skill's base cooldown.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				<span class="q-health" style="letter-spacing: 5px;">BUFFED</span><br />
+				> Increased values for base and stack barrier gain.<br />
+				<h5>Notes:</h5>
+				Barrier gains were increased to allow the item stack better.
+			</td>
+		</tr>
+		<tr id="Lens_Maker's_Glasses">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Lens-Maker's_Glasses.png/96px-Lens-Maker's_Glasses.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Lens-Maker's Glasses</span><br />
+						<span class="q-desc">Gain 10% chance for hits to 'Critically Strike', dealing double damage.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Your attacks have a <span class="q-damage">10%</span> (+10% per stack) chance to <span class="q-damage">'Critically Strike'</span>, dealing <span class="q-damage">double damage</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Lens-Maker's_Glasses.png/96px-Lens-Maker's_Glasses.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Lens-Maker's Glasses</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Roll_of_Pennies">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Roll_of_Pennies.png/96px-Roll_of_Pennies.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Roll of Pennies</span><br />
+						<span class="q-desc">Gain gold on taking damage.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Gain <span class="q-utility">3 <span class="q-stack">(+3 per stack)</span> gold</span> on <span class="q-damage">taking damage</span> from an enemy. <span class="q-utility">Scales over time</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Roll_of_Pennies.png/96px-Roll_of_Pennies.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Roll of Pennies</span><br />
+						<span class="q-desc">Gain gold upon activating an Interactable.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Gain <span class="q-utility">3 <span class="q-stack">(+3 per stack)</span> gold</span> upon activating an Interactable. <span class="q-utility">Scales over time</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				<span class="q-damage" style="letter-spacing: 5px;">MODIFIED</span><br />
+				> Changed gold gain condition from taking damage to activating an interactable.<br />
+				<h5>Notes:</h5>
+				Getting a bit of gold out of being hit doesn't account for much, especially when taking damage is something most survivors want to avoid.
+				Changing the condition to activating an interactable limits the amount of times it can be used, but offers cheaper chest costs in the form of rebates.
+			</td>
+		</tr>
+		<tr id="Stun_Grenade">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Stun_Grenade.png/96px-Stun_Grenade.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Stun Grenade</span><br />
+						<span class="q-desc">Chance to stun on hit.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							<span class="q-utility">5%</span> <span class="q-stack">(+5% per stack)</span> chance on hit to <span class="q-utility">stun</span> enemies for <span class="q-utility">2 seconds</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Stun_Grenade.png/96px-Stun_Grenade.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Stun Grenade</span><br />
+						<span class="q-desc">Chance to stun on hit.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							<span class="q-utility">5%</span> <span class="q-stack">(+5% per stack)</span> chance on hit to deal <span class="q-damage">10%</span> more damage and <span class="q-utility">stun</span> enemies for <span class="q-utility">2 seconds</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				<span class="q-health" style="letter-spacing: 5px;">BUFFED</span><br />
+				> Attacks that trigger the stun effect deal 10% additional damage.<br />
+				<h5>Notes:</h5>
+				While stunning certain enemies can be useful, there are numerous enemies that cannot be stunned.
+				A damage increase offers some sort of benefit when dealing with those enemies.
+			</td>
+		</tr>
+		<tr id="Topaz_Brooch">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Topaz_Brooch.png/96px-Topaz_Brooch.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Topaz Brooch</span><br />
+						<span class="q-desc">Gain a temporary barrier on kill.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Gain a <span class="q-health">temporary barrier</span> on kill for <span class="q-health">15 health</span> <span class="q-stack">(+15 per stack)</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Topaz_Brooch.png/96px-Topaz_Brooch.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Topaz Brooch</span><br />
+						<span class="q-desc">Gain a temporary barrier on kill.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Gain a <span class="q-health">temporary barrier</span> on kill for <span class="q-health">1.5%</span> of you <span class="q-health">maximum health</span> plus <span class="q-health">15 health</span> <span class="q-stack">(+15 per stack)</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				<span class="q-health" style="letter-spacing: 5px;">BUFFED</span><br />
+				> Increased barrier gain on the first stack by an additional 1.5% of base health.<br />
+				<h5>Notes:</h5>
+				The barrier gain increase should help with the item falling off later into a run.
+			</td>
+		</tr>
+		<tr id="Warbanner">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Warbanner.png/96px-Warbanner.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Warbanner</span><br />
+						<span class="q-desc">Drop a Warbanner on level up or starting the Teleporter event. Grants allies attack and movement speed.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							On <span class="q-utility">level up</span> or starting the <span class="q-utility">Teleporter event</span>, drop a banner that strengthens all allies within <span class="q-utility">16m</span> <span class="q-stack">(+8m per stack)</span>.
+							Raise <span class="q-damage">attack</span> and <span class="q-utility">movement speed</span> by <span class="q-damage">30%</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgCommon.png/96px-BgCommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Warbanner.png/96px-Warbanner.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-common">Warbanner</span><br />
+						<span class="q-desc">Hold out zones and leveling up drops a banner that grants allies attack and movement speed.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							On <span class="q-utility">level up</span> drop a banner that strengthens all allies within <span class="q-utility">16m</span> <span class="q-stack">(+8m per stack)</span>, increasing <span class="q-damage">attack speed</span> and <span class="q-utility">movement speed</span> by <span class="q-damage">30%</span>.
+							<span class="q-utility">Teleporter zones</span> will provide the banner effect while active.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr><th colspan="2" class="q-uncommon">Uncommon Items</th></tr>
+		<tr>
+			<td colspan="2">
+				<div style="display: flex; align-content: center; justify-content: center;">
+					<div class="unchanged-items">
+						<div style="text-align: left; margin-bottom: 4px;">Unchanged Items:</div>
+						<div style="display: flex; text-align: center;">
+							<span class="tooltip-icon" title="AtG Missile Mk. 1">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/AtG_Missile_Mk._1.png/32px-AtG_Missile_Mk._1.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Bandolier">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Bandolier.png/32px-Bandolier.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Berzerker's Pauldron">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Berzerker's_Pauldron.png/32px-Berzerker's_Pauldron.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Breaching Fin">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Breaching_Fin.png/32px-Breaching_Fin.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Chronobauble">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Chronobauble.png/32px-Chronobauble.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Collector's_Compulsion">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Collector's_Compulsion.png/32px-Collector's_Compulsion.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Death Mark">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Death_Mark.png/32px-Death_Mark.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Faraday Spur">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Faraday_Spur.png/32px-Faraday_Spur.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Fuel Cell">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Fuel_Cell.png/32px-Fuel_Cell.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Hopoo Feather">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Hopoo_Feather.png/32px-Hopoo_Feather.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Kinetic Dampener">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Kinetic_Dampener.png/32px-Kinetic_Dampener.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Kjaro's Band">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Kjaro's_Band.png/32px-Kjaro's_Band.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Luminous Shot">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Luminous_Shot.png/32px-Luminous_Shot.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Noxious Thorn">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Noxious_Thorn.png/32px-Noxious_Thorn.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Old Guillotine">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Old_Guillotine.png/32px-Old_Guillotine.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Predatory Instincts">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Predatory_Instincts.png/32px-Predatory_Instincts.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Razorwire">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Razorwire.png/32px-Razorwire.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Red Whip">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Red_Whip.png/32px-Red_Whip.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Regenerating Scrap">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Regenerating_Scrap.png/32px-Regenerating_Scrap.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Rose Buckler">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Rose_Buckler.png/32px-Rose_Buckler.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Runald's Band">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Runald's_Band.png/32px-Runald's_Band.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Sale Star">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Sale_Star.png/32px-Sale_Star.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Shipping Request Form">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Shipping_Request_Form.png/32px-Shipping_Request_Form.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Shuriken">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Shuriken.png/32px-Shuriken.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Ukulele">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Ukulele.png/32px-Ukulele.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Unstable Transmitter">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Unstable_Transmitter.png/32px-Unstable_Transmitter.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="War Horn">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/War_Horn.png/32px-War_Horn.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Wax Quail">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Wax_Quail.png/32px-Wax_Quail.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Will-o'-the-wisp">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/32px-BgUncommon.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Will-o'-the-wisp.png/32px-Will-o'-the-wisp.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="Box_of_Dynamite">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Box_of_Dynamite.png/96px-Box_of_Dynamite.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Box of Dynamite</span><br />
+						<span class="q-desc">Your drones periodically drop dynamite.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Gain Lt. Droneboy.
+							While in combat, your drones drop sticks of dynamite that detonate for 240% damage (+85% per stack), stunning enemies.
+							Recharges after 10 seconds.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Box_of_Dynamite.png/96px-Box_of_Dynamite.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Box of Dynamite</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Chance_Doll">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Chance_Doll.png/96px-Chance_Doll.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Chance Doll</span><br />
+						<span class="q-desc">Chance to increase item rarity at Shrines of Chance.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Chance_Doll.png/96px-Chance_Doll.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Chance Doll</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Ghor's_Tome">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Ghor's_Tome.png/96px-Ghor's_Tome.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Ghor's Tome</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Ghor's_Tome.png/96px-Ghor's_Tome.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Ghor's Tome</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Harvester's_Scythe">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Harvester's_Scythe.png/96px-Harvester's_Scythe.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Harvester's Scythe</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Harvester's_Scythe.png/96px-Harvester's_Scythe.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Harvester's Scythe</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Hunter's_Harpoon">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Hunter's_Harpoon.png/96px-Hunter's_Harpoon.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Hunter's Harpoon</span><br />
+						<span class="q-desc">Killing an enemy gives you a burst of movement speed.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Killing an enemy increases <span class="q-utility">movement speed</span> by <span class="q-utility">125%</span>, fading over <span class="q-utility">1</span> <span class="q-stack">(+0.5 per stack)</span> seconds.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Hunter's_Harpoon.png/96px-Hunter's_Harpoon.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Hunter's Harpoon</span><br />
+						<span class="q-desc">Killing an enemy gives you a burst of movement speed.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Killing an enemy increases <span class="q-utility">movement speed</span> by <span class="q-utility">125%</span>, fading over <span class="q-utility">1</span> <span class="q-stack">(+0.5 per stack)</span> seconds.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Ignition_Tank">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Ignition_Tank.png/96px-Ignition_Tank.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Ignition Tank</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Ignition_Tank.png/96px-Ignition_Tank.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Ignition Tank</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Infusion">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Infusion.png/96px-Infusion.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Infusion</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Infusion.png/96px-Infusion.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Infusion</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Leeching_Seed">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Leeching_Seed.png/96px-Leeching_Seed.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Leeching Seed</span><br />
+						<span class="q-desc">Dealing damage heals you.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Dealing damage <span class="q-health">heals</span> you for <span class="q-health">1 <span class="q-stack">(+1 per stack)</span> health</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Leeching_Seed.png/96px-Leeching_Seed.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Leeching Seed</span><br />
+						<span class="q-desc">Killing an enemy gives you a burst of movement speed.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							<span class="q-utility">18%</span> chance to <span class="q-utility">leech</span> an enemy for <span class="q-utility">4 <span class="q-stack">(+2 per stack)</span> seconds</span> on hit.
+							Killing a leeched enemy <span class="q-health">heals <span class="q-common">for</span> 8%</span> of your <span class="q-health">maximum health</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> No longer heals when dealing damage.<br />
+				> Attacks now have a chance to leech enemies. Killing a leeched enemy heals you.<br />
+				<h5>Notes:</h5>
+				Leech is a stackable debuff, but the application of a new stack does not refresh the duration of any current stacks.
+				Every stack of leech heals for +8% of maximum health when the enemy is killed.
+				Upon the death of a leeched enemy, a red healing orb will hover over the death location for a brief period, then start to home in towards the killer and heal them.
+			</td>
+		</tr>
+		<tr id="Lepton_Daisy">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Lepton_Daisy.png/96px-Lepton_Daisy.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Lepton Daisy</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Lepton_Daisy.png/96px-Lepton_Daisy.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Lepton Daisy</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Old_War_Stealthkit">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Old_War_Stealthkit.png/96px-Old_War_Stealthkit.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Old War Stealthkit</span><br />
+						<span class="q-desc">Turn invisible at low health.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Old_War_Stealthkit.png/96px-Old_War_Stealthkit.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Old War Stealthkit</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Prayer_Beads">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Prayer_Beads.png/96px-Prayer_Beads.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Prayer Beads</span><br />
+						<span class="q-desc">Gains experience alongside you. Upon removal, grants bonus stats.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Grows by gaining experience, storing <span class="q-utility">20%</span> <span class="q-stack">(+5% per stack)</span> bonus stats (health, regeneration, and damage).
+							On removal, gain all stored stats.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Prayer_Beads.png/96px-Prayer_Beads.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Prayer Beads</span><br />
+						<span class="q-desc">Gain bonus experience that is redeemed upon removal. Prioritized when used with 3D Printers.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Squid_Polyp">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Squid_Polyp.png/96px-Squid_Polyp.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Squid Polyp</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgUncommon.png/96px-BgUncommon.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Squid_Polyp.png/96px-Squid_Polyp.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-uncommon">Squid Polyp</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr><th colspan="2" class="q-legendary">Legendary Items</th></tr>
+		<tr>
+			<td colspan="2">
+				<div style="display: flex; align-content: center; justify-content: center;">
+					<div class="unchanged-items">
+						<div style="text-align: left; margin-bottom: 4px;">Unchanged Items:</div>
+						<div style="display: flex; text-align: center;">
+							<span class="tooltip-icon" title="57 Leaf Clover">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/57_Leaf_Clover.png/32px-57_Leaf_Clover.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Alien Head">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Alien_Head.png/32px-Alien_Head.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Brainstalks">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Brainstalks.png/32px-Brainstalks.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Brilliant Behemoth">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Brilliant_Behemoth.png/32px-Brilliant_Behemoth.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Ceremonial Dagger">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Ceremonial_Dagger.png/32px-Ceremonial_Dagger.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Defensive Microbots">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Defensive_Microbots.png/32px-Defensive_Microbots.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Electric Boomerang">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Electric_Boomerang.png/32px-Electric_Boomerang.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Growth Nectar">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Growth_Nectar.png/32px-Growth_Nectar.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="H3AD-5T v2">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/H3AD-5T_v2.png/32px-H3AD-5T_v2.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Hardlight Afterburner">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Hardlight_Afterburner.png/32px-Hardlight_Afterburner.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Interstellar Desk Plant">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Interstellar_Desk_Plant.png/32px-Interstellar_Desk_Plant.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Networked Suffering">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Networked_Suffering.png/32px-Networked_Suffering.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Orphaned Core">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Orphaned_Core.png/32px-Orphaned_Core.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Resonance Disc">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Resonance_Disc.png/32px-Resonance_Disc.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Runic Lens">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Runic_Lens.png/32px-Runic_Lens.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Sentient Meat Hook">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Sentient_Meat_Hook.png/32px-Sentient_Meat_Hook.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Shattering Justice">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Shattering_Justice.png/32px-Shattering_Justice.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Sonorous Whispers">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Sonorous_Whispers.png/32px-Sonorous_Whispers.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Symbiotic Scorpion">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Symbiotic_Scorpion.png/32px-Symbiotic_Scorpion.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Unstable Tesla Coil">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Unstable_Tesla_Coil.png/32px-Unstable_Tesla_Coil.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Wake of Vultures">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Wake_of_Vultures.png/32px-Wake_of_Vultures.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="War Bonds">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/32px-BgLegendary.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/War_Bonds.png/32px-War_Bonds.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="Aegis">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Aegis.png/96px-Aegis.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Aegis</span><br />
+						<span class="q-desc">Healing past full grants you a temporary barrier.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Healing past full grants you a <span class="q-health">temporary barrier</span> for <span class="q-health">50%</span> <span class="q-stack">(+50% per stack)</span> of the amount you <span class="q-health">healed</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Aegis.png/96px-Aegis.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Aegis</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Doubles all <span class="q-health">temporary barrier</span> gains.
+							<span class="q-health">Temporary barrier</span> decays <span class="q-utility">40% <span class="q-stack">(+40% per stack)</span> slower</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Ben's_Raincoat">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Ben's_Raincoat.png/96px-Ben's_Raincoat.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Ben's Raincoat</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Ben's_Raincoat.png/96px-Ben's_Raincoat.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Ben's Raincoat</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Bottled_Chaos">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Bottled_Chaos.png/96px-Bottled_Chaos.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Bottled Chaos</span><br />
+						<span class="q-desc">Activating your Equipment triggers an additional, random Equipment effect.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Trigger a <span class="q-damage">random</span> equipment effect <span class="q-damage">1</span> <span class="q-stack">(+1 per stack)</span> time(s).
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Bottled_Chaos.png/96px-Bottled_Chaos.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Bottled Chaos</span><br />
+						<span class="q-desc">Equipments have a random reduced cooldown.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Activating your equipment will randomly reduce its cooldown by <span class="q-utility">10</span>-<span class="q-utility">40%</span> with a <span class="q-utility">8%</span> <span class="q-stack">(+8% per stack)</span> chance to not go on cooldown.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Dio's_Best_Friend">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Dio's_Best_Friend.png/96px-Dio's_Best_Friend.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Dio's Best Friend</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Dio's_Best_Friend.png/96px-Dio's_Best_Friend.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Dio's Best Friend</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Frost_Relic">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Frost_Relic.png/96px-Frost_Relic.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Frost Relic</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Frost_Relic.png/96px-Frost_Relic.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Frost Relic</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Happiest_Mask">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Happiest_Mask.png/96px-Happiest_Mask.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Happiest Mask</span><br />
+						<span class="q-desc">Chance on killing an enemy to summon a ghost.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Killing enemies has a <span class="q-damage">7%</span> chance to <span class="q-damage">spawn a ghost</span> of the killed enemy with <span class="q-damage">1500%</span> damage.
+							Lasts <span class="q-damage">30s</span> <span class="q-stack">(+30 per stack)</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Happiest_Mask.png/96px-Happiest_Mask.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Happiest Mask</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Laser_Scope">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Laser_Scope.png/96px-Laser_Scope.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Laser Scope</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Laser_Scope.png/96px-Laser_Scope.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Laser Scope</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="N'kuhana's_Opinion">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/N'kuhana's_Opinion.png/96px-N'kuhana's_Opinion.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">N'kuhana's Opinion</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/N'kuhana's_Opinion.png/96px-N'kuhana's_Opinion.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">N'kuhana's Opinion</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Pocket_I.C.B.M.">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Pocket_I.C.B.M..png/96px-Pocket_I.C.B.M..png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Pocket I.C.B.M.</span><br />
+						<span class="q-desc">All Missile items deal more damage and fire an additional two missiles.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							All missile items and equipment fire an additional <span class="q-damage">2 missiles</span>.
+							Increase missile damage by <span class="q-damage">0%</span> <span class="q-stack">(+50% per stack)</span>.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Pocket_I.C.B.M..png/96px-Pocket_I.C.B.M..png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Pocket I.C.B.M.</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							Doubles the output of all <span class="q-damage">missiles fired</span>. Increases explosion radius of all items and abilities by <span class="q-damage">40%</span> <span class="q-stack">(+40% per stack)</span>.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Rejuvenation_Rack">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Rejuvenation_Rack.png/96px-Rejuvenation_Rack.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Rejuvenation Rack</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Rejuvenation_Rack.png/96px-Rejuvenation_Rack.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Rejuvenation Rack</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Spare_Drone_Parts">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Spare_Drone_Parts.png/96px-Spare_Drone_Parts.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Spare Drone Parts</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Spare_Drone_Parts.png/96px-Spare_Drone_Parts.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Spare Drone Parts</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Substandard_Duplicator">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Substandard_Duplicator.png/96px-Substandard_Duplicator.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Substandard Duplicator</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLegendary.png/96px-BgLegendary.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Substandard_Duplicator.png/96px-Substandard_Duplicator.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-legendary">Substandard Duplicator</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr><th colspan="2" class="q-boss">Boss Items</th></tr>
+		<tr>
+			<td colspan="2">
+				<div style="display: flex; align-content: center; justify-content: center;">
+					<div class="unchanged-items">
+						<div style="text-align: left; margin-bottom: 4px;">Unchanged Items:</div>
+						<div style="display: flex; text-align: center;">
+							<span class="tooltip-icon" title="Charged Perforator">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Charged_Perforator.png/32px-Charged_Perforator.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Empathy Cores">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Empathy_Cores.png/32px-Empathy_Cores.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Faulty Conductor">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Faulty_Conductor.png/32px-Faulty_Conductor.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Functional Coupler">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Functional_Coupler.png/32px-Functional_Coupler.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Halcyon Seed">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Halcyon_Seed.png/32px-Halcyon_Seed.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Irradiant Pearl">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Irradiant_Pearl.png/32px-Irradiant_Pearl.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Molten Perforator">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Molten_Perforator.png/32px-Molten_Perforator.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Prison Matrix">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Prison_Matrix.png/32px-Prison_Matrix.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Pearl">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Pearl.png/32px-Pearl.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Sentry Key">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Sentry_Key.png/32px-Sentry_Key.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+							<span class="tooltip-icon" title="Shatterspleen">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/32px-BgBoss.png" decoding="async" loading="lazy">
+								<img src="https://riskofrain2.wiki.gg/images/thumb/Shatterspleen.png/32px-Shatterspleen.png" class="item-img" decoding="async" loading="lazy">
+							</span>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="Defense_Nucleus">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Defense_Nucleus.png/96px-Defense_Nucleus.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Defense Nucleus</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Defense_Nucleus.png/96px-Defense_Nucleus.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Defense Nucleus</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Genesis_Loop">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Genesis_Loop.png/96px-Genesis_Loop.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Genesis Loop</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Genesis_Loop.png/96px-Genesis_Loop.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Genesis Loop</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Little_Disciple">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Little_Disciple.png/96px-Little_Disciple.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Little Disciple</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Little_Disciple.png/96px-Little_Disciple.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Little Disciple</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Mired_Urn">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Mired_Urn.png/96px-Mired_Urn.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Mired Urn</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Mired_Urn.png/96px-Mired_Urn.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Mired Urn</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Planula">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Planula.png/96px-Planula.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Planula</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Planula.png/96px-Planula.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Planula</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Queen's_Gland">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Queen's_Gland.png/96px-Queen's_Gland.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Queen's Gland</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Queen's_Gland.png/96px-Queen's_Gland.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Queen's Gland</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+		<tr id="Titanic_Knurl">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Titanic_Knurl.png/96px-Titanic_Knurl.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Titanic Knurl</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgBoss.png/96px-BgBoss.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Titanic_Knurl.png/96px-Titanic_Knurl.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-boss">Titanic Knurl</span><br />
+						<span class="q-desc">TODO.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+	</table>
+	<table>
+		<tr><th colspan="2" class="q-lunar">Lunar Items</th></tr>
+		<tr id="Transcendence">
+			<td>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLunar.png/96px-BgLunar.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Transcendence.png/96px-Transcendence.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-lunar">Transcendence</span><br />
+						<span class="q-desc">Convert all your health into shield. Increase maximum health.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							<span class="q-health">Convert <span class="q-common">all but</span> 1 health <span class="q-common">into</span> regenerating shields. Gain 50% <span class="q-stack">(+25% per stack)</span> maximum health.</span>
+						</span>
+					</span>
+				</div>
+				<div class="item-log">
+					<span class="tooltip-icon">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/BgLunar.png/96px-BgLunar.png" decoding="async" loading="lazy">
+						<img src="https://riskofrain2.wiki.gg/images/thumb/Transcendence.png/96px-Transcendence.png" class="item-img" decoding="async" loading="lazy">
+					</span>
+					<span style="flex-grow: 1;">
+						<span class="item-name q-lunar">Transcendence</span><br />
+						<span class="q-desc">Converts health into shield... <span class="q-downside">BUT shield no longer regenerates</span>.</span><br />
+						<span class="makeshift-hr"></span>
+						<span>
+							TODO.
+						</span>
+					</span>
+				</div>
+			</td>
+			<td class="info-log">
+				<h5>Changes:</h5>
+				> TODO.<br />
+				<h5>Notes:</h5>
+				TODO.
+			</td>
+		</tr>
+	</table>
+</body>

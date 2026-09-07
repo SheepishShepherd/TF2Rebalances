@@ -17,7 +17,7 @@ h1 {
 table {
 	table-layout: fixed;
 	width: 75rem; /* 1200px */
-	margin: 1rem 0;
+	margin: 1rem auto;
 	text-align: center;
 	font-size: 1em; /* 15px */
 }
